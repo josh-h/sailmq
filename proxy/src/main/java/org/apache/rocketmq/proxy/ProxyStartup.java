@@ -29,10 +29,10 @@ import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.rocketmq.acl.AccessValidator;
-import org.apache.rocketmq.acl.plain.PlainAccessValidator;
-import org.apache.rocketmq.broker.BrokerController;
-import org.apache.rocketmq.broker.BrokerStartup;
+import org.sail.mq.acl.AccessValidator;
+import org.sail.mq.acl.plain.PlainAccessValidator;
+import org.sail.mq.broker.BrokerController;
+import org.sail.mq.broker.BrokerStartup;
 import org.apache.rocketmq.common.MixAll;
 import org.apache.rocketmq.common.constant.LoggerName;
 import org.apache.rocketmq.common.thread.ThreadPoolMonitor;
@@ -117,7 +117,7 @@ public class ProxyStartup {
     protected static List<AccessValidator> loadAccessValidators() {
         List<AccessValidator> accessValidators = ServiceProvider.load(AccessValidator.class);
         if (accessValidators.isEmpty()) {
-            log.info("ServiceProvider loaded no AccessValidator, using default org.apache.rocketmq.acl.plain.PlainAccessValidator");
+            log.info("ServiceProvider loaded no AccessValidator, using default plain.org.sail.mq.acl.PlainAccessValidator");
             accessValidators.add(new PlainAccessValidator());
         }
         return accessValidators;

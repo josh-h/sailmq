@@ -18,9 +18,9 @@ package org.apache.rocketmq.proxy.service;
 
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-import org.apache.rocketmq.broker.BrokerController;
-import org.apache.rocketmq.broker.client.ConsumerManager;
-import org.apache.rocketmq.broker.client.ProducerManager;
+import org.sail.mq.broker.BrokerController;
+import org.sail.mq.broker.client.ConsumerManager;
+import org.sail.mq.broker.client.ProducerManager;
 import org.apache.rocketmq.client.common.NameserverAccessConfig;
 import org.apache.rocketmq.client.impl.mqclient.DoNothingClientRemotingProcessor;
 import org.apache.rocketmq.client.impl.mqclient.MQClientAPIFactory;

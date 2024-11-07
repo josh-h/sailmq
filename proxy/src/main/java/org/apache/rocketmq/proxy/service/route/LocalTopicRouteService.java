@@ -19,7 +19,7 @@ package org.apache.rocketmq.proxy.service.route;
 import com.google.common.collect.Lists;
 import java.util.HashMap;
 import java.util.List;
-import org.apache.rocketmq.broker.BrokerController;
+import org.sail.mq.broker.BrokerController;
 import org.apache.rocketmq.client.impl.mqclient.MQClientAPIFactory;
 import org.apache.rocketmq.common.BrokerConfig;
 import org.apache.rocketmq.common.MixAll;

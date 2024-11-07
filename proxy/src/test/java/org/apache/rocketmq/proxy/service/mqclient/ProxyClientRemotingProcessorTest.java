@@ -28,7 +28,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.apache.rocketmq.broker.client.ProducerManager;
+import org.sail.mq.broker.client.ProducerManager;
 import org.apache.rocketmq.common.MixAll;
 import org.apache.rocketmq.proxy.service.client.ProxyClientRemotingProcessor;
 import org.apache.rocketmq.common.message.MessageAccessor;

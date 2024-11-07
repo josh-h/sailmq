@@ -14,7 +14,7 @@ The Name Server boot success. serializeType=JSON, address 0.0.0.0:9876
 ```
 
 ### Step2: 启动Broker
-1. Broker的启动类在`org.apache.rocketmq.broker.BrokerStartup`
+1. Broker的启动类在`org.sail.mq.broker.BrokerStartup`
 2. 创建`/rocketmq/conf/broker.conf`文件或直接在官方release发布包中拷贝即可
 ```shell
 # broker.conf

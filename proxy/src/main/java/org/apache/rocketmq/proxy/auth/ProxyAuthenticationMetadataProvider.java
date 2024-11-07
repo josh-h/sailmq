@@ -19,9 +19,9 @@ package org.apache.rocketmq.proxy.auth;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Supplier;
-import org.apache.rocketmq.auth.authentication.provider.AuthenticationMetadataProvider;
-import org.apache.rocketmq.auth.authentication.model.User;
-import org.apache.rocketmq.auth.config.AuthConfig;
+import org.sail.mq.auth.authentication.provider.AuthenticationMetadataProvider;
+import org.sail.mq.auth.authentication.model.User;
+import org.sail.mq.auth.config.AuthConfig;
 import org.apache.rocketmq.proxy.service.metadata.MetadataService;
 
 public class ProxyAuthenticationMetadataProvider implements AuthenticationMetadataProvider {

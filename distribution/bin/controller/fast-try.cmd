@@ -27,9 +27,9 @@ IF %ERRORLEVEL% EQU 0 (
 timeout /T 3 /NOBREAK
 
 set "JAVA_OPT_EXT= -server -Xms1g -Xmx1g"
-start call "%ROCKETMQ_HOME%\bin\runbroker.cmd" org.apache.rocketmq.broker.BrokerStartup -c %ROCKETMQ_HOME%\conf\controller\quick-start\broker-n0.conf
+start call "%ROCKETMQ_HOME%\bin\runbroker.cmd" org.sail.mq.broker.BrokerStartup -c %ROCKETMQ_HOME%\conf\controller\quick-start\broker-n0.conf
 timeout /T 1 /NOBREAK
-start call "%ROCKETMQ_HOME%\bin\runbroker.cmd" org.apache.rocketmq.broker.BrokerStartup -c %ROCKETMQ_HOME%\conf\controller\quick-start\broker-n1.conf
+start call "%ROCKETMQ_HOME%\bin\runbroker.cmd" org.sail.mq.broker.BrokerStartup -c %ROCKETMQ_HOME%\conf\controller\quick-start\broker-n1.conf
 timeout /T 1 /NOBREAK
 
 IF %ERRORLEVEL% EQU 0 (

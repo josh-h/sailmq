@@ -50,7 +50,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.rocketmq.auth.config.AuthConfig;
+import org.sail.mq.auth.config.AuthConfig;
 import org.apache.rocketmq.common.constant.GrpcConstants;
 import org.apache.rocketmq.common.constant.LoggerName;
 import org.apache.rocketmq.common.thread.ThreadPoolMonitor;

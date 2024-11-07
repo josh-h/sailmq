@@ -19,12 +19,12 @@ package org.apache.rocketmq.proxy.remoting.pipeline;
 
 import io.netty.channel.ChannelHandlerContext;
 import java.util.List;
-import org.apache.rocketmq.auth.authentication.exception.AuthenticationException;
-import org.apache.rocketmq.auth.authorization.AuthorizationEvaluator;
-import org.apache.rocketmq.auth.authorization.context.AuthorizationContext;
-import org.apache.rocketmq.auth.authorization.exception.AuthorizationException;
-import org.apache.rocketmq.auth.authorization.factory.AuthorizationFactory;
-import org.apache.rocketmq.auth.config.AuthConfig;
+import org.sail.mq.auth.authentication.exception.AuthenticationException;
+import org.sail.mq.auth.authorization.AuthorizationEvaluator;
+import org.sail.mq.auth.authorization.context.AuthorizationContext;
+import org.sail.mq.auth.authorization.exception.AuthorizationException;
+import org.sail.mq.auth.authorization.factory.AuthorizationFactory;
+import org.sail.mq.auth.config.AuthConfig;
 import org.apache.rocketmq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;

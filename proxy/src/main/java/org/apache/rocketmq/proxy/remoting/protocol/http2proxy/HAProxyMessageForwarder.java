@@ -38,7 +38,7 @@ import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.reflect.FieldUtils;
-import org.apache.rocketmq.acl.common.AclUtils;
+import org.sail.mq.acl.common.common.AclUtils;
 import org.apache.rocketmq.common.constant.CommonConstants;
 import org.apache.rocketmq.common.constant.HAProxyConstants;
 import org.apache.rocketmq.common.constant.LoggerName;

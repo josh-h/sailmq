@@ -17,8 +17,8 @@
 
 package org.apache.rocketmq.example.benchmark;
 
-import org.apache.rocketmq.acl.common.AclClientRPCHook;
-import org.apache.rocketmq.acl.common.SessionCredentials;
+import org.sail.mq.acl.common.common.AclClientRPCHook;
+import org.sail.mq.acl.common.common.SessionCredentials;
 import org.apache.rocketmq.remoting.RPCHook;
 
 public class AclClient {

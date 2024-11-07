@@ -36,7 +36,7 @@
         <Bug pattern="RV_ABSOLUTE_VALUE_OF_HASHCODE"/>
     </Match>
     <Match>
-        <Class name="org.apache.rocketmq.broker.transaction.queue.DefaultTransactionalMessageCheckListener"/>
+        <Class name="queue.transaction.org.sail.mq.broker.DefaultTransactionalMessageCheckListener"/>
         <Method name="toMessageExtBrokerInner" />
         <Bug pattern="INT_BAD_REM_BY_1"/>
     </Match>

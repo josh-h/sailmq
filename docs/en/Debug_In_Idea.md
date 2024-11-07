@@ -14,7 +14,7 @@ The Name Server boot success. serializeType=JSON, address 0.0.0.0:9876
 ```
 
 ### Step2: Start Broker
-1. The startup class for Broker is located in`org.apache.rocketmq.broker.BrokerStartup`
+1. The startup class for Broker is located in`org.sail.mq.broker.BrokerStartup`
 2. Create the `/rocketmq/conf/broker.conf` file or simply copy it from the official release package.
 ```shell
 # broker.conf

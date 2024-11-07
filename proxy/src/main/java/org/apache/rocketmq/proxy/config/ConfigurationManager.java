@@ -20,7 +20,7 @@ package org.apache.rocketmq.proxy.config;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.rocketmq.auth.config.AuthConfig;
+import org.sail.mq.auth.config.AuthConfig;
 import org.apache.rocketmq.common.MixAll;
 
 public class ConfigurationManager {

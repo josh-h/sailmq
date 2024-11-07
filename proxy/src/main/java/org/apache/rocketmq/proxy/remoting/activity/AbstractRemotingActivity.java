@@ -20,7 +20,7 @@ package org.apache.rocketmq.proxy.remoting.activity;
 import io.netty.channel.ChannelHandlerContext;
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.rocketmq.acl.common.AclException;
+import org.sail.mq.acl.common.common.AclException;
 import org.apache.rocketmq.client.exception.MQBrokerException;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.common.constant.LoggerName;

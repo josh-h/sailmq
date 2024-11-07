@@ -20,7 +20,7 @@ package org.apache.rocketmq.test.offset;
 import java.time.Duration;
 import java.util.List;
 import java.util.Map;
-import org.apache.rocketmq.broker.BrokerController;
+import org.sail.mq.broker.BrokerController;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.common.message.MessageQueue;
 import org.apache.rocketmq.remoting.protocol.RemotingCommand;

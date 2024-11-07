@@ -18,10 +18,10 @@
 package org.apache.rocketmq.proxy.service.metadata;
 
 import java.util.concurrent.CompletableFuture;
-import org.apache.rocketmq.auth.authentication.model.Subject;
-import org.apache.rocketmq.auth.authentication.model.User;
-import org.apache.rocketmq.auth.authorization.model.Acl;
-import org.apache.rocketmq.broker.BrokerController;
+import org.sail.mq.auth.authentication.model.Subject;
+import org.sail.mq.auth.authentication.model.User;
+import org.sail.mq.auth.authorization.model.Acl;
+import org.sail.mq.broker.BrokerController;
 import org.apache.rocketmq.common.TopicConfig;
 import org.apache.rocketmq.common.attribute.TopicMessageType;
 import org.apache.rocketmq.proxy.common.ProxyContext;
