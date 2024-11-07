@@ -20,7 +20,7 @@ package org.apache.rocketmq.remoting.protocol;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.common.MixAll;
 import org.apache.rocketmq.remoting.protocol.body.ClusterInfo;
 import org.apache.rocketmq.remoting.protocol.route.BrokerData;
 import org.junit.Test;

@@ -17,8 +17,8 @@
 package org.apache.rocketmq.remoting.protocol;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.topic.TopicValidator;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.topic.TopicValidator;
 
 public class NamespaceUtil {
     public static final char NAMESPACE_SEPARATOR = '%';

@@ -23,12 +23,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-import org.apache.rocketmq.common.UtilAll;
-import org.apache.rocketmq.common.message.MessageDecoder;
-import org.apache.rocketmq.common.message.MessageExtBatch;
-import org.apache.rocketmq.common.message.MessageExtBrokerInner;
-import org.apache.rocketmq.common.message.MessageVersion;
-import org.apache.rocketmq.common.sysflag.MessageSysFlag;
+import org.sail.mq.common.UtilAll;
+import org.sail.mq.common.message.MessageDecoder;
+import org.sail.mq.common.message.MessageExtBatch;
+import org.sail.mq.common.message.MessageExtBrokerInner;
+import org.sail.mq.common.message.MessageVersion;
+import org.sail.mq.common.sysflag.MessageSysFlag;
 import org.apache.rocketmq.store.AppendMessageResult;
 import org.apache.rocketmq.store.AppendMessageStatus;
 import org.apache.rocketmq.store.CommitLog;

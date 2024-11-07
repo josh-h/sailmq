@@ -17,7 +17,7 @@
 
 package org.apache.rocketmq.tools.monitor;
 
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.common.MixAll;
 
 public class MonitorConfig {
     private String namesrvAddr = System.getProperty(MixAll.NAMESRV_ADDR_PROPERTY,

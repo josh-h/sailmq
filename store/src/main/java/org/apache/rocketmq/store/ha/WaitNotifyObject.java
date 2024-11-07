@@ -16,8 +16,8 @@
  */
 package org.apache.rocketmq.store.ha;
 
-import org.apache.rocketmq.common.constant.LoggerName;
-import org.apache.rocketmq.common.utils.ConcurrentHashMapUtils;
+import org.sail.mq.common.constant.LoggerName;
+import org.sail.mq.common.utils.ConcurrentHashMapUtils;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 

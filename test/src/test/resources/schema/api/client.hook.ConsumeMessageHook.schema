@@ -16,6 +16,6 @@
  */
 
 
-Method consumeMessageAfter(org.apache.rocketmq.client.hook.ConsumeMessageContext) : public throws (void)
-Method consumeMessageBefore(org.apache.rocketmq.client.hook.ConsumeMessageContext) : public throws (void)
+Method consumeMessageAfter(hook.org.sail.mq.client.ConsumeMessageContext) : public throws (void)
+Method consumeMessageBefore(hook.org.sail.mq.client.ConsumeMessageContext) : public throws (void)
 Method hookName() : public throws (java.lang.String)

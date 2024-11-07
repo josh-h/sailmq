@@ -25,7 +25,7 @@ import org.sail.mq.auth.authorization.exception.AuthorizationException;
 import org.sail.mq.auth.authorization.factory.AuthorizationFactory;
 import org.sail.mq.auth.authorization.provider.AuthorizationProvider;
 import org.sail.mq.auth.config.AuthConfig;
-import org.apache.rocketmq.common.utils.ExceptionUtils;
+import org.sail.mq.common.utils.ExceptionUtils;
 
 public abstract class AbstractAuthorizationStrategy implements AuthorizationStrategy {
 

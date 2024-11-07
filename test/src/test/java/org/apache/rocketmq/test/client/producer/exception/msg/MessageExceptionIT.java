@@ -17,10 +17,10 @@
 
 package org.apache.rocketmq.test.client.producer.exception.msg;
 
-import org.apache.rocketmq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.client.producer.SendResult;
-import org.apache.rocketmq.client.producer.SendStatus;
-import org.apache.rocketmq.common.message.Message;
+import org.sail.mq.client.producer.DefaultMQProducer;
+import org.sail.mq.client.producer.SendResult;
+import org.sail.mq.client.producer.SendStatus;
+import org.sail.mq.common.message.Message;
 import org.apache.rocketmq.test.base.BaseConf;
 import org.apache.rocketmq.test.factory.MessageFactory;
 import org.apache.rocketmq.test.factory.ProducerFactory;
@@ -28,6 +28,7 @@ import org.apache.rocketmq.test.util.RandomUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.sail.mq.client.exception.MQClientException;
 
 import static com.google.common.truth.Truth.assertThat;
 
@@ -64,40 +65,40 @@ public class MessageExceptionIT extends BaseConf {
         producer.send((Message) null);
     }
 
-    @Test(expected = org.apache.rocketmq.client.exception.MQClientException.class)
+    @Test(expected = MQClientException.class)
     public void testSynSendNullBodyMessage() throws Exception {
         Message msg = new Message(topic, RandomUtils.getStringByUUID().getBytes());
         msg.setBody(null);
         producer.send(msg);
     }
 
-    @Test(expected = org.apache.rocketmq.client.exception.MQClientException.class)
+    @Test(expected = MQClientException.class)
     public void testSynSendZeroSizeBodyMessage() throws Exception {
         Message msg = new Message(topic, RandomUtils.getStringByUUID().getBytes());
         msg.setBody(new byte[0]);
         producer.send(msg);
     }
 
-    @Test(expected = org.apache.rocketmq.client.exception.MQClientException.class)
+    @Test(expected = MQClientException.class)
     public void testSynSendOutOfSizeBodyMessage() throws Exception {
         Message msg = new Message(topic, RandomUtils.getStringByUUID().getBytes());
         msg.setBody(new byte[1024 * 1024 * 4 + 1]);
         producer.send(msg);
     }
 
-    @Test(expected = org.apache.rocketmq.client.exception.MQClientException.class)
+    @Test(expected = MQClientException.class)
     public void testSynSendNullTopicMessage() throws Exception {
         Message msg = new Message(null, RandomUtils.getStringByUUID().getBytes());
         producer.send(msg);
     }
 
-    @Test(expected = org.apache.rocketmq.client.exception.MQClientException.class)
+    @Test(expected = MQClientException.class)
     public void testSynSendBlankTopicMessage() throws Exception {
         Message msg = new Message("", RandomUtils.getStringByUUID().getBytes());
         producer.send(msg);
     }
 
-    @Test(expected = org.apache.rocketmq.client.exception.MQClientException.class)
+    @Test(expected = MQClientException.class)
     public void testSend128kMsg() throws Exception {
         Message msg = new Message(topic,
             RandomUtils.getStringWithNumber(1024 * 1024 * 4 + 1).getBytes());

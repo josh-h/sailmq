@@ -22,8 +22,8 @@ import org.sail.mq.auth.authentication.model.Subject;
 import org.sail.mq.auth.authentication.model.User;
 import org.sail.mq.auth.authorization.model.Acl;
 import org.sail.mq.broker.BrokerController;
-import org.apache.rocketmq.common.TopicConfig;
-import org.apache.rocketmq.common.attribute.TopicMessageType;
+import org.sail.mq.common.TopicConfig;
+import org.sail.mq.common.attribute.TopicMessageType;
 import org.apache.rocketmq.proxy.common.ProxyContext;
 import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
 

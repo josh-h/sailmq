@@ -18,7 +18,7 @@
 package org.apache.rocketmq.store;
 
 import java.util.concurrent.CompletableFuture;
-import org.apache.rocketmq.common.message.MessageExt;
+import org.sail.mq.common.message.MessageExt;
 
 public interface FlushManager {
 

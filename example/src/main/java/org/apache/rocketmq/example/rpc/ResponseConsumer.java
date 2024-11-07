@@ -19,18 +19,18 @@ package org.apache.rocketmq.example.rpc;
 
 import java.nio.charset.StandardCharsets;
 import java.util.List;
-import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
-import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
-import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
-import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
-import org.apache.rocketmq.client.exception.MQBrokerException;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.client.producer.SendResult;
-import org.apache.rocketmq.client.utils.MessageUtil;
-import org.apache.rocketmq.common.consumer.ConsumeFromWhere;
-import org.apache.rocketmq.common.message.Message;
-import org.apache.rocketmq.common.message.MessageExt;
+import org.sail.mq.client.consumer.DefaultMQPushConsumer;
+import org.sail.mq.client.consumer.listener.ConsumeConcurrentlyContext;
+import org.sail.mq.client.consumer.listener.ConsumeConcurrentlyStatus;
+import org.sail.mq.client.consumer.listener.MessageListenerConcurrently;
+import org.sail.mq.client.exception.MQBrokerException;
+import org.sail.mq.client.exception.MQClientException;
+import org.sail.mq.client.producer.DefaultMQProducer;
+import org.sail.mq.client.producer.SendResult;
+import org.sail.mq.client.utils.MessageUtil;
+import org.sail.mq.common.consumer.ConsumeFromWhere;
+import org.sail.mq.common.message.Message;
+import org.sail.mq.common.message.MessageExt;
 import org.apache.rocketmq.remoting.exception.RemotingException;
 
 public class ResponseConsumer {

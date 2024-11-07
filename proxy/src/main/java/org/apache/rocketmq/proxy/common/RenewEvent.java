@@ -18,7 +18,7 @@
 package org.apache.rocketmq.proxy.common;
 
 import java.util.concurrent.CompletableFuture;
-import org.apache.rocketmq.client.consumer.AckResult;
+import org.sail.mq.client.consumer.AckResult;
 
 public class RenewEvent {
     protected ReceiptHandleGroupKey key;

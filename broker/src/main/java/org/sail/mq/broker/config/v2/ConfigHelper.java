@@ -23,7 +23,7 @@ import io.netty.buffer.Unpooled;
 import java.nio.charset.StandardCharsets;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicLong;
-import org.apache.rocketmq.common.config.AbstractRocksDBStorage;
+import org.sail.mq.common.config.AbstractRocksDBStorage;
 import org.apache.rocketmq.remoting.protocol.DataVersion;
 import org.rocksdb.RocksDBException;
 import org.rocksdb.WriteBatch;

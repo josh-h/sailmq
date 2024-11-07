@@ -19,8 +19,8 @@ package org.apache.rocketmq.store;
 
 import java.util.concurrent.LinkedBlockingQueue;
 
-import org.apache.rocketmq.common.ServiceThread;
-import org.apache.rocketmq.common.constant.LoggerName;
+import org.sail.mq.common.ServiceThread;
+import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.store.CommitLog.GroupCommitRequest;

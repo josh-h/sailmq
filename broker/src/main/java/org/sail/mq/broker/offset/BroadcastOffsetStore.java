@@ -20,7 +20,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicLong;
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.common.MixAll;
 
 public class BroadcastOffsetStore {
 

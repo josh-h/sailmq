@@ -17,8 +17,8 @@
 
 package org.apache.rocketmq.store.ha.autoswitch;
 
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.UtilAll;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.UtilAll;
 
 import java.io.File;
 

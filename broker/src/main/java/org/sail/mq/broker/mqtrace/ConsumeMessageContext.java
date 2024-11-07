@@ -18,7 +18,7 @@ package org.sail.mq.broker.mqtrace;
 
 import java.util.Map;
 
-import org.apache.rocketmq.common.TopicConfig;
+import org.sail.mq.common.TopicConfig;
 import org.apache.rocketmq.store.stats.BrokerStatsManager;
 
 public class ConsumeMessageContext {

@@ -16,17 +16,17 @@
  */
 package org.apache.rocketmq.store.queue;
 
-import org.apache.rocketmq.common.BrokerConfig;
-import org.apache.rocketmq.common.TopicAttributes;
-import org.apache.rocketmq.common.TopicConfig;
-import org.apache.rocketmq.common.attribute.CQType;
-import org.apache.rocketmq.common.message.MessageAccessor;
-import org.apache.rocketmq.common.message.MessageConst;
-import org.apache.rocketmq.common.message.MessageDecoder;
-import org.apache.rocketmq.common.sysflag.MessageSysFlag;
+import org.sail.mq.common.BrokerConfig;
+import org.sail.mq.common.TopicAttributes;
+import org.sail.mq.common.TopicConfig;
+import org.sail.mq.common.attribute.CQType;
+import org.sail.mq.common.message.MessageAccessor;
+import org.sail.mq.common.message.MessageConst;
+import org.sail.mq.common.message.MessageDecoder;
+import org.sail.mq.common.sysflag.MessageSysFlag;
 import org.apache.rocketmq.store.ConsumeQueue;
 import org.apache.rocketmq.store.DefaultMessageStore;
-import org.apache.rocketmq.common.message.MessageExtBrokerInner;
+import org.sail.mq.common.message.MessageExtBrokerInner;
 import org.apache.rocketmq.store.MessageStore;
 import org.apache.rocketmq.store.StoreTestBase;
 import org.apache.rocketmq.store.config.MessageStoreConfig;

@@ -33,8 +33,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.sail.mq.auth.authentication.exception.AuthenticationException;
 import org.sail.mq.auth.authentication.model.User;
 import org.sail.mq.auth.config.AuthConfig;
-import org.apache.rocketmq.common.config.ConfigRocksDBStorage;
-import org.apache.rocketmq.common.thread.ThreadPoolMonitor;
+import org.sail.mq.common.config.ConfigRocksDBStorage;
+import org.sail.mq.common.thread.ThreadPoolMonitor;
 import org.rocksdb.RocksIterator;
 
 public class LocalAuthenticationMetadataProvider implements AuthenticationMetadataProvider {

@@ -16,5 +16,5 @@
  */
 
 
-Method filterMessage(org.apache.rocketmq.client.hook.FilterMessageContext) : public throws (void)
+Method filterMessage(hook.org.sail.mq.client.FilterMessageContext) : public throws (void)
 Method hookName() : public throws (java.lang.String)

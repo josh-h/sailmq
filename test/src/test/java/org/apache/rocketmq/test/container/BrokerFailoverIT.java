@@ -18,7 +18,7 @@
 package org.apache.rocketmq.test.container;
 
 import java.time.Duration;
-import org.apache.rocketmq.container.InnerSalveBrokerController;
+import org.sail.mq.container.InnerSalveBrokerController;
 import org.apache.rocketmq.remoting.RPCHook;
 import org.apache.rocketmq.remoting.protocol.RemotingCommand;
 import org.apache.rocketmq.remoting.protocol.RequestCode;

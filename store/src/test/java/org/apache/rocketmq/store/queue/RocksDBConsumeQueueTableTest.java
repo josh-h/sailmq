@@ -16,8 +16,8 @@
  */
 package org.apache.rocketmq.store.queue;
 
-import org.apache.rocketmq.common.BoundaryType;
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.common.BoundaryType;
+import org.sail.mq.common.MixAll;
 import org.apache.rocketmq.store.DefaultMessageStore;
 import org.apache.rocketmq.store.rocksdb.ConsumeQueueRocksDBStorage;
 import org.junit.Test;

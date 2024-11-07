@@ -20,11 +20,12 @@ package org.apache.rocketmq.test.client.rmq;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Map;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.client.producer.SendStatus;
-import org.apache.rocketmq.common.message.Message;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.client.exception.MQClientException;
+import org.sail.mq.client.producer.DefaultMQProducer;
+import org.sail.mq.client.producer.SendResult;
+import org.sail.mq.client.producer.SendStatus;
+import org.sail.mq.common.message.Message;
+import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.test.clientinterface.AbstractMQProducer;
@@ -95,7 +96,7 @@ public class RMQNormalProducer extends AbstractMQProducer {
     }
 
     public ResultWrapper send(Object msg, Object orderKey) {
-        org.apache.rocketmq.client.producer.SendResult internalSendResult = null;
+        SendResult internalSendResult = null;
         Message message = (Message) msg;
         try {
             long start = System.currentTimeMillis();
@@ -142,7 +143,7 @@ public class RMQNormalProducer extends AbstractMQProducer {
     }
 
     public ResultWrapper sendMQ(Message msg, MessageQueue mq) {
-        org.apache.rocketmq.client.producer.SendResult internalSendResult = null;
+        SendResult internalSendResult = null;
         try {
             long start = System.currentTimeMillis();
             internalSendResult = producer.send(msg, mq);

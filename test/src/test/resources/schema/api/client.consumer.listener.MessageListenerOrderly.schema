@@ -16,4 +16,4 @@
  */
 
 
-Method consumeMessage(java.util.List,org.apache.rocketmq.client.consumer.listener.ConsumeOrderlyContext) : public throws (org.apache.rocketmq.client.consumer.listener.ConsumeOrderlyStatus)
+Method consumeMessage(java.util.List,listener.consumer.org.sail.mq.client.ConsumeOrderlyContext) : public throws (listener.consumer.org.sail.mq.client.ConsumeOrderlyStatus)

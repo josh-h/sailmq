@@ -38,8 +38,8 @@ import org.sail.mq.auth.authorization.model.Acl;
 import org.sail.mq.auth.authorization.model.Policy;
 import org.sail.mq.auth.authorization.model.PolicyEntry;
 import org.sail.mq.auth.config.AuthConfig;
-import org.apache.rocketmq.common.config.ConfigRocksDBStorage;
-import org.apache.rocketmq.common.thread.ThreadPoolMonitor;
+import org.sail.mq.common.config.ConfigRocksDBStorage;
+import org.sail.mq.common.thread.ThreadPoolMonitor;
 import org.rocksdb.RocksIterator;
 
 public class LocalAuthorizationMetadataProvider implements AuthorizationMetadataProvider {

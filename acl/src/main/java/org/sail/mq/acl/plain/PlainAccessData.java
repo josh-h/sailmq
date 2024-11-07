@@ -16,7 +16,7 @@
  */
 package org.sail.mq.acl.plain;
 
-import org.apache.rocketmq.common.PlainAccessConfig;
+import org.sail.mq.common.PlainAccessConfig;
 
 import java.io.Serializable;
 import java.util.ArrayList;

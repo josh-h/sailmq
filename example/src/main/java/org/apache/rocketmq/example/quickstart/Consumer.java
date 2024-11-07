@@ -16,11 +16,11 @@
  */
 package org.apache.rocketmq.example.quickstart;
 
-import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
-import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
-import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.common.consumer.ConsumeFromWhere;
+import org.sail.mq.client.consumer.DefaultMQPushConsumer;
+import org.sail.mq.client.consumer.listener.ConsumeConcurrentlyStatus;
+import org.sail.mq.client.consumer.listener.MessageListenerConcurrently;
+import org.sail.mq.client.exception.MQClientException;
+import org.sail.mq.common.consumer.ConsumeFromWhere;
 
 /**
  * This example shows how to subscribe and consume messages using providing {@link DefaultMQPushConsumer}.

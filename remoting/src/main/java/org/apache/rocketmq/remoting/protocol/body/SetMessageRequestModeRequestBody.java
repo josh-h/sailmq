@@ -17,7 +17,7 @@
 
 package org.apache.rocketmq.remoting.protocol.body;
 
-import org.apache.rocketmq.common.message.MessageRequestMode;
+import org.sail.mq.common.message.MessageRequestMode;
 import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
 
 public class SetMessageRequestModeRequestBody extends RemotingSerializable {

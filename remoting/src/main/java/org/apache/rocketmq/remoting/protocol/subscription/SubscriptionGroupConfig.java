@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.common.MixAll;
 
 public class SubscriptionGroupConfig {
 

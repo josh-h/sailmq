@@ -17,7 +17,7 @@
 
 package org.apache.rocketmq.remoting.protocol.body;
 
-import org.apache.rocketmq.common.UtilAll;
+import org.sail.mq.common.UtilAll;
 
 public class ProcessQueueInfo {
     private long commitOffset;

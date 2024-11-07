@@ -16,10 +16,10 @@
  */
 package org.apache.rocketmq.remoting.protocol.header;
 
-import org.apache.rocketmq.common.action.Action;
-import org.apache.rocketmq.common.action.RocketMQAction;
-import org.apache.rocketmq.common.resource.ResourceType;
-import org.apache.rocketmq.common.resource.RocketMQResource;
+import org.sail.mq.common.action.Action;
+import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.resource.ResourceType;
+import org.sail.mq.common.resource.RocketMQResource;
 import org.apache.rocketmq.remoting.CommandCustomHeader;
 import org.apache.rocketmq.remoting.annotation.CFNotNull;
 import org.apache.rocketmq.remoting.exception.RemotingCommandException;

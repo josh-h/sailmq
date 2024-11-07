@@ -25,8 +25,8 @@ import org.sail.mq.auth.authentication.context.AuthenticationContext;
 import org.sail.mq.auth.authentication.context.DefaultAuthenticationContext;
 import org.sail.mq.auth.authentication.exception.AuthenticationException;
 import org.sail.mq.auth.config.AuthConfig;
-import org.apache.rocketmq.common.Pair;
-import org.apache.rocketmq.common.constant.CommonConstants;
+import org.sail.mq.common.Pair;
+import org.sail.mq.common.constant.CommonConstants;
 
 public class StatefulAuthenticationStrategy extends AbstractAuthenticationStrategy {
 

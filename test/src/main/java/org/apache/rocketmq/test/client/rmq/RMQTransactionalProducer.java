@@ -18,12 +18,13 @@
 package org.apache.rocketmq.test.client.rmq;
 
 import java.nio.charset.StandardCharsets;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.client.producer.LocalTransactionState;
-import org.apache.rocketmq.client.producer.TransactionListener;
-import org.apache.rocketmq.client.producer.TransactionMQProducer;
-import org.apache.rocketmq.common.Pair;
-import org.apache.rocketmq.common.message.Message;
+import org.sail.mq.client.exception.MQClientException;
+import org.sail.mq.client.producer.LocalTransactionState;
+import org.sail.mq.client.producer.TransactionListener;
+import org.sail.mq.client.producer.SendResult;
+import org.sail.mq.client.producer.TransactionMQProducer;
+import org.sail.mq.common.Pair;
+import org.sail.mq.common.message.Message;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.test.clientinterface.AbstractMQProducer;
@@ -71,7 +72,7 @@ public class RMQTransactionalProducer extends AbstractMQProducer {
     @Override
     public ResultWrapper send(Object msg, Object arg) {
         boolean commitMsg = ((Pair<Boolean, LocalTransactionState>) arg).getObject2() == LocalTransactionState.COMMIT_MESSAGE;
-        org.apache.rocketmq.client.producer.SendResult metaqResult = null;
+        SendResult metaqResult = null;
         Message message = (Message) msg;
         try {
             long start = System.currentTimeMillis();

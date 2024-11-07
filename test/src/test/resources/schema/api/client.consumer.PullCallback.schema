@@ -17,4 +17,4 @@
 
 
 Method onException(java.lang.Throwable) : public throws (void)
-Method onSuccess(org.apache.rocketmq.client.consumer.PullResult) : public throws (void)
+Method onSuccess(consumer.org.sail.mq.client.PullResult) : public throws (void)

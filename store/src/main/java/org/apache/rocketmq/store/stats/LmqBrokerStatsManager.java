@@ -16,7 +16,7 @@
  */
 package org.apache.rocketmq.store.stats;
 
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.common.MixAll;
 
 public class LmqBrokerStatsManager extends BrokerStatsManager {
 

@@ -17,7 +17,7 @@
 
 package org.apache.rocketmq.remoting.protocol;
 
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.common.MixAll;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -16,10 +16,10 @@
  */
 package org.apache.rocketmq.example.transaction;
 
-import org.apache.rocketmq.client.producer.LocalTransactionState;
-import org.apache.rocketmq.client.producer.TransactionListener;
-import org.apache.rocketmq.common.message.Message;
-import org.apache.rocketmq.common.message.MessageExt;
+import org.sail.mq.client.producer.LocalTransactionState;
+import org.sail.mq.client.producer.TransactionListener;
+import org.sail.mq.common.message.Message;
+import org.sail.mq.common.message.MessageExt;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;

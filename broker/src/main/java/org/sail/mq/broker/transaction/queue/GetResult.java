@@ -16,8 +16,8 @@
  */
 package org.sail.mq.broker.transaction.queue;
 
-import org.apache.rocketmq.client.consumer.PullResult;
-import org.apache.rocketmq.common.message.MessageExt;
+import org.sail.mq.client.consumer.PullResult;
+import org.sail.mq.common.message.MessageExt;
 
 public class GetResult {
     private MessageExt msg;

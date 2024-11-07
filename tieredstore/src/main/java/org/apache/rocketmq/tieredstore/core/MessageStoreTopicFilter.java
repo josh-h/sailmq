@@ -20,9 +20,9 @@ package org.apache.rocketmq.tieredstore.core;
 import java.util.HashSet;
 import java.util.Set;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.PopAckConstants;
-import org.apache.rocketmq.common.topic.TopicValidator;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.PopAckConstants;
+import org.sail.mq.common.topic.TopicValidator;
 import org.apache.rocketmq.tieredstore.MessageStoreConfig;
 
 public class MessageStoreTopicFilter implements MessageStoreFilter {

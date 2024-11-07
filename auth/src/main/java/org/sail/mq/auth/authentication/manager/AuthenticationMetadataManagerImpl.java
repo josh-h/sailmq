@@ -30,7 +30,7 @@ import org.sail.mq.auth.authentication.provider.AuthenticationMetadataProvider;
 import org.sail.mq.auth.authorization.factory.AuthorizationFactory;
 import org.sail.mq.auth.authorization.provider.AuthorizationMetadataProvider;
 import org.sail.mq.auth.config.AuthConfig;
-import org.apache.rocketmq.common.utils.ExceptionUtils;
+import org.sail.mq.common.utils.ExceptionUtils;
 
 public class AuthenticationMetadataManagerImpl implements AuthenticationMetadataManager {
 

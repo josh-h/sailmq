@@ -17,8 +17,8 @@
 
 package org.apache.rocketmq.test.client.rmq;
 
-import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
-import org.apache.rocketmq.client.exception.MQClientException;
+import org.sail.mq.client.consumer.DefaultMQPushConsumer;
+import org.sail.mq.client.exception.MQClientException;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.test.clientinterface.AbstractMQConsumer;

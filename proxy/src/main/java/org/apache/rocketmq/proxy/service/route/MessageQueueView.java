@@ -17,7 +17,7 @@
 package org.apache.rocketmq.proxy.service.route;
 
 import com.google.common.base.MoreObjects;
-import org.apache.rocketmq.client.latency.MQFaultStrategy;
+import org.sail.mq.client.latency.MQFaultStrategy;
 import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
 
 public class MessageQueueView {

@@ -31,10 +31,10 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.rocketmq.client.impl.producer.TopicPublishInfo;
-import org.apache.rocketmq.client.latency.MQFaultStrategy;
-import org.apache.rocketmq.common.constant.PermName;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.client.impl.producer.TopicPublishInfo;
+import org.sail.mq.client.latency.MQFaultStrategy;
+import org.sail.mq.common.constant.PermName;
+import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.remoting.protocol.route.QueueData;
 
 public class MessageQueueSelector {

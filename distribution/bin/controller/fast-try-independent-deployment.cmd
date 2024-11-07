@@ -20,17 +20,17 @@ if not exist "%ROCKETMQ_HOME%\conf\controller\cluster-3n-independent\controller-
 if not exist "%ROCKETMQ_HOME%\conf\controller\cluster-3n-independent\controller-n2.conf" echo Make sure the %ROCKETMQ_HOME%\conf\controller\cluster-3n-independent\controller-n2.conf exists & EXIT /B 1
 
 set "JAVA_OPT_EXT= -server -Xms512m -Xmx512m"
-start call "%ROCKETMQ_HOME%\bin\runserver.cmd" org.apache.rocketmq.controller.ControllerStartup -c %ROCKETMQ_HOME%\conf\controller\cluster-3n-independent\controller-n0.conf
+start call "%ROCKETMQ_HOME%\bin\runserver.cmd" org.sail.mq.controller.ControllerStartup -c %ROCKETMQ_HOME%\conf\controller\cluster-3n-independent\controller-n0.conf
 IF %ERRORLEVEL% EQU 0 (
    ECHO "Controller start OK"
 )
 timeout /T 3 /NOBREAK
-start call "%ROCKETMQ_HOME%\bin\runserver.cmd" org.apache.rocketmq.controller.ControllerStartup -c %ROCKETMQ_HOME%\conf\controller\cluster-3n-independent\controller-n1.conf
+start call "%ROCKETMQ_HOME%\bin\runserver.cmd" org.sail.mq.controller.ControllerStartup -c %ROCKETMQ_HOME%\conf\controller\cluster-3n-independent\controller-n1.conf
 IF %ERRORLEVEL% EQU 0 (
    ECHO "Controller start OK"
 )
 timeout /T 3 /NOBREAK
-start call "%ROCKETMQ_HOME%\bin\runserver.cmd" org.apache.rocketmq.controller.ControllerStartup -c %ROCKETMQ_HOME%\conf\controller\cluster-3n-independent\controller-n2.conf
+start call "%ROCKETMQ_HOME%\bin\runserver.cmd" org.sail.mq.controller.ControllerStartup -c %ROCKETMQ_HOME%\conf\controller\cluster-3n-independent\controller-n2.conf
 IF %ERRORLEVEL% EQU 0 (
    ECHO "Controller start OK"
 )

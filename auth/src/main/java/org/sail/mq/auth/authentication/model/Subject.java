@@ -19,7 +19,7 @@ package org.sail.mq.auth.authentication.model;
 import com.alibaba.fastjson2.annotation.JSONField;
 import org.apache.commons.lang3.StringUtils;
 import org.sail.mq.auth.authentication.enums.SubjectType;
-import org.apache.rocketmq.common.constant.CommonConstants;
+import org.sail.mq.common.constant.CommonConstants;
 
 public interface Subject {
 

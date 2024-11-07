@@ -26,7 +26,7 @@ import org.sail.mq.auth.authentication.context.AuthenticationContext;
 import org.sail.mq.auth.authentication.exception.AuthenticationException;
 import org.sail.mq.auth.authentication.factory.AuthenticationFactory;
 import org.sail.mq.auth.config.AuthConfig;
-import org.apache.rocketmq.common.constant.LoggerName;
+import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.proxy.common.ProxyContext;

@@ -21,8 +21,8 @@ import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-import org.apache.rocketmq.common.MQVersion;
-import org.apache.rocketmq.common.TopicConfig;
+import org.sail.mq.common.MQVersion;
+import org.sail.mq.common.TopicConfig;
 import org.apache.rocketmq.remoting.protocol.body.RegisterBrokerBody;
 import org.apache.rocketmq.remoting.protocol.body.TopicConfigAndMappingSerializeWrapper;
 import org.junit.Test;

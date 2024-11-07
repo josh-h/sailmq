@@ -17,13 +17,13 @@
 package org.apache.rocketmq.example.simple;
 
 import java.util.List;
-import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
-import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
-import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
-import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.common.consumer.ConsumeFromWhere;
-import org.apache.rocketmq.common.message.MessageExt;
+import org.sail.mq.client.consumer.DefaultMQPushConsumer;
+import org.sail.mq.client.consumer.listener.ConsumeConcurrentlyContext;
+import org.sail.mq.client.consumer.listener.ConsumeConcurrentlyStatus;
+import org.sail.mq.client.consumer.listener.MessageListenerConcurrently;
+import org.sail.mq.client.exception.MQClientException;
+import org.sail.mq.common.consumer.ConsumeFromWhere;
+import org.sail.mq.common.message.MessageExt;
 
 public class PushConsumer {
     public static final String TOPIC = "TopicTest";

@@ -17,7 +17,7 @@
 
 package org.apache.rocketmq.test.client.consumer.broadcast.normal;
 
-import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
+import org.sail.mq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.test.client.consumer.broadcast.BaseBroadcast;

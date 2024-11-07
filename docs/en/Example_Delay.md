@@ -3,11 +3,11 @@
 ### 1 Start consumer to wait for incoming subscribed messages 
 
 ```java
-import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
-import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
-import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
-import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
-import org.apache.rocketmq.common.message.MessageExt;
+import consumer.org.sail.mq.client.DefaultMQPushConsumer;
+import listener.consumer.org.sail.mq.client.ConsumeConcurrentlyContext;
+import listener.consumer.org.sail.mq.client.ConsumeConcurrentlyStatus;
+import listener.consumer.org.sail.mq.client.MessageListenerConcurrently;
+import message.org.sail.mq.common.MessageExt;
 import java.util.List;
 
 public class ScheduledMessageConsumer {
@@ -40,8 +40,8 @@ public class ScheduledMessageConsumer {
 ### 2 Send scheduled messages 
 
 ```java
-import org.apache.rocketmq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.common.message.Message;
+import producer.org.sail.mq.client.DefaultMQProducer;
+import message.org.sail.mq.common.Message;
 
 public class ScheduledMessageProducer {
 

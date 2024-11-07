@@ -18,12 +18,12 @@
 package org.apache.rocketmq.test.client.producer.async;
 
 import java.util.List;
-import org.apache.rocketmq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.client.producer.MessageQueueSelector;
-import org.apache.rocketmq.client.producer.SendCallback;
-import org.apache.rocketmq.client.producer.SendResult;
-import org.apache.rocketmq.common.message.Message;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.client.producer.DefaultMQProducer;
+import org.sail.mq.client.producer.MessageQueueSelector;
+import org.sail.mq.client.producer.SendCallback;
+import org.sail.mq.client.producer.SendResult;
+import org.sail.mq.common.message.Message;
+import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.test.base.BaseConf;

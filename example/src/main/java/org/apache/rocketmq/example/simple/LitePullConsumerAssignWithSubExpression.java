@@ -16,9 +16,9 @@
  */
 package org.apache.rocketmq.example.simple;
 
-import org.apache.rocketmq.client.consumer.DefaultLitePullConsumer;
-import org.apache.rocketmq.common.message.MessageExt;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.client.consumer.DefaultLitePullConsumer;
+import org.sail.mq.common.message.MessageExt;
+import org.sail.mq.common.message.MessageQueue;
 
 import java.util.ArrayList;
 import java.util.Collection;

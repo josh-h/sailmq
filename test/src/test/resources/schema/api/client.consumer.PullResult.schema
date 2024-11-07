@@ -20,11 +20,11 @@ Field maxOffset : private long 0
 Field minOffset : private long 0
 Field msgFoundList : private java.util.List null
 Field nextBeginOffset : private long 0
-Field pullStatus : private org.apache.rocketmq.client.consumer.PullStatus FOUND
+Field pullStatus : private consumer.org.sail.mq.client.PullStatus FOUND
 Method getMaxOffset() : public throws (long)
 Method getMinOffset() : public throws (long)
 Method getMsgFoundList() : public throws (java.util.List)
 Method getNextBeginOffset() : public throws (long)
-Method getPullStatus() : public throws (org.apache.rocketmq.client.consumer.PullStatus)
+Method getPullStatus() : public throws (consumer.org.sail.mq.client.PullStatus)
 Method setMsgFoundList(java.util.List) : public throws (void)
 Method toString() : public throws (java.lang.String)

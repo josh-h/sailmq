@@ -22,8 +22,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
-import org.apache.rocketmq.client.consumer.PopResult;
-import org.apache.rocketmq.common.message.MessageExt;
+import org.sail.mq.client.consumer.PopResult;
+import org.sail.mq.common.message.MessageExt;
 import org.assertj.core.util.Lists;
 import org.junit.Test;
 

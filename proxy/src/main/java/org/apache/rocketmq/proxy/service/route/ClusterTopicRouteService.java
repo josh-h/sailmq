@@ -17,8 +17,8 @@
 package org.apache.rocketmq.proxy.service.route;
 
 import java.util.List;
-import org.apache.rocketmq.client.impl.mqclient.MQClientAPIFactory;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.client.impl.mqclient.MQClientAPIFactory;
+import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.proxy.common.Address;
 import org.apache.rocketmq.proxy.common.ProxyContext;
 import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;

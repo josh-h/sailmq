@@ -18,8 +18,8 @@ package org.apache.rocketmq.proxy.remoting.pipeline;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
-import org.apache.rocketmq.common.MQVersion;
-import org.apache.rocketmq.common.utils.NetworkUtil;
+import org.sail.mq.common.MQVersion;
+import org.sail.mq.common.utils.NetworkUtil;
 import org.apache.rocketmq.proxy.common.ProxyContext;
 import org.apache.rocketmq.proxy.processor.channel.ChannelProtocolType;
 import org.apache.rocketmq.remoting.common.RemotingHelper;

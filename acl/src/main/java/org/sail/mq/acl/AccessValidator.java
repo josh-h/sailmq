@@ -21,8 +21,8 @@ import com.google.protobuf.GeneratedMessageV3;
 import java.util.List;
 import java.util.Map;
 import org.sail.mq.acl.common.common.AuthenticationHeader;
-import org.apache.rocketmq.common.AclConfig;
-import org.apache.rocketmq.common.PlainAccessConfig;
+import org.sail.mq.common.AclConfig;
+import org.sail.mq.common.PlainAccessConfig;
 import org.apache.rocketmq.remoting.protocol.DataVersion;
 import org.apache.rocketmq.remoting.protocol.RemotingCommand;
 

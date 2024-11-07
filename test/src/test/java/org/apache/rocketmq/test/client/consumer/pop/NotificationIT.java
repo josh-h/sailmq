@@ -18,10 +18,10 @@
 package org.apache.rocketmq.test.client.consumer.pop;
 
 import java.util.concurrent.CompletableFuture;
-import org.apache.rocketmq.common.attribute.CQType;
-import org.apache.rocketmq.common.attribute.TopicMessageType;
-import org.apache.rocketmq.common.constant.ConsumeInitMode;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.common.attribute.CQType;
+import org.sail.mq.common.attribute.TopicMessageType;
+import org.sail.mq.common.constant.ConsumeInitMode;
+import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.test.base.IntegrationTestBase;
 import org.apache.rocketmq.test.client.rmq.RMQNormalProducer;
 import org.apache.rocketmq.test.client.rmq.RMQPopClient;

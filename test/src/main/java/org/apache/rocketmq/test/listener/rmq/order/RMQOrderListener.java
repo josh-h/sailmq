@@ -23,10 +23,10 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import org.apache.rocketmq.client.consumer.listener.ConsumeOrderlyContext;
-import org.apache.rocketmq.client.consumer.listener.ConsumeOrderlyStatus;
-import org.apache.rocketmq.client.consumer.listener.MessageListenerOrderly;
-import org.apache.rocketmq.common.message.MessageExt;
+import org.sail.mq.client.consumer.listener.ConsumeOrderlyContext;
+import org.sail.mq.client.consumer.listener.ConsumeOrderlyStatus;
+import org.sail.mq.client.consumer.listener.MessageListenerOrderly;
+import org.sail.mq.common.message.MessageExt;
 import org.apache.rocketmq.test.listener.AbstractListener;
 
 public class RMQOrderListener extends AbstractListener implements MessageListenerOrderly {

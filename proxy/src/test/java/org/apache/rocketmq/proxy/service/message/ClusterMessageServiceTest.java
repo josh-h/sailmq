@@ -16,13 +16,13 @@
  */
 package org.apache.rocketmq.proxy.service.message;
 
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.common.consumer.ReceiptHandle;
-import org.apache.rocketmq.common.message.MessageClientIDSetter;
+import org.sail.mq.client.exception.MQClientException;
+import org.sail.mq.common.consumer.ReceiptHandle;
+import org.sail.mq.common.message.MessageClientIDSetter;
 import org.apache.rocketmq.proxy.common.ProxyContext;
 import org.apache.rocketmq.proxy.common.ProxyException;
 import org.apache.rocketmq.proxy.common.ProxyExceptionCode;
-import org.apache.rocketmq.client.impl.mqclient.MQClientAPIFactory;
+import org.sail.mq.client.impl.mqclient.MQClientAPIFactory;
 import org.apache.rocketmq.proxy.service.route.TopicRouteService;
 import org.apache.rocketmq.remoting.protocol.ResponseCode;
 import org.apache.rocketmq.remoting.protocol.header.AckMessageRequestHeader;

@@ -17,7 +17,7 @@
 package org.apache.rocketmq.proxy.processor;
 
 import java.util.concurrent.CompletableFuture;
-import org.apache.rocketmq.common.sysflag.MessageSysFlag;
+import org.sail.mq.common.sysflag.MessageSysFlag;
 import org.apache.rocketmq.proxy.common.ProxyContext;
 import org.apache.rocketmq.proxy.common.ProxyException;
 import org.apache.rocketmq.proxy.common.ProxyExceptionCode;

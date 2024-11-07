@@ -28,8 +28,8 @@ import org.sail.mq.auth.authentication.factory.AuthenticationFactory;
 import org.sail.mq.auth.authentication.model.User;
 import org.sail.mq.auth.authentication.provider.AuthenticationMetadataProvider;
 import org.sail.mq.auth.config.AuthConfig;
-import org.apache.rocketmq.common.chain.Handler;
-import org.apache.rocketmq.common.chain.HandlerChain;
+import org.sail.mq.common.chain.Handler;
+import org.sail.mq.common.chain.HandlerChain;
 
 public class DefaultAuthenticationHandler implements Handler<DefaultAuthenticationContext, CompletableFuture<Void>> {
 

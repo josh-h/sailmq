@@ -21,9 +21,9 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 import org.sail.mq.broker.BrokerController;
 import org.sail.mq.broker.longpolling.PullRequest;
-import org.apache.rocketmq.common.ServiceThread;
-import org.apache.rocketmq.common.SystemClock;
-import org.apache.rocketmq.common.constant.LoggerName;
+import org.sail.mq.common.ServiceThread;
+import org.sail.mq.common.SystemClock;
+import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 

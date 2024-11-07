@@ -24,7 +24,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.rocketmq.common.UtilAll;
+import org.sail.mq.common.UtilAll;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

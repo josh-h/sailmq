@@ -30,7 +30,7 @@ import io.grpc.Metadata;
 import io.grpc.stub.StreamObserver;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
-import org.apache.rocketmq.common.constant.GrpcConstants;
+import org.sail.mq.common.constant.GrpcConstants;
 import org.apache.rocketmq.proxy.common.ProxyContext;
 import org.apache.rocketmq.proxy.config.InitConfigTest;
 import org.apache.rocketmq.proxy.grpc.pipeline.ContextInitPipeline;

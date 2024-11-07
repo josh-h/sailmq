@@ -29,10 +29,10 @@ import java.util.concurrent.ConcurrentMap;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.Pair;
-import org.apache.rocketmq.common.constant.LoggerName;
-import org.apache.rocketmq.common.topic.TopicValidator;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.Pair;
+import org.sail.mq.common.constant.LoggerName;
+import org.sail.mq.common.topic.TopicValidator;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.store.ConsumeQueue;
@@ -45,7 +45,7 @@ import org.rocksdb.RocksDBException;
 import org.rocksdb.RocksIterator;
 import org.rocksdb.WriteBatch;
 
-import static org.apache.rocketmq.common.config.AbstractRocksDBStorage.CTRL_1;
+import static org.sail.mq.common.config.AbstractRocksDBStorage.CTRL_1;
 
 public class RocksDBConsumeQueueOffsetTable {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.STORE_LOGGER_NAME);

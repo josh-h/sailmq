@@ -17,7 +17,7 @@
 package org.apache.rocketmq.remoting.rpc;
 
 import org.apache.commons.lang3.reflect.FieldUtils;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
 import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingInfo;
 import org.junit.Before;

@@ -23,8 +23,8 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 import org.sail.mq.broker.BrokerController;
-import org.apache.rocketmq.common.BrokerConfig;
-import org.apache.rocketmq.common.ServiceThread;
+import org.sail.mq.common.BrokerConfig;
+import org.sail.mq.common.ServiceThread;
 import org.apache.rocketmq.store.exception.ConsumeQueueException;
 
 /**

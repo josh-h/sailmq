@@ -21,7 +21,7 @@ import io.netty.channel.Channel;
 import java.util.HashSet;
 import java.util.Set;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.rocketmq.common.utils.NetworkUtil;
+import org.sail.mq.common.utils.NetworkUtil;
 import org.apache.rocketmq.proxy.config.InitConfigTest;
 import org.apache.rocketmq.proxy.grpc.v2.channel.GrpcClientChannel;
 import org.apache.rocketmq.proxy.processor.channel.ChannelProtocolType;

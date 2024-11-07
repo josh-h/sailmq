@@ -23,7 +23,7 @@ If you have multiple keys for a message, please concatenate them with 'KEY_SEPAR
    String orderId = "20034568923546";
    String otherKey = "19101121210831";
    String keys = new StringBuilder(orderId)
-           .append(org.apache.rocketmq.common.message.MessageConst.KEY_SEPARATOR)
+           .append(message.org.sail.mq.common.MessageConst.KEY_SEPARATOR)
            .append(otherKey).toString();
    message.setKeys(keys);
 ```

@@ -17,9 +17,9 @@
 package org.apache.rocketmq.example.schedule;
 
 import java.nio.charset.StandardCharsets;
-import org.apache.rocketmq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.client.producer.SendResult;
-import org.apache.rocketmq.common.message.Message;
+import org.sail.mq.client.producer.DefaultMQProducer;
+import org.sail.mq.client.producer.SendResult;
+import org.sail.mq.common.message.Message;
 
 public class ScheduledMessageProducer {
 

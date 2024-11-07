@@ -17,7 +17,7 @@
 
 package org.apache.rocketmq.proxy.service.message;
 
-import org.apache.rocketmq.common.consumer.ReceiptHandle;
+import org.sail.mq.common.consumer.ReceiptHandle;
 
 public class ReceiptHandleMessage {
 

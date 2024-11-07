@@ -34,10 +34,10 @@ import org.sail.mq.auth.authorization.model.PolicyEntry;
 import org.sail.mq.auth.authorization.model.Resource;
 import org.sail.mq.auth.authorization.provider.AuthorizationMetadataProvider;
 import org.sail.mq.auth.config.AuthConfig;
-import org.apache.rocketmq.common.chain.Handler;
-import org.apache.rocketmq.common.chain.HandlerChain;
-import org.apache.rocketmq.common.resource.ResourcePattern;
-import org.apache.rocketmq.common.resource.ResourceType;
+import org.sail.mq.common.chain.Handler;
+import org.sail.mq.common.chain.HandlerChain;
+import org.sail.mq.common.resource.ResourcePattern;
+import org.sail.mq.common.resource.ResourceType;
 
 public class AclAuthorizationHandler implements Handler<DefaultAuthorizationContext, CompletableFuture<Void>> {
 

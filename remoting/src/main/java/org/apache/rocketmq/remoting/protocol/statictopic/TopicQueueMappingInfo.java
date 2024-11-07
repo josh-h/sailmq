@@ -18,7 +18,7 @@ package org.apache.rocketmq.remoting.protocol.statictopic;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.common.MixAll;
 import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
 
 public class TopicQueueMappingInfo extends RemotingSerializable {

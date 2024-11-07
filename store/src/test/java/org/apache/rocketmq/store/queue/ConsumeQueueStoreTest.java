@@ -18,9 +18,9 @@ package org.apache.rocketmq.store.queue;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import org.apache.rocketmq.common.TopicConfig;
-import org.apache.rocketmq.common.UtilAll;
-import org.apache.rocketmq.common.attribute.CQType;
+import org.sail.mq.common.TopicConfig;
+import org.sail.mq.common.UtilAll;
+import org.sail.mq.common.attribute.CQType;
 import org.apache.rocketmq.store.MessageStore;
 import org.apache.rocketmq.store.PutMessageResult;
 import org.apache.rocketmq.store.PutMessageStatus;

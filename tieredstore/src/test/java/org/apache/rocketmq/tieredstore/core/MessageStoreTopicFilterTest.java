@@ -16,7 +16,7 @@
  */
 package org.apache.rocketmq.tieredstore.core;
 
-import org.apache.rocketmq.common.topic.TopicValidator;
+import org.sail.mq.common.topic.TopicValidator;
 import org.apache.rocketmq.tieredstore.MessageStoreConfig;
 import org.junit.Assert;
 import org.junit.Test;

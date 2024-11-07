@@ -19,8 +19,8 @@ package org.apache.rocketmq.store;
 
 import java.io.File;
 import java.util.concurrent.ConcurrentHashMap;
-import org.apache.rocketmq.common.BrokerConfig;
-import org.apache.rocketmq.common.UtilAll;
+import org.sail.mq.common.BrokerConfig;
+import org.sail.mq.common.UtilAll;
 import org.apache.rocketmq.store.config.FlushDiskType;
 import org.apache.rocketmq.store.config.MessageStoreConfig;
 import org.apache.rocketmq.store.config.StorePathConfigHelper;

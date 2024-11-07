@@ -18,10 +18,10 @@
 package org.apache.rocketmq.test.listener.rmq.concurrent;
 
 import java.nio.charset.StandardCharsets;
-import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
-import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
-import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
-import org.apache.rocketmq.common.message.MessageExt;
+import org.sail.mq.client.consumer.listener.ConsumeConcurrentlyContext;
+import org.sail.mq.client.consumer.listener.ConsumeConcurrentlyStatus;
+import org.sail.mq.client.consumer.listener.MessageListenerConcurrently;
+import org.sail.mq.common.message.MessageExt;
 import org.apache.rocketmq.test.listener.AbstractListener;
 import org.apache.rocketmq.test.util.RandomUtil;
 import org.apache.rocketmq.test.util.data.collect.DataCollector;

@@ -17,7 +17,7 @@
 
 package org.apache.rocketmq.remoting;
 
-import org.apache.rocketmq.common.utils.NetworkUtil;
+import org.sail.mq.common.utils.NetworkUtil;
 import org.apache.rocketmq.remoting.common.TlsMode;
 import org.apache.rocketmq.remoting.exception.RemotingSendRequestException;
 import org.apache.rocketmq.remoting.netty.NettyClientConfig;

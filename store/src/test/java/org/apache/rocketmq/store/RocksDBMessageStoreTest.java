@@ -43,15 +43,15 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import com.google.common.collect.Sets;
 
-import org.apache.rocketmq.common.BrokerConfig;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.TopicConfig;
-import org.apache.rocketmq.common.UtilAll;
-import org.apache.rocketmq.common.message.MessageBatch;
-import org.apache.rocketmq.common.message.MessageDecoder;
-import org.apache.rocketmq.common.message.MessageExt;
-import org.apache.rocketmq.common.message.MessageExtBatch;
-import org.apache.rocketmq.common.message.MessageExtBrokerInner;
+import org.sail.mq.common.BrokerConfig;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.TopicConfig;
+import org.sail.mq.common.UtilAll;
+import org.sail.mq.common.message.MessageBatch;
+import org.sail.mq.common.message.MessageDecoder;
+import org.sail.mq.common.message.MessageExt;
+import org.sail.mq.common.message.MessageExtBatch;
+import org.sail.mq.common.message.MessageExtBrokerInner;
 import org.apache.rocketmq.store.config.BrokerRole;
 import org.apache.rocketmq.store.config.FlushDiskType;
 import org.apache.rocketmq.store.config.MessageStoreConfig;

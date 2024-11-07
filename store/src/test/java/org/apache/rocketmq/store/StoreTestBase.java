@@ -16,11 +16,11 @@
  */
 package org.apache.rocketmq.store;
 
-import org.apache.rocketmq.common.UtilAll;
-import org.apache.rocketmq.common.message.Message;
-import org.apache.rocketmq.common.message.MessageDecoder;
-import org.apache.rocketmq.common.message.MessageExtBatch;
-import org.apache.rocketmq.common.message.MessageExtBrokerInner;
+import org.sail.mq.common.UtilAll;
+import org.sail.mq.common.message.Message;
+import org.sail.mq.common.message.MessageDecoder;
+import org.sail.mq.common.message.MessageExtBatch;
+import org.sail.mq.common.message.MessageExtBrokerInner;
 import org.junit.After;
 
 import java.io.File;

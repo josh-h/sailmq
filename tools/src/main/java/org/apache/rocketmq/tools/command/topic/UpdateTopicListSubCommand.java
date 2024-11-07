@@ -27,7 +27,7 @@ import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.OptionGroup;
 import org.apache.commons.cli.Options;
-import org.apache.rocketmq.common.TopicConfig;
+import org.sail.mq.common.TopicConfig;
 import org.apache.rocketmq.remoting.RPCHook;
 import org.apache.rocketmq.srvutil.ServerUtil;
 import org.apache.rocketmq.tools.admin.DefaultMQAdminExt;
@@ -56,7 +56,7 @@ public class UpdateTopicListSubCommand implements SubCommand {
         optionGroup.setRequired(true);
         options.addOptionGroup(optionGroup);
 
-        opt = new Option("f", "filename", true, "Path to a file with list of org.apache.rocketmq.common.TopicConfig in json format");
+        opt = new Option("f", "filename", true, "Path to a file with list of org.sail.mq.common.TopicConfig in json format");
         opt.setRequired(true);
         options.addOption(opt);
 

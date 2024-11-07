@@ -18,7 +18,7 @@
 package org.apache.rocketmq.namesrv.route;
 
 
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.common.MixAll;
 import org.apache.rocketmq.remoting.protocol.RemotingCommand;
 import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
 import org.apache.rocketmq.remoting.protocol.RequestCode;

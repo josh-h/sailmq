@@ -18,9 +18,9 @@
 
 Field ackIndex : private int 2147483647
 Field delayLevelWhenNextConsume : private int 0
-Field messageQueue : private org.apache.rocketmq.common.message.MessageQueue null
+Field messageQueue : private message.org.sail.mq.common.MessageQueue null
 Method getAckIndex() : public throws (int)
 Method getDelayLevelWhenNextConsume() : public throws (int)
-Method getMessageQueue() : public throws (org.apache.rocketmq.common.message.MessageQueue)
+Method getMessageQueue() : public throws (message.org.sail.mq.common.MessageQueue)
 Method setAckIndex(int) : public throws (void)
 Method setDelayLevelWhenNextConsume(int) : public throws (void)

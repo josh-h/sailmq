@@ -26,9 +26,9 @@ import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.rocketmq.common.LifecycleAwareServiceThread;
-import org.apache.rocketmq.common.UtilAll;
-import org.apache.rocketmq.common.constant.LoggerName;
+import org.sail.mq.common.LifecycleAwareServiceThread;
+import org.sail.mq.common.UtilAll;
+import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 

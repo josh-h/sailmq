@@ -16,10 +16,10 @@
  */
 package org.apache.rocketmq.store.kv;
 
-import org.apache.rocketmq.common.TopicConfig;
-import org.apache.rocketmq.common.attribute.CleanupPolicy;
-import org.apache.rocketmq.common.constant.LoggerName;
-import org.apache.rocketmq.common.utils.CleanupPolicyUtils;
+import org.sail.mq.common.TopicConfig;
+import org.sail.mq.common.attribute.CleanupPolicy;
+import org.sail.mq.common.constant.LoggerName;
+import org.sail.mq.common.utils.CleanupPolicyUtils;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.store.CommitLog;

@@ -23,7 +23,7 @@ package org.apache.rocketmq.store;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.rocketmq.common.UtilAll;
+import org.sail.mq.common.UtilAll;
 import org.junit.After;
 import org.junit.Test;
 

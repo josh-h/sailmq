@@ -25,12 +25,12 @@ import java.util.UUID;
 import java.io.File;
 import java.util.concurrent.CompletableFuture;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.rocketmq.common.BrokerConfig;
-import org.apache.rocketmq.common.UtilAll;
-import org.apache.rocketmq.common.message.MessageDecoder;
+import org.sail.mq.common.BrokerConfig;
+import org.sail.mq.common.UtilAll;
+import org.sail.mq.common.message.MessageDecoder;
 
-import org.apache.rocketmq.common.message.MessageExt;
-import org.apache.rocketmq.common.message.MessageExtBrokerInner;
+import org.sail.mq.common.message.MessageExt;
+import org.sail.mq.common.message.MessageExtBrokerInner;
 import org.apache.rocketmq.store.config.FlushDiskType;
 import org.apache.rocketmq.store.config.MessageStoreConfig;
 import org.apache.rocketmq.store.stats.BrokerStatsManager;

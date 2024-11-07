@@ -21,11 +21,11 @@ import io.jaegertracing.Configuration;
 import io.jaegertracing.internal.samplers.ConstSampler;
 import io.opentracing.Tracer;
 import io.opentracing.util.GlobalTracer;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.client.producer.SendResult;
-import org.apache.rocketmq.client.trace.hook.SendMessageOpenTracingHookImpl;
-import org.apache.rocketmq.common.message.Message;
+import org.sail.mq.client.exception.MQClientException;
+import org.sail.mq.client.producer.DefaultMQProducer;
+import org.sail.mq.client.producer.SendResult;
+import org.sail.mq.client.trace.hook.SendMessageOpenTracingHookImpl;
+import org.sail.mq.common.message.Message;
 import org.apache.rocketmq.remoting.common.RemotingHelper;
 
 public class OpenTracingProducer {

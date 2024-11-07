@@ -22,7 +22,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.common.message.MessageQueue;
 
 public class MessageStoreUtil {
 

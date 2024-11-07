@@ -9,11 +9,11 @@ The following demonstrates ordered messages by ensuring order of create, pay, se
 ```java
 package org.apache.rocketmq.example.order2
 
-import org.apache.rocketmq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.client.producer.MessageQueueSelector;
-import org.apache.rocketmq.client.producer.SendResult;
-import org.apache.rocketmq.common.message.Message;
-import org.apache.rocketmq.common.message.MessageQueue;
+import producer.org.sail.mq.client.DefaultMQProducer;
+import producer.org.sail.mq.client.MessageQueueSelector;
+import producer.org.sail.mq.client.SendResult;
+import message.org.sail.mq.common.Message;
+import message.org.sail.mq.common.MessageQueue;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -174,12 +174,12 @@ public class Producer {
 
 package org.apache.rocketmq.example.order2;
 
-import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
-import org.apache.rocketmq.client.consumer.listener.ConsumeOrderlyContext;
-import org.apache.rocketmq.client.consumer.listener.ConsumeOrderlyStatus;
-import org.apache.rocketmq.client.consumer.listener.MessageListenerOrderly;
-import org.apache.rocketmq.common.consumer.ConsumeFromWhere;
-import org.apache.rocketmq.common.message.MessageExt;
+import consumer.org.sail.mq.client.DefaultMQPushConsumer;
+import listener.consumer.org.sail.mq.client.ConsumeOrderlyContext;
+import listener.consumer.org.sail.mq.client.ConsumeOrderlyStatus;
+import listener.consumer.org.sail.mq.client.MessageListenerOrderly;
+import consumer.org.sail.mq.common.ConsumeFromWhere;
+import message.org.sail.mq.common.MessageExt;
 
 import java.util.List;
 import java.util.Random;

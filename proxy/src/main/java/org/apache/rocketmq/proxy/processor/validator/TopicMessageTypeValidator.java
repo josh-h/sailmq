@@ -17,7 +17,7 @@
 
 package org.apache.rocketmq.proxy.processor.validator;
 
-import org.apache.rocketmq.common.attribute.TopicMessageType;
+import org.sail.mq.common.attribute.TopicMessageType;
 
 public interface TopicMessageTypeValidator {
     /**

@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Properties;
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.common.MixAll;
 
 public class SessionCredentials {
     public static final Charset CHARSET = StandardCharsets.UTF_8;

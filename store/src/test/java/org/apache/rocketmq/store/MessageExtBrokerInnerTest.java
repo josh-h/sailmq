@@ -17,7 +17,7 @@
 
 package org.apache.rocketmq.store;
 
-import org.apache.rocketmq.common.message.MessageExtBrokerInner;
+import org.sail.mq.common.message.MessageExtBrokerInner;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

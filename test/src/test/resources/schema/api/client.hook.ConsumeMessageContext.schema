@@ -17,7 +17,7 @@
 
 
 Field consumerGroup : private java.lang.String null
-Field mq : private org.apache.rocketmq.common.message.MessageQueue null
+Field mq : private message.org.sail.mq.common.MessageQueue null
 Field mqTraceContext : private java.lang.Object null
 Field msgList : private java.util.List null
 Field namespace : private java.lang.String null
@@ -25,7 +25,7 @@ Field props : private java.util.Map null
 Field status : private java.lang.String null
 Field success : private boolean false
 Method getConsumerGroup() : public throws (java.lang.String)
-Method getMq() : public throws (org.apache.rocketmq.common.message.MessageQueue)
+Method getMq() : public throws (message.org.sail.mq.common.MessageQueue)
 Method getMqTraceContext() : public throws (java.lang.Object)
 Method getMsgList() : public throws (java.util.List)
 Method getNamespace() : public throws (java.lang.String)
@@ -33,7 +33,7 @@ Method getProps() : public throws (java.util.Map)
 Method getStatus() : public throws (java.lang.String)
 Method isSuccess() : public throws (boolean)
 Method setConsumerGroup(java.lang.String) : public throws (void)
-Method setMq(org.apache.rocketmq.common.message.MessageQueue) : public throws (void)
+Method setMq(message.org.sail.mq.common.MessageQueue) : public throws (void)
 Method setMqTraceContext(java.lang.Object) : public throws (void)
 Method setMsgList(java.util.List) : public throws (void)
 Method setNamespace(java.lang.String) : public throws (void)

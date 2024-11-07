@@ -18,17 +18,17 @@
 
 Field arg : private java.lang.Object null
 Field consumerGroup : private java.lang.String null
-Field mq : private org.apache.rocketmq.common.message.MessageQueue null
+Field mq : private message.org.sail.mq.common.MessageQueue null
 Field msgList : private java.util.List null
 Field unitMode : private boolean false
 Method getArg() : public throws (java.lang.Object)
 Method getConsumerGroup() : public throws (java.lang.String)
-Method getMq() : public throws (org.apache.rocketmq.common.message.MessageQueue)
+Method getMq() : public throws (message.org.sail.mq.common.MessageQueue)
 Method getMsgList() : public throws (java.util.List)
 Method isUnitMode() : public throws (boolean)
 Method setArg(java.lang.Object) : public throws (void)
 Method setConsumerGroup(java.lang.String) : public throws (void)
-Method setMq(org.apache.rocketmq.common.message.MessageQueue) : public throws (void)
+Method setMq(message.org.sail.mq.common.MessageQueue) : public throws (void)
 Method setMsgList(java.util.List) : public throws (void)
 Method setUnitMode(boolean) : public throws (void)
 Method toString() : public throws (java.lang.String)

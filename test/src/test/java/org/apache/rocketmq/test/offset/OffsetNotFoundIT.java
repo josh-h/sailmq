@@ -18,7 +18,7 @@
 package org.apache.rocketmq.test.offset;
 
 import org.sail.mq.broker.BrokerController;
-import org.apache.rocketmq.common.consumer.ConsumeFromWhere;
+import org.sail.mq.common.consumer.ConsumeFromWhere;
 import org.apache.rocketmq.remoting.RPCHook;
 import org.apache.rocketmq.remoting.protocol.RemotingCommand;
 import org.apache.rocketmq.remoting.protocol.RequestCode;

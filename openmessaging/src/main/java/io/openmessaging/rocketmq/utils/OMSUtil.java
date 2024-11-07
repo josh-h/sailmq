@@ -29,9 +29,11 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
-import org.apache.rocketmq.client.producer.SendStatus;
-import org.apache.rocketmq.common.UtilAll;
-import org.apache.rocketmq.common.message.MessageAccessor;
+import org.sail.mq.client.producer.SendStatus;
+import org.sail.mq.common.UtilAll;
+import org.sail.mq.common.message.Message;
+import org.sail.mq.common.message.MessageAccessor;
+import org.sail.mq.common.message.MessageExt;
 
 public class OMSUtil {
 
@@ -44,8 +46,8 @@ public class OMSUtil {
         return Integer.toString(UtilAll.getPid()) + "%OpenMessaging" + "%" + System.nanoTime();
     }
 
-    public static org.apache.rocketmq.common.message.Message msgConvert(BytesMessage omsMessage) {
-        org.apache.rocketmq.common.message.Message rmqMessage = new org.apache.rocketmq.common.message.Message();
+    public static Message msgConvert(BytesMessage omsMessage) {
+        Message rmqMessage = new Message();
         rmqMessage.setBody(omsMessage.getBody(byte[].class));
 
         KeyValue sysHeaders = omsMessage.sysHeaders();
@@ -73,7 +75,7 @@ public class OMSUtil {
         return rmqMessage;
     }
 
-    public static BytesMessage msgConvert(org.apache.rocketmq.common.message.MessageExt rmqMsg) {
+    public static BytesMessage msgConvert(MessageExt rmqMsg) {
         BytesMessage omsMsg = new BytesMessageImpl();
         omsMsg.setBody(rmqMsg.getBody());
 
@@ -118,7 +120,7 @@ public class OMSUtil {
     /**
      * Convert a RocketMQ SEND_OK SendResult instance to a OMS SendResult.
      */
-    public static SendResult sendResultConvert(org.apache.rocketmq.client.producer.SendResult rmqResult) {
+    public static SendResult sendResultConvert(org.sail.mq.client.producer.SendResult rmqResult) {
         assert rmqResult.getSendStatus().equals(SendStatus.SEND_OK);
         return new SendResultImpl(rmqResult.getMsgId(), OMS.newKeyValue());
     }

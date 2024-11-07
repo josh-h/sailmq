@@ -26,12 +26,12 @@ import java.util.List;
 import java.util.Set;
 
 import java.util.concurrent.ConcurrentHashMap;
-import org.apache.rocketmq.common.BrokerConfig;
-import org.apache.rocketmq.common.UtilAll;
-import org.apache.rocketmq.common.message.Message;
-import org.apache.rocketmq.common.message.MessageDecoder;
-import org.apache.rocketmq.common.message.MessageExt;
-import org.apache.rocketmq.common.message.MessageExtBatch;
+import org.sail.mq.common.BrokerConfig;
+import org.sail.mq.common.UtilAll;
+import org.sail.mq.common.message.Message;
+import org.sail.mq.common.message.MessageDecoder;
+import org.sail.mq.common.message.MessageExt;
+import org.sail.mq.common.message.MessageExtBatch;
 import org.apache.rocketmq.store.config.MessageStoreConfig;
 import org.junit.After;
 import org.junit.Before;

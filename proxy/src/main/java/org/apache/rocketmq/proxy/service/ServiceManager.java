@@ -18,7 +18,7 @@ package org.apache.rocketmq.proxy.service;
 
 import org.sail.mq.broker.client.ConsumerManager;
 import org.sail.mq.broker.client.ProducerManager;
-import org.apache.rocketmq.common.utils.StartAndShutdown;
+import org.sail.mq.common.utils.StartAndShutdown;
 import org.apache.rocketmq.proxy.service.admin.AdminService;
 import org.apache.rocketmq.proxy.service.message.MessageService;
 import org.apache.rocketmq.proxy.service.metadata.MetadataService;

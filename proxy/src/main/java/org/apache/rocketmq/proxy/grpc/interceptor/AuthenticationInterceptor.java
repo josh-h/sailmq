@@ -32,7 +32,7 @@ import org.sail.mq.acl.AccessValidator;
 import org.sail.mq.acl.common.common.AclException;
 import org.sail.mq.acl.common.common.AuthenticationHeader;
 import org.sail.mq.acl.plain.PlainAccessResource;
-import org.apache.rocketmq.common.constant.GrpcConstants;
+import org.sail.mq.common.constant.GrpcConstants;
 import org.apache.rocketmq.proxy.common.utils.GrpcUtils;
 import org.apache.rocketmq.proxy.config.ConfigurationManager;
 

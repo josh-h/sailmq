@@ -20,7 +20,7 @@ import java.util.Collections;
 import java.util.List;
 import org.sail.mq.auth.authentication.model.Subject;
 import org.sail.mq.auth.authorization.model.Resource;
-import org.apache.rocketmq.common.action.Action;
+import org.sail.mq.common.action.Action;
 
 public class DefaultAuthorizationContext extends AuthorizationContext {
 

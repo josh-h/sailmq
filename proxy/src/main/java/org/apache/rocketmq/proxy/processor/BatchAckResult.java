@@ -17,7 +17,7 @@
 
 package org.apache.rocketmq.proxy.processor;
 
-import org.apache.rocketmq.client.consumer.AckResult;
+import org.sail.mq.client.consumer.AckResult;
 import org.apache.rocketmq.proxy.common.ProxyException;
 import org.apache.rocketmq.proxy.service.message.ReceiptHandleMessage;
 

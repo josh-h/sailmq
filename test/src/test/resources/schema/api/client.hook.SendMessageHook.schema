@@ -17,5 +17,5 @@
 
 
 Method hookName() : public throws (java.lang.String)
-Method sendMessageAfter(org.apache.rocketmq.client.hook.SendMessageContext) : public throws (void)
-Method sendMessageBefore(org.apache.rocketmq.client.hook.SendMessageContext) : public throws (void)
+Method sendMessageAfter(hook.org.sail.mq.client.SendMessageContext) : public throws (void)
+Method sendMessageBefore(hook.org.sail.mq.client.SendMessageContext) : public throws (void)

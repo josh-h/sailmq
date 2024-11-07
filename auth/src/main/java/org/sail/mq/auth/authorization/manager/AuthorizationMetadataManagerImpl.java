@@ -35,9 +35,9 @@ import org.sail.mq.auth.authorization.model.PolicyEntry;
 import org.sail.mq.auth.authorization.model.Resource;
 import org.sail.mq.auth.authorization.provider.AuthorizationMetadataProvider;
 import org.sail.mq.auth.config.AuthConfig;
-import org.apache.rocketmq.common.action.Action;
-import org.apache.rocketmq.common.utils.ExceptionUtils;
-import org.apache.rocketmq.common.utils.IPAddressUtils;
+import org.sail.mq.common.action.Action;
+import org.sail.mq.common.utils.ExceptionUtils;
+import org.sail.mq.common.utils.IPAddressUtils;
 
 public class AuthorizationMetadataManagerImpl implements AuthorizationMetadataManager {
 

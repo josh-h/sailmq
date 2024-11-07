@@ -22,7 +22,7 @@ import org.sail.mq.broker.client.ClientChannelInfo;
 import org.sail.mq.broker.client.ConsumerGroupInfo;
 import org.sail.mq.broker.client.ConsumerIdsChangeListener;
 import org.sail.mq.broker.client.ProducerChangeListener;
-import org.apache.rocketmq.common.consumer.ConsumeFromWhere;
+import org.sail.mq.common.consumer.ConsumeFromWhere;
 import org.apache.rocketmq.proxy.common.ProxyContext;
 import org.apache.rocketmq.proxy.service.ServiceManager;
 import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumeType;

@@ -17,10 +17,10 @@
 
 package org.apache.rocketmq.test.client.producer.exception.msg;
 
-import org.apache.rocketmq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.client.producer.SendResult;
-import org.apache.rocketmq.client.producer.SendStatus;
-import org.apache.rocketmq.common.message.Message;
+import org.sail.mq.client.producer.DefaultMQProducer;
+import org.sail.mq.client.producer.SendResult;
+import org.sail.mq.client.producer.SendStatus;
+import org.sail.mq.common.message.Message;
 import org.apache.rocketmq.test.base.BaseConf;
 import org.apache.rocketmq.test.factory.MessageFactory;
 import org.apache.rocketmq.test.factory.ProducerFactory;
@@ -28,6 +28,7 @@ import org.apache.rocketmq.test.util.RandomUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.sail.mq.client.exception.MQBrokerException;
 
 import static com.google.common.truth.Truth.assertThat;
 
@@ -49,7 +50,7 @@ public class ChinaPropIT extends BaseConf {
     /**
      * @since version3.4.6
      */
-    @Test(expected = org.apache.rocketmq.client.exception.MQBrokerException.class)
+    @Test(expected = MQBrokerException.class)
     public void testSend20kChinaPropMsg() throws Exception {
         Message msg = MessageFactory.getRandomMessage(topic);
         msg.putUserProperty("key", RandomUtils.getCheseWord(32 * 1024 + 1));

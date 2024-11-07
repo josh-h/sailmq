@@ -25,8 +25,8 @@ import io.grpc.ServerCall;
 import io.grpc.ServerCallHandler;
 import io.grpc.ServerInterceptor;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.rocketmq.common.constant.HAProxyConstants;
-import org.apache.rocketmq.common.constant.GrpcConstants;
+import org.sail.mq.common.constant.HAProxyConstants;
+import org.sail.mq.common.constant.GrpcConstants;
 import org.apache.rocketmq.proxy.common.utils.GrpcUtils;
 import org.apache.rocketmq.proxy.grpc.constant.AttributeKeys;
 

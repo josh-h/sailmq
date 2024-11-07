@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 import org.apache.commons.io.FileUtils;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.common.message.MessageQueue;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;

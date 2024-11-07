@@ -16,5 +16,5 @@
  */
 
 
-Method checkForbidden(org.apache.rocketmq.client.hook.CheckForbiddenContext) : public throws (void)
+Method checkForbidden(hook.org.sail.mq.client.CheckForbiddenContext) : public throws (void)
 Method hookName() : public throws (java.lang.String)

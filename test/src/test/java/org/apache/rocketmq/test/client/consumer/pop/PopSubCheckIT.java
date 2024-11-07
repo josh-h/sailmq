@@ -17,9 +17,9 @@
 
 package org.apache.rocketmq.test.client.consumer.pop;
 
-import org.apache.rocketmq.common.message.MessageClientExt;
-import org.apache.rocketmq.common.message.MessageConst;
-import org.apache.rocketmq.common.message.MessageRequestMode;
+import org.sail.mq.common.message.MessageClientExt;
+import org.sail.mq.common.message.MessageConst;
+import org.sail.mq.common.message.MessageRequestMode;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.test.base.BaseConf;

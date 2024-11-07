@@ -17,7 +17,7 @@
 package org.sail.mq.broker.subscription;
 
 import org.sail.mq.broker.BrokerController;
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.common.MixAll;
 import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
 
 public class LmqSubscriptionGroupManager extends SubscriptionGroupManager {

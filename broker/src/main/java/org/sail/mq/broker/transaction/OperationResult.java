@@ -16,7 +16,7 @@
  */
 package org.sail.mq.broker.transaction;
 
-import org.apache.rocketmq.common.message.MessageExt;
+import org.sail.mq.common.message.MessageExt;
 
 public class OperationResult {
     private MessageExt prepareMessage;

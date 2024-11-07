@@ -28,8 +28,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.TopicConfig;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.TopicConfig;
 
 public class TopicQueueMappingUtils {
 

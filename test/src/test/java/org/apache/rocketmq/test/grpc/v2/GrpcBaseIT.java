@@ -90,17 +90,17 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 import javax.net.ssl.SSLException;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.rocketmq.client.consumer.DefaultMQPullConsumer;
-import org.apache.rocketmq.client.consumer.PullResult;
-import org.apache.rocketmq.client.consumer.PullStatus;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.attribute.TopicMessageType;
-import org.apache.rocketmq.common.message.MessageExt;
-import org.apache.rocketmq.common.utils.NetworkUtil;
+import org.sail.mq.client.consumer.DefaultMQPullConsumer;
+import org.sail.mq.client.consumer.PullResult;
+import org.sail.mq.client.consumer.PullStatus;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.attribute.TopicMessageType;
+import org.sail.mq.common.message.MessageExt;
+import org.sail.mq.common.utils.NetworkUtil;
 import org.apache.rocketmq.proxy.config.ConfigurationManager;
 import org.apache.rocketmq.proxy.grpc.interceptor.ContextInterceptor;
 import org.apache.rocketmq.proxy.grpc.interceptor.HeaderInterceptor;
-import org.apache.rocketmq.common.constant.GrpcConstants;
+import org.sail.mq.common.constant.GrpcConstants;
 import org.apache.rocketmq.proxy.grpc.v2.common.ResponseBuilder;
 import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
 import org.apache.rocketmq.test.base.BaseConf;
@@ -108,7 +108,7 @@ import org.apache.rocketmq.test.util.MQRandomUtils;
 import org.apache.rocketmq.test.util.RandomUtils;
 import org.junit.Rule;
 
-import static org.apache.rocketmq.common.message.MessageClientIDSetter.createUniqID;
+import static org.sail.mq.common.message.MessageClientIDSetter.createUniqID;
 import static org.apache.rocketmq.proxy.config.ConfigurationManager.RMQ_PROXY_HOME;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.awaitility.Awaitility.await;
@@ -499,7 +499,7 @@ public class GrpcBaseIT extends BaseConf {
 
         DefaultMQPullConsumer defaultMQPullConsumer = new DefaultMQPullConsumer(group);
         defaultMQPullConsumer.start();
-        org.apache.rocketmq.common.message.MessageQueue dlqMQ = new org.apache.rocketmq.common.message.MessageQueue(MixAll.getDLQTopic(group), BROKER1_NAME, 0);
+        org.sail.mq.common.message.MessageQueue dlqMQ = new org.sail.mq.common.message.MessageQueue(MixAll.getDLQTopic(group), BROKER1_NAME, 0);
         await().atMost(java.time.Duration.ofSeconds(30)).until(() -> {
             try {
                 List<Message> messageList = getMessageFromReceiveMessageResponse(receiveMessage(blockingStub, topic, group, 1));

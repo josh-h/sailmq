@@ -19,7 +19,7 @@ package org.apache.rocketmq.store.dledger;
 import java.time.Duration;
 import java.util.UUID;
 
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.common.MixAll;
 import org.apache.rocketmq.store.DefaultMessageStore;
 import org.apache.rocketmq.store.StoreTestBase;
 import org.apache.rocketmq.store.config.StorePathConfigHelper;

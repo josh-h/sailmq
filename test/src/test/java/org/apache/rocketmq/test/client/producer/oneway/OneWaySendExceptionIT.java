@@ -18,10 +18,10 @@
 package org.apache.rocketmq.test.client.producer.oneway;
 
 import java.util.List;
-import org.apache.rocketmq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.client.producer.MessageQueueSelector;
-import org.apache.rocketmq.common.message.Message;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.client.producer.DefaultMQProducer;
+import org.sail.mq.client.producer.MessageQueueSelector;
+import org.sail.mq.common.message.Message;
+import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.test.base.BaseConf;
@@ -31,6 +31,7 @@ import org.apache.rocketmq.test.util.RandomUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.sail.mq.client.exception.MQClientException;
 
 public class OneWaySendExceptionIT extends BaseConf {
     private static Logger logger = LoggerFactory.getLogger(TagMessageWith1ConsumerIT.class);
@@ -56,7 +57,7 @@ public class OneWaySendExceptionIT extends BaseConf {
         producer.sendOneway(msg, messageQueue);
     }
 
-    @Test(expected = org.apache.rocketmq.client.exception.MQClientException.class)
+    @Test(expected = MQClientException.class)
     public void testSendSelectorNull() throws Exception {
         Message msg = new Message(topic, RandomUtils.getStringByUUID().getBytes());
         DefaultMQProducer producer = ProducerFactory.getRMQProducer(NAMESRV_ADDR);
@@ -64,7 +65,7 @@ public class OneWaySendExceptionIT extends BaseConf {
         producer.sendOneway(msg, selector, 100);
     }
 
-    @Test(expected = org.apache.rocketmq.client.exception.MQClientException.class)
+    @Test(expected = MQClientException.class)
     public void testSelectorThrowsException() throws Exception {
         Message msg = new Message(topic, RandomUtils.getStringByUUID().getBytes());
         DefaultMQProducer producer = ProducerFactory.getRMQProducer(NAMESRV_ADDR);

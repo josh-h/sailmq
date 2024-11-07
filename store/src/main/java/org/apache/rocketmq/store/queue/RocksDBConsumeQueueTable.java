@@ -21,9 +21,9 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.rocketmq.common.BoundaryType;
-import org.apache.rocketmq.common.Pair;
-import org.apache.rocketmq.common.constant.LoggerName;
+import org.sail.mq.common.BoundaryType;
+import org.sail.mq.common.Pair;
+import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.store.DefaultMessageStore;
@@ -33,9 +33,9 @@ import org.rocksdb.ColumnFamilyHandle;
 import org.rocksdb.RocksDBException;
 import org.rocksdb.WriteBatch;
 
-import static org.apache.rocketmq.common.config.AbstractRocksDBStorage.CTRL_0;
-import static org.apache.rocketmq.common.config.AbstractRocksDBStorage.CTRL_1;
-import static org.apache.rocketmq.common.config.AbstractRocksDBStorage.CTRL_2;
+import static org.sail.mq.common.config.AbstractRocksDBStorage.CTRL_0;
+import static org.sail.mq.common.config.AbstractRocksDBStorage.CTRL_1;
+import static org.sail.mq.common.config.AbstractRocksDBStorage.CTRL_2;
 
 /**
  * We use RocksDBConsumeQueueTable to store cqUnit.

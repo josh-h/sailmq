@@ -18,11 +18,11 @@
 package org.apache.rocketmq.proxy.service;
 
 import java.util.HashMap;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.client.exception.MQClientException;
+import org.sail.mq.common.MixAll;
 import org.apache.rocketmq.proxy.config.InitConfigTest;
-import org.apache.rocketmq.client.impl.mqclient.MQClientAPIExt;
-import org.apache.rocketmq.client.impl.mqclient.MQClientAPIFactory;
+import org.sail.mq.client.impl.mqclient.MQClientAPIExt;
+import org.sail.mq.client.impl.mqclient.MQClientAPIFactory;
 import org.apache.rocketmq.proxy.service.route.MessageQueueView;
 import org.apache.rocketmq.proxy.service.route.TopicRouteService;
 import org.apache.rocketmq.remoting.protocol.ResponseCode;

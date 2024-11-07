@@ -1354,7 +1354,7 @@ Solution: make sure that producer and consumer has the same version of rocketmq-
 
 > question description: when a new consumer group start, it consumes from current offset, do not fetch oldest message.    
 
-Solution: rocketmq's default policy is consume from latest, that is skip oldest message. If you want consume oldest message, you need to set `org.apache.rocketmq.client.consumer.DefaultMQPushConsumer#setConsumeFromWhere`. The following is three common configurations:
+Solution: rocketmq's default policy is consume from latest, that is skip oldest message. If you want consume oldest message, you need to set `consumer.org.sail.mq.client.DefaultMQPushConsumer#setConsumeFromWhere`. The following is three common configurations:
 
 - default configuration, a new consumer group consume from latest position at first startup, then consume from last time's offset at next startup, that is skip oldest message;
 

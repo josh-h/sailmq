@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.sail.mq.broker.BrokerController;
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.common.MixAll;
 import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
 
 public class RocksDBLmqConsumerOffsetManager extends RocksDBConsumerOffsetManager {

@@ -22,14 +22,14 @@ import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import org.apache.rocketmq.client.consumer.DefaultMQPullConsumer;
-import org.apache.rocketmq.client.consumer.PullResult;
-import org.apache.rocketmq.client.consumer.store.ReadOffsetType;
-import org.apache.rocketmq.client.exception.MQBrokerException;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.common.ThreadFactoryImpl;
-import org.apache.rocketmq.common.message.MessageExt;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.client.consumer.DefaultMQPullConsumer;
+import org.sail.mq.client.consumer.PullResult;
+import org.sail.mq.client.consumer.store.ReadOffsetType;
+import org.sail.mq.client.exception.MQBrokerException;
+import org.sail.mq.client.exception.MQClientException;
+import org.sail.mq.common.ThreadFactoryImpl;
+import org.sail.mq.common.message.MessageExt;
+import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.remoting.exception.RemotingException;
 
 @SuppressWarnings("deprecation")

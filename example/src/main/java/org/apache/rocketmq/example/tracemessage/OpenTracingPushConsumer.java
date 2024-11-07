@@ -21,12 +21,12 @@ import io.jaegertracing.Configuration;
 import io.jaegertracing.internal.samplers.ConstSampler;
 import io.opentracing.Tracer;
 import io.opentracing.util.GlobalTracer;
-import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
-import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
-import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.client.trace.hook.ConsumeMessageOpenTracingHookImpl;
-import org.apache.rocketmq.common.consumer.ConsumeFromWhere;
+import org.sail.mq.client.consumer.DefaultMQPushConsumer;
+import org.sail.mq.client.consumer.listener.ConsumeConcurrentlyStatus;
+import org.sail.mq.client.consumer.listener.MessageListenerConcurrently;
+import org.sail.mq.client.exception.MQClientException;
+import org.sail.mq.client.trace.hook.ConsumeMessageOpenTracingHookImpl;
+import org.sail.mq.common.consumer.ConsumeFromWhere;
 
 public class OpenTracingPushConsumer {
 

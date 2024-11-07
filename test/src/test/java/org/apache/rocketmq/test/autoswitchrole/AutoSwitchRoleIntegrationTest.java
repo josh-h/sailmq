@@ -25,12 +25,12 @@ import java.util.concurrent.TimeUnit;
 
 import org.sail.mq.broker.BrokerController;
 import org.sail.mq.broker.controller.ReplicasManager;
-import org.apache.rocketmq.common.UtilAll;
-import org.apache.rocketmq.common.ControllerConfig;
-import org.apache.rocketmq.common.namesrv.NamesrvConfig;
+import org.sail.mq.common.UtilAll;
+import org.sail.mq.common.ControllerConfig;
+import org.sail.mq.common.namesrv.NamesrvConfig;
 import org.apache.rocketmq.remoting.protocol.RemotingCommand;
 import org.apache.rocketmq.remoting.protocol.body.SyncStateSet;
-import org.apache.rocketmq.controller.ControllerManager;
+import org.sail.mq.controller.ControllerManager;
 import org.apache.rocketmq.namesrv.NamesrvController;
 import org.apache.rocketmq.remoting.netty.NettyClientConfig;
 import org.apache.rocketmq.remoting.netty.NettyServerConfig;

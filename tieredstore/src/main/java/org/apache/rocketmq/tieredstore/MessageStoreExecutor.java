@@ -21,8 +21,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-import org.apache.rocketmq.common.ThreadFactoryImpl;
-import org.apache.rocketmq.common.utils.ThreadUtils;
+import org.sail.mq.common.ThreadFactoryImpl;
+import org.sail.mq.common.utils.ThreadUtils;
 
 public class MessageStoreExecutor {
 

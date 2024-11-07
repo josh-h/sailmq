@@ -21,7 +21,7 @@ import java.util.List;
 import org.sail.mq.broker.BrokerController;
 import org.sail.mq.broker.client.ConsumerGroupInfo;
 import org.sail.mq.broker.offset.ConsumerOffsetManager;
-import org.apache.rocketmq.common.constant.LoggerName;
+import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.remoting.common.RemotingHelper;

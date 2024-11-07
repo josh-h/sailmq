@@ -18,8 +18,8 @@
 package org.apache.rocketmq.test.factory;
 
 import java.util.UUID;
-import org.apache.rocketmq.client.consumer.DefaultMQPullConsumer;
-import org.apache.rocketmq.client.consumer.MessageSelector;
+import org.sail.mq.client.consumer.DefaultMQPullConsumer;
+import org.sail.mq.client.consumer.MessageSelector;
 import org.apache.rocketmq.test.client.rmq.RMQBroadCastConsumer;
 import org.apache.rocketmq.test.client.rmq.RMQNormalConsumer;
 import org.apache.rocketmq.test.client.rmq.RMQPopClient;

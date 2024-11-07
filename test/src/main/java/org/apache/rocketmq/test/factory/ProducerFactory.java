@@ -18,8 +18,8 @@
 package org.apache.rocketmq.test.factory;
 
 import java.util.UUID;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.client.producer.DefaultMQProducer;
+import org.sail.mq.client.exception.MQClientException;
+import org.sail.mq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.test.util.RandomUtil;
 
 public class ProducerFactory {

@@ -18,8 +18,8 @@ package org.apache.rocketmq.tieredstore.file;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
-import org.apache.rocketmq.common.BoundaryType;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.common.BoundaryType;
+import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.store.ConsumeQueue;
 import org.apache.rocketmq.store.DispatchRequest;
 import org.apache.rocketmq.tieredstore.MessageStoreConfig;

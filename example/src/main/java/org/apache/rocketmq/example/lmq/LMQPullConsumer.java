@@ -19,13 +19,13 @@ package org.apache.rocketmq.example.lmq;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
-import org.apache.rocketmq.client.consumer.DefaultMQPullConsumer;
-import org.apache.rocketmq.client.consumer.PullCallback;
-import org.apache.rocketmq.client.consumer.PullResult;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.message.MessageExt;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.client.consumer.DefaultMQPullConsumer;
+import org.sail.mq.client.consumer.PullCallback;
+import org.sail.mq.client.consumer.PullResult;
+import org.sail.mq.client.exception.MQClientException;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.message.MessageExt;
+import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.remoting.exception.RemotingException;
 
 @SuppressWarnings("deprecation")

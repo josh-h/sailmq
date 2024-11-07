@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.rocketmq.common.action.Action;
+import org.sail.mq.common.action.Action;
 import org.sail.mq.auth.authorization.enums.Decision;
 import org.sail.mq.auth.authorization.enums.PolicyType;
 

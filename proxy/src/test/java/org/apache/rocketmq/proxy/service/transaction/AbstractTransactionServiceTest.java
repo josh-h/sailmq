@@ -19,10 +19,10 @@ package org.apache.rocketmq.proxy.service.transaction;
 
 import java.util.List;
 import java.util.Random;
-import org.apache.rocketmq.common.message.Message;
-import org.apache.rocketmq.common.message.MessageClientIDSetter;
-import org.apache.rocketmq.common.message.MessageConst;
-import org.apache.rocketmq.common.sysflag.MessageSysFlag;
+import org.sail.mq.common.message.Message;
+import org.sail.mq.common.message.MessageClientIDSetter;
+import org.sail.mq.common.message.MessageConst;
+import org.sail.mq.common.sysflag.MessageSysFlag;
 import org.apache.rocketmq.proxy.common.ProxyContext;
 import org.apache.rocketmq.proxy.config.InitConfigTest;
 import org.junit.Before;

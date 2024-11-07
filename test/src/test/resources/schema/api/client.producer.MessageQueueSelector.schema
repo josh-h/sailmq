@@ -16,4 +16,4 @@
  */
 
 
-Method select(java.lang.Object,java.util.List,org.apache.rocketmq.common.message.Message) : public throws (org.apache.rocketmq.common.message.MessageQueue)
+Method select(java.lang.Object,java.util.List,message.org.sail.mq.common.Message) : public throws (message.org.sail.mq.common.MessageQueue)

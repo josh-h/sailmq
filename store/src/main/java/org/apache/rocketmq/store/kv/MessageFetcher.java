@@ -23,10 +23,10 @@ import com.google.common.collect.Sets;
 import java.io.IOException;
 import java.util.function.BiFunction;
 
-import org.apache.rocketmq.common.constant.LoggerName;
-import org.apache.rocketmq.common.consumer.ConsumeFromWhere;
-import org.apache.rocketmq.common.sysflag.PullSysFlag;
-import org.apache.rocketmq.common.utils.NetworkUtil;
+import org.sail.mq.common.constant.LoggerName;
+import org.sail.mq.common.consumer.ConsumeFromWhere;
+import org.sail.mq.common.sysflag.PullSysFlag;
+import org.sail.mq.common.utils.NetworkUtil;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.remoting.RemotingClient;

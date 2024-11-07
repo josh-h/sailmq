@@ -17,8 +17,8 @@
 
 package org.apache.rocketmq.test.factory;
 
-import org.apache.rocketmq.client.producer.SendCallback;
-import org.apache.rocketmq.client.producer.SendResult;
+import org.sail.mq.client.producer.SendCallback;
+import org.sail.mq.client.producer.SendResult;
 
 public class SendCallBackFactory {
     public static SendCallback getSendCallBack() {

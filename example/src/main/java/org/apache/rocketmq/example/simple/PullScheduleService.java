@@ -17,13 +17,13 @@
 
 package org.apache.rocketmq.example.simple;
 
-import org.apache.rocketmq.client.consumer.MQPullConsumer;
-import org.apache.rocketmq.client.consumer.MQPullConsumerScheduleService;
-import org.apache.rocketmq.client.consumer.PullResult;
-import org.apache.rocketmq.client.consumer.PullTaskCallback;
-import org.apache.rocketmq.client.consumer.PullTaskContext;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.client.consumer.MQPullConsumer;
+import org.sail.mq.client.consumer.MQPullConsumerScheduleService;
+import org.sail.mq.client.consumer.PullResult;
+import org.sail.mq.client.consumer.PullTaskCallback;
+import org.sail.mq.client.consumer.PullTaskContext;
+import org.sail.mq.client.exception.MQClientException;
+import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
 
 public class PullScheduleService {

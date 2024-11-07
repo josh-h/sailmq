@@ -18,7 +18,7 @@ package org.apache.rocketmq.tieredstore.file;
 
 import java.io.IOException;
 import java.util.concurrent.CompletableFuture;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.tieredstore.MessageStoreConfig;
 import org.apache.rocketmq.tieredstore.MessageStoreExecutor;
 import org.apache.rocketmq.tieredstore.exception.TieredStoreErrorCode;

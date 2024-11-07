@@ -16,9 +16,9 @@
  */
 package org.apache.rocketmq.example.namespace;
 
-import org.apache.rocketmq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.client.producer.SendResult;
-import org.apache.rocketmq.common.message.Message;
+import org.sail.mq.client.producer.DefaultMQProducer;
+import org.sail.mq.client.producer.SendResult;
+import org.sail.mq.common.message.Message;
 
 import java.nio.charset.StandardCharsets;
 

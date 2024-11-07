@@ -27,7 +27,7 @@ Solution: The jar package of RocketMQ, such as rocketmq-client, should be the sa
 Solution: The default policy of rocketmq is to start from the end of the message queue and skip the historical message. If you want to consume historical message, you need to set: 
 
 ```java
-org.apache.rocketmq.client.consumer.DefaultMQPushConsumer#setConsumeFromWhere
+consumer.org.sail.mq.client.DefaultMQPushConsumer#setConsumeFromWhere
 ```
 
 There are three common configurations: 

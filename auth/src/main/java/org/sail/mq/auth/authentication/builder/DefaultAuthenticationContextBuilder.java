@@ -33,10 +33,10 @@ import org.sail.mq.acl.common.common.AclUtils;
 import org.sail.mq.acl.common.common.SessionCredentials;
 import org.sail.mq.auth.authentication.context.DefaultAuthenticationContext;
 import org.sail.mq.auth.authentication.exception.AuthenticationException;
-import org.apache.rocketmq.common.MQVersion;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.constant.CommonConstants;
-import org.apache.rocketmq.common.constant.GrpcConstants;
+import org.sail.mq.common.MQVersion;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.constant.CommonConstants;
+import org.sail.mq.common.constant.GrpcConstants;
 import org.apache.rocketmq.remoting.protocol.RemotingCommand;
 
 public class DefaultAuthenticationContextBuilder implements AuthenticationContextBuilder<DefaultAuthenticationContext> {

@@ -19,7 +19,7 @@ package org.sail.mq.broker.loadbalance;
 import java.util.concurrent.ConcurrentHashMap;
 import org.sail.mq.broker.BrokerController;
 import org.sail.mq.broker.BrokerPathConfigHelper;
-import org.apache.rocketmq.common.ConfigManager;
+import org.sail.mq.common.ConfigManager;
 import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
 import org.apache.rocketmq.remoting.protocol.body.SetMessageRequestModeRequestBody;
 

@@ -19,8 +19,8 @@ package org.apache.rocketmq.example.simple;
 
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
-import org.apache.rocketmq.common.message.MessageExt;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.common.message.MessageExt;
+import org.sail.mq.common.message.MessageQueue;
 
 public class RandomAsyncCommit {
     private final ConcurrentHashMap<MessageQueue, CachedQueue> mqCachedTable =

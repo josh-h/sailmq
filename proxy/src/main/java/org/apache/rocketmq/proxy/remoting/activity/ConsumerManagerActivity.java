@@ -27,7 +27,7 @@ import java.util.Map;
 import java.util.Set;
 import org.sail.mq.broker.client.ClientChannelInfo;
 import org.sail.mq.broker.client.ConsumerGroupInfo;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.remoting.common.RemotingHelper;
 import org.apache.rocketmq.remoting.protocol.RequestCode;
 import org.apache.rocketmq.remoting.protocol.ResponseCode;

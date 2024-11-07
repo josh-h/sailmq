@@ -18,8 +18,8 @@ package org.apache.rocketmq.store;
 
 import java.util.Map;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.message.MessageConst;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.message.MessageConst;
 
 public class DispatchRequest {
     private final String topic;

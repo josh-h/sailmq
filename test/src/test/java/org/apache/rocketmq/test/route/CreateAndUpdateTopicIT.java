@@ -18,7 +18,7 @@
 package org.apache.rocketmq.test.route;
 
 import java.util.concurrent.TimeUnit;
-import org.apache.rocketmq.common.TopicConfig;
+import org.sail.mq.common.TopicConfig;
 import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
 import org.apache.rocketmq.test.base.BaseConf;
 import org.apache.rocketmq.test.util.MQAdminTestUtils;

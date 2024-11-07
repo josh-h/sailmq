@@ -17,9 +17,9 @@
 package org.sail.mq.broker.topic;
 
 import org.sail.mq.broker.BrokerController;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.TopicConfig;
-import org.apache.rocketmq.common.constant.PermName;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.TopicConfig;
+import org.sail.mq.common.constant.PermName;
 
 public class LmqTopicConfigManager extends TopicConfigManager {
     public LmqTopicConfigManager(BrokerController brokerController) {

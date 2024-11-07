@@ -25,7 +25,7 @@ import org.sail.mq.auth.authentication.exception.AuthenticationException;
 import org.sail.mq.auth.authentication.factory.AuthenticationFactory;
 import org.sail.mq.auth.authentication.provider.AuthenticationProvider;
 import org.sail.mq.auth.config.AuthConfig;
-import org.apache.rocketmq.common.utils.ExceptionUtils;
+import org.sail.mq.common.utils.ExceptionUtils;
 
 public abstract class AbstractAuthenticationStrategy implements AuthenticationStrategy {
 

@@ -21,7 +21,7 @@ Field queueId : private int 0
 Field serialVersionUID : private long 6191200464116433425
 Field topic : private java.lang.String null
 Method compareTo(java.lang.Object) : public throws (int)
-Method compareTo(org.apache.rocketmq.common.message.MessageQueue) : public throws (int)
+Method compareTo(message.org.sail.mq.common.MessageQueue) : public throws (int)
 Method equals(java.lang.Object) : public throws (boolean)
 Method getBrokerName() : public throws (java.lang.String)
 Method getQueueId() : public throws (int)

@@ -22,8 +22,8 @@ import java.util.Map;
 import org.sail.mq.acl.AccessResource;
 import org.sail.mq.acl.AccessValidator;
 import org.sail.mq.acl.common.common.AuthenticationHeader;
-import org.apache.rocketmq.common.AclConfig;
-import org.apache.rocketmq.common.PlainAccessConfig;
+import org.sail.mq.common.AclConfig;
+import org.sail.mq.common.PlainAccessConfig;
 import org.apache.rocketmq.remoting.protocol.DataVersion;
 import org.apache.rocketmq.remoting.protocol.RemotingCommand;
 

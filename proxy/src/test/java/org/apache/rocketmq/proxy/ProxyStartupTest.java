@@ -33,7 +33,7 @@ import java.util.UUID;
 import org.sail.mq.broker.BrokerController;
 import org.sail.mq.broker.BrokerStartup;
 import org.sail.mq.broker.metrics.BrokerMetricsManager;
-import org.apache.rocketmq.common.MixAll;
+import org.sail.mq.common.MixAll;
 import org.apache.rocketmq.proxy.config.Configuration;
 import org.apache.rocketmq.proxy.config.ConfigurationManager;
 import org.apache.rocketmq.proxy.config.ProxyConfig;

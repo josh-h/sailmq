@@ -18,7 +18,7 @@ package org.apache.rocketmq.proxy.service.route;
 
 import com.google.common.base.MoreObjects;
 import java.util.Objects;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.common.message.MessageQueue;
 
 public class AddressableMessageQueue implements Comparable<AddressableMessageQueue> {
 

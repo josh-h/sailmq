@@ -21,19 +21,19 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
-import org.apache.rocketmq.client.ClientConfig;
-import org.apache.rocketmq.client.QueryResult;
-import org.apache.rocketmq.client.exception.MQBrokerException;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.apache.rocketmq.common.BoundaryType;
-import org.apache.rocketmq.common.CheckRocksdbCqWriteResult;
-import org.apache.rocketmq.common.Pair;
-import org.apache.rocketmq.common.PlainAccessConfig;
-import org.apache.rocketmq.common.TopicConfig;
-import org.apache.rocketmq.common.message.MessageExt;
-import org.apache.rocketmq.common.message.MessageQueue;
-import org.apache.rocketmq.common.message.MessageRequestMode;
-import org.apache.rocketmq.common.topic.TopicValidator;
+import org.sail.mq.client.ClientConfig;
+import org.sail.mq.client.QueryResult;
+import org.sail.mq.client.exception.MQBrokerException;
+import org.sail.mq.client.exception.MQClientException;
+import org.sail.mq.common.BoundaryType;
+import org.sail.mq.common.CheckRocksdbCqWriteResult;
+import org.sail.mq.common.Pair;
+import org.sail.mq.common.PlainAccessConfig;
+import org.sail.mq.common.TopicConfig;
+import org.sail.mq.common.message.MessageExt;
+import org.sail.mq.common.message.MessageQueue;
+import org.sail.mq.common.message.MessageRequestMode;
+import org.sail.mq.common.topic.TopicValidator;
 import org.apache.rocketmq.remoting.RPCHook;
 import org.apache.rocketmq.remoting.exception.RemotingCommandException;
 import org.apache.rocketmq.remoting.exception.RemotingConnectException;
@@ -711,7 +711,7 @@ public class DefaultMQAdminExt extends ClientConfig implements MQAdminExt {
     }
 
     /* (non-Javadoc)
-     * @see org.apache.rocketmq.client.MQAdmin#queryMessageByUniqKey(java.lang.String, java.lang.String)
+     * @see org.sail.mq.client.MQAdmin#queryMessageByUniqKey(java.lang.String, java.lang.String)
      */
     @Override
     public MessageExt viewMessage(String topic, String msgId)

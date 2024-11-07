@@ -28,8 +28,8 @@ import io.openmessaging.producer.Producer;
 import io.openmessaging.producer.SendResult;
 import io.openmessaging.rocketmq.promise.DefaultPromise;
 import io.openmessaging.rocketmq.utils.OMSUtil;
-import org.apache.rocketmq.client.producer.SendCallback;
-import org.apache.rocketmq.client.producer.SendStatus;
+import org.sail.mq.client.producer.SendCallback;
+import org.sail.mq.client.producer.SendStatus;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 
@@ -67,9 +67,9 @@ public class ProducerImpl extends AbstractOMSProducer implements Producer {
 
     private SendResult send(final Message message, long timeout) {
         checkMessageType(message);
-        org.apache.rocketmq.common.message.Message rmqMessage = msgConvert((BytesMessage) message);
+        org.sail.mq.common.message.Message rmqMessage = msgConvert((BytesMessage) message);
         try {
-            org.apache.rocketmq.client.producer.SendResult rmqResult = this.rocketmqProducer.send(rmqMessage, timeout);
+            org.sail.mq.client.producer.SendResult rmqResult = this.rocketmqProducer.send(rmqMessage, timeout);
             if (!rmqResult.getSendStatus().equals(SendStatus.SEND_OK)) {
                 log.error(String.format("Send message to RocketMQ failed, %s", message));
                 throw new OMSRuntimeException("-1", "Send message to RocketMQ broker failed.");
@@ -96,12 +96,12 @@ public class ProducerImpl extends AbstractOMSProducer implements Producer {
 
     private Promise<SendResult> sendAsync(final Message message, long timeout) {
         checkMessageType(message);
-        org.apache.rocketmq.common.message.Message rmqMessage = msgConvert((BytesMessage) message);
+        org.sail.mq.common.message.Message rmqMessage = msgConvert((BytesMessage) message);
         final Promise<SendResult> promise = new DefaultPromise<>();
         try {
             this.rocketmqProducer.send(rmqMessage, new SendCallback() {
                 @Override
-                public void onSuccess(final org.apache.rocketmq.client.producer.SendResult rmqResult) {
+                public void onSuccess(final org.sail.mq.client.producer.SendResult rmqResult) {
                     message.sysHeaders().put(Message.BuiltinKeys.MESSAGE_ID, rmqResult.getMsgId());
                     promise.set(OMSUtil.sendResultConvert(rmqResult));
                 }
@@ -120,7 +120,7 @@ public class ProducerImpl extends AbstractOMSProducer implements Producer {
     @Override
     public void sendOneway(final Message message) {
         checkMessageType(message);
-        org.apache.rocketmq.common.message.Message rmqMessage = msgConvert((BytesMessage) message);
+        org.sail.mq.common.message.Message rmqMessage = msgConvert((BytesMessage) message);
         try {
             this.rocketmqProducer.sendOneway(rmqMessage);
         } catch (Exception ignore) { //Ignore the oneway exception.

@@ -17,7 +17,7 @@
 package org.sail.mq.auth.authorization.model;
 
 import org.sail.mq.auth.authentication.model.Subject;
-import org.apache.rocketmq.common.action.Action;
+import org.sail.mq.common.action.Action;
 
 public class RequestContext {
 

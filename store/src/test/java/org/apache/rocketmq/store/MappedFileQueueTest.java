@@ -19,9 +19,9 @@ package org.apache.rocketmq.store;
 
 import java.util.concurrent.CountDownLatch;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.ThreadFactoryImpl;
-import org.apache.rocketmq.common.UtilAll;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.ThreadFactoryImpl;
+import org.sail.mq.common.UtilAll;
 import org.apache.rocketmq.store.logfile.DefaultMappedFile;
 import org.apache.rocketmq.store.logfile.MappedFile;
 import org.assertj.core.util.Lists;

@@ -19,14 +19,14 @@ package org.sail.mq.broker.transaction.queue;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.message.MessageAccessor;
-import org.apache.rocketmq.common.message.MessageConst;
-import org.apache.rocketmq.common.message.MessageDecoder;
-import org.apache.rocketmq.common.message.MessageExt;
-import org.apache.rocketmq.common.message.MessageExtBrokerInner;
-import org.apache.rocketmq.common.sysflag.MessageSysFlag;
-import org.apache.rocketmq.common.topic.TopicValidator;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.message.MessageAccessor;
+import org.sail.mq.common.message.MessageConst;
+import org.sail.mq.common.message.MessageDecoder;
+import org.sail.mq.common.message.MessageExt;
+import org.sail.mq.common.message.MessageExtBrokerInner;
+import org.sail.mq.common.sysflag.MessageSysFlag;
+import org.sail.mq.common.topic.TopicValidator;
 
 public class TransactionalMessageUtil {
     public static final String REMOVE_TAG = "d";

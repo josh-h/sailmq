@@ -19,7 +19,7 @@ package org.sail.mq.auth.authentication.model;
 import org.sail.mq.auth.authentication.enums.SubjectType;
 import org.sail.mq.auth.authentication.enums.UserStatus;
 import org.sail.mq.auth.authentication.enums.UserType;
-import org.apache.rocketmq.common.constant.CommonConstants;
+import org.sail.mq.common.constant.CommonConstants;
 
 public class User implements Subject {
 

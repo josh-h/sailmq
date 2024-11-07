@@ -27,8 +27,8 @@ import org.sail.mq.auth.authentication.builder.DefaultAuthenticationContextBuild
 import org.sail.mq.auth.authentication.context.DefaultAuthenticationContext;
 import org.sail.mq.auth.authentication.chain.DefaultAuthenticationHandler;
 import org.sail.mq.auth.config.AuthConfig;
-import org.apache.rocketmq.common.chain.HandlerChain;
-import org.apache.rocketmq.common.constant.LoggerName;
+import org.sail.mq.common.chain.HandlerChain;
+import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.remoting.protocol.RemotingCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

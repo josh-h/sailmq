@@ -20,9 +20,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.rocketmq.client.consumer.DefaultMQPullConsumer;
-import org.apache.rocketmq.client.consumer.PullResult;
-import org.apache.rocketmq.common.message.MessageQueue;
+import org.sail.mq.client.consumer.DefaultMQPullConsumer;
+import org.sail.mq.client.consumer.PullResult;
+import org.sail.mq.common.message.MessageQueue;
 
 public class PullConsumerWithNamespace {
 

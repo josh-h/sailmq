@@ -17,7 +17,7 @@
 
 package org.apache.rocketmq.test.client.rmq;
 
-import org.apache.rocketmq.client.consumer.MessageSelector;
+import org.sail.mq.client.consumer.MessageSelector;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.test.listener.AbstractListener;

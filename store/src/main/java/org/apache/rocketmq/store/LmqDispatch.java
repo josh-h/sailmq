@@ -17,10 +17,10 @@
 package org.apache.rocketmq.store;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.message.MessageAccessor;
-import org.apache.rocketmq.common.message.MessageConst;
-import org.apache.rocketmq.common.message.MessageExtBrokerInner;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.message.MessageAccessor;
+import org.sail.mq.common.message.MessageConst;
+import org.sail.mq.common.message.MessageExtBrokerInner;
 import org.apache.rocketmq.store.exception.ConsumeQueueException;
 
 public class LmqDispatch {

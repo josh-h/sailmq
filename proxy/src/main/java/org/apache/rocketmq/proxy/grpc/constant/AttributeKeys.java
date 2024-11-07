@@ -17,7 +17,7 @@
 package org.apache.rocketmq.proxy.grpc.constant;
 
 import io.grpc.Attributes;
-import org.apache.rocketmq.common.constant.HAProxyConstants;
+import org.sail.mq.common.constant.HAProxyConstants;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

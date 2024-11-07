@@ -17,8 +17,8 @@
 package org.sail.mq.broker.longpolling;
 
 import org.sail.mq.broker.BrokerController;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.constant.LoggerName;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 

@@ -37,11 +37,11 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.rocketmq.client.producer.SendResult;
-import org.apache.rocketmq.common.message.Message;
-import org.apache.rocketmq.common.message.MessageAccessor;
-import org.apache.rocketmq.common.message.MessageConst;
-import org.apache.rocketmq.common.sysflag.MessageSysFlag;
+import org.sail.mq.client.producer.SendResult;
+import org.sail.mq.common.message.Message;
+import org.sail.mq.common.message.MessageAccessor;
+import org.sail.mq.common.message.MessageConst;
+import org.sail.mq.common.sysflag.MessageSysFlag;
 import org.apache.rocketmq.proxy.common.ProxyContext;
 import org.apache.rocketmq.proxy.config.ConfigurationManager;
 import org.apache.rocketmq.proxy.config.ProxyConfig;
@@ -193,7 +193,7 @@ public class SendMessageActivity extends AbstractMessingActivity {
     protected Map<String, String> buildMessageProperty(ProxyContext context, apache.rocketmq.v2.Message message, String producerGroup) {
         long userPropertySize = 0;
         ProxyConfig config = ConfigurationManager.getProxyConfig();
-        org.apache.rocketmq.common.message.Message messageWithHeader = new org.apache.rocketmq.common.message.Message();
+        Message messageWithHeader = new Message();
         // set user properties
         Map<String, String> userProperties = message.getUserPropertiesMap();
         if (userProperties.size() > config.getUserPropertyMaxNum()) {
@@ -290,7 +290,7 @@ public class SendMessageActivity extends AbstractMessingActivity {
         return messageWithHeader.getProperties();
     }
 
-    protected void fillDelayMessageProperty(apache.rocketmq.v2.Message message, org.apache.rocketmq.common.message.Message messageWithHeader) {
+    protected void fillDelayMessageProperty(apache.rocketmq.v2.Message message, Message messageWithHeader) {
         if (message.getSystemProperties().hasDeliveryTimestamp()) {
             Timestamp deliveryTimestamp = message.getSystemProperties().getDeliveryTimestamp();
             long deliveryTimestampMs = Timestamps.toMillis(deliveryTimestamp);

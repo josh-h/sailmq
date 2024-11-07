@@ -17,7 +17,7 @@
 package org.apache.rocketmq.remoting.protocol.body;
 
 import java.util.List;
-import org.apache.rocketmq.common.TopicConfig;
+import org.sail.mq.common.TopicConfig;
 import org.apache.rocketmq.remoting.annotation.CFNotNull;
 import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
 

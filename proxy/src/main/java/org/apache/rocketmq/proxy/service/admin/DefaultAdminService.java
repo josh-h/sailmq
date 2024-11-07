@@ -21,17 +21,17 @@ import java.time.Duration;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import org.apache.rocketmq.common.MixAll;
-import org.apache.rocketmq.common.TopicConfig;
-import org.apache.rocketmq.common.constant.LoggerName;
-import org.apache.rocketmq.common.constant.PermName;
+import org.sail.mq.common.MixAll;
+import org.sail.mq.common.TopicConfig;
+import org.sail.mq.common.constant.LoggerName;
+import org.sail.mq.common.constant.PermName;
 import org.apache.rocketmq.remoting.protocol.route.BrokerData;
 import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
-import org.apache.rocketmq.common.topic.TopicValidator;
+import org.sail.mq.common.topic.TopicValidator;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.client.impl.mqclient.MQClientAPIExt;
-import org.apache.rocketmq.client.impl.mqclient.MQClientAPIFactory;
+import org.sail.mq.client.impl.mqclient.MQClientAPIExt;
+import org.sail.mq.client.impl.mqclient.MQClientAPIFactory;
 import org.apache.rocketmq.proxy.service.route.TopicRouteHelper;
 
 public class DefaultAdminService implements AdminService {

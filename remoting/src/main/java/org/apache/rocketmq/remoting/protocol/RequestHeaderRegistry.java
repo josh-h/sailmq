@@ -19,7 +19,7 @@ package org.apache.rocketmq.remoting.protocol;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-import org.apache.rocketmq.common.action.RocketMQAction;
+import org.sail.mq.common.action.RocketMQAction;
 import org.apache.rocketmq.remoting.CommandCustomHeader;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
