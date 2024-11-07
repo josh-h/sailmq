@@ -24,8 +24,8 @@ import org.sail.mq.broker.longpolling.PullRequest;
 import org.sail.mq.common.ServiceThread;
 import org.sail.mq.common.SystemClock;
 import org.sail.mq.common.constant.LoggerName;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 /**
  * just requests are type of pull have the qualification to be put into this hold queue.

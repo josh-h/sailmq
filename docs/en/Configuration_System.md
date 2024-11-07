@@ -12,7 +12,7 @@ Direct ByteBuffer memory size setting. Full GC will be triggered when the Direct
 
     -XX:MaxDirectMemorySize=15g
 
-If you don’t care about the boot time of RocketMQ broker, pre-touch the Java heap to make sure that every page will be allocated during JVM initialization is a better choice. Those who don’t care about the boot time can enable it:
+If you don’t care about the boot time of SailMQ broker, pre-touch the Java heap to make sure that every page will be allocated during JVM initialization is a better choice. Those who don’t care about the boot time can enable it:
     
     -XX:+AlwaysPreTouch
 
@@ -45,7 +45,7 @@ There is a os.sh script that lists a lot of kernel parameters in folder bin whic
 
 
 
-- **vm.extra_free_kbytes**, tells the VM to keep extra free memory between the threshold where background reclaim (kswapd) kicks in, and the threshold where direct reclaim (by allocating processes) kicks in. RocketMQ uses this parameter to avoid high latency in memory allocation. (It is specific to the kernel version）
+- **vm.extra_free_kbytes**, tells the VM to keep extra free memory between the threshold where background reclaim (kswapd) kicks in, and the threshold where direct reclaim (by allocating processes) kicks in. SailMQ uses this parameter to avoid high latency in memory allocation. (It is specific to the kernel version）
 
 
 
@@ -55,7 +55,7 @@ There is a os.sh script that lists a lot of kernel parameters in folder bin whic
 
 
 
-- **vm.max_map_count**, limits the maximum number of memory map areas a process may have. RocketMQ will use mmap to load CommitLog and ConsumeQueue, so set a bigger value for this parameter is recommended.
+- **vm.max_map_count**, limits the maximum number of memory map areas a process may have. SailMQ will use mmap to load CommitLog and ConsumeQueue, so set a bigger value for this parameter is recommended.
 
 
 
@@ -63,9 +63,9 @@ There is a os.sh script that lists a lot of kernel parameters in folder bin whic
 
 
 
-- **File descriptor limits**, RocketMQ needs open file descriptors for files(CommitLog and ConsumeQueue) and network connections. We recommend setting  655350 for file descriptors.
+- **File descriptor limits**, SailMQ needs open file descriptors for files(CommitLog and ConsumeQueue) and network connections. We recommend setting  655350 for file descriptors.
 
 
 
-- **Disk scheduler**, the deadline I/O scheduler is recommended for RocketMQ, which attempts to provide a guaranteed latency for requests.
+- **Disk scheduler**, the deadline I/O scheduler is recommended for SailMQ, which attempts to provide a guaranteed latency for requests.
 

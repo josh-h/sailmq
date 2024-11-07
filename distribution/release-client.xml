@@ -48,8 +48,8 @@
         <moduleSet>
             <useAllReactorProjects>true</useAllReactorProjects>
             <includes>
-                <include>org.apache.rocketmq:rocketmq-client</include>
-                <include>org.apache.rocketmq:rocketmq-openmessaging</include>
+                <include>org.sail.mq:sailmq-client</include>
+                <include>org.sail.mq:sailmq-openmessaging</include>
             </includes>
             <binaries>
                 <outputDirectory>./</outputDirectory>

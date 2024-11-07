@@ -17,20 +17,20 @@
 package org.sail.mq.remoting.protocol.header.namesrv;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
-import org.sail.mq.common.resource.RocketMQResource;
+import org.sail.mq.common.resource.SailMQResource;
 import org.sail.mq.remoting.annotation.CFNotNull;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.protocol.RequestCode;
 import org.sail.mq.remoting.rpc.TopicRequestHeader;
 
-@RocketMQAction(value = RequestCode.DELETE_TOPIC_IN_NAMESRV, resource = ResourceType.CLUSTER, action = Action.UPDATE)
+@SailMQAction(value = RequestCode.DELETE_TOPIC_IN_NAMESRV, resource = ResourceType.CLUSTER, action = Action.UPDATE)
 public class DeleteTopicFromNamesrvRequestHeader extends TopicRequestHeader {
     @CFNotNull
     private String topic;
 
-    @RocketMQResource(ResourceType.CLUSTER)
+    @SailMQResource(ResourceType.CLUSTER)
     private String clusterName;
 
     @Override

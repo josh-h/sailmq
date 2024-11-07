@@ -20,8 +20,8 @@ package org.sail.mq.proxy.grpc;
 import java.util.concurrent.TimeUnit;
 import io.grpc.Server;
 import org.sail.mq.common.constant.LoggerName;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.common.utils.StartAndShutdown;
 
 public class GrpcServer implements StartAndShutdown {

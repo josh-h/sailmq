@@ -17,7 +17,7 @@
 package org.sail.mq.proxy.metrics;
 
 public class ProxyMetricsConstant {
-    public static final String GAUGE_PROXY_UP = "rocketmq_proxy_up";
+    public static final String GAUGE_PROXY_UP = "sailmq_proxy_up";
 
     public static final String LABEL_PROXY_MODE = "proxy_mode";
     public static final String NODE_TYPE_PROXY = "proxy";

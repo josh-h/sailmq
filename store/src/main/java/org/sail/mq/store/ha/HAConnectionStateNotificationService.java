@@ -20,8 +20,8 @@ package org.sail.mq.store.ha;
 import java.net.InetSocketAddress;
 import org.sail.mq.common.ServiceThread;
 import org.sail.mq.common.constant.LoggerName;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.store.DefaultMessageStore;
 import org.sail.mq.store.config.BrokerRole;
 

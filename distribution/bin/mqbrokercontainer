@@ -42,4 +42,4 @@ fi
 
 export ROCKETMQ_HOME
 
-sh ${ROCKETMQ_HOME}/bin/runbroker.sh org.apache.rocketmq.container.BrokerContainerStartup $@
+sh ${ROCKETMQ_HOME}/bin/runbroker.sh org.sail.mq.container.BrokerContainerStartup $@

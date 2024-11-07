@@ -16,12 +16,12 @@
  */
 package org.sail.mq.proxy.grpc.v2.consumer;
 
-import apache.rocketmq.v2.Code;
-import apache.rocketmq.v2.FilterExpression;
-import apache.rocketmq.v2.ReceiveMessageRequest;
-import apache.rocketmq.v2.ReceiveMessageResponse;
-import apache.rocketmq.v2.Settings;
-import apache.rocketmq.v2.Subscription;
+import apache.sailmq.v2.Code;
+import apache.sailmq.v2.FilterExpression;
+import apache.sailmq.v2.ReceiveMessageRequest;
+import apache.sailmq.v2.ReceiveMessageResponse;
+import apache.sailmq.v2.Settings;
+import apache.sailmq.v2.Subscription;
 import com.google.protobuf.util.Durations;
 import io.grpc.stub.StreamObserver;
 import java.util.List;

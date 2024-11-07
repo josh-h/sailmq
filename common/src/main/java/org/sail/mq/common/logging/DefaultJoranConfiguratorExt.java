@@ -24,15 +24,15 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-import org.apache.rocketmq.logging.ch.qos.logback.classic.ClassicConstants;
-import org.apache.rocketmq.logging.ch.qos.logback.classic.LoggerContext;
-import org.apache.rocketmq.logging.ch.qos.logback.classic.util.DefaultJoranConfigurator;
-import org.apache.rocketmq.logging.ch.qos.logback.core.LogbackException;
-import org.apache.rocketmq.logging.ch.qos.logback.core.joran.spi.JoranException;
-import org.apache.rocketmq.logging.ch.qos.logback.core.status.InfoStatus;
-import org.apache.rocketmq.logging.ch.qos.logback.core.status.StatusManager;
-import org.apache.rocketmq.logging.ch.qos.logback.core.util.Loader;
-import org.apache.rocketmq.logging.ch.qos.logback.core.util.OptionHelper;
+import org.sail.mq.logging.ch.qos.logback.classic.ClassicConstants;
+import org.sail.mq.logging.ch.qos.logback.classic.LoggerContext;
+import org.sail.mq.logging.ch.qos.logback.classic.util.DefaultJoranConfigurator;
+import org.sail.mq.logging.ch.qos.logback.core.LogbackException;
+import org.sail.mq.logging.ch.qos.logback.core.joran.spi.JoranException;
+import org.sail.mq.logging.ch.qos.logback.core.status.InfoStatus;
+import org.sail.mq.logging.ch.qos.logback.core.status.StatusManager;
+import org.sail.mq.logging.ch.qos.logback.core.util.Loader;
+import org.sail.mq.logging.ch.qos.logback.core.util.OptionHelper;
 
 public class DefaultJoranConfiguratorExt extends DefaultJoranConfigurator {
 

@@ -18,14 +18,14 @@
 package org.sail.mq.remoting.protocol.header;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
 import org.sail.mq.remoting.annotation.CFNotNull;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.protocol.RequestCode;
 import org.sail.mq.remoting.rpc.RpcRequestHeader;
 
-@RocketMQAction(value = RequestCode.GET_PRODUCER_CONNECTION_LIST, resource = ResourceType.CLUSTER, action = Action.GET)
+@SailMQAction(value = RequestCode.GET_PRODUCER_CONNECTION_LIST, resource = ResourceType.CLUSTER, action = Action.GET)
 public class GetProducerConnectionListRequestHeader extends RpcRequestHeader {
     @CFNotNull
     private String producerGroup;

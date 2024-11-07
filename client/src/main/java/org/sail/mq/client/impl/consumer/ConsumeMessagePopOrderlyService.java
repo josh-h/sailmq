@@ -44,8 +44,8 @@ import org.sail.mq.remoting.protocol.NamespaceUtil;
 import org.sail.mq.remoting.protocol.body.CMResult;
 import org.sail.mq.remoting.protocol.body.ConsumeMessageDirectlyResult;
 import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class ConsumeMessagePopOrderlyService implements ConsumeMessageService {
     private static final Logger log = LoggerFactory.getLogger(ConsumeMessagePopOrderlyService.class);

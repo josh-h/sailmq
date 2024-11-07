@@ -33,7 +33,7 @@ public class OnewayProducer {
             //Create a message instance, specifying topic, tag and message body.
             Message msg = new Message("TopicTest" /* Topic */,
                     "TagA" /* Tag */,
-                    ("Hello RocketMQ " +
+                    ("Hello SailMQ " +
                             i).getBytes(StandardCharsets.UTF_8) /* Message body */
             );
             //Call send message to deliver message to one of brokers.

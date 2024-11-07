@@ -22,7 +22,7 @@ import io.openmessaging.Message.BuiltinKeys;
 import io.openmessaging.OMS;
 import io.openmessaging.producer.SendResult;
 import io.openmessaging.sailmq.domain.BytesMessageImpl;
-import io.openmessaging.sailmq.domain.RocketMQConstants;
+import io.openmessaging.sailmq.domain.SailMQConstants;
 import io.openmessaging.sailmq.domain.SendResultImpl;
 import java.lang.reflect.Field;
 import java.util.Iterator;
@@ -53,13 +53,13 @@ public class OMSUtil {
         KeyValue sysHeaders = omsMessage.sysHeaders();
         KeyValue userHeaders = omsMessage.userHeaders();
 
-        //All destinations in RocketMQ use Topic
+        //All destinations in SailMQ use Topic
         rmqMessage.setTopic(sysHeaders.getString(BuiltinKeys.DESTINATION));
 
         if (sysHeaders.containsKey(BuiltinKeys.START_TIME)) {
             long deliverTime = sysHeaders.getLong(BuiltinKeys.START_TIME, 0);
             if (deliverTime > 0) {
-                rmqMessage.putUserProperty(RocketMQConstants.START_DELIVER_TIME, String.valueOf(deliverTime));
+                rmqMessage.putUserProperty(SailMQConstants.START_DELIVER_TIME, String.valueOf(deliverTime));
             }
         }
 
@@ -118,7 +118,7 @@ public class OMSUtil {
     }
 
     /**
-     * Convert a RocketMQ SEND_OK SendResult instance to a OMS SendResult.
+     * Convert a SailMQ SEND_OK SendResult instance to a OMS SendResult.
      */
     public static SendResult sendResultConvert(org.sail.mq.client.producer.SendResult rmqResult) {
         assert rmqResult.getSendStatus().equals(SendStatus.SEND_OK);

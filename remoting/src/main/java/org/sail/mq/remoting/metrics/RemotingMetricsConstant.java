@@ -17,7 +17,7 @@
 package org.sail.mq.remoting.metrics;
 
 public class RemotingMetricsConstant {
-    public static final String HISTOGRAM_RPC_LATENCY = "rocketmq_rpc_latency";
+    public static final String HISTOGRAM_RPC_LATENCY = "sailmq_rpc_latency";
     public static final String LABEL_PROTOCOL_TYPE = "protocol_type";
     public static final String LABEL_REQUEST_CODE = "request_code";
     public static final String LABEL_RESPONSE_CODE = "response_code";

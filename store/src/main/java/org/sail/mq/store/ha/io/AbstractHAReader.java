@@ -23,8 +23,8 @@ import java.nio.channels.SocketChannel;
 import java.util.ArrayList;
 import java.util.List;
 import org.sail.mq.common.constant.LoggerName;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public abstract class AbstractHAReader {
     private static final Logger LOGGER = LoggerFactory.getLogger(LoggerName.STORE_LOGGER_NAME);

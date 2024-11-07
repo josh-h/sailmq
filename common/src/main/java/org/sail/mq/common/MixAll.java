@@ -50,8 +50,8 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.help.FAQUrl;
 import org.sail.mq.common.topic.TopicValidator;
 import org.sail.mq.common.utils.IOTinyUtils;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class MixAll {
     public static final String ROCKETMQ_HOME_ENV = "ROCKETMQ_HOME";
@@ -435,7 +435,7 @@ public class MixAll {
         }
     }
 
-    //Reverse logic comparing to RemotingUtil method, consider refactor in RocketMQ 5.0
+    //Reverse logic comparing to RemotingUtil method, consider refactor in SailMQ 5.0
     public static String getLocalhostByNetworkInterface() throws SocketException {
         List<String> candidatesHost = new ArrayList<>();
         Enumeration<NetworkInterface> enumeration = NetworkInterface.getNetworkInterfaces();

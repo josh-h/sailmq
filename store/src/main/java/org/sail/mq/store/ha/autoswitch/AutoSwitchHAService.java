@@ -37,8 +37,8 @@ import org.sail.mq.common.ThreadFactoryImpl;
 import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.utils.ConcurrentHashMapUtils;
 import org.sail.mq.common.utils.ThreadUtils;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.remoting.protocol.EpochEntry;
 import org.sail.mq.remoting.protocol.body.HARuntimeInfo;
 import org.sail.mq.store.DefaultMessageStore;
@@ -419,7 +419,7 @@ public class AutoSwitchHAService extends DefaultHAService {
         List<Long> idList = this.connectionList.stream().map(connection -> ((AutoSwitchHAConnection)connection).getSlaveId()).collect(Collectors.toList());
 
         // To avoid the syncStateSet is not consistent with connectionList.
-        // Fix issue: https://github.com/apache/rocketmq/issues/6662
+        // Fix issue: https://github.com/sail/sailmq/issues/6662
         for (Long syncId : currentSyncStateSet) {
             if (!idList.contains(syncId) && this.localBrokerId != null && !Objects.equals(syncId, this.localBrokerId)) {
                 LOGGER.warn("Slave {} is still in syncStateSet, but has lost its connection. So new offset can't be compute.", syncId);

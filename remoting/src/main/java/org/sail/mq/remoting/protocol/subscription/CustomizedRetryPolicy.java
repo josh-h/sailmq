@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * CustomizedRetryPolicy is aim to make group's behavior compatible with messageDelayLevel
  *
- * @see <a href="https://github.com/apache/rocketmq/blob/3bd4b2b2f61a824196f19b03146e2c929c62777b/store/src/main/java/org/apache/rocketmq/store/config/MessageStoreConfig.java#L137">org.apache.sailmq.store.config.MessageStoreConfig</a>
+ * @see <a href="https://github.com/sail/sailmq/blob/3bd4b2b2f61a824196f19b03146e2c929c62777b/store/src/main/java/org/sail/sailmq/store/config/MessageStoreConfig.java#L137">org.apache.sailmq.store.config.MessageStoreConfig</a>
  */
 public class CustomizedRetryPolicy implements RetryPolicy {
     // 1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h
@@ -77,8 +77,8 @@ public class CustomizedRetryPolicy implements RetryPolicy {
      * and old index is reconsumeTime + 3
      *
      * @param reconsumeTimes Message reconsumeTimes {@link MessageExt#getReconsumeTimes}
-     * @see <a href="https://github.com/apache/rocketmq/blob/3bddd514646826253a239f95959c14840a87034a/broker/src/main/java/org/apache/rocketmq/broker/processor/AbstractSendMessageProcessor.java#L210">org.apache.sailmq.broker.processor.AbstractSendMessageProcessor</a>
-     * @see <a href="https://github.com/apache/rocketmq/blob/3bddd514646826253a239f95959c14840a87034a/store/src/main/java/org/apache/rocketmq/store/DefaultMessageStore.java#L242">org.apache.sailmq.store.DefaultMessageStore</a>
+     * @see <a href="https://github.com/sail/sailmq/blob/3bddd514646826253a239f95959c14840a87034a/broker/src/main/java/org/sail/sailmq/broker/processor/AbstractSendMessageProcessor.java#L210">org.apache.sailmq.broker.processor.AbstractSendMessageProcessor</a>
+     * @see <a href="https://github.com/sail/sailmq/blob/3bddd514646826253a239f95959c14840a87034a/store/src/main/java/org/sail/sailmq/store/DefaultMessageStore.java#L242">org.apache.sailmq.store.DefaultMessageStore</a>
      */
     @Override
     public long nextDelayDuration(int reconsumeTimes) {

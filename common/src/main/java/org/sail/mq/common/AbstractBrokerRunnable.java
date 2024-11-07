@@ -18,7 +18,7 @@
 package org.sail.mq.common;
 
 import java.io.File;
-import org.apache.rocketmq.logging.org.slf4j.MDC;
+import org.sail.mq.logging.org.slf4j.MDC;
 
 public abstract class AbstractBrokerRunnable implements Runnable {
     protected final BrokerIdentity brokerIdentity;

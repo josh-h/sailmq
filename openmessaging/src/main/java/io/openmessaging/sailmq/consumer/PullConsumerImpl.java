@@ -36,13 +36,13 @@ import org.sail.mq.client.impl.consumer.ProcessQueue;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.remoting.protocol.LanguageCode;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class PullConsumerImpl implements PullConsumer {
     private static final Logger log = LoggerFactory.getLogger(PullConsumerImpl.class);
 
-    private final DefaultMQPullConsumer rocketmqPullConsumer;
+    private final DefaultMQPullConsumer sailmqPullConsumer;
     private final KeyValue properties;
     private boolean started = false;
     private final MQPullConsumerScheduleService pullConsumerScheduleService;
@@ -55,32 +55,32 @@ public class PullConsumerImpl implements PullConsumer {
 
         String consumerGroup = clientConfig.getConsumerId();
         if (null == consumerGroup || consumerGroup.isEmpty()) {
-            throw new OMSRuntimeException("-1", "Consumer Group is necessary for RocketMQ, please set it.");
+            throw new OMSRuntimeException("-1", "Consumer Group is necessary for SailMQ, please set it.");
         }
         pullConsumerScheduleService = new MQPullConsumerScheduleService(consumerGroup);
 
-        this.rocketmqPullConsumer = pullConsumerScheduleService.getDefaultMQPullConsumer();
+        this.sailmqPullConsumer = pullConsumerScheduleService.getDefaultMQPullConsumer();
 
         if ("true".equalsIgnoreCase(System.getenv("OMS_RMQ_DIRECT_NAME_SRV"))) {
             String accessPoints = clientConfig.getAccessPoints();
             if (accessPoints == null || accessPoints.isEmpty()) {
                 throw new OMSRuntimeException("-1", "OMS AccessPoints is null or empty.");
             }
-            this.rocketmqPullConsumer.setNamesrvAddr(accessPoints.replace(',', ';'));
+            this.sailmqPullConsumer.setNamesrvAddr(accessPoints.replace(',', ';'));
         }
 
-        this.rocketmqPullConsumer.setConsumerGroup(consumerGroup);
+        this.sailmqPullConsumer.setConsumerGroup(consumerGroup);
 
         int maxReDeliveryTimes = clientConfig.getRmqMaxRedeliveryTimes();
-        this.rocketmqPullConsumer.setMaxReconsumeTimes(maxReDeliveryTimes);
+        this.sailmqPullConsumer.setMaxReconsumeTimes(maxReDeliveryTimes);
 
         String consumerId = OMSUtil.buildInstanceName();
-        this.rocketmqPullConsumer.setInstanceName(consumerId);
+        this.sailmqPullConsumer.setInstanceName(consumerId);
         properties.put(OMSBuiltinKeys.CONSUMER_ID, consumerId);
 
-        this.rocketmqPullConsumer.setLanguage(LanguageCode.OMS);
+        this.sailmqPullConsumer.setLanguage(LanguageCode.OMS);
 
-        this.localMessageCache = new LocalMessageCache(this.rocketmqPullConsumer, clientConfig);
+        this.localMessageCache = new LocalMessageCache(this.sailmqPullConsumer, clientConfig);
     }
 
     @Override
@@ -102,7 +102,7 @@ public class PullConsumerImpl implements PullConsumer {
 
     @Override
     public PullConsumer detachQueue(String queueName) {
-        this.rocketmqPullConsumer.getRegisterTopics().remove(queueName);
+        this.sailmqPullConsumer.getRegisterTopics().remove(queueName);
         return this;
     }
 
@@ -151,7 +151,7 @@ public class PullConsumerImpl implements PullConsumer {
 
                     PullResult pullResult = consumer.pull(mq, "*",
                         offset, localMessageCache.nextPullBatchNums());
-                    ProcessQueue pq = rocketmqPullConsumer.getDefaultMQPullConsumerImpl().getRebalanceImpl()
+                    ProcessQueue pq = sailmqPullConsumer.getDefaultMQPullConsumerImpl().getRebalanceImpl()
                         .getProcessQueueTable().get(mq);
                     switch (pullResult.getPullStatus()) {
                         case FOUND:
@@ -178,7 +178,7 @@ public class PullConsumerImpl implements PullConsumer {
         if (this.started) {
             this.localMessageCache.shutdown();
             this.pullConsumerScheduleService.shutdown();
-            this.rocketmqPullConsumer.shutdown();
+            this.sailmqPullConsumer.shutdown();
         }
         this.started = false;
     }

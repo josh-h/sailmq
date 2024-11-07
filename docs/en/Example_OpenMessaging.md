@@ -1,16 +1,16 @@
 # OpenMessaging Example
 [OpenMessaging](https://openmessaging.github.io/), which includes the establishment of industry guidelines and messaging, streaming specifications to provide a common framework for finance, e-commerce, IoT and big-data area. The design principles are the cloud-oriented, simplicity, flexibility, and language independent in distributed heterogeneous environments. Conformance to these specifications will make it possible to develop a heterogeneous messaging applications across all major platforms and operating systems.
 
-RocketMQ provides a partial implementation of OpenMessaging 0.1.0-alpha, the following examples demonstrate how to access RocketMQ based on OpenMessaging.
+SailMQ provides a partial implementation of OpenMessaging 0.1.0-alpha, the following examples demonstrate how to access SailMQ based on OpenMessaging.
 
 ## OMSProducer
-The following example shows how to send message to RocketMQ broker in synchronous, asynchronous, or one-way transmissions.
+The following example shows how to send message to SailMQ broker in synchronous, asynchronous, or one-way transmissions.
 
 ```
 public class OMSProducer {
     public static void main(String[] args) {
         final MessagingAccessPoint messagingAccessPoint = MessagingAccessPointFactory
-            .getMessagingAccessPoint("openmessaging:rocketmq://IP1:9876,IP2:9876/namespace");
+            .getMessagingAccessPoint("openmessaging:sailmq://IP1:9876,IP2:9876/namespace");
 
         final Producer producer = messagingAccessPoint.createProducer();
 
@@ -58,7 +58,7 @@ Use OMS PullConsumer to poll messages from a specified queue.
 public class OMSPullConsumer {
     public static void main(String[] args) {
         final MessagingAccessPoint messagingAccessPoint = MessagingAccessPointFactory
-            .getMessagingAccessPoint("openmessaging:rocketmq://IP1:9876,IP2:9876/namespace");
+            .getMessagingAccessPoint("openmessaging:sailmq://IP1:9876,IP2:9876/namespace");
 
         final PullConsumer consumer = messagingAccessPoint.createPullConsumer("OMS_HELLO_TOPIC",
             OMS.newKeyValue().put(NonStandardKeys.CONSUMER_GROUP, "OMS_CONSUMER"));
@@ -89,7 +89,7 @@ Attaches OMS PushConsumer to a specified queue and consumes messages by MessageL
 public class OMSPushConsumer {
     public static void main(String[] args) {
         final MessagingAccessPoint messagingAccessPoint = MessagingAccessPointFactory
-            .getMessagingAccessPoint("openmessaging:rocketmq://IP1:9876,IP2:9876/namespace");
+            .getMessagingAccessPoint("openmessaging:sailmq://IP1:9876,IP2:9876/namespace");
 
         final PushConsumer consumer = messagingAccessPoint.
             createPushConsumer(OMS.newKeyValue().put(NonStandardKeys.CONSUMER_GROUP, "OMS_CONSUMER"));

@@ -46,7 +46,7 @@ public class AclClient {
 
     private static final Map<MessageQueue, Long> OFFSE_TABLE = new HashMap<>();
 
-    private static final String ACL_ACCESS_KEY = "RocketMQ";
+    private static final String ACL_ACCESS_KEY = "SailMQ";
 
     private static final String ACL_SECRET_KEY = "1234567";
 

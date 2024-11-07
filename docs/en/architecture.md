@@ -1,9 +1,9 @@
 # Architecture design
 
 ## Technology Architecture
-![](image/rocketmq_architecture_1.png)
+![](image/sailmq_architecture_1.png)
 
-The RocketMQ architecture is divided into four parts, as shown in the figure above:
+The SailMQ architecture is divided into four parts, as shown in the figure above:
 
 
 - Producer: The role of message publishing supports distributed cluster mode deployment. Producer selects the corresponding Broker cluster queue for message delivery through MQ's load balancing module. The delivery process supports fast failure and low latency.
@@ -19,19 +19,19 @@ The RocketMQ architecture is divided into four parts, as shown in the figure abo
 4. HA Service: Highly available service that provides data synchronization between Master Broker and Slave Broker.
 5. Index Service: The message delivered to the Broker is indexed according to a specific Message key to provide a quick query of the message.
 
-![](image/rocketmq_architecture_2.png)
+![](image/sailmq_architecture_2.png)
 
 ## Deployment architecture
 
 
-![](image/rocketmq_architecture_3.png)
+![](image/sailmq_architecture_3.png)
 
 
-### RocketMQ Network deployment features
+### SailMQ Network deployment features
 
 - NameServer is an almost stateless node that can be deployed in a cluster without any information synchronization between nodes.
 
-- The broker deployment is relatively complex. The Broker is divided into the Master and the Slave. One Master can correspond to multiple Slaves. However, one Slave can only correspond to one Master. The correspondence between the Master and the Slave is defined by specifying the same BrokerName and different BrokerId. The BrokerId is 0. Indicates Master, non-zero means Slave. The Master can also deploy multiple. Each broker establishes a long connection with all nodes in the NameServer cluster, and periodically registers Topic information to all NameServers. Note: The current RocketMQ version supports a Master Multi Slave on the deployment architecture, but only the slave server with BrokerId=1 will participate in the read load of the message.
+- The broker deployment is relatively complex. The Broker is divided into the Master and the Slave. One Master can correspond to multiple Slaves. However, one Slave can only correspond to one Master. The correspondence between the Master and the Slave is defined by specifying the same BrokerName and different BrokerId. The BrokerId is 0. Indicates Master, non-zero means Slave. The Master can also deploy multiple. Each broker establishes a long connection with all nodes in the NameServer cluster, and periodically registers Topic information to all NameServers. Note: The current SailMQ version supports a Master Multi Slave on the deployment architecture, but only the slave server with BrokerId=1 will participate in the read load of the message.
 
 - The Producer establishes a long connection with one of the nodes in the NameServer cluster (randomly selected), periodically obtains Topic routing information from the NameServer, and establishes a long connection to the Master that provides the Topic service, and periodically sends a heartbeat to the Master. Producer is completely stateless and can be deployed in a cluster.
 

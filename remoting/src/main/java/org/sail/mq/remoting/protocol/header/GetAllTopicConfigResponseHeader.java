@@ -21,13 +21,13 @@
 package org.sail.mq.remoting.protocol.header;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
 import org.sail.mq.remoting.CommandCustomHeader;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.protocol.RequestCode;
 
-@RocketMQAction(value = RequestCode.GET_ALL_TOPIC_CONFIG, resource = ResourceType.TOPIC, action = Action.LIST)
+@SailMQAction(value = RequestCode.GET_ALL_TOPIC_CONFIG, resource = ResourceType.TOPIC, action = Action.LIST)
 public class GetAllTopicConfigResponseHeader implements CommandCustomHeader {
 
     @Override

@@ -40,8 +40,8 @@ import org.sail.mq.common.message.MessageAccessor;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.common.utils.ThreadUtils;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 class LocalMessageCache implements ServiceLifecycle {
     private static final Logger log = LoggerFactory.getLogger(LocalMessageCache.class);
@@ -49,15 +49,15 @@ class LocalMessageCache implements ServiceLifecycle {
     private final BlockingQueue<ConsumeRequest> consumeRequestCache;
     private final Map<String, ConsumeRequest> consumedRequest;
     private final ConcurrentHashMap<MessageQueue, Long> pullOffsetTable;
-    private final DefaultMQPullConsumer rocketmqPullConsumer;
+    private final DefaultMQPullConsumer sailmqPullConsumer;
     private final ClientConfig clientConfig;
     private final ScheduledExecutorService cleanExpireMsgExecutors;
 
-    LocalMessageCache(final DefaultMQPullConsumer rocketmqPullConsumer, final ClientConfig clientConfig) {
+    LocalMessageCache(final DefaultMQPullConsumer sailmqPullConsumer, final ClientConfig clientConfig) {
         consumeRequestCache = new LinkedBlockingQueue<>(clientConfig.getRmqPullMessageCacheCapacity());
         this.consumedRequest = new ConcurrentHashMap<>();
         this.pullOffsetTable = new ConcurrentHashMap<>();
-        this.rocketmqPullConsumer = rocketmqPullConsumer;
+        this.sailmqPullConsumer = sailmqPullConsumer;
         this.clientConfig = clientConfig;
         this.cleanExpireMsgExecutors = Executors.newSingleThreadScheduledExecutor(new ThreadFactoryImpl(
             "OMS_CleanExpireMsgScheduledThread_"));
@@ -71,7 +71,7 @@ class LocalMessageCache implements ServiceLifecycle {
         if (!pullOffsetTable.containsKey(remoteQueue)) {
             try {
                 pullOffsetTable.putIfAbsent(remoteQueue,
-                    rocketmqPullConsumer.fetchConsumeOffset(remoteQueue, false));
+                    sailmqPullConsumer.fetchConsumeOffset(remoteQueue, false));
             } catch (MQClientException e) {
                 log.error("An error occurred in fetch consume offset process.", e);
             }
@@ -122,7 +122,7 @@ class LocalMessageCache implements ServiceLifecycle {
         if (consumeRequest != null) {
             long offset = consumeRequest.getProcessQueue().removeMessage(Collections.singletonList(consumeRequest.getMessageExt()));
             try {
-                rocketmqPullConsumer.updateConsumeOffset(consumeRequest.getMessageQueue(), offset);
+                sailmqPullConsumer.updateConsumeOffset(consumeRequest.getMessageQueue(), offset);
             } catch (MQClientException e) {
                 log.error("An error occurred in update consume offset process.", e);
             }
@@ -133,7 +133,7 @@ class LocalMessageCache implements ServiceLifecycle {
         consumedRequest.remove(messageExt.getMsgId());
         long offset = processQueue.removeMessage(Collections.singletonList(messageExt));
         try {
-            rocketmqPullConsumer.updateConsumeOffset(messageQueue, offset);
+            sailmqPullConsumer.updateConsumeOffset(messageQueue, offset);
         } catch (MQClientException e) {
             log.error("An error occurred in update consume offset process.", e);
         }
@@ -155,7 +155,7 @@ class LocalMessageCache implements ServiceLifecycle {
     }
 
     private void cleanExpireMsg() {
-        for (final Map.Entry<MessageQueue, ProcessQueue> next : rocketmqPullConsumer.getDefaultMQPullConsumerImpl()
+        for (final Map.Entry<MessageQueue, ProcessQueue> next : sailmqPullConsumer.getDefaultMQPullConsumerImpl()
             .getRebalanceImpl().getProcessQueueTable().entrySet()) {
             ProcessQueue pq = next.getValue();
             MessageQueue mq = next.getKey();
@@ -192,7 +192,7 @@ class LocalMessageCache implements ServiceLifecycle {
                 }
 
                 try {
-                    rocketmqPullConsumer.sendMessageBack(msg, 3);
+                    sailmqPullConsumer.sendMessageBack(msg, 3);
                     log.info("Send expired msg back. topic={}, msgId={}, storeHost={}, queueId={}, queueOffset={}",
                         msg.getTopic(), msg.getMsgId(), msg.getStoreHost(), msg.getQueueId(), msg.getQueueOffset());
                     ack(mq, pq, msg);

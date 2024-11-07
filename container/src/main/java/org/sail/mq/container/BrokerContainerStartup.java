@@ -34,8 +34,8 @@ import org.sail.mq.common.MQVersion;
 import org.sail.mq.common.MixAll;
 import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.utils.NetworkUtil;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.remoting.netty.NettyClientConfig;
 import org.sail.mq.remoting.netty.NettyServerConfig;
 import org.sail.mq.remoting.netty.NettySystemConfig;
@@ -53,7 +53,7 @@ public class BrokerContainerStartup {
     public static String configFile = null;
     public static Logger log;
     public static final SystemConfigFileHelper CONFIG_FILE_HELPER = new SystemConfigFileHelper();
-    public static String rocketmqHome = null;
+    public static String sailmqHome = null;
 
     public static void main(String[] args) {
         final BrokerContainer brokerContainer = startBrokerContainer(createBrokerContainer(args));
@@ -286,10 +286,10 @@ public class BrokerContainerStartup {
             MixAll.properties2Object(ServerUtil.commandLine2Properties(commandLine), containerConfig);
 
             if (null == containerConfig.getRocketmqHome()) {
-                System.out.printf("Please set the %s variable in your environment to match the location of the RocketMQ installation", MixAll.ROCKETMQ_HOME_ENV);
+                System.out.printf("Please set the %s variable in your environment to match the location of the SailMQ installation", MixAll.ROCKETMQ_HOME_ENV);
                 System.exit(-2);
             }
-            rocketmqHome = containerConfig.getRocketmqHome();
+            sailmqHome = containerConfig.getRocketmqHome();
 
             String namesrvAddr = containerConfig.getNamesrvAddr();
             if (null != namesrvAddr) {

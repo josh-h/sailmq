@@ -270,7 +270,7 @@ public class MessageStoreConfig {
     /**
      * Use MessageVersion.MESSAGE_VERSION_V2 automatically if topic length larger than Bytes.MAX_VALUE.
      * Otherwise, store use MESSAGE_VERSION_V1. Note: Client couldn't decode MESSAGE_VERSION_V2 version message.
-     * Enable this config to resolve this issue. https://github.com/apache/rocketmq/issues/5568
+     * Enable this config to resolve this issue. https://github.com/sail/sailmq/issues/5568
      */
     private boolean autoMessageVersionOnTopicLen = true;
 

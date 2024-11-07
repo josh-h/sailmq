@@ -35,8 +35,8 @@ import org.sail.mq.controller.BrokerHeartbeatManager;
 import org.sail.mq.controller.ControllerManager;
 import org.sail.mq.controller.metrics.ControllerMetricsConstant;
 import org.sail.mq.controller.metrics.ControllerMetricsManager;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.remoting.common.RemotingHelper;
 import org.sail.mq.remoting.netty.NettyRequestProcessor;
 import org.sail.mq.remoting.protocol.RemotingCommand;
@@ -86,7 +86,7 @@ public class ControllerRequestProcessor implements NettyRequestProcessor {
     private void initConfigBlackList() {
         configBlackList.add("configBlackList");
         configBlackList.add("configStorePath");
-        configBlackList.add("rocketmqHome");
+        configBlackList.add("sailmqHome");
         String[] configArray = controllerManager.getControllerConfig().getConfigBlackList().split(";");
         configBlackList.addAll(Arrays.asList(configArray));
     }

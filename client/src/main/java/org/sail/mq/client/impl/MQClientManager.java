@@ -23,8 +23,8 @@ import org.sail.mq.client.ClientConfig;
 import org.sail.mq.client.impl.factory.MQClientInstance;
 import org.sail.mq.client.producer.ProduceAccumulator;
 import org.sail.mq.remoting.RPCHook;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class MQClientManager {
     private final static Logger log = LoggerFactory.getLogger(MQClientManager.class);

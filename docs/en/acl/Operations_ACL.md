@@ -1,14 +1,14 @@
 # Access control list
 ## Overview
-This document focuses on how to quickly deploy and use a RocketMQ cluster that supports the privilege control feature.
+This document focuses on how to quickly deploy and use a SailMQ cluster that supports the privilege control feature.
 
 ## 1. Access control features
-Access Control (ACL) mainly provides Topic resource level user access control for RocketMQ.If you want to enable RocketMQ permission control, you can inject the AccessKey and SecretKey signatures through the RPCHook on the Client side.And then, the corresponding permission control attributes (including Topic access rights, IP whitelist and AccessKey and SecretKey signature) are set in the configuration file of distribution/conf/plain_acl.yml.The Broker side will check the permissions owned by the AccessKey, and if the verification fails, an exception is thrown;
+Access Control (ACL) mainly provides Topic resource level user access control for SailMQ.If you want to enable SailMQ permission control, you can inject the AccessKey and SecretKey signatures through the RPCHook on the Client side.And then, the corresponding permission control attributes (including Topic access rights, IP whitelist and AccessKey and SecretKey signature) are set in the configuration file of distribution/conf/plain_acl.yml.The Broker side will check the permissions owned by the AccessKey, and if the verification fails, an exception is thrown;
 The source code about ACL on the Client side can be find in **org.sail.mq.example.simple.AclClient.java**  
 
 ## 2. Access control definition and attribute values
 ### 2.1 Access control definition
-The definition of Topic resource access control for RocketMQ is mainly as shown in the following table.
+The definition of Topic resource access control for SailMQ is mainly as shown in the following table.
 
 | Permission | explanation |
 | --- | --- |
@@ -33,7 +33,7 @@ The definition of Topic resource access control for RocketMQ is mainly as shown 
 For details, please refer to the **distribution/conf/plain_acl.yml** configuration file.
 
 ## 3. Cluster deployment with permission control
-After defining the permission attribute in the **distribution/conf/plain_acl.yml** configuration file as described above, open the **aclEnable** switch variable to enable the ACL feature of the RocketMQ cluster.The configuration file of the ACL feature enabled on the broker is as follows:
+After defining the permission attribute in the **distribution/conf/plain_acl.yml** configuration file as described above, open the **aclEnable** switch variable to enable the ACL feature of the SailMQ cluster.The configuration file of the ACL feature enabled on the broker is as follows:
 ```properties
 brokerClusterName=DefaultCluster
 brokerName=broker-a
@@ -42,8 +42,8 @@ deleteWhen=04
 fileReservedTime=48
 brokerRole=ASYNC_MASTER
 flushDiskType=ASYNC_FLUSH
-storePathRootDir=/data/rocketmq/rootdir-a-m
-storePathCommitLog=/data/rocketmq/commitlog-a-m
+storePathRootDir=/data/sailmq/rootdir-a-m
+storePathCommitLog=/data/sailmq/commitlog-a-m
 autoCreateSubscriptionGroup=true
 ## if acl is open,the flag will be true
 aclEnable=true
@@ -73,4 +73,4 @@ The verification of the required permissions of the user requires attention to t
  (2) For a resource, if there is explicit configuration permission, the configured permission is used; if there is no explicit configuration permission, the default permission is adopted;
 
 ## 5. Hot loading modified Access control
-The default implementation of RocketMQ's permission control store is based on the yml configuration file. Users can dynamically modify the properties defined by the permission control without restarting the Broker service node.
+The default implementation of SailMQ's permission control store is based on the yml configuration file. Users can dynamically modify the properties defined by the permission control without restarting the Broker service node.

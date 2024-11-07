@@ -19,12 +19,12 @@
 <configuration scan="true" scanPeriod="30 seconds">
     <appender name="DefaultAppender"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${user.home}${file.separator}logs${file.separator}rocketmqlogs${file.separator}controller_default.log
+        <file>${user.home}${file.separator}logs${file.separator}sailmqlogs${file.separator}controller_default.log
         </file>
         <append>true</append>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
             <fileNamePattern>
-                ${user.home}${file.separator}logs${file.separator}rocketmqlogs${file.separator}otherdays${file.separator}controller_default.%i.log.gz
+                ${user.home}${file.separator}logs${file.separator}sailmqlogs${file.separator}otherdays${file.separator}controller_default.%i.log.gz
             </fileNamePattern>
             <minIndex>1</minIndex>
             <maxIndex>5</maxIndex>
@@ -41,11 +41,11 @@
 
     <appender name="DLedgerAppender_inner"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${user.home}${file.separator}logs${file.separator}rocketmqlogs${file.separator}dledger.log</file>
+        <file>${user.home}${file.separator}logs${file.separator}sailmqlogs${file.separator}dledger.log</file>
         <append>true</append>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
             <fileNamePattern>
-                ${user.home}${file.separator}logs${file.separator}rocketmqlogs${file.separator}otherdays${file.separator}dledger.%i.log.gz
+                ${user.home}${file.separator}logs${file.separator}sailmqlogs${file.separator}otherdays${file.separator}dledger.%i.log.gz
             </fileNamePattern>
             <minIndex>1</minIndex>
             <maxIndex>5</maxIndex>
@@ -67,11 +67,11 @@
 
     <appender name="JRaftAppender_inner"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${user.home}${file.separator}logs${file.separator}rocketmqlogs${file.separator}jraft.log</file>
+        <file>${user.home}${file.separator}logs${file.separator}sailmqlogs${file.separator}jraft.log</file>
         <append>true</append>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
             <fileNamePattern>
-                ${user.home}${file.separator}logs${file.separator}rocketmqlogs${file.separator}otherdays${file.separator}jraft.%i.log.gz
+                ${user.home}${file.separator}logs${file.separator}sailmqlogs${file.separator}otherdays${file.separator}jraft.%i.log.gz
             </fileNamePattern>
             <minIndex>1</minIndex>
             <maxIndex>5</maxIndex>
@@ -93,12 +93,12 @@
 
     <appender name="RocketmqTrafficAppender_inner"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${user.home}${file.separator}logs${file.separator}rocketmqlogs${file.separator}controller_traffic.log
+        <file>${user.home}${file.separator}logs${file.separator}sailmqlogs${file.separator}controller_traffic.log
         </file>
         <append>true</append>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
             <fileNamePattern>
-                ${user.home}${file.separator}logs${file.separator}rocketmqlogs${file.separator}otherdays${file.separator}controller_traffic.%i.log.gz
+                ${user.home}${file.separator}logs${file.separator}sailmqlogs${file.separator}otherdays${file.separator}controller_traffic.%i.log.gz
             </fileNamePattern>
             <minIndex>1</minIndex>
             <maxIndex>10</maxIndex>
@@ -118,11 +118,11 @@
 
     <appender name="RocketmqControllerAppender_inner"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${user.home}${file.separator}logs${file.separator}rocketmqlogs${file.separator}controller.log</file>
+        <file>${user.home}${file.separator}logs${file.separator}sailmqlogs${file.separator}controller.log</file>
         <append>true</append>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
             <fileNamePattern>
-                ${user.home}${file.separator}logs${file.separator}rocketmqlogs${file.separator}otherdays${file.separator}controller.%i.log.gz
+                ${user.home}${file.separator}logs${file.separator}sailmqlogs${file.separator}otherdays${file.separator}controller.%i.log.gz
             </fileNamePattern>
             <minIndex>1</minIndex>
             <maxIndex>5</maxIndex>

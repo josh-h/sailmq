@@ -17,8 +17,8 @@
 
 package org.sail.mq.proxy.grpc.v2.common;
 
-import apache.rocketmq.v2.Code;
-import apache.rocketmq.v2.Status;
+import apache.sailmq.v2.Code;
+import apache.sailmq.v2.Status;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import org.sail.mq.auth.authentication.exception.AuthenticationException;
@@ -27,8 +27,8 @@ import org.sail.mq.client.common.ClientErrorCode;
 import org.sail.mq.client.exception.MQBrokerException;
 import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.common.constant.LoggerName;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.proxy.common.ProxyException;
 import org.sail.mq.common.utils.ExceptionUtils;
 import org.sail.mq.proxy.service.route.TopicRouteHelper;

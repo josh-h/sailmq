@@ -1,9 +1,9 @@
 # Background
 
-In the current RocketMQ Raft mode, the DLedger Commitlog is mainly used to replace the original Commitlog, enabling the Commitlog to have the ability to elect and replicate. However, this also causes some problems:
+In the current SailMQ Raft mode, the DLedger Commitlog is mainly used to replace the original Commitlog, enabling the Commitlog to have the ability to elect and replicate. However, this also causes some problems:
 
 - In the Raft mode, the number of replicas within the Broker group must be three or more, and the ACK of the replicas must also follow the majority protocol.
-- RocketMQ has two sets of HA replication processes, and the replication in Raft mode cannot utilize RocketMQ's native storage capability.
+- SailMQ has two sets of HA replication processes, and the replication in Raft mode cannot utilize SailMQ's native storage capability.
 
 Therefore, we hope to use DLedger to implement a consistency module (DLedger Controller) based on Raft, and use it as an optional leader election component. It can be deployed independently or embedded in the Nameserver. The Broker completes the election of the Master through interaction with the Controller, thus solving the above problems. We refer to this new mode as the Controller mode.
 
@@ -189,4 +189,4 @@ If a Slave replica catches up with the Master, the Master needs to timely alter 
 
 ## Reference
 
-[RIP-44](https://github.com/apache/rocketmq/wiki/RIP-44-Support-DLedger-Controller)
+[RIP-44](https://github.com/sail/sailmq/wiki/RIP-44-Support-DLedger-Controller)

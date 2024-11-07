@@ -52,9 +52,9 @@ while [ -z "${clusterName}" ]; do
   read -p "Choose a cluster to export:" clusterName
 done
 
-read -p "Enter file path to export [default /tmp/rocketmq/export]:" filePath
+read -p "Enter file path to export [default /tmp/sailmq/export]:" filePath
 if [ -z "${filePath}" ]; then
-  filePath="/tmp/rocketmq/config"
+  filePath="/tmp/sailmq/config"
 fi
 
 if [[ -e ${filePath} ]]; then
@@ -86,4 +86,4 @@ echo "{
     \"metrics\": ${metrics}
   }" >sailmq-metadata-export.json
 
-echo -e "[INFO] The RocketMQ metadata has been exported to the file:${filePath}/rocketmq-metadata-export.json"
+echo -e "[INFO] The SailMQ metadata has been exported to the file:${filePath}/sailmq-metadata-export.json"

@@ -17,12 +17,12 @@
 package org.sail.mq.remoting.protocol.header;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.protocol.RequestCode;
 import org.sail.mq.remoting.rpc.RpcRequestHeader;
 
-@RocketMQAction(value = RequestCode.UPDATE_AND_CREATE_TOPIC_LIST, action = Action.CREATE)
+@SailMQAction(value = RequestCode.UPDATE_AND_CREATE_TOPIC_LIST, action = Action.CREATE)
 public class CreateTopicListRequestHeader extends RpcRequestHeader {
     @Override
     public void checkFields() throws RemotingCommandException {

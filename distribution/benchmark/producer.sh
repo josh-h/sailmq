@@ -15,4 +15,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-sh ./runclass.sh -Dorg.apache.rocketmq.client.sendSmartMsg=true org.apache.rocketmq.example.benchmark.Producer $@ &
+sh ./runclass.sh -Dorg.sail.mq.client.sendSmartMsg=true org.sail.mq.example.benchmark.Producer $@ &

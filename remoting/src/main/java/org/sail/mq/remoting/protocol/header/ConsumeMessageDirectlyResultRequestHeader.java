@@ -19,19 +19,19 @@ package org.sail.mq.remoting.protocol.header;
 
 import com.google.common.base.MoreObjects;
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
-import org.sail.mq.common.resource.RocketMQResource;
+import org.sail.mq.common.resource.SailMQResource;
 import org.sail.mq.remoting.annotation.CFNotNull;
 import org.sail.mq.remoting.annotation.CFNullable;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.protocol.RequestCode;
 import org.sail.mq.remoting.rpc.TopicRequestHeader;
 
-@RocketMQAction(value = RequestCode.CONSUME_MESSAGE_DIRECTLY, action = Action.SUB)
+@SailMQAction(value = RequestCode.CONSUME_MESSAGE_DIRECTLY, action = Action.SUB)
 public class ConsumeMessageDirectlyResultRequestHeader extends TopicRequestHeader {
     @CFNotNull
-    @RocketMQResource(ResourceType.GROUP)
+    @SailMQResource(ResourceType.GROUP)
     private String consumerGroup;
     @CFNullable
     private String clientId;
@@ -40,7 +40,7 @@ public class ConsumeMessageDirectlyResultRequestHeader extends TopicRequestHeade
     @CFNullable
     private String brokerName;
     @CFNullable
-    @RocketMQResource(ResourceType.TOPIC)
+    @SailMQResource(ResourceType.TOPIC)
     private String topic;
     @CFNullable
     private Integer topicSysFlag;

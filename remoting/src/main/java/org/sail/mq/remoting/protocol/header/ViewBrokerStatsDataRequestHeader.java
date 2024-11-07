@@ -18,14 +18,14 @@
 package org.sail.mq.remoting.protocol.header;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
 import org.sail.mq.remoting.CommandCustomHeader;
 import org.sail.mq.remoting.annotation.CFNotNull;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.protocol.RequestCode;
 
-@RocketMQAction(value = RequestCode.VIEW_BROKER_STATS_DATA, resource = ResourceType.CLUSTER, action = Action.GET)
+@SailMQAction(value = RequestCode.VIEW_BROKER_STATS_DATA, resource = ResourceType.CLUSTER, action = Action.GET)
 public class ViewBrokerStatsDataRequestHeader implements CommandCustomHeader {
     @CFNotNull
     private String statsName;

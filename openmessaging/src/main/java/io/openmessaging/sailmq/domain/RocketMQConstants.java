@@ -16,7 +16,7 @@
  */
 package io.openmessaging.sailmq.domain;
 
-public interface RocketMQConstants {
+public interface SailMQConstants {
 
     /**
      * Key of scheduled message delivery time

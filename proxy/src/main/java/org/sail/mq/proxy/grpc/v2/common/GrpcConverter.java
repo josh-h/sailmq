@@ -17,17 +17,17 @@
 
 package org.sail.mq.proxy.grpc.v2.common;
 
-import apache.rocketmq.v2.Broker;
-import apache.rocketmq.v2.DeadLetterQueue;
-import apache.rocketmq.v2.Digest;
-import apache.rocketmq.v2.DigestType;
-import apache.rocketmq.v2.Encoding;
-import apache.rocketmq.v2.FilterType;
-import apache.rocketmq.v2.Message;
-import apache.rocketmq.v2.MessageQueue;
-import apache.rocketmq.v2.MessageType;
-import apache.rocketmq.v2.Resource;
-import apache.rocketmq.v2.SystemProperties;
+import apache.sailmq.v2.Broker;
+import apache.sailmq.v2.DeadLetterQueue;
+import apache.sailmq.v2.Digest;
+import apache.sailmq.v2.DigestType;
+import apache.sailmq.v2.Encoding;
+import apache.sailmq.v2.FilterType;
+import apache.sailmq.v2.Message;
+import apache.sailmq.v2.MessageQueue;
+import apache.sailmq.v2.MessageType;
+import apache.sailmq.v2.Resource;
+import apache.sailmq.v2.SystemProperties;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.util.Timestamps;
 import java.net.SocketAddress;
@@ -43,8 +43,8 @@ import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.sysflag.MessageSysFlag;
 import org.sail.mq.common.utils.BinaryUtil;
 import org.sail.mq.common.utils.NetworkUtil;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.remoting.protocol.NamespaceUtil;
 
 public class GrpcConverter {

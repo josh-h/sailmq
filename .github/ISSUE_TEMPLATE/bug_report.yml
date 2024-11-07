@@ -24,13 +24,13 @@ body:
       label: Before Creating the Bug Report
       options:
         - label: >
-            I found a bug, not just asking a question, which should be created in [GitHub Discussions](https://github.com/apache/rocketmq/discussions).
+            I found a bug, not just asking a question, which should be created in [GitHub Discussions](https://github.com/sail/sailmq/discussions).
           required: true
         - label: >
-            I have searched the [GitHub Issues](https://github.com/apache/rocketmq/issues) and [GitHub Discussions](https://github.com/apache/rocketmq/discussions)  of this repository and believe that this is not a duplicate.
+            I have searched the [GitHub Issues](https://github.com/sail/sailmq/issues) and [GitHub Discussions](https://github.com/sail/sailmq/discussions)  of this repository and believe that this is not a duplicate.
           required: true
         - label: >
-            I have confirmed that this bug belongs to the current repository, not other repositories of RocketMQ.
+            I have confirmed that this bug belongs to the current repository, not other repositories of SailMQ.
           required: true
 
   - type: textarea
@@ -45,8 +45,8 @@ body:
 
   - type: textarea
     attributes:
-      label: RocketMQ version
-      description: Describe the RocketMQ version.
+      label: SailMQ version
+      description: Describe the SailMQ version.
       placeholder: >
         branch: (e.g develop|4.9.x)
         version: (e.g. 5.1.0|4.9.5)

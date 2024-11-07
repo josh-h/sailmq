@@ -125,7 +125,7 @@ public class ConfigHelper {
             if (!rootPathFile.exists() || !rootPathFile.canWrite()) {
                 continue;
             }
-            String logDirectory = rootPath + File.separator + "logs" + File.separator + "rocketmqlogs";
+            String logDirectory = rootPath + File.separator + "logs" + File.separator + "sailmqlogs";
             // Create directories recursively.
             UtilAll.ensureDirOK(logDirectory);
             return logDirectory;

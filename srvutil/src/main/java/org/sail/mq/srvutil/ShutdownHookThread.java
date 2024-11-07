@@ -17,7 +17,7 @@
 
 package org.sail.mq.srvutil;
 
-import org.apache.rocketmq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.Logger;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicInteger;

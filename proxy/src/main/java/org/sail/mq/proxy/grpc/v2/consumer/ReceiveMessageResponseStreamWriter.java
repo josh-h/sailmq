@@ -16,10 +16,10 @@
  */
 package org.sail.mq.proxy.grpc.v2.consumer;
 
-import apache.rocketmq.v2.Code;
-import apache.rocketmq.v2.Message;
-import apache.rocketmq.v2.ReceiveMessageRequest;
-import apache.rocketmq.v2.ReceiveMessageResponse;
+import apache.sailmq.v2.Code;
+import apache.sailmq.v2.Message;
+import apache.sailmq.v2.ReceiveMessageRequest;
+import apache.sailmq.v2.ReceiveMessageResponse;
 import com.google.protobuf.util.Timestamps;
 import io.grpc.stub.StreamObserver;
 import java.time.Duration;
@@ -31,8 +31,8 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.consumer.ReceiptHandle;
 import org.sail.mq.common.message.MessageConst;
 import org.sail.mq.common.message.MessageExt;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.grpc.v2.common.GrpcConverter;
 import org.sail.mq.proxy.grpc.v2.common.ResponseBuilder;

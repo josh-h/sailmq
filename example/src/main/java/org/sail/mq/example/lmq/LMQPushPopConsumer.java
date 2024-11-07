@@ -31,7 +31,7 @@ import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageRequestMode;
 import org.sail.mq.remoting.protocol.route.BrokerData;
 import org.sail.mq.remoting.protocol.route.TopicRouteData;
-import org.apache.rocketmq.tools.admin.DefaultMQAdminExt;
+import org.sail.mq.tools.admin.DefaultMQAdminExt;
 
 public class LMQPushPopConsumer {
     public static final String CLUSTER_NAME = "DefaultCluster";

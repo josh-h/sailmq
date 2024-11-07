@@ -92,8 +92,8 @@ import org.sail.mq.remoting.protocol.NamespaceUtil;
 import org.sail.mq.remoting.protocol.header.CheckTransactionStateRequestHeader;
 import org.sail.mq.remoting.protocol.header.EndTransactionRequestHeader;
 import org.sail.mq.remoting.protocol.header.SendMessageRequestHeader;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class DefaultMQProducerImpl implements MQProducerInner {
 
@@ -1013,7 +1013,7 @@ public class DefaultMQProducerImpl implements MQProducerInner {
                         if (msgBodyCompressed) {
                             //If msg body was compressed, msgbody should be reset using prevBody.
                             //Clone new message using compressed message body and recover origin massage.
-                            //Fix bug:https://github.com/apache/rocketmq-externals/issues/66
+                            //Fix bug:https://github.com/sail/sailmq-externals/issues/66
                             tmpMessage = MessageAccessor.cloneMessage(msg);
                             messageCloned = true;
                             msg.setBody(prevBody);

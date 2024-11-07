@@ -19,7 +19,7 @@ package org.sail.mq.remoting.protocol;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.remoting.CommandCustomHeader;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
@@ -51,10 +51,10 @@ public class RequestHeaderRegistry {
     }
 
     private void registerHeader(Class<? extends CommandCustomHeader> clazz) {
-        if (!clazz.isAnnotationPresent(RocketMQAction.class)) {
+        if (!clazz.isAnnotationPresent(SailMQAction.class)) {
             return;
         }
-        RocketMQAction action = clazz.getAnnotation(RocketMQAction.class);
+        SailMQAction action = clazz.getAnnotation(SailMQAction.class);
         this.requestHeaderMap.putIfAbsent(action.value(), clazz);
     }
 

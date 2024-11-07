@@ -18,20 +18,20 @@ package org.sail.mq.remoting.protocol.header;
 
 import com.google.common.base.MoreObjects;
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
-import org.sail.mq.common.resource.RocketMQResource;
+import org.sail.mq.common.resource.SailMQResource;
 import org.sail.mq.remoting.annotation.CFNotNull;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.rpc.TopicRequestHeader;
 import org.sail.mq.remoting.protocol.RequestCode;
 
-@RocketMQAction(value = RequestCode.GET_CONSUME_STATS, action = Action.GET)
+@SailMQAction(value = RequestCode.GET_CONSUME_STATS, action = Action.GET)
 public class GetConsumeStatsRequestHeader extends TopicRequestHeader {
     @CFNotNull
-    @RocketMQResource(ResourceType.GROUP)
+    @SailMQResource(ResourceType.GROUP)
     private String consumerGroup;
-    @RocketMQResource(ResourceType.TOPIC)
+    @SailMQResource(ResourceType.TOPIC)
     private String topic;
 
     @Override

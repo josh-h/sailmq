@@ -26,7 +26,7 @@ import org.sail.mq.remoting.exception.RemotingCommandException;
 
 import io.netty.buffer.ByteBuf;
 
-public class RocketMQSerializable {
+public class SailMQSerializable {
     private static final Charset CHARSET_UTF8 = StandardCharsets.UTF_8;
 
     public static void writeStr(ByteBuf buf, boolean useShortLength, String str) {
@@ -222,7 +222,7 @@ public class RocketMQSerializable {
         int extFieldsLength = headerBuffer.readInt();
         if (extFieldsLength > 0) {
             if (extFieldsLength > headerLen) {
-                throw new RemotingCommandException("RocketMQ protocol decoding failed, extFields length: " + extFieldsLength + ", but header length: " + headerLen);
+                throw new RemotingCommandException("SailMQ protocol decoding failed, extFields length: " + extFieldsLength + ", but header length: " + headerLen);
             }
             cmd.setExtFields(mapDeserialize(headerBuffer, extFieldsLength));
         }

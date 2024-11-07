@@ -18,19 +18,19 @@
 package org.sail.mq.remoting.protocol.header.namesrv;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
-import org.sail.mq.common.resource.RocketMQResource;
+import org.sail.mq.common.resource.SailMQResource;
 import org.sail.mq.remoting.CommandCustomHeader;
 import org.sail.mq.remoting.annotation.CFNotNull;
 import org.sail.mq.remoting.annotation.CFNullable;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.protocol.RequestCode;
 
-@RocketMQAction(value = RequestCode.BROKER_HEARTBEAT, resource = ResourceType.CLUSTER, action = Action.UPDATE)
+@SailMQAction(value = RequestCode.BROKER_HEARTBEAT, resource = ResourceType.CLUSTER, action = Action.UPDATE)
 public class BrokerHeartbeatRequestHeader implements CommandCustomHeader {
     @CFNotNull
-    @RocketMQResource(ResourceType.CLUSTER)
+    @SailMQResource(ResourceType.CLUSTER)
     private String clusterName;
     @CFNotNull
     private String brokerAddr;

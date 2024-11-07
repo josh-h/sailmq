@@ -74,8 +74,8 @@ import org.sail.mq.remoting.protocol.header.QueryConsumerOffsetRequestHeader;
 import org.sail.mq.remoting.protocol.header.SendMessageRequestHeader;
 import org.sail.mq.remoting.protocol.header.SendMessageResponseHeader;
 import org.sail.mq.remoting.protocol.header.UpdateConsumerOffsetRequestHeader;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class LocalMessageService implements MessageService {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

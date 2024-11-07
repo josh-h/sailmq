@@ -1,5 +1,5 @@
 # TLS Configuration
-This section introduce TLS configuration in RocketMQ.
+This section introduce TLS configuration in SailMQ.
 
 ## 1 Generate Certification Files
 User can generate certification files using OpenSSL. Suggested to generate files in Linux.
@@ -71,21 +71,21 @@ tls.client.trustCertPath=/opt/certFiles/ca.pem
 
 ## 3 Update Rocketmq JVM parameters
 
-Edit the configuration file under the rocketmq/bin path to make tls.properties configurations take effect.
+Edit the configuration file under the sailmq/bin path to make tls.properties configurations take effect.
 
 The value of "tls.config.file" needs to be replaced by the file path created in step 2.
 
 ### 3.1 Edit runserver.sh
 Add following content in JAVA_OPT:
 ```shell
-JAVA_OPT="${JAVA_OPT} -Dtls.server.mode=enforcing -Dtls.config.file=/opt/rocketmq-4.9.3/conf/tls.properties"
+JAVA_OPT="${JAVA_OPT} -Dtls.server.mode=enforcing -Dtls.config.file=/opt/sailmq-4.9.3/conf/tls.properties"
 ```
 
 ### 3.2 Edit runbroker.sh
 Add following content in JAVA_OPT:
 
 ```shell
-JAVA_OPT="${JAVA_OPT} -Dorg.apache.rocketmq.remoting.ssl.mode=enforcing -Dtls.config.file=/opt/rocketmq-4.9.3/conf/tls.properties  -Dtls.enable=true"
+JAVA_OPT="${JAVA_OPT} -Dorg.sail.mq.remoting.ssl.mode=enforcing -Dtls.config.file=/opt/sailmq-4.9.3/conf/tls.properties  -Dtls.enable=true"
 ```
 
 # 4 Client connection

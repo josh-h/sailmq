@@ -18,22 +18,22 @@
 package org.sail.mq.remoting.protocol.header;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
-import org.sail.mq.common.resource.RocketMQResource;
+import org.sail.mq.common.resource.SailMQResource;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.rpc.TopicQueueRequestHeader;
 import org.sail.mq.remoting.protocol.RequestCode;
 
-@RocketMQAction(value = RequestCode.QUERY_CONSUME_QUEUE, action = Action.GET)
+@SailMQAction(value = RequestCode.QUERY_CONSUME_QUEUE, action = Action.GET)
 public class QueryConsumeQueueRequestHeader extends TopicQueueRequestHeader {
 
-    @RocketMQResource(ResourceType.TOPIC)
+    @SailMQResource(ResourceType.TOPIC)
     private String topic;
     private int queueId;
     private long index;
     private int count;
-    @RocketMQResource(ResourceType.GROUP)
+    @SailMQResource(ResourceType.GROUP)
     private String consumerGroup;
 
     public String getTopic() {

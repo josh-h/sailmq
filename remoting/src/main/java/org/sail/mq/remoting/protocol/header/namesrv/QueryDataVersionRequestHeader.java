@@ -18,22 +18,22 @@
 package org.sail.mq.remoting.protocol.header.namesrv;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
-import org.sail.mq.common.resource.RocketMQResource;
+import org.sail.mq.common.resource.SailMQResource;
 import org.sail.mq.remoting.CommandCustomHeader;
 import org.sail.mq.remoting.annotation.CFNotNull;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.protocol.RequestCode;
 
-@RocketMQAction(value = RequestCode.QUERY_DATA_VERSION, resource = ResourceType.CLUSTER, action = Action.GET)
+@SailMQAction(value = RequestCode.QUERY_DATA_VERSION, resource = ResourceType.CLUSTER, action = Action.GET)
 public class QueryDataVersionRequestHeader implements CommandCustomHeader {
     @CFNotNull
     private String brokerName;
     @CFNotNull
     private String brokerAddr;
     @CFNotNull
-    @RocketMQResource(ResourceType.CLUSTER)
+    @SailMQResource(ResourceType.CLUSTER)
     private String clusterName;
     @CFNotNull
     private Long brokerId;

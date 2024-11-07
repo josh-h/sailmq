@@ -12,4 +12,4 @@ Fixes #issue_id
 
 ### How Did You Test This Change?
 
-<!-- In order to ensure the code quality of Apache RocketMQ, we expect every pull request to have undergone thorough testing. -->
+<!-- In order to ensure the code quality of Apache SailMQ, we expect every pull request to have undergone thorough testing. -->

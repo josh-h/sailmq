@@ -18,16 +18,16 @@
 package org.sail.mq.remoting.protocol.header;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
-import org.sail.mq.common.resource.RocketMQResource;
+import org.sail.mq.common.resource.SailMQResource;
 import org.sail.mq.remoting.annotation.CFNotNull;
 import org.sail.mq.remoting.annotation.CFNullable;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.rpc.RpcRequestHeader;
 import org.sail.mq.remoting.protocol.RequestCode;
 
-@RocketMQAction(value = RequestCode.UNREGISTER_CLIENT, action = {Action.PUB, Action.SUB})
+@SailMQAction(value = RequestCode.UNREGISTER_CLIENT, action = {Action.PUB, Action.SUB})
 public class UnregisterClientRequestHeader extends RpcRequestHeader {
     @CFNotNull
     private String clientID;
@@ -35,7 +35,7 @@ public class UnregisterClientRequestHeader extends RpcRequestHeader {
     @CFNullable
     private String producerGroup;
     @CFNullable
-    @RocketMQResource(ResourceType.GROUP)
+    @SailMQResource(ResourceType.GROUP)
     private String consumerGroup;
 
     public String getClientID() {

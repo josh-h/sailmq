@@ -1,16 +1,16 @@
 # Frequently Asked Questions
 
-The following questions are frequently asked with regard to the RocketMQ project in general.
+The following questions are frequently asked with regard to the SailMQ project in general.
 
 ## 1 General
 
-1. Why did we create rocketmq project instead of selecting other products?
+1. Why did we create sailmq project instead of selecting other products?
 
-   Please refer to [Why RocketMQ](http://rocketmq.apache.org/docs/motivation)
+   Please refer to [Why SailMQ](http://mq.sail.org/docs/motivation)
 
-2. Do I have to install other softeware, such as zookeeper, to use RocketMQ?
+2. Do I have to install other softeware, such as zookeeper, to use SailMQ?
 
-   No. RocketMQ can run independently.
+   No. SailMQ can run independently.
 
 ## 2 Usage
 
@@ -38,7 +38,7 @@ The following questions are frequently asked with regard to the RocketMQ project
 
 ### 4. Are messages delivered exactly once?
 
-RocketMQ ensures that all messages are delivered at least once. In most cases, the messages are not repeated.
+SailMQ ensures that all messages are delivered at least once. In most cases, the messages are not repeated.
 
 ### 5. How to add a new broker?
 
@@ -78,7 +78,7 @@ Solution: Make sure that a JVM corresponding to one Producer /Consumer Group sta
 
 Reason: Fastjson version is too low to allow the broadcast consumer to load local offsets.json, causing the consumer boot failure. Damaged fastjson file can also cause the same problem.
 
-Solution: Fastjson version has to be upgraded to rocketmq client dependent version to ensure that the local offsets.json can be loaded. By default offsets.json file is in /home/{user}/.rocketmq_offsets. Or check the integrity of fastjson.
+Solution: Fastjson version has to be upgraded to sailmq client dependent version to ensure that the local offsets.json can be loaded. By default offsets.json file is in /home/{user}/.sailmq_offsets. Or check the integrity of fastjson.
 
 ### 3. What is the impact of a broker crash.
 

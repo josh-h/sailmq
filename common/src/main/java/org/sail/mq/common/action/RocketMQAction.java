@@ -21,7 +21,7 @@ import java.lang.annotation.RetentionPolicy;
 import org.sail.mq.common.resource.ResourceType;
 
 @Retention(RetentionPolicy.RUNTIME)
-public @interface RocketMQAction {
+public @interface SailMQAction {
 
     int value();
 

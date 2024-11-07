@@ -36,8 +36,8 @@ import org.sail.mq.common.consumer.ConsumeFromWhere;
 import org.sail.mq.common.message.MessageDecoder;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.remoting.RPCHook;
 import org.sail.mq.remoting.exception.RemotingException;
 import org.sail.mq.remoting.protocol.NamespaceUtil;
@@ -74,14 +74,14 @@ public class DefaultMQPushConsumer extends ClientConfig implements MQPushConsume
      * Consumers of the same role is required to have exactly same subscriptions and consumerGroup to correctly achieve
      * load balance. It's required and needs to be globally unique.
      * </p>
-     * See <a href="https://rocketmq.apache.org/docs/introduction/02concepts">here</a> for further discussion.
+     * See <a href="https://mq.sail.org/docs/introduction/02concepts">here</a> for further discussion.
      */
     private String consumerGroup;
 
     /**
      * Message model defines the way how messages are delivered to each consumer clients.
      * </p>
-     * RocketMQ supports two message models: clustering and broadcasting. If clustering is set, consumer clients with
+     * SailMQ supports two message models: clustering and broadcasting. If clustering is set, consumer clients with
      * the same {@link #consumerGroup} would only consume shards of the messages subscribed, which achieves load
      * balances; Conversely, if the broadcasting is set, each consumer client will consume all subscribed messages
      * separately.

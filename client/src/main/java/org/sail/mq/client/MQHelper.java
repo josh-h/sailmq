@@ -21,8 +21,8 @@ import java.util.TreeSet;
 import org.sail.mq.client.consumer.DefaultMQPullConsumer;
 import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class MQHelper {
     private static final Logger log = LoggerFactory.getLogger(MQHelper.class);

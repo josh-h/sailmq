@@ -18,22 +18,22 @@
 package org.sail.mq.remoting.protocol.header;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
-import org.sail.mq.common.resource.RocketMQResource;
+import org.sail.mq.common.resource.SailMQResource;
 import org.sail.mq.remoting.annotation.CFNotNull;
 import org.sail.mq.remoting.annotation.CFNullable;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.rpc.TopicQueueRequestHeader;
 import org.sail.mq.remoting.protocol.RequestCode;
 
-@RocketMQAction(value = RequestCode.PUSH_REPLY_MESSAGE_TO_CLIENT, action = Action.SUB)
+@SailMQAction(value = RequestCode.PUSH_REPLY_MESSAGE_TO_CLIENT, action = Action.SUB)
 public class ReplyMessageRequestHeader extends TopicQueueRequestHeader {
     @CFNotNull
-    @RocketMQResource(ResourceType.GROUP)
+    @SailMQResource(ResourceType.GROUP)
     private String producerGroup;
     @CFNotNull
-    @RocketMQResource(ResourceType.TOPIC)
+    @SailMQResource(ResourceType.TOPIC)
     private String topic;
     @CFNotNull
     private String defaultTopic;

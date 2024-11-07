@@ -17,16 +17,16 @@
 
 package org.sail.mq.proxy.grpc.interceptor;
 
-import apache.rocketmq.v2.AckMessageRequest;
-import apache.rocketmq.v2.ChangeInvisibleDurationRequest;
-import apache.rocketmq.v2.EndTransactionRequest;
-import apache.rocketmq.v2.ForwardMessageToDeadLetterQueueResponse;
-import apache.rocketmq.v2.HeartbeatRequest;
-import apache.rocketmq.v2.NotifyClientTerminationRequest;
-import apache.rocketmq.v2.QueryAssignmentRequest;
-import apache.rocketmq.v2.QueryRouteRequest;
-import apache.rocketmq.v2.ReceiveMessageRequest;
-import apache.rocketmq.v2.SendMessageRequest;
+import apache.sailmq.v2.AckMessageRequest;
+import apache.sailmq.v2.ChangeInvisibleDurationRequest;
+import apache.sailmq.v2.EndTransactionRequest;
+import apache.sailmq.v2.ForwardMessageToDeadLetterQueueResponse;
+import apache.sailmq.v2.HeartbeatRequest;
+import apache.sailmq.v2.NotifyClientTerminationRequest;
+import apache.sailmq.v2.QueryAssignmentRequest;
+import apache.sailmq.v2.QueryRouteRequest;
+import apache.sailmq.v2.ReceiveMessageRequest;
+import apache.sailmq.v2.SendMessageRequest;
 import java.util.HashMap;
 import java.util.Map;
 import org.sail.mq.remoting.protocol.RequestCode;

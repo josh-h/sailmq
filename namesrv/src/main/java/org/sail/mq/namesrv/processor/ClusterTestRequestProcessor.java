@@ -21,15 +21,15 @@ import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.help.FAQUrl;
 import org.sail.mq.common.namesrv.NamesrvUtil;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.namesrv.NamesrvController;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.protocol.RemotingCommand;
 import org.sail.mq.remoting.protocol.ResponseCode;
 import org.sail.mq.remoting.protocol.header.namesrv.GetRouteInfoRequestHeader;
 import org.sail.mq.remoting.protocol.route.TopicRouteData;
-import org.apache.rocketmq.tools.admin.DefaultMQAdminExt;
+import org.sail.mq.tools.admin.DefaultMQAdminExt;
 
 public class ClusterTestRequestProcessor extends ClientRequestProcessor {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.NAMESRV_LOGGER_NAME);

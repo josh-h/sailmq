@@ -33,11 +33,11 @@ import org.sail.mq.common.MixAll;
 import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.namesrv.NamesrvConfig;
 import org.sail.mq.controller.ControllerManager;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.Logger;
 import org.sail.mq.remoting.netty.NettyClientConfig;
 import org.sail.mq.remoting.netty.NettyServerConfig;
 import org.sail.mq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.srvutil.ServerUtil;
 import org.sail.mq.srvutil.ShutdownHookThread;
 
@@ -130,7 +130,7 @@ public class NamesrvStartup {
         }
 
         if (null == namesrvConfig.getRocketmqHome()) {
-            System.out.printf("Please set the %s variable in your environment to match the location of the RocketMQ installation%n", MixAll.ROCKETMQ_HOME_ENV);
+            System.out.printf("Please set the %s variable in your environment to match the location of the SailMQ installation%n", MixAll.ROCKETMQ_HOME_ENV);
             System.exit(-2);
         }
         MixAll.printObjectProperties(log, namesrvConfig);

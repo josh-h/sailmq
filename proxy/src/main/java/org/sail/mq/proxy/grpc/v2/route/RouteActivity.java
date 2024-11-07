@@ -16,20 +16,20 @@
  */
 package org.sail.mq.proxy.grpc.v2.route;
 
-import apache.rocketmq.v2.Address;
-import apache.rocketmq.v2.AddressScheme;
-import apache.rocketmq.v2.Assignment;
-import apache.rocketmq.v2.Broker;
-import apache.rocketmq.v2.Code;
-import apache.rocketmq.v2.Endpoints;
-import apache.rocketmq.v2.MessageQueue;
-import apache.rocketmq.v2.MessageType;
-import apache.rocketmq.v2.Permission;
-import apache.rocketmq.v2.QueryAssignmentRequest;
-import apache.rocketmq.v2.QueryAssignmentResponse;
-import apache.rocketmq.v2.QueryRouteRequest;
-import apache.rocketmq.v2.QueryRouteResponse;
-import apache.rocketmq.v2.Resource;
+import apache.sailmq.v2.Address;
+import apache.sailmq.v2.AddressScheme;
+import apache.sailmq.v2.Assignment;
+import apache.sailmq.v2.Broker;
+import apache.sailmq.v2.Code;
+import apache.sailmq.v2.Endpoints;
+import apache.sailmq.v2.MessageQueue;
+import apache.sailmq.v2.MessageType;
+import apache.sailmq.v2.Permission;
+import apache.sailmq.v2.QueryAssignmentRequest;
+import apache.sailmq.v2.QueryAssignmentResponse;
+import apache.sailmq.v2.QueryRouteRequest;
+import apache.sailmq.v2.QueryRouteResponse;
+import apache.sailmq.v2.Resource;
 import com.google.common.net.HostAndPort;
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -41,13 +41,13 @@ import static io.openmessaging.sailmq.utils.OMSUtil.buildInstanceName;
 
 abstract class AbstractOMSProducer implements ServiceLifecycle, MessageFactory {
     final KeyValue properties;
-    final DefaultMQProducer rocketmqProducer;
+    final DefaultMQProducer sailmqProducer;
     private boolean started = false;
     private final ClientConfig clientConfig;
 
     AbstractOMSProducer(final KeyValue properties) {
         this.properties = properties;
-        this.rocketmqProducer = new DefaultMQProducer();
+        this.sailmqProducer = new DefaultMQProducer();
         this.clientConfig = BeanUtils.populate(properties, ClientConfig.class);
 
         if ("true".equalsIgnoreCase(System.getenv("OMS_RMQ_DIRECT_NAME_SRV"))) {
@@ -56,16 +56,16 @@ abstract class AbstractOMSProducer implements ServiceLifecycle, MessageFactory {
                 throw new OMSRuntimeException("-1", "OMS AccessPoints is null or empty.");
             }
 
-            this.rocketmqProducer.setNamesrvAddr(accessPoints.replace(',', ';'));
+            this.sailmqProducer.setNamesrvAddr(accessPoints.replace(',', ';'));
         }
 
-        this.rocketmqProducer.setProducerGroup(clientConfig.getRmqProducerGroup());
+        this.sailmqProducer.setProducerGroup(clientConfig.getRmqProducerGroup());
 
         String producerId = buildInstanceName();
-        this.rocketmqProducer.setSendMsgTimeout(clientConfig.getOperationTimeout());
-        this.rocketmqProducer.setInstanceName(producerId);
-        this.rocketmqProducer.setMaxMessageSize(1024 * 1024 * 4);
-        this.rocketmqProducer.setLanguage(LanguageCode.OMS);
+        this.sailmqProducer.setSendMsgTimeout(clientConfig.getOperationTimeout());
+        this.sailmqProducer.setInstanceName(producerId);
+        this.sailmqProducer.setMaxMessageSize(1024 * 1024 * 4);
+        this.sailmqProducer.setLanguage(LanguageCode.OMS);
         properties.put(OMSBuiltinKeys.PRODUCER_ID, producerId);
     }
 
@@ -73,7 +73,7 @@ abstract class AbstractOMSProducer implements ServiceLifecycle, MessageFactory {
     public synchronized void startup() {
         if (!started) {
             try {
-                this.rocketmqProducer.start();
+                this.sailmqProducer.start();
             } catch (MQClientException e) {
                 throw new OMSRuntimeException("-1", e);
             }
@@ -84,7 +84,7 @@ abstract class AbstractOMSProducer implements ServiceLifecycle, MessageFactory {
     @Override
     public synchronized void shutdown() {
         if (this.started) {
-            this.rocketmqProducer.shutdown();
+            this.sailmqProducer.shutdown();
         }
         this.started = false;
     }
@@ -94,7 +94,7 @@ abstract class AbstractOMSProducer implements ServiceLifecycle, MessageFactory {
             if (e.getCause() != null) {
                 if (e.getCause() instanceof RemotingTimeoutException) {
                     return new OMSTimeOutException("-1", String.format("Send message to broker timeout, %dms, Topic=%s, msgId=%s",
-                        this.rocketmqProducer.getSendMsgTimeout(), topic, msgId), e);
+                        this.sailmqProducer.getSendMsgTimeout(), topic, msgId), e);
                 } else if (e.getCause() instanceof MQBrokerException || e.getCause() instanceof RemotingConnectException) {
                     if (e.getCause() instanceof MQBrokerException) {
                         MQBrokerException brokerException = (MQBrokerException) e.getCause();
@@ -118,12 +118,12 @@ abstract class AbstractOMSProducer implements ServiceLifecycle, MessageFactory {
                     return new OMSRuntimeException("-1", String.format("Topic does not exist, Topic=%s, msgId=%s",
                         topic, msgId), e);
                 } else if (ResponseCode.MESSAGE_ILLEGAL == clientException.getResponseCode()) {
-                    return new OMSMessageFormatException("-1", String.format("A illegal message for RocketMQ, Topic=%s, msgId=%s",
+                    return new OMSMessageFormatException("-1", String.format("A illegal message for SailMQ, Topic=%s, msgId=%s",
                         topic, msgId), e);
                 }
             }
         }
-        return new OMSRuntimeException("-1", "Send message to RocketMQ broker failed.", e);
+        return new OMSRuntimeException("-1", "Send message to SailMQ broker failed.", e);
     }
 
     protected void checkMessageType(Message message) {

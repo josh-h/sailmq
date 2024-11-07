@@ -17,13 +17,13 @@
 package org.sail.mq.remoting.protocol.header;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
 import org.sail.mq.remoting.CommandCustomHeader;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.protocol.RequestCode;
 
-@RocketMQAction(value = RequestCode.AUTH_CREATE_USER, resource = ResourceType.CLUSTER, action = Action.UPDATE)
+@SailMQAction(value = RequestCode.AUTH_CREATE_USER, resource = ResourceType.CLUSTER, action = Action.UPDATE)
 public class CreateUserRequestHeader implements CommandCustomHeader {
 
     private String username;

@@ -16,9 +16,9 @@
  */
 package org.sail.mq.proxy.grpc.v2.consumer;
 
-import apache.rocketmq.v2.ChangeInvisibleDurationRequest;
-import apache.rocketmq.v2.ChangeInvisibleDurationResponse;
-import apache.rocketmq.v2.Code;
+import apache.sailmq.v2.ChangeInvisibleDurationRequest;
+import apache.sailmq.v2.ChangeInvisibleDurationResponse;
+import apache.sailmq.v2.Code;
 import com.google.protobuf.util.Durations;
 import java.util.concurrent.CompletableFuture;
 import org.sail.mq.client.consumer.AckResult;

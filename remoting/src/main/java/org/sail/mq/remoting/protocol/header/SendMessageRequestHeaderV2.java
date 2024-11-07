@@ -21,9 +21,9 @@ import com.google.common.base.MoreObjects;
 import io.netty.buffer.ByteBuf;
 import java.util.HashMap;
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
-import org.sail.mq.common.resource.RocketMQResource;
+import org.sail.mq.common.resource.SailMQResource;
 import org.sail.mq.remoting.CommandCustomHeader;
 import org.sail.mq.remoting.annotation.CFNotNull;
 import org.sail.mq.remoting.annotation.CFNullable;
@@ -35,12 +35,12 @@ import org.sail.mq.remoting.protocol.RequestCode;
 /**
  * Use short variable name to speed up FastJson deserialization process.
  */
-@RocketMQAction(value = RequestCode.SEND_MESSAGE_V2, action = Action.PUB)
+@SailMQAction(value = RequestCode.SEND_MESSAGE_V2, action = Action.PUB)
 public class SendMessageRequestHeaderV2 extends TopicQueueRequestHeader implements CommandCustomHeader, FastCodesHeader {
     @CFNotNull
     private String a; // producerGroup;
     @CFNotNull
-    @RocketMQResource(ResourceType.TOPIC)
+    @SailMQResource(ResourceType.TOPIC)
     private String b; // topic;
     @CFNotNull
     private String c; // defaultTopic;

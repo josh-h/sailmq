@@ -35,8 +35,8 @@ import org.sail.mq.common.attribute.TopicMessageType;
 import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.thread.ThreadPoolMonitor;
 import org.sail.mq.common.utils.AbstractStartAndShutdown;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.proxy.common.AbstractCacheLoader;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.config.ConfigurationManager;
@@ -183,7 +183,7 @@ public class ClusterMetadataService extends AbstractStartAndShutdown implements 
         @Override
         protected SubscriptionGroupConfig getDirectly(String consumerGroup) throws Exception {
             ProxyConfig config = ConfigurationManager.getProxyConfig();
-            String clusterName = config.getRocketMQClusterName();
+            String clusterName = config.getSailMQClusterName();
             Optional<BrokerData> brokerDataOptional = findOneBroker(clusterName);
             if (brokerDataOptional.isPresent()) {
                 String brokerAddress = brokerDataOptional.get().selectBrokerAddr();
@@ -229,7 +229,7 @@ public class ClusterMetadataService extends AbstractStartAndShutdown implements 
         @Override
         protected User getDirectly(String username) throws Exception {
             ProxyConfig config = ConfigurationManager.getProxyConfig();
-            String clusterName = config.getRocketMQClusterName();
+            String clusterName = config.getSailMQClusterName();
             Optional<BrokerData> brokerDataOptional = findOneBroker(clusterName);
             if (brokerDataOptional.isPresent()) {
                 String brokerAddress = brokerDataOptional.get().selectBrokerAddr();
@@ -257,7 +257,7 @@ public class ClusterMetadataService extends AbstractStartAndShutdown implements 
         @Override
         protected Acl getDirectly(String subject) throws Exception {
             ProxyConfig config = ConfigurationManager.getProxyConfig();
-            String clusterName = config.getRocketMQClusterName();
+            String clusterName = config.getSailMQClusterName();
             Optional<BrokerData> brokerDataOptional = findOneBroker(clusterName);
             if (brokerDataOptional.isPresent()) {
                 String brokerAddress = brokerDataOptional.get().selectBrokerAddr();

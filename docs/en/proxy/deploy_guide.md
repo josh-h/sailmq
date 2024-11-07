@@ -1,8 +1,8 @@
-# RocketMQ Proxy Deployment Guide
+# SailMQ Proxy Deployment Guide
 
 ## Overview
 
-RocketMQ Proxy supports two deployment modes: `Local` and `Cluster`.
+SailMQ Proxy supports two deployment modes: `Local` and `Cluster`.
 
 ## Configuration
 

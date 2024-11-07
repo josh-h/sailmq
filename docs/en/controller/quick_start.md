@@ -4,16 +4,16 @@
 
 ![架构图](../image/controller/controller_design_2.png)
 
-This document mainly introduces how to quickly build a RocketMQ cluster that supports automatic master-slave switch, as shown in the above diagram. The main addition is the Controller component, which can be deployed independently or embedded in the NameServer.
+This document mainly introduces how to quickly build a SailMQ cluster that supports automatic master-slave switch, as shown in the above diagram. The main addition is the Controller component, which can be deployed independently or embedded in the NameServer.
 
 For detailed design ideas, please refer to [Design ideas](design.md).
 
 For detailed guidelines on new cluster deployment and old cluster upgrades, please refer to [Deployment guide](deploy.md).
 
-## Compile RocketMQ source code
+## Compile SailMQ source code
 
 ```shell
-$ git clone https://github.com/apache/rocketmq.git
+$ git clone https://github.com/sail/sailmq.git
 
 $ cd sailmq
 

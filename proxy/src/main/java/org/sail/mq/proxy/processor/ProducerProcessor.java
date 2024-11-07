@@ -35,8 +35,8 @@ import org.sail.mq.common.message.MessageId;
 import org.sail.mq.common.sysflag.MessageSysFlag;
 import org.sail.mq.common.topic.TopicValidator;
 import org.sail.mq.common.utils.FutureUtils;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.common.ProxyException;
 import org.sail.mq.proxy.common.ProxyExceptionCode;
@@ -160,10 +160,10 @@ public class ProducerProcessor extends AbstractProcessor {
         requestHeader.setQueueId(queueId);
         requestHeader.setSysFlag(sysFlag);
         /*
-        In RocketMQ 4.0, org.apache.sailmq.remoting.protocol.header.SendMessageRequestHeader.bornTimestamp
-        represents the timestamp when the message was born. In RocketMQ 5.0, the bornTimestamp of the message
+        In SailMQ 4.0, org.apache.sailmq.remoting.protocol.header.SendMessageRequestHeader.bornTimestamp
+        represents the timestamp when the message was born. In SailMQ 5.0, the bornTimestamp of the message
         is a message attribute, that is, the timestamp when message was constructed, and there is no
-        bornTimestamp in the SendMessageRequest of RocketMQ 5.0.
+        bornTimestamp in the SendMessageRequest of SailMQ 5.0.
         Note: When using grpc sendMessage to send multiple messages, the bornTimestamp in the requestHeader
         is set to the bornTimestamp of the first message, which may not be accurate. When a bornTimestamp is
         required, the bornTimestamp of the message property should be used.

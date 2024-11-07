@@ -23,7 +23,7 @@ import org.sail.mq.common.message.MessageExt;
 
 public class TimerMessageConsumer {
 
-    //Note: TimerMessage is a new feature in version 5.0, so be sure to upgrade RocketMQ to version 5.0+ before using it.
+    //Note: TimerMessage is a new feature in version 5.0, so be sure to upgrade SailMQ to version 5.0+ before using it.
 
     public static final String CONSUMER_GROUP = "TimerMessageConsumerGroup";
     public static final String DEFAULT_NAMESRVADDR = "127.0.0.1:9876";

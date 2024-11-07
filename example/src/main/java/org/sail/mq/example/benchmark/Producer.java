@@ -37,8 +37,8 @@ import org.sail.mq.remoting.RPCHook;
 import org.sail.mq.remoting.exception.RemotingException;
 import org.sail.mq.remoting.protocol.RemotingCommand;
 import org.sail.mq.remoting.protocol.SerializeType;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.srvutil.ServerUtil;
 
 import java.util.Arrays;
@@ -335,7 +335,7 @@ public class Producer {
         opt.setRequired(false);
         options.addOption(opt);
 
-        opt = new Option("sk", "secretKey", true, "Acl secret key, Default: rocketmq2");
+        opt = new Option("sk", "secretKey", true, "Acl secret key, Default: sailmq2");
         opt.setRequired(false);
         options.addOption(opt);
 

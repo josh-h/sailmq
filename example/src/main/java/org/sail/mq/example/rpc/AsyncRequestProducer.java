@@ -22,8 +22,8 @@ import org.sail.mq.client.producer.DefaultMQProducer;
 import org.sail.mq.client.producer.RequestCallback;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class AsyncRequestProducer {
     private static final Logger log = LoggerFactory.getLogger(AsyncRequestProducer.class);

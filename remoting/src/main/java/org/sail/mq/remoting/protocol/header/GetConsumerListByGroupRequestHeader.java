@@ -19,18 +19,18 @@ package org.sail.mq.remoting.protocol.header;
 
 import com.google.common.base.MoreObjects;
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
-import org.sail.mq.common.resource.RocketMQResource;
+import org.sail.mq.common.resource.SailMQResource;
 import org.sail.mq.remoting.annotation.CFNotNull;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.rpc.RpcRequestHeader;
 import org.sail.mq.remoting.protocol.RequestCode;
 
-@RocketMQAction(value = RequestCode.GET_CONSUMER_LIST_BY_GROUP, action = Action.SUB)
+@SailMQAction(value = RequestCode.GET_CONSUMER_LIST_BY_GROUP, action = Action.SUB)
 public class GetConsumerListByGroupRequestHeader extends RpcRequestHeader {
     @CFNotNull
-    @RocketMQResource(ResourceType.GROUP)
+    @SailMQResource(ResourceType.GROUP)
     private String consumerGroup;
 
     @Override

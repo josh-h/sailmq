@@ -21,8 +21,8 @@ import java.util.concurrent.ScheduledExecutorService;
 import org.sail.mq.common.stats.StatsItemSet;
 import org.sail.mq.common.stats.StatsSnapshot;
 import org.sail.mq.remoting.protocol.body.ConsumeStatus;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class ConsumerStatsManager {
     private static final Logger log = LoggerFactory.getLogger(ConsumerStatsManager.class);

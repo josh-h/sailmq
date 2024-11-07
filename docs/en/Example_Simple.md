@@ -1,20 +1,20 @@
 # Basic Sample 
 ------
 Two functions below are provided in the basic sample:
-* The RocketMQ can be utilized to send messages in three ways: reliable synchronous, reliable asynchronous, and one-way transmission.  The first two message types are reliable because there is a response whether they were sent successfully.
-* The RocketMQ can be utilized to consume messages.
+* The SailMQ can be utilized to send messages in three ways: reliable synchronous, reliable asynchronous, and one-way transmission.  The first two message types are reliable because there is a response whether they were sent successfully.
+* The SailMQ can be utilized to consume messages.
 ### 1 Add Dependency
 maven:
 ``` java
 <dependency>
-  <groupId>org.apache.rocketmq</groupId>
-  <artifactId>rocketmq-client</artifactId>
+  <groupId>org.sail.mq</groupId>
+  <artifactId>sailmq-client</artifactId>
   <version>4.3.0</version>
 </dependency>
 ```
 gradle: 
 ``` java 
-compile 'org.apache.rocketmq:rocketmq-client:4.3.0'
+compile 'org.sail.mq:sailmq-client:4.3.0'
 ```
 ### 2 Send Messages
 ##### 2.1 Use Producer to Send Synchronous Messages
@@ -32,7 +32,7 @@ public class SyncProducer {
       // Create a message instance with specifying topic, tag and message body
       Message msg = new Message("TopicTest" /* Topic */,
         "TagA" /* Tag */,
-        ("Hello RocketMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET) /* Message body */
+        ("Hello SailMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET) /* Message body */
         );
       // Send message to one of brokers
       SendResult sendResult = producer.send(msg);
@@ -97,7 +97,7 @@ public class OnewayProducer {
       // Create a message instance with specifying topic, tag and message body
       Message msg = new Message("TopicTest" /* Topic */,
         "TagA" /* Tag */,
-        ("Hello RocketMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET) /* Message body */
+        ("Hello SailMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET) /* Message body */
       );
       // Send in one-way mode, no return result
       producer.sendOneway(msg);

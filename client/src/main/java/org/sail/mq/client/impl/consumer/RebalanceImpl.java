@@ -43,8 +43,8 @@ import org.sail.mq.remoting.protocol.filter.FilterAPI;
 import org.sail.mq.remoting.protocol.heartbeat.ConsumeType;
 import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
 import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public abstract class RebalanceImpl {
     protected static final Logger log = LoggerFactory.getLogger(RebalanceImpl.class);

@@ -31,7 +31,7 @@
         <Bug pattern="RV_ABSOLUTE_VALUE_OF_HASHCODE"/>
     </Match>
     <Match>
-        <Class name="org.apache.rocketmq.tieredstore.index.TieredIndexFile"/>
+        <Class name="org.sail.mq.tieredstore.index.TieredIndexFile"/>
         <Method name="indexKeyHashMethod" />
         <Bug pattern="RV_ABSOLUTE_VALUE_OF_HASHCODE"/>
     </Match>
@@ -41,7 +41,7 @@
         <Bug pattern="INT_BAD_REM_BY_1"/>
     </Match>
     <Match>
-        <Class name="org.apache.rocketmq.tools.command.cluster.ClusterListSubCommand"/>
+        <Class name="cluster.org.sail.mq.tools.command.ClusterListSubCommand"/>
         <Method name="execute" />
         <Bug pattern="IL_INFINITE_LOOP"/>
     </Match>

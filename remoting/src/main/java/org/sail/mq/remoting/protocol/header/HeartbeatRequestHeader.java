@@ -18,13 +18,13 @@
 package org.sail.mq.remoting.protocol.header;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.protocol.RequestCode;
 import org.sail.mq.remoting.rpc.RpcRequestHeader;
 
-@RocketMQAction(value = RequestCode.HEART_BEAT, resource = ResourceType.GROUP, action = {Action.PUB, Action.SUB})
+@SailMQAction(value = RequestCode.HEART_BEAT, resource = ResourceType.GROUP, action = {Action.PUB, Action.SUB})
 public class HeartbeatRequestHeader extends RpcRequestHeader {
     // for namespace
     @Override

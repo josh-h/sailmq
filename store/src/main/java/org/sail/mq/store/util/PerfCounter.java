@@ -17,7 +17,7 @@
 package org.sail.mq.store.util;
 
 import org.sail.mq.common.ServiceThread;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.Logger;
 
 import java.sql.Timestamp;
 import java.util.Iterator;

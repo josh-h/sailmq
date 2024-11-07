@@ -16,11 +16,11 @@
  */
 package org.sail.mq.proxy.grpc.v2.transaction;
 
-import apache.rocketmq.v2.Code;
-import apache.rocketmq.v2.EndTransactionRequest;
-import apache.rocketmq.v2.EndTransactionResponse;
-import apache.rocketmq.v2.TransactionResolution;
-import apache.rocketmq.v2.TransactionSource;
+import apache.sailmq.v2.Code;
+import apache.sailmq.v2.EndTransactionRequest;
+import apache.sailmq.v2.EndTransactionResponse;
+import apache.sailmq.v2.TransactionResolution;
+import apache.sailmq.v2.TransactionSource;
 import java.util.concurrent.CompletableFuture;
 import org.apache.commons.lang3.StringUtils;
 import org.sail.mq.proxy.common.ProxyContext;

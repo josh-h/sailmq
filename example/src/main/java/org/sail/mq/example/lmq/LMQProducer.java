@@ -46,7 +46,7 @@ public class LMQProducer {
         producer.start();
         for (int i = 0; i < 128; i++) {
             try {
-                Message msg = new Message(TOPIC, TAG, ("Hello RocketMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET));
+                Message msg = new Message(TOPIC, TAG, ("Hello SailMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET));
                 msg.setKeys("Key" + i);
                 msg.putUserProperty(MessageConst.PROPERTY_INNER_MULTI_DISPATCH /* "INNER_MULTI_DISPATCH" */,
                     String.join(MixAll.LMQ_DISPATCH_SEPARATOR, LMQ_TOPIC_1, LMQ_TOPIC_2) /* "%LMQ%123,%LMQ%456" */);

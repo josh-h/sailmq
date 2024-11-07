@@ -21,8 +21,8 @@ deleteWhen=04
 fileReservedTime=48
 brokerRole=ASYNC_MASTER
 flushDiskType=ASYNC_FLUSH
-storePathRootDir=/data/rocketmq/rootdir-a-m
-storePathCommitLog=/data/rocketmq/commitlog-a-m
+storePathRootDir=/data/sailmq/rootdir-a-m
+storePathCommitLog=/data/sailmq/commitlog-a-m
 autoCreateSubscriptionGroup=true
 ## if msg tracing is open,the flag will be true
 traceTopicEnable=true
@@ -32,16 +32,16 @@ namesrvAddr=XX.XX.XX.XX:9876
 ```
 
 ### 2.2 Common mode
-Each Broker node in RocketMQ cluster used for storing message trace data that client collected and sent. So, there is no requirements and limitations to the size of Broker node in RocketMQ cluster.
+Each Broker node in SailMQ cluster used for storing message trace data that client collected and sent. So, there is no requirements and limitations to the size of Broker node in SailMQ cluster.
 
 ### 2.3 IO physical isolation mode
-For huge amounts of message trace data scenario, we can select any one Broker node in RocketMQ cluster used for storing message trace data special, thus, common message data's IO are isolated from message trace data's IO in physical, not impact each other. In this mode, RocketMQ cluster must have at least two Broker nodes, the one that defined as storing message trace data.
+For huge amounts of message trace data scenario, we can select any one Broker node in SailMQ cluster used for storing message trace data special, thus, common message data's IO are isolated from message trace data's IO in physical, not impact each other. In this mode, SailMQ cluster must have at least two Broker nodes, the one that defined as storing message trace data.
 
 ### 2.4 Start Broker that enable message trace
 `nohup sh mqbroker -c ../conf/2m-noslave/broker-a.properties &`
   
 ## 3. Save the definition of topic that with support message trace
-RocketMQ's message trace feature supports two types of storage.
+SailMQ's message trace feature supports two types of storage.
 
 ### 3.1 System level TraceTopic
 Be default, message trace data is stored in system level TraceTopic(topic name: **RMQ_SYS_TRACE_TOPIC**). That topic will be created at startup of broker(As mentioned above, set **traceTopicEnable** to **true** in Broker's configuration).
@@ -50,7 +50,7 @@ Be default, message trace data is stored in system level TraceTopic(topic name: 
 If user don't want to store message trace data in system level TraceTopic, he can create user defined TraceTopic used for storing message trace data(that is, create common topic for storing message trace data). The following part will introduce how client SDK support user defined TraceTopic.
 
 ## 4. Client SDK demo with message trace feature
-For business system adapting to use RocketMQ's message trace feature easily, in design phase, the author add a switch parameter(**enableMsgTrace**) for enable message trace; add a custom parameter(**customizedTraceTopic**) for user defined TraceTopic.
+For business system adapting to use SailMQ's message trace feature easily, in design phase, the author add a switch parameter(**enableMsgTrace**) for enable message trace; add a custom parameter(**customizedTraceTopic**) for user defined TraceTopic.
 
 ### 4.1 Enable message trace when sending messages
 ```
@@ -112,8 +112,8 @@ Adjusting instantiation of DefaultMQProducer and DefaultMQPushConsumer as follow
 ```
 - query trace result
 ```
-RocketMQLog:WARN No appenders could be found for logger (io.netty.util.internal.PlatformDependent0).
-RocketMQLog:WARN Please initialize the logger system properly.
+SailMQLog:WARN No appenders could be found for logger (io.netty.util.internal.PlatformDependent0).
+SailMQLog:WARN Please initialize the logger system properly.
 #Type      #ProducerGroup       #ClientHost          #SendTime            #CostTimes #Status
 Pub        1623305799667        xxx.xxx.xxx.xxx       2021-06-10 14:16:40  131ms      success
 ```

@@ -17,15 +17,15 @@
 package org.sail.mq.broker.metrics;
 
 public class PopMetricsConstant {
-    public static final String HISTOGRAM_POP_BUFFER_SCAN_TIME_CONSUME = "rocketmq_pop_buffer_scan_time_consume";
-    public static final String COUNTER_POP_REVIVE_IN_MESSAGE_TOTAL = "rocketmq_pop_revive_in_message_total";
-    public static final String COUNTER_POP_REVIVE_OUT_MESSAGE_TOTAL = "rocketmq_pop_revive_out_message_total";
-    public static final String COUNTER_POP_REVIVE_RETRY_MESSAGES_TOTAL = "rocketmq_pop_revive_retry_messages_total";
+    public static final String HISTOGRAM_POP_BUFFER_SCAN_TIME_CONSUME = "sailmq_pop_buffer_scan_time_consume";
+    public static final String COUNTER_POP_REVIVE_IN_MESSAGE_TOTAL = "sailmq_pop_revive_in_message_total";
+    public static final String COUNTER_POP_REVIVE_OUT_MESSAGE_TOTAL = "sailmq_pop_revive_out_message_total";
+    public static final String COUNTER_POP_REVIVE_RETRY_MESSAGES_TOTAL = "sailmq_pop_revive_retry_messages_total";
 
-    public static final String GAUGE_POP_REVIVE_LAG = "rocketmq_pop_revive_lag";
-    public static final String GAUGE_POP_REVIVE_LATENCY = "rocketmq_pop_revive_latency";
-    public static final String GAUGE_POP_OFFSET_BUFFER_SIZE = "rocketmq_pop_offset_buffer_size";
-    public static final String GAUGE_POP_CHECKPOINT_BUFFER_SIZE = "rocketmq_pop_checkpoint_buffer_size";
+    public static final String GAUGE_POP_REVIVE_LAG = "sailmq_pop_revive_lag";
+    public static final String GAUGE_POP_REVIVE_LATENCY = "sailmq_pop_revive_latency";
+    public static final String GAUGE_POP_OFFSET_BUFFER_SIZE = "sailmq_pop_offset_buffer_size";
+    public static final String GAUGE_POP_CHECKPOINT_BUFFER_SIZE = "sailmq_pop_checkpoint_buffer_size";
 
     public static final String LABEL_REVIVE_MESSAGE_TYPE = "revive_message_type";
     public static final String LABEL_PUT_STATUS = "put_status";

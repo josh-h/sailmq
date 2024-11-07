@@ -27,7 +27,7 @@ import java.util.Properties;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import org.sail.mq.common.MixAll;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.Logger;
 import org.sail.mq.remoting.protocol.DataVersion;
 
 public class Configuration {

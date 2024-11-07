@@ -18,12 +18,12 @@
 package org.sail.mq.remoting.protocol.header;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.protocol.RequestCode;
 import org.sail.mq.remoting.rpc.RpcRequestHeader;
 
-@RocketMQAction(value = RequestCode.LOCK_BATCH_MQ, action = Action.SUB)
+@SailMQAction(value = RequestCode.LOCK_BATCH_MQ, action = Action.SUB)
 public class LockBatchMqRequestHeader extends RpcRequestHeader {
     @Override
     public void checkFields() throws RemotingCommandException {

@@ -19,8 +19,8 @@ package org.sail.mq.test.client.rmq;
 
 import org.sail.mq.client.consumer.DefaultMQPushConsumer;
 import org.sail.mq.client.exception.MQClientException;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.test.clientinterface.AbstractMQConsumer;
 import org.sail.mq.test.listener.AbstractListener;
 import org.sail.mq.test.util.RandomUtil;

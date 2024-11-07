@@ -34,8 +34,8 @@ import org.sail.mq.common.MQVersion;
 import org.sail.mq.common.MixAll;
 import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.utils.NetworkUtil;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.remoting.netty.NettyClientConfig;
 import org.sail.mq.remoting.netty.NettyServerConfig;
 import org.sail.mq.remoting.protocol.RemotingCommand;
@@ -121,7 +121,7 @@ public class BrokerStartup {
         MixAll.properties2Object(ServerUtil.commandLine2Properties(commandLine), brokerConfig);
         if (null == brokerConfig.getRocketmqHome()) {
             System.out.printf("Please set the %s variable in your environment " +
-                "to match the location of the RocketMQ installation", MixAll.ROCKETMQ_HOME_ENV);
+                "to match the location of the SailMQ installation", MixAll.ROCKETMQ_HOME_ENV);
             System.exit(-2);
         }
 

@@ -22,15 +22,15 @@ import java.util.Set;
 
 import org.sail.mq.common.BrokerIdentity;
 import org.sail.mq.common.constant.LoggerName;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class BrokerLogbackConfigurator {
     private static final Logger LOG = LoggerFactory.getLogger(LoggerName.BROKER_LOGGER_NAME);
 
     private static final Set<String> CONFIGURED_BROKER_LIST = new HashSet<>();
 
-    public static final String ROCKETMQ_LOGS = "rocketmqlogs";
+    public static final String ROCKETMQ_LOGS = "sailmqlogs";
     public static final String ROCKETMQ_PREFIX = "Rocketmq";
     public static final String SUFFIX_CONSOLE = "Console";
     public static final String SUFFIX_APPENDER = "Appender";

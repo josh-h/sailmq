@@ -16,11 +16,11 @@
  */
 package org.sail.mq.proxy.grpc.v2.consumer;
 
-import apache.rocketmq.v2.AckMessageEntry;
-import apache.rocketmq.v2.AckMessageRequest;
-import apache.rocketmq.v2.AckMessageResponse;
-import apache.rocketmq.v2.AckMessageResultEntry;
-import apache.rocketmq.v2.Code;
+import apache.sailmq.v2.AckMessageEntry;
+import apache.sailmq.v2.AckMessageRequest;
+import apache.sailmq.v2.AckMessageResponse;
+import apache.sailmq.v2.AckMessageResultEntry;
+import apache.sailmq.v2.Code;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

@@ -32,8 +32,8 @@ import org.sail.mq.client.common.ClientErrorCode;
 import org.sail.mq.client.exception.RequestTimeoutException;
 import org.sail.mq.client.impl.producer.DefaultMQProducerImpl;
 import org.sail.mq.common.ThreadFactoryImpl;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class RequestFutureHolder {
     private static final Logger log = LoggerFactory.getLogger(RequestFutureHolder.class);

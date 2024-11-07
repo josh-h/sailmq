@@ -44,15 +44,15 @@ import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageExtBrokerInner;
 import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.common.utils.ThreadUtils;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.remoting.exception.RemotingException;
 import org.sail.mq.store.GetMessageResult;
 import org.sail.mq.store.GetMessageStatus;
 import org.sail.mq.store.MessageStore;
 import org.sail.mq.store.PutMessageResult;
 import org.sail.mq.store.PutMessageStatus;
-import org.apache.rocketmq.tieredstore.TieredMessageStore;
+import org.sail.mq.tieredstore.TieredMessageStore;
 
 public class EscapeBridge {
     protected static final Logger LOG = LoggerFactory.getLogger(LoggerName.BROKER_LOGGER_NAME);

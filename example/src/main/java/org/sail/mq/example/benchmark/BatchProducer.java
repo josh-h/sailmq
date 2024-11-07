@@ -46,8 +46,8 @@ import org.sail.mq.remoting.RPCHook;
 import org.sail.mq.remoting.exception.RemotingException;
 import org.sail.mq.remoting.protocol.RemotingCommand;
 import org.sail.mq.remoting.protocol.SerializeType;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.srvutil.ServerUtil;
 
 public class BatchProducer {
@@ -222,7 +222,7 @@ public class BatchProducer {
         opt.setRequired(false);
         options.addOption(opt);
 
-        opt = new Option("ak", "accessKey", true, "Acl Access Key, Default: rocketmq2");
+        opt = new Option("ak", "accessKey", true, "Acl Access Key, Default: sailmq2");
         opt.setRequired(false);
         options.addOption(opt);
 

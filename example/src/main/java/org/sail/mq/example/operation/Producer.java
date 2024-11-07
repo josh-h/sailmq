@@ -50,7 +50,7 @@ public class Producer {
                         topic,
                         tags,
                         keys,
-                        ("Hello RocketMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET));
+                        ("Hello SailMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET));
                     SendResult sendResult = producer.send(msg);
                     System.out.printf("%-8d %s%n", i, sendResult);
                 } catch (Exception e) {

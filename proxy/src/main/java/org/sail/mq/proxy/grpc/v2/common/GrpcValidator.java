@@ -17,8 +17,8 @@
 
 package org.sail.mq.proxy.grpc.v2.common;
 
-import apache.rocketmq.v2.Code;
-import apache.rocketmq.v2.Resource;
+import apache.sailmq.v2.Code;
+import apache.sailmq.v2.Resource;
 import com.google.common.base.CharMatcher;
 import org.apache.commons.lang3.StringUtils;
 import org.sail.mq.client.Validators;
@@ -26,8 +26,8 @@ import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.common.MixAll;
 import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.topic.TopicValidator;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.proxy.config.ConfigurationManager;
 
 public class GrpcValidator {

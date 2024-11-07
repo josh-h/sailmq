@@ -18,12 +18,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.apache.rocketmq</groupId>
-        <artifactId>rocketmq-all</artifactId>
+        <groupId>org.sail.mq</groupId>
+        <artifactId>sailmq-all</artifactId>
         <version>5.3.2-SNAPSHOT</version>
     </parent>
-    <artifactId>rocketmq-distribution</artifactId>
-    <name>rocketmq-distribution ${project.version}</name>
+    <artifactId>sailmq-distribution</artifactId>
+    <name>sailmq-distribution ${project.version}</name>
     <packaging>pom</packaging>
 
     <properties>
@@ -35,32 +35,32 @@
             <id>release-all</id>
             <dependencies>
                 <dependency>
-                    <groupId>org.apache.rocketmq</groupId>
-                    <artifactId>rocketmq-container</artifactId>
+                    <groupId>org.sail.mq</groupId>
+                    <artifactId>sailmq-container</artifactId>
                 </dependency>
                 <dependency>
-                    <groupId>org.apache.rocketmq</groupId>
-                    <artifactId>rocketmq-controller</artifactId>
+                    <groupId>org.sail.mq</groupId>
+                    <artifactId>sailmq-controller</artifactId>
                 </dependency>
                 <dependency>
-                    <groupId>org.apache.rocketmq</groupId>
-                    <artifactId>rocketmq-broker</artifactId>
+                    <groupId>org.sail.mq</groupId>
+                    <artifactId>sailmq-broker</artifactId>
                 </dependency>
                 <dependency>
-                    <groupId>org.apache.rocketmq</groupId>
-                    <artifactId>rocketmq-proxy</artifactId>
+                    <groupId>org.sail.mq</groupId>
+                    <artifactId>sailmq-proxy</artifactId>
                 </dependency>
                 <dependency>
-                    <groupId>org.apache.rocketmq</groupId>
-                    <artifactId>rocketmq-client</artifactId>
+                    <groupId>org.sail.mq</groupId>
+                    <artifactId>sailmq-client</artifactId>
                 </dependency>
                 <dependency>
-                    <groupId>org.apache.rocketmq</groupId>
-                    <artifactId>rocketmq-tools</artifactId>
+                    <groupId>org.sail.mq</groupId>
+                    <artifactId>sailmq-tools</artifactId>
                 </dependency>
                 <dependency>
-                    <groupId>org.apache.rocketmq</groupId>
-                    <artifactId>rocketmq-example</artifactId>
+                    <groupId>org.sail.mq</groupId>
+                    <artifactId>sailmq-example</artifactId>
                 </dependency>
             </dependencies>
 
@@ -85,7 +85,7 @@
                         </executions>
                     </plugin>
                 </plugins>
-                <finalName>rocketmq-${project.version}</finalName>
+                <finalName>sailmq-${project.version}</finalName>
             </build>
         </profile>
 
@@ -93,8 +93,8 @@
             <id>release-client</id>
             <dependencies>
                 <dependency>
-                    <groupId>org.apache.rocketmq</groupId>
-                    <artifactId>rocketmq-client</artifactId>
+                    <groupId>org.sail.mq</groupId>
+                    <artifactId>sailmq-client</artifactId>
                 </dependency>
             </dependencies>
 
@@ -119,7 +119,7 @@
                         </executions>
                     </plugin>
                 </plugins>
-                <finalName>rocketmq-client-${project.version}</finalName>
+                <finalName>sailmq-client-${project.version}</finalName>
             </build>
         </profile>
     </profiles>

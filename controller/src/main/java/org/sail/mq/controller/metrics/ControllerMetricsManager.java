@@ -51,8 +51,8 @@ import org.sail.mq.common.metrics.NopLongHistogram;
 import org.sail.mq.common.metrics.NopLongUpDownCounter;
 import org.sail.mq.common.metrics.NopObservableLongGauge;
 import org.sail.mq.controller.ControllerManager;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.slf4j.bridge.SLF4JBridgeHandler;
 
 import java.io.File;

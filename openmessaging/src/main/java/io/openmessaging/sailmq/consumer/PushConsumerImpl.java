@@ -42,14 +42,14 @@ import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.remoting.protocol.LanguageCode;
 
 public class PushConsumerImpl implements PushConsumer {
-    private final DefaultMQPushConsumer rocketmqPushConsumer;
+    private final DefaultMQPushConsumer sailmqPushConsumer;
     private final KeyValue properties;
     private boolean started = false;
     private final Map<String, MessageListener> subscribeTable = new ConcurrentHashMap<>();
     private final ClientConfig clientConfig;
 
     public PushConsumerImpl(final KeyValue properties) {
-        this.rocketmqPushConsumer = new DefaultMQPushConsumer();
+        this.sailmqPushConsumer = new DefaultMQPushConsumer();
         this.properties = properties;
         this.clientConfig = BeanUtils.populate(properties, ClientConfig.class);
 
@@ -58,25 +58,25 @@ public class PushConsumerImpl implements PushConsumer {
             if (accessPoints == null || accessPoints.isEmpty()) {
                 throw new OMSRuntimeException("-1", "OMS AccessPoints is null or empty.");
             }
-            this.rocketmqPushConsumer.setNamesrvAddr(accessPoints.replace(',', ';'));
+            this.sailmqPushConsumer.setNamesrvAddr(accessPoints.replace(',', ';'));
         }
 
         String consumerGroup = clientConfig.getConsumerId();
         if (null == consumerGroup || consumerGroup.isEmpty()) {
-            throw new OMSRuntimeException("-1", "Consumer Group is necessary for RocketMQ, please set it.");
+            throw new OMSRuntimeException("-1", "Consumer Group is necessary for SailMQ, please set it.");
         }
-        this.rocketmqPushConsumer.setConsumerGroup(consumerGroup);
-        this.rocketmqPushConsumer.setMaxReconsumeTimes(clientConfig.getRmqMaxRedeliveryTimes());
-        this.rocketmqPushConsumer.setConsumeTimeout(clientConfig.getRmqMessageConsumeTimeout());
-        this.rocketmqPushConsumer.setConsumeThreadMax(clientConfig.getRmqMaxConsumeThreadNums());
-        this.rocketmqPushConsumer.setConsumeThreadMin(clientConfig.getRmqMinConsumeThreadNums());
+        this.sailmqPushConsumer.setConsumerGroup(consumerGroup);
+        this.sailmqPushConsumer.setMaxReconsumeTimes(clientConfig.getRmqMaxRedeliveryTimes());
+        this.sailmqPushConsumer.setConsumeTimeout(clientConfig.getRmqMessageConsumeTimeout());
+        this.sailmqPushConsumer.setConsumeThreadMax(clientConfig.getRmqMaxConsumeThreadNums());
+        this.sailmqPushConsumer.setConsumeThreadMin(clientConfig.getRmqMinConsumeThreadNums());
 
         String consumerId = OMSUtil.buildInstanceName();
-        this.rocketmqPushConsumer.setInstanceName(consumerId);
+        this.sailmqPushConsumer.setInstanceName(consumerId);
         properties.put(OMSBuiltinKeys.CONSUMER_ID, consumerId);
-        this.rocketmqPushConsumer.setLanguage(LanguageCode.OMS);
+        this.sailmqPushConsumer.setLanguage(LanguageCode.OMS);
 
-        this.rocketmqPushConsumer.registerMessageListener(new MessageListenerImpl());
+        this.sailmqPushConsumer.registerMessageListener(new MessageListenerImpl());
     }
 
     @Override
@@ -86,12 +86,12 @@ public class PushConsumerImpl implements PushConsumer {
 
     @Override
     public void resume() {
-        this.rocketmqPushConsumer.resume();
+        this.sailmqPushConsumer.resume();
     }
 
     @Override
     public void suspend() {
-        this.rocketmqPushConsumer.suspend();
+        this.sailmqPushConsumer.suspend();
     }
 
     @Override
@@ -101,16 +101,16 @@ public class PushConsumerImpl implements PushConsumer {
 
     @Override
     public boolean isSuspended() {
-        return this.rocketmqPushConsumer.isPause();
+        return this.sailmqPushConsumer.isPause();
     }
 
     @Override
     public PushConsumer attachQueue(final String queueName, final MessageListener listener) {
         this.subscribeTable.put(queueName, listener);
         try {
-            this.rocketmqPushConsumer.subscribe(queueName, "*");
+            this.sailmqPushConsumer.subscribe(queueName, "*");
         } catch (MQClientException e) {
-            throw new OMSRuntimeException("-1", String.format("RocketMQ push consumer can't attach to %s.", queueName));
+            throw new OMSRuntimeException("-1", String.format("SailMQ push consumer can't attach to %s.", queueName));
         }
         return this;
     }
@@ -124,9 +124,9 @@ public class PushConsumerImpl implements PushConsumer {
     public PushConsumer detachQueue(String queueName) {
         this.subscribeTable.remove(queueName);
         try {
-            this.rocketmqPushConsumer.unsubscribe(queueName);
+            this.sailmqPushConsumer.unsubscribe(queueName);
         } catch (Exception e) {
-            throw new OMSRuntimeException("-1", String.format("RocketMQ push consumer fails to unsubscribe topic: %s", queueName));
+            throw new OMSRuntimeException("-1", String.format("SailMQ push consumer fails to unsubscribe topic: %s", queueName));
         }
         return null;
     }
@@ -145,7 +145,7 @@ public class PushConsumerImpl implements PushConsumer {
     public synchronized void startup() {
         if (!started) {
             try {
-                this.rocketmqPushConsumer.start();
+                this.sailmqPushConsumer.start();
             } catch (MQClientException e) {
                 throw new OMSRuntimeException("-1", e);
             }
@@ -156,7 +156,7 @@ public class PushConsumerImpl implements PushConsumer {
     @Override
     public synchronized void shutdown() {
         if (this.started) {
-            this.rocketmqPushConsumer.shutdown();
+            this.sailmqPushConsumer.shutdown();
         }
         this.started = false;
     }

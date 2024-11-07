@@ -32,8 +32,8 @@ import org.sail.mq.common.MixAll;
 import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.metrics.MetricsExporterType;
 import org.sail.mq.common.utils.NetworkUtil;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.proxy.ProxyMode;
 import org.sail.mq.proxy.common.ProxyException;
 import org.sail.mq.proxy.common.ProxyExceptionCode;
@@ -136,7 +136,7 @@ public class ProxyConfig implements ConfigFile {
     private int channelExpiredInSeconds = 60;
     private int contextExpiredInSeconds = 30;
 
-    private int rocketmqMQClientNum = 6;
+    private int sailmqMQClientNum = 6;
 
     private long grpcProxyRelayRequestTimeoutInSeconds = 5;
     private int grpcProducerThreadPoolNums = PROCESSOR_NUMBER;
@@ -322,11 +322,11 @@ public class ProxyConfig implements ConfigFile {
         }
     }
 
-    public String getRocketMQClusterName() {
+    public String getSailMQClusterName() {
         return rocketMQClusterName;
     }
 
-    public void setRocketMQClusterName(String rocketMQClusterName) {
+    public void setSailMQClusterName(String rocketMQClusterName) {
         this.rocketMQClusterName = rocketMQClusterName;
     }
 
@@ -691,11 +691,11 @@ public class ProxyConfig implements ConfigFile {
     }
 
     public int getRocketmqMQClientNum() {
-        return rocketmqMQClientNum;
+        return sailmqMQClientNum;
     }
 
-    public void setRocketmqMQClientNum(int rocketmqMQClientNum) {
-        this.rocketmqMQClientNum = rocketmqMQClientNum;
+    public void setRocketmqMQClientNum(int sailmqMQClientNum) {
+        this.sailmqMQClientNum = sailmqMQClientNum;
     }
 
     public long getGrpcProxyRelayRequestTimeoutInSeconds() {

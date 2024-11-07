@@ -15,7 +15,7 @@ This mode is risky, upon broker restart or broken down, the whole service is una
 $ nohup sh mqnamesrv &
  
 ### check whether Name Server is successfully started
-$ tail -f ~/logs/rocketmqlogs/namesrv.log
+$ tail -f ~/logs/sailmqlogs/namesrv.log
 The Name Server boot success...
 ```
 
@@ -26,7 +26,7 @@ The Name Server boot success...
 $ nohup sh bin/mqbroker -n localhost:9876 &
 
 ### check whether Broker is successfully started, eg: Broker's IP is 192.168.1.2, Broker's name is broker-a
-$ tail -f ~/logs/rocketmqlogs/broker.log 
+$ tail -f ~/logs/sailmqlogs/broker.log 
 The broker[broker-a, 192.169.1.2:10911] boot success...
 ```
 
@@ -47,7 +47,7 @@ NameServer should be started before broker. If under production environment, we 
 $ nohup sh mqnamesrv &
  
 ### check whether Name Server is successfully started
-$ tail -f ~/logs/rocketmqlogs/namesrv.log
+$ tail -f ~/logs/sailmqlogs/namesrv.log
 The Name Server boot success...
 ```
 
@@ -80,7 +80,7 @@ Each Master node is equipped with one Slave node, this mode has many Master-Slav
 $ nohup sh mqnamesrv &
  
 ### check whether Name Server is successfully started
-$ tail -f ~/logs/rocketmqlogs/namesrv.log
+$ tail -f ~/logs/sailmqlogs/namesrv.log
 The Name Server boot success...
 ```
 
@@ -115,7 +115,7 @@ Each Master node is equipped with one Slave node, this mode has many Master-Slav
 $ nohup sh mqnamesrv &
  
 ### check whether Name Server is successfully started
-$ tail -f ~/logs/rocketmqlogs/namesrv.log
+$ tail -f ~/logs/sailmqlogs/namesrv.log
 The Name Server boot success...
 ```
 
@@ -135,7 +135,7 @@ $ nohup sh mqbroker -n 192.168.1.1:9876 -c $ROCKETMQ_HOME/conf/2m-2s-sync/broker
 $ nohup sh mqbroker -n 192.168.1.1:9876 -c $ROCKETMQ_HOME/conf/2m-2s-sync/broker-b-s.properties &
 ```
 
-The above Broker matches Slave by specifying the same BrokerName, Master's BrokerId must be 0, Slave's BrokerId must larger than 0. Besides, a Master can have multi Slaves that each has a distinct BrokerId. $ROCKETMQ_HOME indicates RocketMQ's install directory, user needs to set this environment parameter.
+The above Broker matches Slave by specifying the same BrokerName, Master's BrokerId must be 0, Slave's BrokerId must larger than 0. Besides, a Master can have multi Slaves that each has a distinct BrokerId. $ROCKETMQ_HOME indicates SailMQ's install directory, user needs to set this environment parameter.
 
 ### 2 mqadmin management tool
 
@@ -1330,9 +1330,9 @@ The above Broker matches Slave by specifying the same BrokerName, Master's Broke
 
 ### 3   Frequently asked questions about operations
 
-#### 3.1 RocketMQ's mqadmin command error
+#### 3.1 SailMQ's mqadmin command error
 
->  question description: execute mqadmin occur below exception after deploy RocketMQ cluster.
+>  question description: execute mqadmin occur below exception after deploy SailMQ cluster.
 >
 > ```java
 > exception.org.sail.mq.remoting.RemotingConnectException: connect to <null> failed
@@ -1340,21 +1340,21 @@ The above Broker matches Slave by specifying the same BrokerName, Master's Broke
 
 Solution: execute command `export NAMESRV_ADDR=ip:9876` (ip is NameServer's ip address), then execute mqadmin commands.
 
-#### 3.2 RocketMQ consumer cannot consume, because of different version of producer and consumer.
+#### 3.2 SailMQ consumer cannot consume, because of different version of producer and consumer.
 
-> question description: one producer produce message, consumer A can consume, consume B cannot consume, RocketMQ console print:
+> question description: one producer produce message, consumer A can consume, consume B cannot consume, SailMQ console print:
 >
 > ```java
 > Not found the consumer group consume stats, because return offset table is empty, maybe the consumer not consume any message.
 > ```
 
-Solution: make sure that producer and consumer has the same version of rocketmq-client.
+Solution: make sure that producer and consumer has the same version of sailmq-client.
 
 #### 3.3  Consumer cannot consume oldest message, when a new consumer group is added.
 
 > question description: when a new consumer group start, it consumes from current offset, do not fetch oldest message.    
 
-Solution: rocketmq's default policy is consume from latest, that is skip oldest message. If you want consume oldest message, you need to set `consumer.org.sail.mq.client.DefaultMQPushConsumer#setConsumeFromWhere`. The following is three common configurations:
+Solution: sailmq's default policy is consume from latest, that is skip oldest message. If you want consume oldest message, you need to set `consumer.org.sail.mq.client.DefaultMQPushConsumer#setConsumeFromWhere`. The following is three common configurations:
 
 - default configuration, a new consumer group consume from latest position at first startup, then consume from last time's offset at next startup, that is skip oldest message;
 
@@ -1382,13 +1382,13 @@ In some cases, consumer need reset offset to a day or two before, if Master Brok
 
 A spin lock is recommended for asynchronous disk flush, a reentrant lock is recommended for synchronous disk flush, configuration item is `useReentrantLockWhenPutMessage`, default is false; Enable `TransientStorePoolEnable` is recommended when use asynchronous disk flush; Recommend to close `transferMsgByHeap` to improve fetch efficiency; Set a little larger `sendMessageThreadPoolNums`, when use synchronous disk flush.
 
-#### 3.6 The meaning and difference between msgId and offsetMsgId in RocketMQ
+#### 3.6 The meaning and difference between msgId and offsetMsgId in SailMQ
 
-You will usually see the following log print message after sending message by using RocketMQ sdk.
+You will usually see the following log print message after sending message by using SailMQ sdk.
 
 ```java
 SendResult [sendStatus=SEND_OK, msgId=0A42333A0DC818B4AAC246C290FD0000, offsetMsgId=0A42333A00002A9F000000000134F1F5, messageQueue=MessageQueue [topic=topicTest1, BrokerName=mac.local, queueId=3], queueOffset=4]
 ```
 
 - msgId, is generated by producer sdk. In particular, call method `MessageClientIDSetter.createUniqIDBuffer()` to generate unique Id;
-- offsetMsgId, offsetMsgId is generated by Broker server(format is "Ip Address + port + CommitLog offset"). offsetMsgId is messageId that is RocketMQ console's input.
+- offsetMsgId, offsetMsgId is generated by Broker server(format is "Ip Address + port + CommitLog offset"). offsetMsgId is messageId that is SailMQ console's input.

@@ -40,8 +40,8 @@ import org.sail.mq.common.message.MessageConst;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.common.topic.TopicValidator;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.remoting.RPCHook;
 import org.sail.mq.remoting.exception.RemotingException;
 import org.sail.mq.remoting.protocol.ResponseCode;
@@ -90,7 +90,7 @@ public class DefaultMQProducer extends ClientConfig implements MQProducer {
      * <p>
      * For non-transactional messages, it does not matter as long as it's unique per process. </p>
      * <p>
-     * See <a href="https://rocketmq.apache.org/docs/introduction/02concepts">core concepts</a> for more discussion.
+     * See <a href="https://mq.sail.org/docs/introduction/02concepts">core concepts</a> for more discussion.
      */
     private String producerGroup;
 

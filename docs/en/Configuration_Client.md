@@ -1,10 +1,10 @@
 ## Client Configuration
 
-  Relative to RocketMQ's Broker cluster, producers and consumers are client. In this section, it mainly describes the common behavior configuration of producers and consumers.
+  Relative to SailMQ's Broker cluster, producers and consumers are client. In this section, it mainly describes the common behavior configuration of producers and consumers.
 ​ 
 ### 1 Client Addressing mode
 
-```RocketMQ``` can let client find the ```Name Server```, and then find the ```Broker```by the ```Name Server```. Followings show a variety of configurations, and priority level from highly to lower, the highly priority configurations can override the lower priority configurations.
+```SailMQ``` can let client find the ```Name Server```, and then find the ```Broker```by the ```Name Server```. Followings show a variety of configurations, and priority level from highly to lower, the highly priority configurations can override the lower priority configurations.
 
 -  Specified ```Name Server``` address in the code, and multiple ```Name Server``` addresses are separated by semicolons
 
@@ -16,7 +16,7 @@ consumer.setNamesrvAddr("192.168.0.1:9876;192.168.0.2:9876");
 - Specified ```Name Server``` address in the Java setup parameters
 
 ```text
--Drocketmq.namesrv.addr=192.168.0.1:9876;192.168.0.2:9876  
+-Dsailmq.namesrv.addr=192.168.0.1:9876;192.168.0.2:9876  
 ```
 - Specified ```Name Server``` address in the environment variables
 
@@ -25,7 +25,7 @@ export   NAMESRV_ADDR=192.168.0.1:9876;192.168.0.2:9876
 ```
 - HTTP static server addressing(default)
 
-After client started, it will access the http static server address, as: <http://jmenv.tbsite.net:8080/rocketmq/nsaddr>, this URL return the following contents:
+After client started, it will access the http static server address, as: <http://jmenv.tbsite.net:8080/sailmq/nsaddr>, this URL return the following contents:
 
 ```text
 192.168.0.1:9876;192.168.0.2:9876   
@@ -113,7 +113,7 @@ HTTP static server addressing is recommended, because it is simple client deploy
 | Body           | null   | Required, message body                                                |
 | Tags           | null   | Optional, message tag, convenient for server filtering. Currently only one tag per message is supported |
 | Keys           | null   | Optional, represent this message's business keys, server create hash indexes based keys. After setting, you can find message by ```Topics```,```Keys``` in Console system. Because of hash indexes, please make key as unique as possible, such as order number, goods Id and so on.|
-| Flag           | 0      | Optional, it is entirely up to the application, and RocketMQ does not intervene                     |
+| Flag           | 0      | Optional, it is entirely up to the application, and SailMQ does not intervene                     |
 | DelayTimeLevel | 0      | Optional, message delay level, 0 represent no delay, greater tan 0 can consume |
 | WaitStoreMsgOK | TRUE   | Optional, indicates whether the message is not answered until the server is down.                |
 

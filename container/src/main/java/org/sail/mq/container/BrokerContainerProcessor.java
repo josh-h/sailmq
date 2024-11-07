@@ -30,8 +30,8 @@ import org.sail.mq.common.BrokerConfig;
 import org.sail.mq.common.BrokerIdentity;
 import org.sail.mq.common.MixAll;
 import org.sail.mq.common.constant.LoggerName;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.remoting.common.RemotingHelper;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.netty.NettyRequestProcessor;
@@ -57,7 +57,7 @@ public class BrokerContainerProcessor implements NettyRequestProcessor {
 
     private void initConfigBlackList() {
         configBlackList.add("brokerConfigPaths");
-        configBlackList.add("rocketmqHome");
+        configBlackList.add("sailmqHome");
         configBlackList.add("configBlackList");
         String[] configArray = brokerContainer.getBrokerContainerConfig().getConfigBlackList().split(";");
         configBlackList.addAll(Arrays.asList(configArray));

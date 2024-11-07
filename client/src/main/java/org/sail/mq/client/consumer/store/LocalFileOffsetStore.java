@@ -33,8 +33,8 @@ import org.sail.mq.common.UtilAll;
 import org.sail.mq.common.help.FAQUrl;
 import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.remoting.exception.RemotingException;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 /**
  * Local storage implementation
@@ -42,7 +42,7 @@ import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 public class LocalFileOffsetStore implements OffsetStore {
     public final static String LOCAL_OFFSET_STORE_DIR = System.getProperty(
         "sailmq.client.localOffsetStoreDir",
-        System.getProperty("user.home") + File.separator + ".rocketmq_offsets");
+        System.getProperty("user.home") + File.separator + ".sailmq_offsets");
     private final static Logger log = LoggerFactory.getLogger(LocalFileOffsetStore.class);
     private final MQClientInstance mQClientFactory;
     private final String groupName;

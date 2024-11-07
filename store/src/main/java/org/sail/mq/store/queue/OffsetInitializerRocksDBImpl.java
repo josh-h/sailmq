@@ -18,8 +18,8 @@ package org.sail.mq.store.queue;
 
 import org.sail.mq.store.exception.ConsumeQueueException;
 import org.rocksdb.RocksDBException;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class OffsetInitializerRocksDBImpl implements OffsetInitializer {
 

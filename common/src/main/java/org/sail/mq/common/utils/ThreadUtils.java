@@ -30,8 +30,8 @@ import java.util.concurrent.TimeUnit;
 import org.sail.mq.common.ThreadFactoryImpl;
 import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.thread.FutureTaskExtThreadPoolExecutor;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public final class ThreadUtils {
     private static final Logger LOGGER = LoggerFactory.getLogger(LoggerName.TOOLS_LOGGER_NAME);

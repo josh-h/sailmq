@@ -24,7 +24,7 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import org.sail.mq.common.UtilAll;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.Logger;
 
 public class MomentStatsItemSet {
     private final ConcurrentMap<String/* key */, MomentStatsItem> statsItemTable =

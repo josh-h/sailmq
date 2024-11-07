@@ -45,17 +45,17 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.constant.PermName;
 import org.sail.mq.common.sysflag.TopicSysFlag;
 import org.sail.mq.common.topic.TopicValidator;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.remoting.protocol.DataVersion;
 import org.sail.mq.remoting.protocol.body.KVTable;
 import org.sail.mq.remoting.protocol.body.TopicConfigAndMappingSerializeWrapper;
 import org.sail.mq.remoting.protocol.body.TopicConfigSerializeWrapper;
 import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingInfo;
 import org.sail.mq.store.timer.TimerMessageStore;
-import org.apache.rocketmq.tieredstore.TieredMessageStore;
-import org.apache.rocketmq.tieredstore.metadata.MetadataStore;
-import org.apache.rocketmq.tieredstore.metadata.entity.TopicMetadata;
+import org.sail.mq.tieredstore.TieredMessageStore;
+import org.sail.mq.tieredstore.metadata.MetadataStore;
+import org.sail.mq.tieredstore.metadata.entity.TopicMetadata;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

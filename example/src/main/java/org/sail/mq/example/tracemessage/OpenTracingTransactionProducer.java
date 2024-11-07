@@ -68,7 +68,7 @@ public class OpenTracingTransactionProducer {
 
         try {
             Message msg = new Message(TOPIC, TAG, KEY,
-                "Hello RocketMQ".getBytes(RemotingHelper.DEFAULT_CHARSET));
+                "Hello SailMQ".getBytes(RemotingHelper.DEFAULT_CHARSET));
             SendResult sendResult = producer.sendMessageInTransaction(msg, null);
             System.out.printf("%s%n", sendResult);
         } catch (MQClientException | UnsupportedEncodingException e) {

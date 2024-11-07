@@ -16,13 +16,13 @@
  */
 package org.sail.mq.proxy.grpc.v2.producer;
 
-import apache.rocketmq.v2.Code;
-import apache.rocketmq.v2.Encoding;
-import apache.rocketmq.v2.MessageType;
-import apache.rocketmq.v2.Resource;
-import apache.rocketmq.v2.SendMessageRequest;
-import apache.rocketmq.v2.SendMessageResponse;
-import apache.rocketmq.v2.SendResultEntry;
+import apache.sailmq.v2.Code;
+import apache.sailmq.v2.Encoding;
+import apache.sailmq.v2.MessageType;
+import apache.sailmq.v2.Resource;
+import apache.sailmq.v2.SendMessageRequest;
+import apache.sailmq.v2.SendMessageResponse;
+import apache.sailmq.v2.SendResultEntry;
 import com.google.common.collect.Maps;
 import com.google.common.hash.Hashing;
 import com.google.protobuf.ByteString;
@@ -71,8 +71,8 @@ public class SendMessageActivity extends AbstractMessingActivity {
                 throw new GrpcProxyException(Code.MESSAGE_CORRUPTED, "no message to send");
             }
 
-            List<apache.rocketmq.v2.Message> messageList = request.getMessagesList();
-            apache.rocketmq.v2.Message message = messageList.get(0);
+            List<apache.sailmq.v2.Message> messageList = request.getMessagesList();
+            apache.sailmq.v2.Message message = messageList.get(0);
             Resource topic = message.getTopic();
             validateTopic(topic);
 
@@ -89,11 +89,11 @@ public class SendMessageActivity extends AbstractMessingActivity {
         return future;
     }
 
-    protected List<Message> buildMessage(ProxyContext context, List<apache.rocketmq.v2.Message> protoMessageList,
+    protected List<Message> buildMessage(ProxyContext context, List<apache.sailmq.v2.Message> protoMessageList,
         Resource topic) {
         String topicName = topic.getName();
         List<Message> messageExtList = new ArrayList<>();
-        for (apache.rocketmq.v2.Message protoMessage : protoMessageList) {
+        for (apache.sailmq.v2.Message protoMessage : protoMessageList) {
             if (!protoMessage.getTopic().equals(topic)) {
                 throw new GrpcProxyException(Code.MESSAGE_CORRUPTED, "topic in message is not same");
             }
@@ -103,7 +103,7 @@ public class SendMessageActivity extends AbstractMessingActivity {
         return messageExtList;
     }
 
-    protected Message buildMessage(ProxyContext context, apache.rocketmq.v2.Message protoMessage, String producerGroup) {
+    protected Message buildMessage(ProxyContext context, apache.sailmq.v2.Message protoMessage, String producerGroup) {
         String topicName = protoMessage.getTopic().getName();
 
         validateMessageBodySize(protoMessage.getBody());
@@ -116,7 +116,7 @@ public class SendMessageActivity extends AbstractMessingActivity {
         return messageExt;
     }
 
-    protected int buildSysFlag(apache.rocketmq.v2.Message protoMessage) {
+    protected int buildSysFlag(apache.sailmq.v2.Message protoMessage) {
         // sysFlag (body encoding & message type)
         int sysFlag = 0;
         Encoding bodyEncoding = protoMessage.getSystemProperties().getBodyEncoding();
@@ -190,7 +190,7 @@ public class SendMessageActivity extends AbstractMessingActivity {
         }
     }
 
-    protected Map<String, String> buildMessageProperty(ProxyContext context, apache.rocketmq.v2.Message message, String producerGroup) {
+    protected Map<String, String> buildMessageProperty(ProxyContext context, apache.sailmq.v2.Message message, String producerGroup) {
         long userPropertySize = 0;
         ProxyConfig config = ConfigurationManager.getProxyConfig();
         Message messageWithHeader = new Message();
@@ -290,7 +290,7 @@ public class SendMessageActivity extends AbstractMessingActivity {
         return messageWithHeader.getProperties();
     }
 
-    protected void fillDelayMessageProperty(apache.rocketmq.v2.Message message, Message messageWithHeader) {
+    protected void fillDelayMessageProperty(apache.sailmq.v2.Message message, Message messageWithHeader) {
         if (message.getSystemProperties().hasDeliveryTimestamp()) {
             Timestamp deliveryTimestamp = message.getSystemProperties().getDeliveryTimestamp();
             long deliveryTimestampMs = Timestamps.toMillis(deliveryTimestamp);
@@ -369,7 +369,7 @@ public class SendMessageActivity extends AbstractMessingActivity {
         @Override
         public AddressableMessageQueue select(ProxyContext ctx, MessageQueueView messageQueueView) {
             try {
-                apache.rocketmq.v2.Message message = request.getMessages(0);
+                apache.sailmq.v2.Message message = request.getMessages(0);
                 String shardingKey = null;
                 if (request.getMessagesCount() == 1) {
                     shardingKey = message.getSystemProperties().getMessageGroup();

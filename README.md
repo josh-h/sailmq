@@ -1,4 +1,4 @@
-## Apache RocketMQ
+## Apache SailMQ
 
 [![Build Status][maven-build-image]][maven-build-url]
 [![CodeCov][codecov-image]][codecov-url]
@@ -9,7 +9,7 @@
 [![Percentage of Issues Still Open][average-time-to-resolve-an-issue-image]][average-time-to-resolve-an-issue-url]
 [![Twitter Follow][twitter-follow-image]][twitter-follow-url]
 
-**[Apache RocketMQ](https://rocketmq.apache.org) is a distributed messaging and streaming platform with low latency, high performance and reliability, trillion-level capacity and flexible scalability.**
+**[Apache SailMQ](https://mq.sail.org) is a distributed messaging and streaming platform with low latency, high performance and reliability, trillion-level capacity and flexible scalability.**
 
 
 It offers a variety of features:
@@ -37,25 +37,25 @@ It offers a variety of features:
 
 ## Quick Start
 
-This paragraph guides you through steps of installing RocketMQ in different ways.
+This paragraph guides you through steps of installing SailMQ in different ways.
 For local development and testing, only one instance will be created for each component.
 
-### Run RocketMQ locally
+### Run SailMQ locally
 
-RocketMQ runs on all major operating systems and requires only a Java JDK version 8 or higher to be installed.
+SailMQ runs on all major operating systems and requires only a Java JDK version 8 or higher to be installed.
 To check, run `java -version`:
 ```shell
 $ java -version
 java version "1.8.0_121"
 ```
 
-For Windows users, click [here](https://dist.apache.org/repos/dist/release/rocketmq/5.2.0/rocketmq-all-5.2.0-bin-release.zip) to download the 5.2.0 RocketMQ binary release,
-unpack it to your local disk, such as `D:\rocketmq`.
+For Windows users, click [here](https://dist.apache.org/repos/dist/release/sailmq/5.2.0/sailmq-all-5.2.0-bin-release.zip) to download the 5.2.0 SailMQ binary release,
+unpack it to your local disk, such as `D:\sailmq`.
 For macOS and Linux users, execute following commands:
 
 ```shell
 # Download release from the Apache mirror
-$ wget https://dist.apache.org/repos/dist/release/rocketmq/5.2.0/rocketmq-all-5.2.0-bin-release.zip
+$ wget https://dist.apache.org/repos/dist/release/sailmq/5.2.0/sailmq-all-5.2.0-bin-release.zip
 
 # Unpack the release
 $ unzip sailmq-all-5.2.0-bin-release.zip
@@ -76,7 +76,7 @@ For macOS and Linux users:
 $ nohup sh mqnamesrv &
 
 ### check whether Name Server is successfully started
-$ tail -f ~/logs/rocketmqlogs/namesrv.log
+$ tail -f ~/logs/sailmqlogs/namesrv.log
 The Name Server boot success...
 ```
 
@@ -85,9 +85,9 @@ For Windows users, you need set environment variables first:
 - Choose Properties from the context menu.
 - Click the Advanced system settings link.
 - Click Environment Variables.
-- Add Environment `ROCKETMQ_HOME="D:\rocketmq"`. 
+- Add Environment `ROCKETMQ_HOME="D:\sailmq"`. 
 
-Then change directory to rocketmq, type and run:
+Then change directory to sailmq, type and run:
 ```shell
 $ mqnamesrv.cmd
 The Name Server boot success...
@@ -101,7 +101,7 @@ For macOS and Linux users:
 $ nohup sh bin/mqbroker -n localhost:9876 &
 
 ### check whether Broker is successfully started, eg: Broker's IP is 192.168.1.2, Broker's name is broker-a
-$ tail -f ~/logs/rocketmqlogs/broker.log
+$ tail -f ~/logs/sailmqlogs/broker.log
 The broker[broker-a, 192.169.1.2:10911] boot success...
 ```
 
@@ -111,9 +111,9 @@ $ mqbroker.cmd -n localhost:9876
 The broker[broker-a, 192.169.1.2:10911] boot success...
 ```
 
-### Run RocketMQ in Docker
+### Run SailMQ in Docker
 
-You can run RocketMQ on your own machine within Docker containers,
+You can run SailMQ on your own machine within Docker containers,
 `host` network will be used to expose listening port in the container.
 
 **1) Start NameServer**
@@ -128,15 +128,15 @@ $ docker run -it --net=host apache/sailmq ./mqnamesrv
 $ docker run -it --net=host --mount source=/tmp/store,target=/home/sailmq/store apache/sailmq ./mqbroker -n localhost:9876
 ```
 
-### Run RocketMQ in Kubernetes
+### Run SailMQ in Kubernetes
 
-You can also run a RocketMQ cluster within a Kubernetes cluster using [RocketMQ Operator](https://github.com/apache/rocketmq-operator).
+You can also run a SailMQ cluster within a Kubernetes cluster using [SailMQ Operator](https://github.com/sail/sailmq-operator).
 Before your operations, make sure that `kubectl` and related kubeconfig file installed on your machine.
 
 **1) Install CRDs**
 ```shell
 ### install CRDs
-$ git clone https://github.com/apache/rocketmq-operator
+$ git clone https://github.com/sail/sailmq-operator
 $ cd sailmq-operator && make deploy
 
 ### check whether CRDs is successfully installed
@@ -153,8 +153,8 @@ sailmq-operator-6f65c77c49-8hwmj   1/1     Running   0          93s
 
 **2) Create Cluster Instance**
 ```shell
-### create RocketMQ cluster resource
-$ cd example && kubectl create -f rocketmq_v1alpha1_rocketmq_cluster.yaml
+### create SailMQ cluster resource
+$ cd example && kubectl create -f sailmq_v1alpha1_sailmq_cluster.yaml
 
 ### check whether cluster resources is running
 $ kubectl get sts
@@ -165,38 +165,38 @@ name-service         1/1     107m
 ```
 
 ---
-## Apache RocketMQ Community
-* [RocketMQ Streams](https://github.com/apache/rocketmq-streams): A lightweight stream computing engine based on Apache RocketMQ.
-* [RocketMQ Flink](https://github.com/apache/rocketmq-flink): The Apache RocketMQ connector of Apache Flink that supports source and sink connector in data stream and Table.
-* [RocketMQ APIs](https://github.com/apache/rocketmq-apis): RocketMQ protobuf protocol.
-* [RocketMQ Clients](https://github.com/apache/rocketmq-clients): gRPC/protobuf-based RocketMQ clients.
-* RocketMQ Remoting-based Clients
-	 - [RocketMQ Client CPP](https://github.com/apache/rocketmq-client-cpp)
-	 - [RocketMQ Client Go](https://github.com/apache/rocketmq-client-go)
-	 - [RocketMQ Client Python](https://github.com/apache/rocketmq-client-python)
-	 - [RocketMQ Client Nodejs](https://github.com/apache/rocketmq-client-nodejs)
-* [RocketMQ Spring](https://github.com/apache/rocketmq-spring): A project which helps developers quickly integrate Apache RocketMQ with Spring Boot.
-* [RocketMQ Exporter](https://github.com/apache/rocketmq-exporter): An Apache RocketMQ exporter for Prometheus.
-* [RocketMQ Operator](https://github.com/apache/rocketmq-operator): Providing a way to run an Apache RocketMQ cluster on Kubernetes.
-* [RocketMQ Docker](https://github.com/apache/rocketmq-docker): The Git repo of the Docker Image for Apache RocketMQ.
-* [RocketMQ Dashboard](https://github.com/apache/rocketmq-dashboard): Operation and maintenance console of Apache RocketMQ.
-* [RocketMQ Connect](https://github.com/apache/rocketmq-connect): A tool for scalably and reliably streaming data between Apache RocketMQ and other systems.
-* [RocketMQ MQTT](https://github.com/apache/rocketmq-mqtt): A new MQTT protocol architecture model, based on which Apache RocketMQ can better support messages from terminals such as IoT devices and Mobile APP.
-* [RocketMQ EventBridge](https://github.com/apache/rocketmq-eventbridge): EventBridge make it easier to build a event-driven application.
-* [RocketMQ Incubating Community Projects](https://github.com/apache/rocketmq-externals): Incubator community projects of Apache RocketMQ, including [logappender](https://github.com/apache/rocketmq-externals/tree/master/logappender), [rocketmq-ansible](https://github.com/apache/rocketmq-externals/tree/master/rocketmq-ansible), [rocketmq-beats-integration](https://github.com/apache/rocketmq-externals/tree/master/rocketmq-beats-integration), [rocketmq-cloudevents-binding](https://github.com/apache/rocketmq-externals/tree/master/rocketmq-cloudevents-binding), etc.
-* [RocketMQ Site](https://github.com/apache/rocketmq-site): The repository for Apache RocketMQ website.
-* [RocketMQ E2E](https://github.com/apache/rocketmq-e2e): A project for testing Apache RocketMQ, including end-to-end, performance, compatibility tests.
+## Apache SailMQ Community
+* [SailMQ Streams](https://github.com/sail/sailmq-streams): A lightweight stream computing engine based on Apache SailMQ.
+* [SailMQ Flink](https://github.com/sail/sailmq-flink): The Apache SailMQ connector of Apache Flink that supports source and sink connector in data stream and Table.
+* [SailMQ APIs](https://github.com/sail/sailmq-apis): SailMQ protobuf protocol.
+* [SailMQ Clients](https://github.com/sail/sailmq-clients): gRPC/protobuf-based SailMQ clients.
+* SailMQ Remoting-based Clients
+	 - [SailMQ Client CPP](https://github.com/sail/sailmq-client-cpp)
+	 - [SailMQ Client Go](https://github.com/sail/sailmq-client-go)
+	 - [SailMQ Client Python](https://github.com/sail/sailmq-client-python)
+	 - [SailMQ Client Nodejs](https://github.com/sail/sailmq-client-nodejs)
+* [SailMQ Spring](https://github.com/sail/sailmq-spring): A project which helps developers quickly integrate Apache SailMQ with Spring Boot.
+* [SailMQ Exporter](https://github.com/sail/sailmq-exporter): An Apache SailMQ exporter for Prometheus.
+* [SailMQ Operator](https://github.com/sail/sailmq-operator): Providing a way to run an Apache SailMQ cluster on Kubernetes.
+* [SailMQ Docker](https://github.com/sail/sailmq-docker): The Git repo of the Docker Image for Apache SailMQ.
+* [SailMQ Dashboard](https://github.com/sail/sailmq-dashboard): Operation and maintenance console of Apache SailMQ.
+* [SailMQ Connect](https://github.com/sail/sailmq-connect): A tool for scalably and reliably streaming data between Apache SailMQ and other systems.
+* [SailMQ MQTT](https://github.com/sail/sailmq-mqtt): A new MQTT protocol architecture model, based on which Apache SailMQ can better support messages from terminals such as IoT devices and Mobile APP.
+* [SailMQ EventBridge](https://github.com/sail/sailmq-eventbridge): EventBridge make it easier to build a event-driven application.
+* [SailMQ Incubating Community Projects](https://github.com/sail/sailmq-externals): Incubator community projects of Apache SailMQ, including [logappender](https://github.com/sail/sailmq-externals/tree/master/logappender), [sailmq-ansible](https://github.com/sail/sailmq-externals/tree/master/sailmq-ansible), [sailmq-beats-integration](https://github.com/sail/sailmq-externals/tree/master/sailmq-beats-integration), [sailmq-cloudevents-binding](https://github.com/sail/sailmq-externals/tree/master/sailmq-cloudevents-binding), etc.
+* [SailMQ Site](https://github.com/sail/sailmq-site): The repository for Apache SailMQ website.
+* [SailMQ E2E](https://github.com/sail/sailmq-e2e): A project for testing Apache SailMQ, including end-to-end, performance, compatibility tests.
 
 
 ----------
 ## Learn it & Contact us
-* Mailing Lists: <https://rocketmq.apache.org/about/contact/>
-* Home: <https://rocketmq.apache.org>
-* Docs: <https://rocketmq.apache.org/docs/quick-start/>
-* Issues: <https://github.com/apache/rocketmq/issues>
-* Rips: <https://github.com/apache/rocketmq/wiki/RocketMQ-Improvement-Proposal>
-* Ask: <https://stackoverflow.com/questions/tagged/rocketmq>
-* Slack: <https://rocketmq-invite-automation.herokuapp.com/>
+* Mailing Lists: <https://mq.sail.org/about/contact/>
+* Home: <https://mq.sail.org>
+* Docs: <https://mq.sail.org/docs/quick-start/>
+* Issues: <https://github.com/sail/sailmq/issues>
+* Rips: <https://github.com/sail/sailmq/wiki/SailMQ-Improvement-Proposal>
+* Ask: <https://stackoverflow.com/questions/tagged/sailmq>
+* Slack: <https://sailmq-invite-automation.herokuapp.com/>
 
 
 ----------
@@ -204,7 +204,7 @@ name-service         1/1     107m
 
 
 ## Contributing
-We always welcome new contributions, whether for trivial cleanups, [big new features](https://github.com/apache/rocketmq/wiki/RocketMQ-Improvement-Proposal) or other material rewards, more details see [here](http://rocketmq.apache.org/docs/how-to-contribute/).
+We always welcome new contributions, whether for trivial cleanups, [big new features](https://github.com/sail/sailmq/wiki/SailMQ-Improvement-Proposal) or other material rewards, more details see [here](http://mq.sail.org/docs/how-to-contribute/).
 
 ----------
 ## License
@@ -232,19 +232,19 @@ This software uses Apache Commons Crypto (https://commons.apache.org/proper/comm
 support authentication, and encryption and decryption of data sent across the network between
 services.
 
-[maven-build-image]: https://github.com/apache/rocketmq/actions/workflows/maven.yaml/badge.svg
-[maven-build-url]: https://github.com/apache/rocketmq/actions/workflows/maven.yaml
-[codecov-image]: https://codecov.io/gh/apache/rocketmq/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/apache/rocketmq
-[maven-central-image]: https://maven-badges.herokuapp.com/maven-central/org.apache.rocketmq/rocketmq-all/badge.svg
-[maven-central-url]: http://search.maven.org/#search%7Cga%7C1%7Corg.apache.rocketmq
+[maven-build-image]: https://github.com/sail/sailmq/actions/workflows/maven.yaml/badge.svg
+[maven-build-url]: https://github.com/sail/sailmq/actions/workflows/maven.yaml
+[codecov-image]: https://codecov.io/gh/sail/sailmq/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/sail/sailmq
+[maven-central-image]: https://maven-badges.herokuapp.com/maven-central/org.sail.mq/sailmq-all/badge.svg
+[maven-central-url]: http://search.maven.org/#search%7Cga%7C1%7Corg.sail.mq
 [release-image]: https://img.shields.io/badge/release-download-orange.svg
 [release-url]: https://www.apache.org/licenses/LICENSE-2.0.html
 [license-image]: https://img.shields.io/badge/license-Apache%202-4EB1BA.svg
 [license-url]: https://www.apache.org/licenses/LICENSE-2.0.html
-[average-time-to-resolve-an-issue-image]: http://isitmaintained.com/badge/resolution/apache/rocketmq.svg
-[average-time-to-resolve-an-issue-url]: http://isitmaintained.com/project/apache/rocketmq
-[percentage-of-issues-still-open-image]: http://isitmaintained.com/badge/open/apache/rocketmq.svg
-[percentage-of-issues-still-open-url]: http://isitmaintained.com/project/apache/rocketmq
-[twitter-follow-image]: https://img.shields.io/twitter/follow/ApacheRocketMQ?style=social
-[twitter-follow-url]: https://twitter.com/intent/follow?screen_name=ApacheRocketMQ
+[average-time-to-resolve-an-issue-image]: http://isitmaintained.com/badge/resolution/sail/sailmq.svg
+[average-time-to-resolve-an-issue-url]: http://isitmaintained.com/project/sail/sailmq
+[percentage-of-issues-still-open-image]: http://isitmaintained.com/badge/open/sail/sailmq.svg
+[percentage-of-issues-still-open-url]: http://isitmaintained.com/project/sail/sailmq
+[twitter-follow-image]: https://img.shields.io/twitter/follow/ApacheSailMQ?style=social
+[twitter-follow-url]: https://twitter.com/intent/follow?screen_name=ApacheSailMQ

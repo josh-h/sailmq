@@ -1,12 +1,12 @@
 # Dledger Quick Deployment
 ---
 ### preface
-This document is mainly introduced for how to build and deploy auto failover RocketMQ cluster based on DLedger.
+This document is mainly introduced for how to build and deploy auto failover SailMQ cluster based on DLedger.
 
 For detailed new cluster deployment and old cluster upgrade document, please refer to [Deployment Guide](deploy_guide.md).
 
 ### 1. Build from source code
-Build phase contains two parts, first, build DLedger, then build RocketMQ.
+Build phase contains two parts, first, build DLedger, then build SailMQ.
 
 #### 1.1 Build DLedger
 
@@ -16,10 +16,10 @@ $ cd dledger
 $ mvn clean install -DskipTests
 ```
 
-#### 1.2 Build RocketMQ
+#### 1.2 Build SailMQ
 
 ```shell
-$ git clone https://github.com/apache/rocketmq.git
+$ git clone https://github.com/sail/sailmq.git
 $ cd sailmq
 $ git checkout -b store_with_dledger origin/store_with_dledger
 $ mvn -Prelease-all -DskipTests clean install -U

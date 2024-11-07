@@ -41,7 +41,7 @@ options {
 
 PARSER_BEGIN(SelectorParser)
 
-package org.apache.rocketmq.filter.parser;
+package org.sail.mq.filter.parser;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;

@@ -35,7 +35,7 @@ public class SqlFilterProducer {
         for (int i = 0; i < 10; i++) {
             Message msg = new Message("SqlFilterTest",
                 tags[i % tags.length],
-                ("Hello RocketMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET)
+                ("Hello SailMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET)
             );
             msg.putUserProperty("a", String.valueOf(i));
 

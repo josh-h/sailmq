@@ -2,7 +2,7 @@
 
 ## Background
 
-The `TopicMessageType` concept is introduced in RocketMQ 5.0, using the existing topic attribute feature to implement it.
+The `TopicMessageType` concept is introduced in SailMQ 5.0, using the existing topic attribute feature to implement it.
 
 The topic is created by `mqadmin` tool declaring the `message.type` attribute.
 

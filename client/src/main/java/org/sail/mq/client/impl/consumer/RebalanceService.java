@@ -18,8 +18,8 @@ package org.sail.mq.client.impl.consumer;
 
 import org.sail.mq.client.impl.factory.MQClientInstance;
 import org.sail.mq.common.ServiceThread;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class RebalanceService extends ServiceThread {
     private static long waitInterval =

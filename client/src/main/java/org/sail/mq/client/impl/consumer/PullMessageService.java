@@ -25,8 +25,8 @@ import org.sail.mq.common.ServiceThread;
 import org.sail.mq.common.ThreadFactoryImpl;
 import org.sail.mq.common.message.MessageRequestMode;
 import org.sail.mq.common.utils.ThreadUtils;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class PullMessageService extends ServiceThread {
     private final Logger logger = LoggerFactory.getLogger(PullMessageService.class);

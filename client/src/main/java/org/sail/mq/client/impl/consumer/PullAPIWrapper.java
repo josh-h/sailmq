@@ -49,8 +49,8 @@ import org.sail.mq.remoting.protocol.header.PopMessageRequestHeader;
 import org.sail.mq.remoting.protocol.header.PullMessageRequestHeader;
 import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 import org.sail.mq.remoting.protocol.route.TopicRouteData;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 public class PullAPIWrapper {
     private static final Logger log = LoggerFactory.getLogger(PullAPIWrapper.class);

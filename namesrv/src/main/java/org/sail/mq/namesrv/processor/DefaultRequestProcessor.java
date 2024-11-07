@@ -31,8 +31,8 @@ import org.sail.mq.common.MixAll;
 import org.sail.mq.common.UtilAll;
 import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.namesrv.NamesrvUtil;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.namesrv.NamesrvController;
 import org.sail.mq.remoting.common.RemotingHelper;
 import org.sail.mq.remoting.exception.RemotingCommandException;
@@ -85,7 +85,7 @@ public class DefaultRequestProcessor implements NettyRequestProcessor {
         configBlackList.add("configBlackList");
         configBlackList.add("configStorePath");
         configBlackList.add("kvConfigPath");
-        configBlackList.add("rocketmqHome");
+        configBlackList.add("sailmqHome");
         String[] configArray = namesrvController.getNamesrvConfig().getConfigBlackList().split(";");
         configBlackList.addAll(Arrays.asList(configArray));
     }

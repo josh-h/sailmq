@@ -1,13 +1,13 @@
 # Example for Ordered Messages
 
-RocketMQ provides ordered messages using FIFO order. All related messages need to be sent into the same message queue in an orderly manner.
+SailMQ provides ordered messages using FIFO order. All related messages need to be sent into the same message queue in an orderly manner.
 
 The following demonstrates ordered messages by ensuring order of create, pay, send and finish steps of sales order process.
 
 ## 1 produce ordered messages
 
 ```java
-package org.apache.rocketmq.example.order2
+package org.sail.mq.example.order2
 
 import producer.org.sail.mq.client.DefaultMQProducer;
 import producer.org.sail.mq.client.MessageQueueSelector;
@@ -39,7 +39,7 @@ public class Producer {
 
         for (int i = 0; i < 10; i++) {
             // generate message timestamp
-            String body = dateStr + " Hello RocketMQ " + orderList.get(i);
+            String body = dateStr + " Hello SailMQ " + orderList.get(i);
             Message msg = new Message("TopicTest", tags[i % tags.length], "KEY" + i, body.getBytes());
 
             SendResult sendResult = producer.send(msg, new MessageQueueSelector() {
@@ -172,7 +172,7 @@ public class Producer {
 
 ```java
 
-package org.apache.rocketmq.example.order2;
+package org.sail.mq.example.order2;
 
 import consumer.org.sail.mq.client.DefaultMQPushConsumer;
 import listener.consumer.org.sail.mq.client.ConsumeOrderlyContext;

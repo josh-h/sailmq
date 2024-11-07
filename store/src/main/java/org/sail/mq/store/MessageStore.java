@@ -479,7 +479,7 @@ public interface MessageStore {
      * @param queueId       queue ID.
      * @param consumeOffset consume queue offset.
      * @return true if the message is no longer in memory; false otherwise.
-     * @deprecated As of RIP-57, replaced by {@link #checkInMemByConsumeOffset(String, int, long, int)}, see <a href="https://github.com/apache/rocketmq/issues/5837">this issue</a> for more details
+     * @deprecated As of RIP-57, replaced by {@link #checkInMemByConsumeOffset(String, int, long, int)}, see <a href="https://github.com/sail/sailmq/issues/5837">this issue</a> for more details
      */
     @Deprecated
     boolean checkInDiskByConsumeOffset(final String topic, final int queueId, long consumeOffset);

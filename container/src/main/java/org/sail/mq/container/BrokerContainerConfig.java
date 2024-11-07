@@ -23,7 +23,7 @@ import org.sail.mq.common.utils.NetworkUtil;
 
 public class BrokerContainerConfig {
 
-    private String rocketmqHome = System.getProperty(MixAll.ROCKETMQ_HOME_PROPERTY, System.getenv(MixAll.ROCKETMQ_HOME_ENV));
+    private String sailmqHome = System.getProperty(MixAll.ROCKETMQ_HOME_PROPERTY, System.getenv(MixAll.ROCKETMQ_HOME_ENV));
 
     @ImportantField
     private String namesrvAddr = System.getProperty(MixAll.NAMESRV_ADDR_PROPERTY, System.getenv(MixAll.NAMESRV_ADDR_ENV));
@@ -58,11 +58,11 @@ public class BrokerContainerConfig {
     private String configBlackList = "configBlackList;brokerConfigPaths";
 
     public String getRocketmqHome() {
-        return rocketmqHome;
+        return sailmqHome;
     }
 
-    public void setRocketmqHome(String rocketmqHome) {
-        this.rocketmqHome = rocketmqHome;
+    public void setRocketmqHome(String sailmqHome) {
+        this.sailmqHome = sailmqHome;
     }
 
     public String getNamesrvAddr() {

@@ -16,7 +16,7 @@
  */
 package org.sail.mq.common.statistics;
 
-import org.apache.rocketmq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.Logger;
 
 public class StatisticsItemPrinter {
     private Logger log;

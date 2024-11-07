@@ -282,7 +282,7 @@ public class TransactionProducer {
         opt.setRequired(false);
         options.addOption(opt);
 
-        opt = new Option("sk", "secretKey", true, "Acl secret key, Default: rocketmq2");
+        opt = new Option("sk", "secretKey", true, "Acl secret key, Default: sailmq2");
         opt.setRequired(false);
         options.addOption(opt);
 

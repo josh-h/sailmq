@@ -21,7 +21,7 @@ import java.util.Arrays;
 import org.sail.mq.common.metrics.MetricsExporterType;
 
 public class ControllerConfig {
-    private String rocketmqHome = System.getProperty(MixAll.ROCKETMQ_HOME_PROPERTY, System.getenv(MixAll.ROCKETMQ_HOME_ENV));
+    private String sailmqHome = System.getProperty(MixAll.ROCKETMQ_HOME_PROPERTY, System.getenv(MixAll.ROCKETMQ_HOME_ENV));
     private String configStorePath = System.getProperty("user.home") + File.separator + "controller" + File.separator + "controller.properties";
     public static final String DLEDGER_CONTROLLER = "DLedger";
     public static final String JRAFT_CONTROLLER = "jRaft";
@@ -109,11 +109,11 @@ public class ControllerConfig {
     }
 
     public String getRocketmqHome() {
-        return rocketmqHome;
+        return sailmqHome;
     }
 
-    public void setRocketmqHome(String rocketmqHome) {
-        this.rocketmqHome = rocketmqHome;
+    public void setRocketmqHome(String sailmqHome) {
+        this.sailmqHome = sailmqHome;
     }
 
     public String getConfigStorePath() {

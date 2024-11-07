@@ -25,7 +25,7 @@ import org.sail.mq.common.MixAll;
 
 public class NamesrvConfig {
 
-    private String rocketmqHome = System.getProperty(MixAll.ROCKETMQ_HOME_PROPERTY, System.getenv(MixAll.ROCKETMQ_HOME_ENV));
+    private String sailmqHome = System.getProperty(MixAll.ROCKETMQ_HOME_PROPERTY, System.getenv(MixAll.ROCKETMQ_HOME_ENV));
     private String kvConfigPath = System.getProperty("user.home") + File.separator + "namesrv" + File.separator + "kvConfig.json";
     private String configStorePath = System.getProperty("user.home") + File.separator + "namesrv" + File.separator + "namesrv.properties";
     private String productEnvName = "center";
@@ -114,11 +114,11 @@ public class NamesrvConfig {
     }
 
     public String getRocketmqHome() {
-        return rocketmqHome;
+        return sailmqHome;
     }
 
-    public void setRocketmqHome(String rocketmqHome) {
-        this.rocketmqHome = rocketmqHome;
+    public void setRocketmqHome(String sailmqHome) {
+        this.sailmqHome = sailmqHome;
     }
 
     public String getKvConfigPath() {

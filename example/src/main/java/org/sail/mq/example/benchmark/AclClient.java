@@ -23,7 +23,7 @@ import org.sail.mq.remoting.RPCHook;
 
 public class AclClient {
 
-    public static final String ACL_ACCESS_KEY = "rocketmq2";
+    public static final String ACL_ACCESS_KEY = "sailmq2";
 
     public static final String ACL_SECRET_KEY = "12345678";
 

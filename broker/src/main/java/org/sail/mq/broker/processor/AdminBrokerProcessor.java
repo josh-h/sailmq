@@ -97,8 +97,8 @@ import org.sail.mq.common.stats.StatsSnapshot;
 import org.sail.mq.common.topic.TopicValidator;
 import org.sail.mq.common.utils.ExceptionUtils;
 import org.sail.mq.filter.util.BitsArray;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.remoting.common.RemotingHelper;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.exception.RemotingTimeoutException;
@@ -246,7 +246,7 @@ public class AdminBrokerProcessor implements NettyRequestProcessor {
 
     private void initConfigBlackList() {
         configBlackList.add("brokerConfigPath");
-        configBlackList.add("rocketmqHome");
+        configBlackList.add("sailmqHome");
         configBlackList.add("configBlackList");
         String[] configArray = brokerController.getBrokerConfig().getConfigBlackList().split(";");
         configBlackList.addAll(Arrays.asList(configArray));

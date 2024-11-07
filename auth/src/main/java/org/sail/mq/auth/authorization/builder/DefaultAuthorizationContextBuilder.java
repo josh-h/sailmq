@@ -16,20 +16,20 @@
  */
 package org.sail.mq.auth.authorization.builder;
 
-import apache.rocketmq.v2.AckMessageRequest;
-import apache.rocketmq.v2.ChangeInvisibleDurationRequest;
-import apache.rocketmq.v2.ClientType;
-import apache.rocketmq.v2.EndTransactionRequest;
-import apache.rocketmq.v2.ForwardMessageToDeadLetterQueueRequest;
-import apache.rocketmq.v2.HeartbeatRequest;
-import apache.rocketmq.v2.NotifyClientTerminationRequest;
-import apache.rocketmq.v2.QueryAssignmentRequest;
-import apache.rocketmq.v2.QueryRouteRequest;
-import apache.rocketmq.v2.ReceiveMessageRequest;
-import apache.rocketmq.v2.SendMessageRequest;
-import apache.rocketmq.v2.Subscription;
-import apache.rocketmq.v2.SubscriptionEntry;
-import apache.rocketmq.v2.TelemetryCommand;
+import apache.sailmq.v2.AckMessageRequest;
+import apache.sailmq.v2.ChangeInvisibleDurationRequest;
+import apache.sailmq.v2.ClientType;
+import apache.sailmq.v2.EndTransactionRequest;
+import apache.sailmq.v2.ForwardMessageToDeadLetterQueueRequest;
+import apache.sailmq.v2.HeartbeatRequest;
+import apache.sailmq.v2.NotifyClientTerminationRequest;
+import apache.sailmq.v2.QueryAssignmentRequest;
+import apache.sailmq.v2.QueryRouteRequest;
+import apache.sailmq.v2.ReceiveMessageRequest;
+import apache.sailmq.v2.SendMessageRequest;
+import apache.sailmq.v2.Subscription;
+import apache.sailmq.v2.SubscriptionEntry;
+import apache.sailmq.v2.TelemetryCommand;
 import com.google.protobuf.GeneratedMessageV3;
 import io.grpc.Metadata;
 import io.netty.channel.ChannelHandlerContext;
@@ -52,13 +52,13 @@ import org.sail.mq.auth.authorization.exception.AuthorizationException;
 import org.sail.mq.auth.authorization.model.Resource;
 import org.sail.mq.auth.config.AuthConfig;
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.constant.CommonConstants;
 import org.sail.mq.common.constant.GrpcConstants;
 import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.common.resource.ResourcePattern;
 import org.sail.mq.common.resource.ResourceType;
-import org.sail.mq.common.resource.RocketMQResource;
+import org.sail.mq.common.resource.SailMQResource;
 import org.sail.mq.remoting.CommandCustomHeader;
 import org.sail.mq.remoting.common.RemotingHelper;
 import org.sail.mq.remoting.protocol.NamespaceUtil;
@@ -333,7 +333,7 @@ public class DefaultAuthorizationContextBuilder implements AuthorizationContextB
         }
         CommandCustomHeader header = request.decodeCommandCustomHeader(clazz);
 
-        RocketMQAction rocketMQAction = clazz.getAnnotation(RocketMQAction.class);
+        SailMQAction rocketMQAction = clazz.getAnnotation(SailMQAction.class);
         ResourceType resourceType = rocketMQAction.resource();
         Action[] actions = rocketMQAction.action();
         Resource resource = null;
@@ -344,7 +344,7 @@ public class DefaultAuthorizationContextBuilder implements AuthorizationContextB
         Field[] fields = clazz.getDeclaredFields();
         if (ArrayUtils.isNotEmpty(fields)) {
             for (Field field : fields) {
-                RocketMQResource rocketMQResource = field.getAnnotation(RocketMQResource.class);
+                SailMQResource rocketMQResource = field.getAnnotation(SailMQResource.class);
                 if (rocketMQResource == null) {
                     continue;
                 }
@@ -385,7 +385,7 @@ public class DefaultAuthorizationContextBuilder implements AuthorizationContextB
     }
 
     private List<DefaultAuthorizationContext> newContext(Metadata metadata, QueryRouteRequest request) {
-        apache.rocketmq.v2.Resource topic = request.getTopic();
+        apache.sailmq.v2.Resource topic = request.getTopic();
         if (StringUtils.isBlank(topic.getName())) {
             throw new AuthorizationException("topic is null.");
         }
@@ -408,8 +408,8 @@ public class DefaultAuthorizationContextBuilder implements AuthorizationContextB
         }
         List<DefaultAuthorizationContext> result = new ArrayList<>();
         if (request.getSettings().hasPublishing()) {
-            List<apache.rocketmq.v2.Resource> topicList = request.getSettings().getPublishing().getTopicsList();
-            for (apache.rocketmq.v2.Resource topic : topicList) {
+            List<apache.sailmq.v2.Resource> topicList = request.getSettings().getPublishing().getTopicsList();
+            for (apache.sailmq.v2.Resource topic : topicList) {
                 result.addAll(newPubContext(metadata, topic));
             }
         }
@@ -428,7 +428,7 @@ public class DefaultAuthorizationContextBuilder implements AuthorizationContextB
             .contains(clientType);
     }
 
-    private static List<DefaultAuthorizationContext> newPubContext(Metadata metadata, apache.rocketmq.v2.Resource topic) {
+    private static List<DefaultAuthorizationContext> newPubContext(Metadata metadata, apache.sailmq.v2.Resource topic) {
         if (topic == null || StringUtils.isBlank(topic.getName())) {
             throw new AuthorizationException("topic is null.");
         }
@@ -442,8 +442,8 @@ public class DefaultAuthorizationContextBuilder implements AuthorizationContextB
         return Collections.singletonList(context);
     }
 
-    private List<DefaultAuthorizationContext> newSubContexts(Metadata metadata, apache.rocketmq.v2.Resource group,
-        apache.rocketmq.v2.Resource topic) {
+    private List<DefaultAuthorizationContext> newSubContexts(Metadata metadata, apache.sailmq.v2.Resource group,
+        apache.sailmq.v2.Resource topic) {
         List<DefaultAuthorizationContext> result = new ArrayList<>();
         result.addAll(newGroupSubContexts(metadata, group));
         result.addAll(newTopicSubContexts(metadata, topic));
@@ -451,17 +451,17 @@ public class DefaultAuthorizationContextBuilder implements AuthorizationContextB
     }
 
     private static List<DefaultAuthorizationContext> newTopicSubContexts(Metadata metadata,
-        apache.rocketmq.v2.Resource resource) {
+        apache.sailmq.v2.Resource resource) {
         return newSubContexts(metadata, ResourceType.TOPIC, resource);
     }
 
     private static List<DefaultAuthorizationContext> newGroupSubContexts(Metadata metadata,
-        apache.rocketmq.v2.Resource resource) {
+        apache.sailmq.v2.Resource resource) {
         return newSubContexts(metadata, ResourceType.GROUP, resource);
     }
 
     private static List<DefaultAuthorizationContext> newSubContexts(Metadata metadata, ResourceType resourceType,
-        apache.rocketmq.v2.Resource resource) {
+        apache.sailmq.v2.Resource resource) {
         if (resourceType == ResourceType.GROUP) {
             if (resource == null || StringUtils.isBlank(resource.getName())) {
                 throw new AuthorizationException("group is null.");

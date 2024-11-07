@@ -19,8 +19,8 @@ package io.openmessaging.sailmq.promise;
 import io.openmessaging.Promise;
 import io.openmessaging.FutureListener;
 import io.openmessaging.exception.OMSRuntimeException;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;

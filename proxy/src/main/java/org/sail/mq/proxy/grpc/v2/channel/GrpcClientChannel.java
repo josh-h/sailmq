@@ -16,11 +16,11 @@
  */
 package org.sail.mq.proxy.grpc.v2.channel;
 
-import apache.rocketmq.v2.PrintThreadStackTraceCommand;
-import apache.rocketmq.v2.RecoverOrphanedTransactionCommand;
-import apache.rocketmq.v2.Settings;
-import apache.rocketmq.v2.TelemetryCommand;
-import apache.rocketmq.v2.VerifyMessageCommand;
+import apache.sailmq.v2.PrintThreadStackTraceCommand;
+import apache.sailmq.v2.RecoverOrphanedTransactionCommand;
+import apache.sailmq.v2.Settings;
+import apache.sailmq.v2.TelemetryCommand;
+import apache.sailmq.v2.VerifyMessageCommand;
 import com.google.common.base.MoreObjects;
 import com.google.common.collect.ComparisonChain;
 import com.google.protobuf.InvalidProtocolBufferException;
@@ -34,8 +34,8 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.atomic.AtomicReference;
 import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.message.MessageExt;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.common.channel.ChannelHelper;
 import org.sail.mq.proxy.config.ConfigurationManager;

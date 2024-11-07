@@ -15,7 +15,7 @@ localbin
 nohup.out
 bazel-out
 bazel-bin
-bazel-rocketmq
+bazel-sailmq
 bazel-testlogs
 .vscode
 MODULE.bazel.lock

@@ -16,8 +16,8 @@
  */
 package org.sail.mq.proxy.grpc.v2.producer;
 
-import apache.rocketmq.v2.ForwardMessageToDeadLetterQueueRequest;
-import apache.rocketmq.v2.ForwardMessageToDeadLetterQueueResponse;
+import apache.sailmq.v2.ForwardMessageToDeadLetterQueueRequest;
+import apache.sailmq.v2.ForwardMessageToDeadLetterQueueResponse;
 import java.util.concurrent.CompletableFuture;
 import org.sail.mq.common.consumer.ReceiptHandle;
 import org.sail.mq.proxy.common.MessageReceiptHandle;

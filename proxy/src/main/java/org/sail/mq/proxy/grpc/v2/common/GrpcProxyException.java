@@ -16,7 +16,7 @@
  */
 package org.sail.mq.proxy.grpc.v2.common;
 
-import apache.rocketmq.v2.Code;
+import apache.sailmq.v2.Code;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import org.sail.mq.proxy.common.ProxyException;

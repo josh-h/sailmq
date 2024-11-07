@@ -19,7 +19,7 @@ package org.sail.mq.controller.impl.event;
 import org.apache.commons.lang3.SerializationException;
 import org.sail.mq.common.utils.FastJsonSerializer;
 import org.sail.mq.common.utils.Serializer;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.Logger;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;

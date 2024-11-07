@@ -17,25 +17,25 @@
 package org.sail.mq.remoting.protocol.header;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
-import org.sail.mq.common.resource.RocketMQResource;
+import org.sail.mq.common.resource.SailMQResource;
 import org.sail.mq.remoting.annotation.CFNotNull;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.protocol.RequestCode;
 import org.sail.mq.remoting.rpc.TopicQueueRequestHeader;
 
-@RocketMQAction(value = RequestCode.PEEK_MESSAGE, action = Action.SUB)
+@SailMQAction(value = RequestCode.PEEK_MESSAGE, action = Action.SUB)
 public class PeekMessageRequestHeader extends TopicQueueRequestHeader {
     @CFNotNull
-    @RocketMQResource(ResourceType.TOPIC)
+    @SailMQResource(ResourceType.TOPIC)
     private String topic;
     @CFNotNull
     private int queueId;
     @CFNotNull
     private int maxMsgNums;
     @CFNotNull
-    @RocketMQResource(ResourceType.GROUP)
+    @SailMQResource(ResourceType.GROUP)
     private String consumerGroup;
 
     @Override

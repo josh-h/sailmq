@@ -18,18 +18,18 @@
 package org.sail.mq.remoting.protocol.header;
 
 import org.sail.mq.common.action.Action;
-import org.sail.mq.common.action.RocketMQAction;
+import org.sail.mq.common.action.SailMQAction;
 import org.sail.mq.common.resource.ResourceType;
-import org.sail.mq.common.resource.RocketMQResource;
+import org.sail.mq.common.resource.SailMQResource;
 import org.sail.mq.remoting.CommandCustomHeader;
 import org.sail.mq.remoting.annotation.CFNullable;
 import org.sail.mq.remoting.exception.RemotingCommandException;
 import org.sail.mq.remoting.protocol.RequestCode;
 
-@RocketMQAction(value = RequestCode.RESUME_CHECK_HALF_MESSAGE, action = Action.UPDATE)
+@SailMQAction(value = RequestCode.RESUME_CHECK_HALF_MESSAGE, action = Action.UPDATE)
 public class ResumeCheckHalfMessageRequestHeader implements CommandCustomHeader {
 
-    @RocketMQResource(ResourceType.TOPIC)
+    @SailMQResource(ResourceType.TOPIC)
     private String topic;
     @CFNullable
     private String msgId;

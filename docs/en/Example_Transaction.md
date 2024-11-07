@@ -37,7 +37,7 @@ public class TransactionProducer {
            try {
                Message msg =
                    new Message("TopicTest1234", tags[i % tags.length], "KEY" + i,
-                       ("Hello RocketMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET));
+                       ("Hello SailMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET));
                SendResult sendResult = producer.sendMessageInTransaction(msg, null);
                System.out.printf("%s%n", sendResult);
                Thread.sleep(10);
@@ -91,6 +91,6 @@ public class TransactionListenerImpl implements TransactionListener {
 2. In order to avoid a single message being checked too many times and lead to half queue message accumulation,  we limited the number of checks for a single message to 15 times by default, but users can change this limit by change the ```transactionCheckMax``` parameter in the configuration of the broker,  if one message has been checked over ```transactionCheckMax``` times,  broker will discard this message and print an error log at the same time by default. Users can change this behavior by override the ```AbstractTransactionalMessageCheckListener``` class.
 3. A transactional message will be checked after a certain period of time that determined by parameter ```transactionTimeout``` in the configuration of the broker. And users also can change this limit by set user property ```CHECK_IMMUNITY_TIME_IN_SECONDS``` when sending transactional message, this parameter takes precedence over the ```transactionTimeout``` parameter. 
 4. A transactional message maybe checked or consumed more than once. 
-5. Committed message reput to the user’s target topic may fail. Currently, it depends on the log record. High availability is ensured by the high availability mechanism of RocketMQ itself. If you want to ensure that the transactional message isn’t lost and the transaction integrity is guaranteed, it is recommended to use synchronous double write mechanism. 
+5. Committed message reput to the user’s target topic may fail. Currently, it depends on the log record. High availability is ensured by the high availability mechanism of SailMQ itself. If you want to ensure that the transactional message isn’t lost and the transaction integrity is guaranteed, it is recommended to use synchronous double write mechanism. 
 6. `producerGroup` for producers of transactional messages cannot be shared with `producerGroup` for producers of other types of messages. Unlike other types of message, transactional messages allow backward queries. MQ Server query clients by their `producerGroup` of producers.
 

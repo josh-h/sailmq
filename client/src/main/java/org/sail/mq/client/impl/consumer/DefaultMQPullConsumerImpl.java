@@ -63,8 +63,8 @@ import org.sail.mq.remoting.protocol.filter.FilterAPI;
 import org.sail.mq.remoting.protocol.heartbeat.ConsumeType;
 import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
 import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 
 /**
  * This class will be removed in 2022, and a better implementation {@link DefaultLitePullConsumerImpl} is recommend to use

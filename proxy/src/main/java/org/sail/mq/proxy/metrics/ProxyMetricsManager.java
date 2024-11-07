@@ -43,8 +43,8 @@ import org.sail.mq.broker.metrics.BrokerMetricsManager;
 import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.metrics.MetricsExporterType;
 import org.sail.mq.common.utils.StartAndShutdown;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.proxy.config.ProxyConfig;
 import org.slf4j.bridge.SLF4JBridgeHandler;
 

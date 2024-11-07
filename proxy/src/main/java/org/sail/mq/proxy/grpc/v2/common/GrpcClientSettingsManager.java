@@ -17,14 +17,14 @@
 
 package org.sail.mq.proxy.grpc.v2.common;
 
-import apache.rocketmq.v2.Address;
-import apache.rocketmq.v2.AddressScheme;
-import apache.rocketmq.v2.ClientType;
-import apache.rocketmq.v2.CustomizedBackoff;
-import apache.rocketmq.v2.Endpoints;
-import apache.rocketmq.v2.ExponentialBackoff;
-import apache.rocketmq.v2.Metric;
-import apache.rocketmq.v2.Settings;
+import apache.sailmq.v2.Address;
+import apache.sailmq.v2.AddressScheme;
+import apache.sailmq.v2.ClientType;
+import apache.sailmq.v2.CustomizedBackoff;
+import apache.sailmq.v2.Endpoints;
+import apache.sailmq.v2.ExponentialBackoff;
+import apache.sailmq.v2.Metric;
+import apache.sailmq.v2.Settings;
 import com.google.protobuf.Duration;
 import com.google.protobuf.util.Durations;
 import java.util.Arrays;
@@ -38,8 +38,8 @@ import org.sail.mq.broker.client.ConsumerGroupInfo;
 import org.sail.mq.common.ServiceThread;
 import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.utils.StartAndShutdown;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.config.ConfigurationManager;
 import org.sail.mq.proxy.config.MetricCollectorMode;

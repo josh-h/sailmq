@@ -26,14 +26,14 @@
     <appender name="DefaultAppenderInner" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <append>true</append>
         <File>
-            ${rocketmq.log.root:-${user.home}${file.separator}logs${file.separator}rocketmqlogs}${file.separator}rocketmq_client.log
+            ${sailmq.log.root:-${user.home}${file.separator}logs${file.separator}sailmqlogs}${file.separator}sailmq_client.log
         </File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
             <FileNamePattern>
-                ${rocketmq.log.root:-${user.home}${file.separator}logs${file.separator}rocketmqlogs}${file.separator}other_days${file.separator}rocketmq_client-%i.log.gz
+                ${sailmq.log.root:-${user.home}${file.separator}logs${file.separator}sailmqlogs}${file.separator}other_days${file.separator}sailmq_client-%i.log.gz
             </FileNamePattern>
             <minIndex>1</minIndex>
-            <maxIndex>${rocketmq.log.file.maxIndex:-10}</maxIndex>
+            <maxIndex>${sailmq.log.file.maxIndex:-10}</maxIndex>
         </rollingPolicy>
         <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
             <maxFileSize>64MB</maxFileSize>
@@ -46,7 +46,7 @@
     <appender name="DefaultAppender" class="ch.qos.logback.classic.AsyncAppender">
         <appender-ref ref="DefaultAppenderInner"/>
     </appender>
-    <root level="${rocketmq.log.level:-info}">
+    <root level="${sailmq.log.level:-info}">
         <appender-ref ref="CustomConsoleAppender"/>
         <appender-ref ref="DefaultAppender" additivity="false"/>
     </root>

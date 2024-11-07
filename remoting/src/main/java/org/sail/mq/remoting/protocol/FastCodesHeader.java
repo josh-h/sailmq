@@ -37,8 +37,8 @@ public interface FastCodesHeader {
 
     default void writeIfNotNull(ByteBuf out, String key, Object value) {
         if (value != null) {
-            RocketMQSerializable.writeStr(out, true, key);
-            RocketMQSerializable.writeStr(out, false, value.toString());
+            SailMQSerializable.writeStr(out, true, key);
+            SailMQSerializable.writeStr(out, false, value.toString());
         }
     }
 

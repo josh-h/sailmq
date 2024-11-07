@@ -85,14 +85,14 @@
         <moduleSet>
             <useAllReactorProjects>true</useAllReactorProjects>
             <includes>
-                <include>org.apache.rocketmq:rocketmq-container</include>
-                <include>org.apache.rocketmq:rocketmq-broker</include>
-                <include>org.apache.rocketmq:rocketmq-tools</include>
-                <include>org.apache.rocketmq:rocketmq-client</include>
-                <include>org.apache.rocketmq:rocketmq-namesrv</include>
-                <include>org.apache.rocketmq:rocketmq-example</include>
-                <include>org.apache.rocketmq:rocketmq-openmessaging</include>
-                <include>org.apache.rocketmq:rocketmq-controller</include>
+                <include>org.sail.mq:sailmq-container</include>
+                <include>org.sail.mq:sailmq-broker</include>
+                <include>org.sail.mq:sailmq-tools</include>
+                <include>org.sail.mq:sailmq-client</include>
+                <include>org.sail.mq:sailmq-namesrv</include>
+                <include>org.sail.mq:sailmq-example</include>
+                <include>org.sail.mq:sailmq-openmessaging</include>
+                <include>org.sail.mq:sailmq-controller</include>
             </includes>
             <binaries>
                 <outputDirectory>lib/</outputDirectory>

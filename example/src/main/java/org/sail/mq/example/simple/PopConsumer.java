@@ -27,7 +27,7 @@ import org.sail.mq.common.consumer.ConsumeFromWhere;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageRequestMode;
 import org.sail.mq.remoting.protocol.route.BrokerData;
-import org.apache.rocketmq.tools.admin.DefaultMQAdminExt;
+import org.sail.mq.tools.admin.DefaultMQAdminExt;
 
 public class PopConsumer {
     public static final String TOPIC = "TopicTest";

@@ -50,7 +50,7 @@ import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.remoting.CommandCustomHeader;
 import org.sail.mq.remoting.RPCHook;
 import org.sail.mq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.tools.admin.DefaultMQAdminExt;
+import org.sail.mq.tools.admin.DefaultMQAdminExt;
 import org.reflections.Reflections;
 
 public class SchemaDefiner {

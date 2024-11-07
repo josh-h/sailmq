@@ -36,8 +36,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 import org.apache.commons.lang3.StringUtils;
 import org.sail.mq.common.BoundaryType;
 import org.sail.mq.common.constant.LoggerName;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
+import org.sail.mq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.remoting.CommandCustomHeader;
 import org.sail.mq.remoting.annotation.CFNotNull;
 import org.sail.mq.remoting.exception.RemotingCommandException;
@@ -220,7 +220,7 @@ public class RemotingCommand {
                 resultJson.setSerializeTypeCurrentRPC(type);
                 return resultJson;
             case ROCKETMQ:
-                RemotingCommand resultRMQ = RocketMQSerializable.rocketMQProtocolDecode(byteBuffer, len);
+                RemotingCommand resultRMQ = SailMQSerializable.rocketMQProtocolDecode(byteBuffer, len);
                 resultRMQ.setSerializeTypeCurrentRPC(type);
                 return resultRMQ;
             default:
@@ -418,7 +418,7 @@ public class RemotingCommand {
     private byte[] headerEncode() {
         this.makeCustomHeaderToNet();
         if (SerializeType.ROCKETMQ == serializeTypeCurrentRPC) {
-            return RocketMQSerializable.rocketMQProtocolEncode(this);
+            return SailMQSerializable.rocketMQProtocolEncode(this);
         } else {
             return RemotingSerializable.encode(this);
         }
@@ -462,7 +462,7 @@ public class RemotingCommand {
             if (customHeader != null && !(customHeader instanceof FastCodesHeader)) {
                 this.makeCustomHeaderToNet();
             }
-            headerSize = RocketMQSerializable.rocketMQProtocolEncode(this, out);
+            headerSize = SailMQSerializable.rocketMQProtocolEncode(this, out);
         } else {
             this.makeCustomHeaderToNet();
             byte[] header = RemotingSerializable.encode(this);

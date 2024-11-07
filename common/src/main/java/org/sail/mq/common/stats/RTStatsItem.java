@@ -18,7 +18,7 @@
 package org.sail.mq.common.stats;
 
 import java.util.concurrent.ScheduledExecutorService;
-import org.apache.rocketmq.logging.org.slf4j.Logger;
+import org.sail.mq.logging.org.slf4j.Logger;
 
 /**
  * A StatItem for response time, the only difference between from StatsItem is it has a different log output.

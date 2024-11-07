@@ -13,7 +13,7 @@ This is the simplest, but also the riskiest mode, that makes the entire service 
 $ nohup sh mqnamesrv &
  
 ### Then verify that the Name Server starts successfully
-$ tail -f ~/logs/rocketmqlogs/namesrv.log
+$ tail -f ~/logs/sailmqlogs/namesrv.log
 The Name Server boot success...
 ```
 
@@ -26,7 +26,7 @@ We can see 'The Name Server boot success.. ' in namesrv.log that indicates the N
 $ nohup sh bin/mqbroker -n localhost:9876 &
 
 ### Then verify that the broker is started successfully, for example, the IP of broker is 192.168.1.2 and the name is broker-a
-$ tail -f ~/logs/rocketmqlogs/Broker.log 
+$ tail -f ~/logs/sailmqlogs/Broker.log 
 The broker[broker-a,192.169.1.2:10911] boot success...
 ```
 
@@ -53,7 +53,7 @@ The starting steps for multiple master mode are as follows:
 $ nohup sh mqnamesrv &
  
 ### Then verify that the Name Server starts successfully
-$ tail -f ~/logs/rocketmqlogs/namesrv.log
+$ tail -f ~/logs/sailmqlogs/namesrv.log
 The Name Server boot success...
 ```
 
@@ -91,7 +91,7 @@ The starting steps for multiple master and multiple slave mode are as follows:
 $ nohup sh mqnamesrv &
  
 ### Then verify that the Name Server starts successfully
-$ tail -f ~/logs/rocketmqlogs/namesrv.log
+$ tail -f ~/logs/sailmqlogs/namesrv.log
 The Name Server boot success...
 ```
 
@@ -136,7 +136,7 @@ The starting steps are as follows:
 $ nohup sh mqnamesrv &
  
 ### Then verify that the Name Server starts successfully
-$ tail -f ~/logs/rocketmqlogs/namesrv.log
+$ tail -f ~/logs/sailmqlogs/namesrv.log
 The Name Server boot success...
 ```
 
