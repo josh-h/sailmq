@@ -18,10 +18,10 @@
 package org.apache.rocketmq.test.grpc.v2;
 
 import apache.rocketmq.v2.QueryRouteResponse;
-import org.apache.rocketmq.proxy.config.ConfigurationManager;
-import org.apache.rocketmq.proxy.grpc.v2.GrpcMessagingApplication;
-import org.apache.rocketmq.proxy.processor.DefaultMessagingProcessor;
-import org.apache.rocketmq.proxy.processor.MessagingProcessor;
+import org.sail.mq.proxy.config.ConfigurationManager;
+import org.sail.mq.proxy.grpc.v2.GrpcMessagingApplication;
+import org.sail.mq.proxy.processor.DefaultMessagingProcessor;
+import org.sail.mq.proxy.processor.MessagingProcessor;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.FixMethodOrder;

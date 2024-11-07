@@ -76,7 +76,7 @@ public class IndexStoreServiceTest {
         storeConfig.setTieredStoreFilePath(directory);
         storeConfig.setTieredStoreIndexFileMaxHashSlotNum(5);
         storeConfig.setTieredStoreIndexFileMaxIndexNum(20);
-        storeConfig.setTieredBackendServiceProvider("org.apache.rocketmq.tieredstore.provider.PosixFileSegment");
+        storeConfig.setTieredBackendServiceProvider("org.apache.sailmq.tieredstore.provider.PosixFileSegment");
         MetadataStore metadataStore = new DefaultMetadataStore(storeConfig);
         fileAllocator = new FlatFileFactory(metadataStore, storeConfig);
     }

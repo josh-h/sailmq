@@ -66,7 +66,7 @@ public class ExportMetricsCommand implements SubCommand {
         options.addOption(opt);
 
         opt = new Option("f", "filePath", true,
-            "export metrics.json path | default /tmp/rocketmq/export");
+            "export metrics.json path | default /tmp/sailmq/export");
         opt.setRequired(false);
         options.addOption(opt);
         return options;
@@ -81,7 +81,7 @@ public class ExportMetricsCommand implements SubCommand {
 
         try {
             String clusterName = commandLine.getOptionValue('c').trim();
-            String filePath = !commandLine.hasOption('f') ? "/tmp/rocketmq/export" : commandLine.getOptionValue('f')
+            String filePath = !commandLine.hasOption('f') ? "/tmp/sailmq/export" : commandLine.getOptionValue('f')
                 .trim();
 
             defaultMQAdminExt.start();

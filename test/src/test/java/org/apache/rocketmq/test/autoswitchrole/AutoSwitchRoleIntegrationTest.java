@@ -31,7 +31,7 @@ import org.sail.mq.common.namesrv.NamesrvConfig;
 import org.apache.rocketmq.remoting.protocol.RemotingCommand;
 import org.apache.rocketmq.remoting.protocol.body.SyncStateSet;
 import org.sail.mq.controller.ControllerManager;
-import org.apache.rocketmq.namesrv.NamesrvController;
+import org.sail.mq.namesrv.NamesrvController;
 import org.apache.rocketmq.remoting.netty.NettyClientConfig;
 import org.apache.rocketmq.remoting.netty.NettyServerConfig;
 import org.apache.rocketmq.remoting.protocol.header.controller.GetReplicaInfoRequestHeader;

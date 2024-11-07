@@ -26,7 +26,7 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.constant.PermName;
 import org.sail.mq.common.filter.ExpressionType;
 import org.sail.mq.common.sysflag.TopicSysFlag;
-import org.apache.rocketmq.filter.FilterFactory;
+import org.sail.mq.filter.FilterFactory;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.remoting.common.RemotingHelper;

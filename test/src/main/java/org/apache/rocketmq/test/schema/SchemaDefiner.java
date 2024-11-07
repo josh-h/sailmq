@@ -119,7 +119,7 @@ public class SchemaDefiner {
         }
         {
             PROTOCOL_CLASS_LIST.add(RequestCode.class);
-            Reflections reflections = new Reflections("org.apache.rocketmq");
+            Reflections reflections = new Reflections("org.apache.sailmq");
             for (Class<?> protocolClass: reflections.getSubTypesOf(CommandCustomHeader.class)) {
                 PROTOCOL_CLASS_LIST.add(protocolClass);
             }

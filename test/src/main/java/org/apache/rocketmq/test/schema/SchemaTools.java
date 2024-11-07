@@ -186,7 +186,7 @@ public class SchemaTools {
             TreeMap<String, String> map = new TreeMap<>();
             map.putAll(buildSchemaOfFields(apiClass));
             map.putAll(buildSchemaOfMethods(apiClass));
-            schemaMap.put(apiClass.getName().replace("org.apache.rocketmq.", ""), map);
+            schemaMap.put(apiClass.getName().replace("org.apache.sailmq.", ""), map);
         }
         return schemaMap;
     }

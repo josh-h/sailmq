@@ -15,7 +15,7 @@ For detailed guidelines on new cluster deployment and old cluster upgrades, plea
 ```shell
 $ git clone https://github.com/apache/rocketmq.git
 
-$ cd rocketmq
+$ cd sailmq
 
 $ mvn -Prelease-all -DskipTests clean install -U
 ```
@@ -25,8 +25,8 @@ $ mvn -Prelease-all -DskipTests clean install -U
 After successful build
 
 ```shell
-#{rocketmq-version} replace with rocketmq actual version. example: 5.0.0-SNAPSHOT
-$ cd distribution/target/rocketmq-{rocketmq-version}/rocketmq-{rocketmq-version}/
+#{sailmq-version} replace with sailmq actual version. example: 5.0.0-SNAPSHOT
+$ cd distribution/target/sailmq-{sailmq-version}/sailmq-{sailmq-version}/
 
 $ sh bin/controller/fast-try.sh start
 ```

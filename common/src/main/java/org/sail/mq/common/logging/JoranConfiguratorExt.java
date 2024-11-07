@@ -32,7 +32,7 @@ public class JoranConfiguratorExt extends JoranConfigurator {
     private InputStream transformXml(InputStream in) throws IOException {
         try {
             String str = CharStreams.toString(new InputStreamReader(in, StandardCharsets.UTF_8));
-            str = str.replace("\"ch.qos.logback", "\"org.apache.rocketmq.logging.ch.qos.logback");
+            str = str.replace("\"ch.qos.logback", "\"org.apache.sailmq.logging.ch.qos.logback");
             return new ByteArrayInputStream(str.getBytes(StandardCharsets.UTF_8));
         } finally {
             if (null != in) {

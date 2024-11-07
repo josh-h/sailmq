@@ -54,7 +54,7 @@ import org.sail.mq.container.BrokerContainerConfig;
 import org.sail.mq.container.InnerSalveBrokerController;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.namesrv.NamesrvController;
+import org.sail.mq.namesrv.NamesrvController;
 import org.apache.rocketmq.remoting.netty.NettyClientConfig;
 import org.apache.rocketmq.remoting.netty.NettyRequestProcessor;
 import org.apache.rocketmq.remoting.netty.NettyServerConfig;
@@ -73,7 +73,7 @@ import org.junit.BeforeClass;
 import static org.awaitility.Awaitility.await;
 
 /**
- * ContainerIntegrationTestBase will setup a rocketmq ha cluster contains two broker group:
+ * ContainerIntegrationTestBase will setup a sailmq ha cluster contains two broker group:
  * <li>BrokerA contains two replicas</li>
  * <li>BrokerB contains three replicas</li>
  */
@@ -113,8 +113,8 @@ public class ContainerIntegrationTestBase {
     public static void setUp() throws Exception {
         if (CLUSTER_SET_UP.compareAndSet(false, true)) {
             System.setProperty(RemotingCommand.REMOTING_VERSION_KEY, Integer.toString(MQVersion.CURRENT_VERSION));
-            System.setProperty("rocketmq.broker.diskSpaceCleanForciblyRatio", "0.99");
-            System.setProperty("rocketmq.broker.diskSpaceWarningLevelRatio", "0.99");
+            System.setProperty("sailmq.broker.diskSpaceCleanForciblyRatio", "0.99");
+            System.setProperty("sailmq.broker.diskSpaceWarningLevelRatio", "0.99");
 
             setUpCluster();
             setUpTopic();

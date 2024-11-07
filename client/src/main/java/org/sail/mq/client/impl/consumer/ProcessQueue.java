@@ -38,9 +38,9 @@ import org.apache.rocketmq.remoting.protocol.body.ProcessQueueInfo;
  */
 public class ProcessQueue {
     public final static long REBALANCE_LOCK_MAX_LIVE_TIME =
-        Long.parseLong(System.getProperty("rocketmq.client.rebalance.lockMaxLiveTime", "30000"));
-    public final static long REBALANCE_LOCK_INTERVAL = Long.parseLong(System.getProperty("rocketmq.client.rebalance.lockInterval", "20000"));
-    private final static long PULL_MAX_IDLE_TIME = Long.parseLong(System.getProperty("rocketmq.client.pull.pullMaxIdleTime", "120000"));
+        Long.parseLong(System.getProperty("sailmq.client.rebalance.lockMaxLiveTime", "30000"));
+    public final static long REBALANCE_LOCK_INTERVAL = Long.parseLong(System.getProperty("sailmq.client.rebalance.lockInterval", "20000"));
+    private final static long PULL_MAX_IDLE_TIME = Long.parseLong(System.getProperty("sailmq.client.pull.pullMaxIdleTime", "120000"));
     private final Logger log = LoggerFactory.getLogger(ProcessQueue.class);
     private final ReadWriteLock treeMapLock = new ReentrantReadWriteLock();
     private final TreeMap<Long, MessageExt> msgTreeMap = new TreeMap<>();

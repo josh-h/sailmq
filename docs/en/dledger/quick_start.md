@@ -20,7 +20,7 @@ $ mvn clean install -DskipTests
 
 ```shell
 $ git clone https://github.com/apache/rocketmq.git
-$ cd rocketmq
+$ cd sailmq
 $ git checkout -b store_with_dledger origin/store_with_dledger
 $ mvn -Prelease-all -DskipTests clean install -U
 ```
@@ -30,8 +30,8 @@ $ mvn -Prelease-all -DskipTests clean install -U
 after build successful
 
 ```shell
-#{rocketmq-version} replace with rocketmq actual version. example: 5.0.0-SNAPSHOT
-$ cd distribution/target/rocketmq-{rocketmq-version}/rocketmq-{rocketmq-version}
+#{sailmq-version} replace with sailmq actual version. example: 5.0.0-SNAPSHOT
+$ cd distribution/target/sailmq-{sailmq-version}/sailmq-{sailmq-version}
 $ sh bin/dledger/fast-try.sh start
 ```
 

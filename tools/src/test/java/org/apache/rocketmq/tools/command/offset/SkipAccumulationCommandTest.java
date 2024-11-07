@@ -66,7 +66,7 @@ public class SkipAccumulationCommandTest {
     @Ignore
     @Test
     public void testExecute() throws SubCommandException {
-        System.setProperty("rocketmq.namesrv.addr", "127.0.0.1:9876");
+        System.setProperty("sailmq.namesrv.addr", "127.0.0.1:9876");
         SkipAccumulationSubCommand cmd = new SkipAccumulationSubCommand();
         Options options = ServerUtil.buildCommandlineOptions(new Options());
         String[] subargs = new String[] {"-g group-test", "-t topic-test", "-f false"};

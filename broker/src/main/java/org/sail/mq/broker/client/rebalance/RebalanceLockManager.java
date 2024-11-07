@@ -31,7 +31,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class RebalanceLockManager {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.REBALANCE_LOCK_LOGGER_NAME);
     private final static long REBALANCE_LOCK_MAX_LIVE_TIME = Long.parseLong(System.getProperty(
-        "rocketmq.broker.rebalance.lockMaxLiveTime", "60000"));
+        "sailmq.broker.rebalance.lockMaxLiveTime", "60000"));
     private final Lock lock = new ReentrantLock();
     private final ConcurrentMap<String/* group */, ConcurrentHashMap<MessageQueue, LockEntry>> mqLockTable =
         new ConcurrentHashMap<>(1024);

@@ -53,7 +53,7 @@ import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 public class ConsumeMessageOrderlyService implements ConsumeMessageService {
     private static final Logger log = LoggerFactory.getLogger(ConsumeMessageOrderlyService.class);
     private final static long MAX_TIME_CONSUME_CONTINUOUSLY =
-        Long.parseLong(System.getProperty("rocketmq.client.maxTimeConsumeContinuously", "60000"));
+        Long.parseLong(System.getProperty("sailmq.client.maxTimeConsumeContinuously", "60000"));
     private final DefaultMQPushConsumerImpl defaultMQPushConsumerImpl;
     private final DefaultMQPushConsumer defaultMQPushConsumer;
     private final MessageListenerOrderly messageListener;

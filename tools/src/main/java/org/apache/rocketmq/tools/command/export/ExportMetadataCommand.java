@@ -37,7 +37,7 @@ import org.apache.rocketmq.tools.command.SubCommandException;
 
 public class ExportMetadataCommand implements SubCommand {
 
-    private static final String DEFAULT_FILE_PATH = "/tmp/rocketmq/export";
+    private static final String DEFAULT_FILE_PATH = "/tmp/sailmq/export";
 
     @Override
     public String commandName() {
@@ -59,7 +59,7 @@ public class ExportMetadataCommand implements SubCommand {
         opt.setRequired(false);
         options.addOption(opt);
 
-        opt = new Option("f", "filePath", true, "export metadata.json path | default /tmp/rocketmq/export");
+        opt = new Option("f", "filePath", true, "export metadata.json path | default /tmp/sailmq/export");
         opt.setRequired(false);
         options.addOption(opt);
 

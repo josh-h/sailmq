@@ -86,10 +86,10 @@ public class RocksDBMessageStore extends DefaultMessageStore {
 
     class RocksDBCleanConsumeQueueService extends CleanConsumeQueueService {
         private final double diskSpaceWarningLevelRatio =
-            Double.parseDouble(System.getProperty("rocketmq.broker.diskSpaceWarningLevelRatio", "0.90"));
+            Double.parseDouble(System.getProperty("sailmq.broker.diskSpaceWarningLevelRatio", "0.90"));
 
         private final double diskSpaceCleanForciblyRatio =
-            Double.parseDouble(System.getProperty("rocketmq.broker.diskSpaceCleanForciblyRatio", "0.85"));
+            Double.parseDouble(System.getProperty("sailmq.broker.diskSpaceCleanForciblyRatio", "0.85"));
 
         @Override
         protected void deleteExpiredFiles() {

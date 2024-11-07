@@ -73,7 +73,7 @@ public class IndexStoreServiceBenchTest {
         storeConfig.setBrokerClusterName("IndexService");
         storeConfig.setBrokerName("IndexServiceBroker");
         storeConfig.setStorePathRootDir(storePath);
-        storeConfig.setTieredBackendServiceProvider("org.apache.rocketmq.tieredstore.provider.PosixFileSegment");
+        storeConfig.setTieredBackendServiceProvider("org.apache.sailmq.tieredstore.provider.PosixFileSegment");
         storeConfig.setTieredStoreIndexFileMaxHashSlotNum(500 * 1000);
         storeConfig.setTieredStoreIndexFileMaxIndexNum(2000 * 1000);
         MetadataStore metadataStore = new DefaultMetadataStore(storeConfig);

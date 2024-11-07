@@ -37,7 +37,7 @@ import org.sail.mq.common.attribute.TopicMessageType;
 import org.sail.mq.common.namesrv.NamesrvConfig;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.namesrv.NamesrvController;
+import org.sail.mq.namesrv.NamesrvController;
 import org.apache.rocketmq.remoting.netty.NettyClientConfig;
 import org.apache.rocketmq.remoting.netty.NettyServerConfig;
 import org.apache.rocketmq.store.config.MessageStoreConfig;
@@ -58,7 +58,7 @@ public class IntegrationTestBase {
 
     static {
 
-        System.setProperty("rocketmq.client.logRoot", System.getProperty("java.io.tmpdir"));
+        System.setProperty("sailmq.client.logRoot", System.getProperty("java.io.tmpdir"));
 
         Runtime.getRuntime().addShutdownHook(new Thread() {
             @Override

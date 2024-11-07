@@ -83,7 +83,7 @@ public class PlainPermissionManager {
 
     public PlainPermissionManager() {
         this.defaultAclDir = MixAll.dealFilePath(fileHome + File.separator + "conf" + File.separator + "acl");
-        this.defaultAclFile = MixAll.dealFilePath(fileHome + File.separator + System.getProperty("rocketmq.acl.plain.file", "conf" + File.separator + "plain_acl.yml"));
+        this.defaultAclFile = MixAll.dealFilePath(fileHome + File.separator + System.getProperty("sailmq.acl.plain.file", "conf" + File.separator + "plain_acl.yml"));
         load();
         watch();
     }
@@ -482,7 +482,7 @@ public class PlainPermissionManager {
         }
 
         if (!file.getAbsolutePath().startsWith(fileHome)) {
-            log.error("Parameter value " + fileName + " is not in the directory rocketmq.home.dir " + fileHome);
+            log.error("Parameter value " + fileName + " is not in the directory sailmq.home.dir " + fileHome);
             return false;
         }
 

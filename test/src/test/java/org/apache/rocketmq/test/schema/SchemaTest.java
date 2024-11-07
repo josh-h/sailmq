@@ -99,7 +99,7 @@ public class SchemaTest {
             });
         });
 
-        String message = "The schema test failed, which means you have changed the API or Protocol defined in org.apache.rocketmq.test.schema.SchemaDefiner.\n" +
+        String message = "The schema test failed, which means you have changed the API or Protocol defined in org.apache.sailmq.test.schema.SchemaDefiner.\n" +
             "Please submit a pr only contains the API/Protocol changes and request at least one PMC Member's review.\n" +
             "For original motivation of this test, please refer to https://github.com/apache/rocketmq/pull/4565 .";
         Assert.assertTrue(message, fileChanges.isEmpty() && changesByFile.isEmpty());

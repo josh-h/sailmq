@@ -37,7 +37,7 @@ public class GetConsumerStatusCommandTest {
 
     @BeforeClass
     public static void setUpEnv() {
-        System.setProperty("rocketmq.client.logRoot", System.getProperty("java.io.tmpdir"));
+        System.setProperty("sailmq.client.logRoot", System.getProperty("java.io.tmpdir"));
     }
 
     @Before

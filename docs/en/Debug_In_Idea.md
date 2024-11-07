@@ -5,7 +5,7 @@
 2. Ensure successful local compilation.
 
 ### Step1: Start NameServer
-1. The startup class for NameServer is located in `org.apache.rocketmq.namesrv.NamesrvStartup`.
+1. The startup class for NameServer is located in `org.sail.mq.namesrv.NamesrvStartup`.
 2. Add environment variable `ROCKETMQ_HOME=<rocketmq repository directory>` in `Idea-Edit Configurations`.
 ![Idea_config_nameserver.png](../cn/image/Idea_config_nameserver.png)
 3. Run NameServer and if the following log output is observed, it indicates successful startup.
@@ -39,7 +39,7 @@ The broker[broker-a,192.169.1.2:10911] boot success...
 RocketMQ startup is now complete. You can use the examples provided in `/example` to send and consume messages.
 
 ### Additional: Start the Proxy locally.
-1. RocketMQ 5.x introduced the Proxy mode. Using the `LOCAL` mode eliminates the need for `Step2`. The startup class is located at `org.apache.rocketmq.proxy.ProxyStartup`.
+1. RocketMQ 5.x introduced the Proxy mode. Using the `LOCAL` mode eliminates the need for `Step2`. The startup class is located at `org.sail.mq.proxy.ProxyStartup`.
 2. Add the environment variable `ROCKETMQ_HOME=<rocketmq repository directory>` in `Idea-Edit Configurations`.
 3. Create a new configuration file named `rmq-proxy.json` in the `/conf/` directory.
 ```json
@@ -51,5 +51,5 @@ RocketMQ startup is now complete. You can use the examples provided in `/example
 ```
 4. Run the Proxy, and if the following log is observed, it indicates successful startup.
 ```shell
-Sat Aug 26 15:29:33 CST 2023 rocketmq-proxy startup successfully
+Sat Aug 26 15:29:33 CST 2023 sailmq-proxy startup successfully
 ```

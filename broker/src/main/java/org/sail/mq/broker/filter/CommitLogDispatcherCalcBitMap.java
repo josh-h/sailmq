@@ -22,7 +22,7 @@ import org.sail.mq.common.UtilAll;
 import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.filter.util.BitsArray;
+import org.sail.mq.filter.util.BitsArray;
 import org.apache.rocketmq.store.CommitLogDispatcher;
 import org.apache.rocketmq.store.DispatchRequest;
 

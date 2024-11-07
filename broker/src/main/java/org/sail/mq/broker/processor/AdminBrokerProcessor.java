@@ -96,7 +96,7 @@ import org.sail.mq.common.stats.StatsItem;
 import org.sail.mq.common.stats.StatsSnapshot;
 import org.sail.mq.common.topic.TopicValidator;
 import org.sail.mq.common.utils.ExceptionUtils;
-import org.apache.rocketmq.filter.util.BitsArray;
+import org.sail.mq.filter.util.BitsArray;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.remoting.common.RemotingHelper;

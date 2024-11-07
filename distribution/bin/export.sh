@@ -84,6 +84,6 @@ echo "{
     \"configs\": ${configs},
     \"metadata\": ${metadata},
     \"metrics\": ${metrics}
-  }" >rocketmq-metadata-export.json
+  }" >sailmq-metadata-export.json
 
 echo -e "[INFO] The RocketMQ metadata has been exported to the file:${filePath}/rocketmq-metadata-export.json"

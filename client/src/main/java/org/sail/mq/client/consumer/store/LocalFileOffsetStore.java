@@ -41,7 +41,7 @@ import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
  */
 public class LocalFileOffsetStore implements OffsetStore {
     public final static String LOCAL_OFFSET_STORE_DIR = System.getProperty(
-        "rocketmq.client.localOffsetStoreDir",
+        "sailmq.client.localOffsetStoreDir",
         System.getProperty("user.home") + File.separator + ".rocketmq_offsets");
     private final static Logger log = LoggerFactory.getLogger(LocalFileOffsetStore.class);
     private final MQClientInstance mQClientFactory;

@@ -18,7 +18,7 @@
 case $1 in
     producer)
 
-    pid=`ps ax | grep -i 'org.apache.rocketmq.example.benchmark.Producer' |grep java | grep -v grep | awk '{print $1}'`
+    pid=`ps ax | grep -i 'org.apache.sailmq.example.benchmark.Producer' |grep java | grep -v grep | awk '{print $1}'`
     if [ -z "$pid" ] ; then
             echo "No benchmark producer running."
             exit -1;
@@ -32,7 +32,7 @@ case $1 in
     ;;
     consumer)
 
-    pid=`ps ax | grep -i 'org.apache.rocketmq.example.benchmark.Consumer' |grep java | grep -v grep | awk '{print $1}'`
+    pid=`ps ax | grep -i 'org.apache.sailmq.example.benchmark.Consumer' |grep java | grep -v grep | awk '{print $1}'`
     if [ -z "$pid" ] ; then
             echo "No benchmark consumer running."
             exit -1;
@@ -46,7 +46,7 @@ case $1 in
     ;;
     tproducer)
 
-    pid=`ps ax | grep -i 'org.apache.rocketmq.example.benchmark.TransactionProducer' |grep java | grep -v grep | awk '{print $1}'`
+    pid=`ps ax | grep -i 'org.apache.sailmq.example.benchmark.TransactionProducer' |grep java | grep -v grep | awk '{print $1}'`
     if [ -z "$pid" ] ; then
             echo "No benchmark transaction producer running."
             exit -1;
@@ -60,7 +60,7 @@ case $1 in
     ;;
     bproducer)
 
-    pid=`ps ax | grep -i 'org.apache.rocketmq.example.benchmark.BatchProducer' |grep java | grep -v grep | awk '{print $1}'`
+    pid=`ps ax | grep -i 'org.apache.sailmq.example.benchmark.BatchProducer' |grep java | grep -v grep | awk '{print $1}'`
     if [ -z "$pid" ] ; then
             echo "No benchmark batch producer running."
             exit -1;

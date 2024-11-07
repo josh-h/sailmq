@@ -62,7 +62,7 @@ public class IndexStoreFileTest {
         storeConfig.setTieredStoreFilePath(directory);
         storeConfig.setTieredStoreIndexFileMaxHashSlotNum(5);
         storeConfig.setTieredStoreIndexFileMaxIndexNum(20);
-        storeConfig.setTieredBackendServiceProvider("org.apache.rocketmq.tieredstore.provider.PosixFileSegment");
+        storeConfig.setTieredBackendServiceProvider("org.apache.sailmq.tieredstore.provider.PosixFileSegment");
         indexStoreFile = new IndexStoreFile(storeConfig, System.currentTimeMillis());
     }
 

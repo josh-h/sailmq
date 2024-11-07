@@ -24,8 +24,8 @@ jobs:
       - uses: actions/upload-artifact@v4
         name: Upload distribution tar
         with:
-          name: rocketmq
-          path: distribution/target/rocketmq*/rocketmq*
+          name: sailmq
+          path: distribution/target/sailmq*/sailmq*
       - name: Save PR number
         run: |
           mkdir -p ./pr

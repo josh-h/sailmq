@@ -2192,10 +2192,10 @@ public class DefaultMessageStore implements MessageStore {
 
         private final static int MAX_MANUAL_DELETE_FILE_TIMES = 20;
         private final String diskSpaceWarningLevelRatio =
-            System.getProperty("rocketmq.broker.diskSpaceWarningLevelRatio", "");
+            System.getProperty("sailmq.broker.diskSpaceWarningLevelRatio", "");
 
         private final String diskSpaceCleanForciblyRatio =
-            System.getProperty("rocketmq.broker.diskSpaceCleanForciblyRatio", "");
+            System.getProperty("sailmq.broker.diskSpaceCleanForciblyRatio", "");
         private long lastRedeleteTimestamp = 0;
 
         private final AtomicInteger manualDeleteFileSeveralTimes = new AtomicInteger();

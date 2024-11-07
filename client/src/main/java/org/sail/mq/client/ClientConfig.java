@@ -35,16 +35,16 @@ import org.apache.rocketmq.remoting.protocol.RequestType;
  * Client Common configuration
  */
 public class ClientConfig {
-    public static final String SEND_MESSAGE_WITH_VIP_CHANNEL_PROPERTY = "com.rocketmq.sendMessageWithVIPChannel";
-    public static final String SOCKS_PROXY_CONFIG = "com.rocketmq.socks.proxy.config";
-    public static final String DECODE_READ_BODY = "com.rocketmq.read.body";
-    public static final String DECODE_DECOMPRESS_BODY = "com.rocketmq.decompress.body";
-    public static final String SEND_LATENCY_ENABLE = "com.rocketmq.sendLatencyEnable";
-    public static final String START_DETECTOR_ENABLE = "com.rocketmq.startDetectorEnable";
-    public static final String HEART_BEAT_V2 = "com.rocketmq.heartbeat.v2";
+    public static final String SEND_MESSAGE_WITH_VIP_CHANNEL_PROPERTY = "com.sailmq.sendMessageWithVIPChannel";
+    public static final String SOCKS_PROXY_CONFIG = "com.sailmq.socks.proxy.config";
+    public static final String DECODE_READ_BODY = "com.sailmq.read.body";
+    public static final String DECODE_DECOMPRESS_BODY = "com.sailmq.decompress.body";
+    public static final String SEND_LATENCY_ENABLE = "com.sailmq.sendLatencyEnable";
+    public static final String START_DETECTOR_ENABLE = "com.sailmq.startDetectorEnable";
+    public static final String HEART_BEAT_V2 = "com.sailmq.heartbeat.v2";
     private String namesrvAddr = NameServerAddressUtils.getNameServerAddresses();
     private String clientIP = NetworkUtil.getLocalAddress();
-    private String instanceName = System.getProperty("rocketmq.client.name", "DEFAULT");
+    private String instanceName = System.getProperty("sailmq.client.name", "DEFAULT");
     private int clientCallbackExecutorThreads = Runtime.getRuntime().availableProcessors();
     @Deprecated
     protected String namespace;

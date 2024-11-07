@@ -58,12 +58,12 @@ For macOS and Linux users, execute following commands:
 $ wget https://dist.apache.org/repos/dist/release/rocketmq/5.2.0/rocketmq-all-5.2.0-bin-release.zip
 
 # Unpack the release
-$ unzip rocketmq-all-5.2.0-bin-release.zip
+$ unzip sailmq-all-5.2.0-bin-release.zip
 ```
 
 Prepare a terminal and change to the extracted `bin` directory:
 ```shell
-$ cd rocketmq-all-5.2.0-bin-release/bin
+$ cd sailmq-all-5.2.0-bin-release/bin
 ```
 
 **1) Start NameServer**
@@ -119,13 +119,13 @@ You can run RocketMQ on your own machine within Docker containers,
 **1) Start NameServer**
 
 ```shell
-$ docker run -it --net=host apache/rocketmq ./mqnamesrv
+$ docker run -it --net=host apache/sailmq ./mqnamesrv
 ```
 
 **2) Start Broker**
 
 ```shell
-$ docker run -it --net=host --mount source=/tmp/store,target=/home/rocketmq/store apache/rocketmq ./mqbroker -n localhost:9876
+$ docker run -it --net=host --mount source=/tmp/store,target=/home/sailmq/store apache/sailmq ./mqbroker -n localhost:9876
 ```
 
 ### Run RocketMQ in Kubernetes
@@ -137,18 +137,18 @@ Before your operations, make sure that `kubectl` and related kubeconfig file ins
 ```shell
 ### install CRDs
 $ git clone https://github.com/apache/rocketmq-operator
-$ cd rocketmq-operator && make deploy
+$ cd sailmq-operator && make deploy
 
 ### check whether CRDs is successfully installed
-$ kubectl get crd | grep rocketmq.apache.org
-brokers.rocketmq.apache.org                 2022-05-12T09:23:18Z
-consoles.rocketmq.apache.org                2022-05-12T09:23:19Z
-nameservices.rocketmq.apache.org            2022-05-12T09:23:18Z
-topictransfers.rocketmq.apache.org          2022-05-12T09:23:19Z
+$ kubectl get crd | grep sailmq.apache.org
+brokers.sailmq.apache.org                 2022-05-12T09:23:18Z
+consoles.sailmq.apache.org                2022-05-12T09:23:19Z
+nameservices.sailmq.apache.org            2022-05-12T09:23:18Z
+topictransfers.sailmq.apache.org          2022-05-12T09:23:19Z
 
 ### check whether operator is running
-$ kubectl get pods | grep rocketmq-operator
-rocketmq-operator-6f65c77c49-8hwmj   1/1     Running   0          93s
+$ kubectl get pods | grep sailmq-operator
+sailmq-operator-6f65c77c49-8hwmj   1/1     Running   0          93s
 ```
 
 **2) Create Cluster Instance**

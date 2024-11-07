@@ -21,7 +21,7 @@ github:
     - streaming
     - eventing
     - cloud-native
-    - rocketmq
+    - sailmq
     - java
     - hacktoberfest
   enabled_merge_buttons:
@@ -46,8 +46,8 @@ github:
           - maven-compile (windows-latest, JDK-8)
           - maven-compile (macos-latest, JDK-8)
 notifications:
-  commits:      commits@rocketmq.apache.org
-  issues:       commits@rocketmq.apache.org
-  pullrequests: commits@rocketmq.apache.org
-  jobs:         commits@rocketmq.apache.org
-  discussions:  dev@rocketmq.apache.org
+  commits:      commits@sailmq.apache.org
+  issues:       commits@sailmq.apache.org
+  pullrequests: commits@sailmq.apache.org
+  jobs:         commits@sailmq.apache.org
+  discussions:  dev@sailmq.apache.org

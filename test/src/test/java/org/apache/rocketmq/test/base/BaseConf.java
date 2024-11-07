@@ -37,7 +37,7 @@ import org.sail.mq.common.attribute.CQType;
 import org.sail.mq.common.attribute.TopicMessageType;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.namesrv.NamesrvController;
+import org.sail.mq.namesrv.NamesrvController;
 import org.apache.rocketmq.remoting.protocol.RemotingCommand;
 import org.apache.rocketmq.remoting.protocol.route.BrokerData;
 import org.apache.rocketmq.test.client.rmq.RMQAsyncSendProducer;

@@ -253,7 +253,7 @@ import static org.apache.rocketmq.remoting.protocol.RemotingSysResponseCode.SUCC
 public class MQClientAPIImpl implements NameServerUpdateCallback, StartAndShutdown {
     private final static Logger log = LoggerFactory.getLogger(MQClientAPIImpl.class);
     private static boolean sendSmartMsg =
-        Boolean.parseBoolean(System.getProperty("org.apache.rocketmq.client.sendSmartMsg", "true"));
+        Boolean.parseBoolean(System.getProperty("org.apache.sailmq.client.sendSmartMsg", "true"));
 
     static {
         System.setProperty(RemotingCommand.REMOTING_VERSION_KEY, Integer.toString(MQVersion.CURRENT_VERSION));

@@ -21,8 +21,8 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import org.apache.rocketmq.filter.expression.Expression;
-import org.apache.rocketmq.filter.util.BloomFilterData;
+import org.sail.mq.filter.expression.Expression;
+import org.sail.mq.filter.util.BloomFilterData;
 
 import java.util.Collections;
 

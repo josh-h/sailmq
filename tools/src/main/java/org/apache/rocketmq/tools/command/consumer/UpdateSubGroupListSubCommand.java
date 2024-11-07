@@ -58,7 +58,7 @@ public class UpdateSubGroupListSubCommand implements SubCommand {
         options.addOptionGroup(optionGroup);
 
         opt = new Option("f", "filename", true,
-            "Path to a file with a list of org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig in json format");
+            "Path to a file with a list of org.apache.sailmq.remoting.protocol.subscription.SubscriptionGroupConfig in json format");
         opt.setRequired(true);
         options.addOption(opt);
 

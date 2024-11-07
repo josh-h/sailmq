@@ -17,13 +17,13 @@
 
 case $1 in
     broker)
-    pid=`ps ax | grep -i 'org.apache.rocketmq.proxy.ProxyStartup' | grep '\-pm local' |grep java | grep -v grep | awk '{print $1}'`
+    pid=`ps ax | grep -i 'org.apache.sailmq.proxy.ProxyStartup' | grep '\-pm local' |grep java | grep -v grep | awk '{print $1}'`
     if [ "$pid" != "" ] ; then
             echo "The mqbroker with proxy enable is running(${pid})..."
             kill ${pid}
             echo "Send shutdown request to mqbroker with proxy enable OK(${pid})"
     fi
-    pid=`ps ax | grep -i 'org.apache.rocketmq.broker.BrokerStartup' |grep java | grep -v grep | awk '{print $1}'`
+    pid=`ps ax | grep -i 'org.apache.sailmq.broker.BrokerStartup' |grep java | grep -v grep | awk '{print $1}'`
     if [ -z "$pid" ] ; then
             echo "No mqbroker running."
             exit 1;
@@ -37,7 +37,7 @@ case $1 in
     ;;
     brokerContainer)
 
-    pid=`ps ax | grep -i 'org.apache.rocketmq.container.BrokerContainerStartup' |grep java | grep -v grep | awk '{print $1}'`
+    pid=`ps ax | grep -i 'org.apache.sailmq.container.BrokerContainerStartup' |grep java | grep -v grep | awk '{print $1}'`
     if [ -z "$pid" ] ; then
             echo "No broker container running."
             exit 1;
@@ -51,7 +51,7 @@ case $1 in
     ;;
     namesrv)
 
-    pid=`ps ax | grep -i 'org.apache.rocketmq.namesrv.NamesrvStartup' |grep java | grep -v grep | awk '{print $1}'`
+    pid=`ps ax | grep -i 'org.apache.sailmq.namesrv.NamesrvStartup' |grep java | grep -v grep | awk '{print $1}'`
     if [ -z "$pid" ] ; then
             echo "No mqnamesrv running."
             exit 1;
@@ -65,7 +65,7 @@ case $1 in
     ;;
     controller)
 
-    pid=`ps ax | grep -i 'org.apache.rocketmq.controller.ControllerStartup' |grep java | grep -v grep | awk '{print $1}'`
+    pid=`ps ax | grep -i 'org.apache.sailmq.controller.ControllerStartup' |grep java | grep -v grep | awk '{print $1}'`
     if [ -z "$pid" ] ; then
             echo "No mqcontroller running."
             exit 1;
@@ -79,7 +79,7 @@ case $1 in
     ;;
     proxy)
 
-    pid=`ps ax | grep -i 'org.apache.rocketmq.proxy.ProxyStartup' |grep java | grep -v grep | awk '{print $1}'`
+    pid=`ps ax | grep -i 'org.apache.sailmq.proxy.ProxyStartup' |grep java | grep -v grep | awk '{print $1}'`
     if [ -z "$pid" ] ; then
             echo "No mqproxy running."
             exit 1;

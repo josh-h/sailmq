@@ -61,7 +61,7 @@ public interface MQPushConsumer extends MQConsumer {
      *
      * Subscribe some topic
      *
-     * @param fullClassName full class name,must extend org.apache.rocketmq.common.filter. MessageFilter
+     * @param fullClassName full class name,must extend org.apache.sailmq.common.filter. MessageFilter
      * @param filterClassSource class source code,used UTF-8 file encoding,must be responsible for your code safety
      */
     @Deprecated

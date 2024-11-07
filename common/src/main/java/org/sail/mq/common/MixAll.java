@@ -55,14 +55,14 @@ import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 
 public class MixAll {
     public static final String ROCKETMQ_HOME_ENV = "ROCKETMQ_HOME";
-    public static final String ROCKETMQ_HOME_PROPERTY = "rocketmq.home.dir";
+    public static final String ROCKETMQ_HOME_PROPERTY = "sailmq.home.dir";
     public static final String NAMESRV_ADDR_ENV = "NAMESRV_ADDR";
-    public static final String NAMESRV_ADDR_PROPERTY = "rocketmq.namesrv.addr";
-    public static final String MESSAGE_COMPRESS_TYPE = "rocketmq.message.compressType";
-    public static final String MESSAGE_COMPRESS_LEVEL = "rocketmq.message.compressLevel";
+    public static final String NAMESRV_ADDR_PROPERTY = "sailmq.namesrv.addr";
+    public static final String MESSAGE_COMPRESS_TYPE = "sailmq.message.compressType";
+    public static final String MESSAGE_COMPRESS_LEVEL = "sailmq.message.compressLevel";
     public static final String DEFAULT_NAMESRV_ADDR_LOOKUP = "jmenv.tbsite.net";
-    public static final String WS_DOMAIN_NAME = System.getProperty("rocketmq.namesrv.domain", DEFAULT_NAMESRV_ADDR_LOOKUP);
-    public static final String WS_DOMAIN_SUBGROUP = System.getProperty("rocketmq.namesrv.domain.subgroup", "nsaddr");
+    public static final String WS_DOMAIN_NAME = System.getProperty("sailmq.namesrv.domain", DEFAULT_NAMESRV_ADDR_LOOKUP);
+    public static final String WS_DOMAIN_SUBGROUP = System.getProperty("sailmq.namesrv.domain.subgroup", "nsaddr");
     public static final String DEFAULT_PRODUCER_GROUP = "DEFAULT_PRODUCER";
     public static final String DEFAULT_CONSUMER_GROUP = "DEFAULT_CONSUMER";
     public static final String TOOLS_CONSUMER_GROUP = "TOOLS_CONSUMER";
@@ -104,9 +104,9 @@ public class MixAll {
     public static final String LMQ_DISPATCH_SEPARATOR = ",";
     public static final String REQ_T = "ReqT";
     public static final String ROCKETMQ_ZONE_ENV = "ROCKETMQ_ZONE";
-    public static final String ROCKETMQ_ZONE_PROPERTY = "rocketmq.zone";
+    public static final String ROCKETMQ_ZONE_PROPERTY = "sailmq.zone";
     public static final String ROCKETMQ_ZONE_MODE_ENV = "ROCKETMQ_ZONE_MODE";
-    public static final String ROCKETMQ_ZONE_MODE_PROPERTY = "rocketmq.zone.mode";
+    public static final String ROCKETMQ_ZONE_MODE_PROPERTY = "sailmq.zone.mode";
     public static final String ZONE_NAME = "__ZONE_NAME";
     public static final String ZONE_MODE = "__ZONE_MODE";
     public final static String RPC_REQUEST_HEADER_NAMESPACED_FIELD = "nsd";
@@ -116,7 +116,7 @@ public class MixAll {
     public static final String LOGICAL_QUEUE_MOCK_BROKER_PREFIX = "__syslo__";
     public static final String METADATA_SCOPE_GLOBAL = "__global__";
     public static final String LOGICAL_QUEUE_MOCK_BROKER_NAME_NOT_EXIST = "__syslo__none__";
-    public static final String MULTI_PATH_SPLITTER = System.getProperty("rocketmq.broker.multiPathSplitter", ",");
+    public static final String MULTI_PATH_SPLITTER = System.getProperty("sailmq.broker.multiPathSplitter", ",");
 
     private static final String OS = System.getProperty("os.name").toLowerCase();
 
@@ -139,11 +139,11 @@ public class MixAll {
     }
 
     public static String getWSAddr() {
-        String wsDomainName = System.getProperty("rocketmq.namesrv.domain", DEFAULT_NAMESRV_ADDR_LOOKUP);
-        String wsDomainSubgroup = System.getProperty("rocketmq.namesrv.domain.subgroup", "nsaddr");
-        String wsAddr = "http://" + wsDomainName + ":8080/rocketmq/" + wsDomainSubgroup;
+        String wsDomainName = System.getProperty("sailmq.namesrv.domain", DEFAULT_NAMESRV_ADDR_LOOKUP);
+        String wsDomainSubgroup = System.getProperty("sailmq.namesrv.domain.subgroup", "nsaddr");
+        String wsAddr = "http://" + wsDomainName + ":8080/sailmq/" + wsDomainSubgroup;
         if (wsDomainName.indexOf(":") > 0) {
-            wsAddr = "http://" + wsDomainName + "/rocketmq/" + wsDomainSubgroup;
+            wsAddr = "http://" + wsDomainName + "/sailmq/" + wsDomainSubgroup;
         }
         return wsAddr;
     }

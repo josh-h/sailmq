@@ -70,7 +70,7 @@ public class StaticTopicIT extends BaseConf {
 
     @Before
     public void setUp() throws Exception {
-        System.setProperty("rocketmq.client.rebalance.waitInterval", "500");
+        System.setProperty("sailmq.client.rebalance.waitInterval", "500");
         defaultMQAdminExt = getAdmin(NAMESRV_ADDR);
         waitBrokerRegistered(NAMESRV_ADDR, CLUSTER_NAME, BROKER_NUM);
         defaultMQAdminExt.start();
@@ -505,7 +505,7 @@ public class StaticTopicIT extends BaseConf {
 
     @After
     public void tearDown() {
-        System.setProperty("rocketmq.client.rebalance.waitInterval", "20000");
+        System.setProperty("sailmq.client.rebalance.waitInterval", "20000");
         super.shutdown();
     }
 

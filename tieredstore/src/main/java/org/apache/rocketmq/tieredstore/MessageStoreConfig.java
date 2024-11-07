@@ -94,8 +94,8 @@ public class MessageStoreConfig {
     private int tieredStoreIndexFileMaxHashSlotNum = 5000000;
     private int tieredStoreIndexFileMaxIndexNum = 5000000 * 4;
 
-    private String tieredMetadataServiceProvider = "org.apache.rocketmq.tieredstore.metadata.DefaultMetadataStore";
-    private String tieredBackendServiceProvider = "org.apache.rocketmq.tieredstore.provider.MemoryFileSegment";
+    private String tieredMetadataServiceProvider = "org.apache.sailmq.tieredstore.metadata.DefaultMetadataStore";
+    private String tieredBackendServiceProvider = "org.apache.sailmq.tieredstore.provider.MemoryFileSegment";
 
     // file reserved time, default is 72 hour
     private boolean tieredStoreDeleteFileEnable = true;

@@ -97,11 +97,11 @@ import org.sail.mq.common.MixAll;
 import org.sail.mq.common.attribute.TopicMessageType;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.utils.NetworkUtil;
-import org.apache.rocketmq.proxy.config.ConfigurationManager;
-import org.apache.rocketmq.proxy.grpc.interceptor.ContextInterceptor;
-import org.apache.rocketmq.proxy.grpc.interceptor.HeaderInterceptor;
+import org.sail.mq.proxy.config.ConfigurationManager;
+import org.sail.mq.proxy.grpc.interceptor.ContextInterceptor;
+import org.sail.mq.proxy.grpc.interceptor.HeaderInterceptor;
 import org.sail.mq.common.constant.GrpcConstants;
-import org.apache.rocketmq.proxy.grpc.v2.common.ResponseBuilder;
+import org.sail.mq.proxy.grpc.v2.common.ResponseBuilder;
 import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
 import org.apache.rocketmq.test.base.BaseConf;
 import org.apache.rocketmq.test.util.MQRandomUtils;
@@ -109,7 +109,7 @@ import org.apache.rocketmq.test.util.RandomUtils;
 import org.junit.Rule;
 
 import static org.sail.mq.common.message.MessageClientIDSetter.createUniqID;
-import static org.apache.rocketmq.proxy.config.ConfigurationManager.RMQ_PROXY_HOME;
+import static org.sail.mq.proxy.config.ConfigurationManager.RMQ_PROXY_HOME;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.awaitility.Awaitility.await;
 

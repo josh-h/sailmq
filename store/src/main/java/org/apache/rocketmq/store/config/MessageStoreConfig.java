@@ -26,7 +26,7 @@ import org.rocksdb.CompressionType;
 
 public class MessageStoreConfig {
 
-    public static final String MULTI_PATH_SPLITTER = System.getProperty("rocketmq.broker.multiPathSplitter", ",");
+    public static final String MULTI_PATH_SPLITTER = System.getProperty("sailmq.broker.multiPathSplitter", ",");
 
     //The root directory in which the log data is kept
     @ImportantField
