@@ -28,7 +28,7 @@ import org.sail.mq.common.filter.ExpressionType;
 import org.sail.mq.common.message.MessageConst;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.protocol.header.ExtraInfoUtil;
+import org.sail.mq.remoting.protocol.header.ExtraInfoUtil;
 import org.apache.rocketmq.test.base.IntegrationTestBase;
 import org.apache.rocketmq.test.client.rmq.RMQNormalProducer;
 import org.apache.rocketmq.test.client.rmq.RMQPopClient;

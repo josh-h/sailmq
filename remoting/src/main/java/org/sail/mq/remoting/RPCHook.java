@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting;
+package org.sail.mq.remoting;
 
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public interface RPCHook {
     void doBeforeRequest(final String remoteAddr, final RemotingCommand request);

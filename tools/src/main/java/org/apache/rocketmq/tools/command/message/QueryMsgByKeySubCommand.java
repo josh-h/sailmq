@@ -22,8 +22,8 @@ import org.apache.commons.cli.Options;
 import org.sail.mq.client.QueryResult;
 import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.common.message.MessageExt;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.exception.RemotingException;
 
 import org.apache.rocketmq.tools.admin.DefaultMQAdminExt;
 import org.apache.rocketmq.tools.command.SubCommand;

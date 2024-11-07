@@ -33,7 +33,7 @@ import org.sail.mq.proxy.config.ProxyConfig;
 import org.sail.mq.proxy.grpc.v2.common.GrpcClientSettingsManager;
 import org.sail.mq.proxy.service.relay.ProxyRelayResult;
 import org.sail.mq.proxy.service.relay.ProxyRelayService;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
 
 public class GrpcChannelManager implements StartAndShutdown {
     private final ProxyRelayService proxyRelayService;

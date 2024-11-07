@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.body;
+package org.sail.mq.remoting.protocol.body;
 
 import java.util.List;
 import java.util.Map;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 public class ProducerTableInfo extends RemotingSerializable {
     public ProducerTableInfo(Map<String, List<ProducerInfo>> data) {

@@ -16,17 +16,17 @@
 
 <FindBugsFilter>
     <Match>
-        <Class name="org.apache.rocketmq.remoting.netty.TlsSystemConfig"/>
+        <Class name="netty.org.sail.mq.remoting.TlsSystemConfig"/>
         <Field name="tlsConfigFile"/>
         <Bug pattern="MS_SHOULD_BE_FINAL"/>
     </Match>
     <Match>
-        <Class name="org.apache.rocketmq.remoting.netty.TlsSystemConfig"/>
+        <Class name="netty.org.sail.mq.remoting.TlsSystemConfig"/>
         <Field name="tlsMode"/>
         <Bug pattern="MS_SHOULD_BE_FINAL"/>
     </Match>
     <Match>
-        <Class name="org.apache.rocketmq.store.index.IndexFile"/>
+        <Class name="index.org.sail.mq.store.IndexFile"/>
         <Method name="indexKeyHashMethod" />
         <Bug pattern="RV_ABSOLUTE_VALUE_OF_HASHCODE"/>
     </Match>

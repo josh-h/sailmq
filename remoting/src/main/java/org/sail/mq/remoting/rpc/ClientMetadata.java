@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.rpc;
+package org.sail.mq.remoting.rpc;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,11 +27,11 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.body.ClusterInfo;
-import org.apache.rocketmq.remoting.protocol.route.BrokerData;
-import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingInfo;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingUtils;
+import org.sail.mq.remoting.protocol.body.ClusterInfo;
+import org.sail.mq.remoting.protocol.route.BrokerData;
+import org.sail.mq.remoting.protocol.route.TopicRouteData;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingInfo;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingUtils;
 
 public class ClientMetadata {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.COMMON_LOGGER_NAME);

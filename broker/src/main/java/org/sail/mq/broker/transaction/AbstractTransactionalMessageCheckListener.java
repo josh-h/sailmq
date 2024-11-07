@@ -29,7 +29,7 @@ import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.utils.ThreadUtils;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.header.CheckTransactionStateRequestHeader;
+import org.sail.mq.remoting.protocol.header.CheckTransactionStateRequestHeader;
 
 public abstract class AbstractTransactionalMessageCheckListener {
     private static final Logger LOGGER = LoggerFactory.getLogger(LoggerName.TRANSACTION_LOGGER_NAME);

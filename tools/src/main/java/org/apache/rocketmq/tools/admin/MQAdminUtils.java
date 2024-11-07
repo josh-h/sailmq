@@ -26,27 +26,27 @@ import org.sail.mq.client.exception.MQBrokerException;
 import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.common.TopicConfig;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.exception.RemotingConnectException;
-import org.apache.rocketmq.remoting.exception.RemotingException;
-import org.apache.rocketmq.remoting.exception.RemotingSendRequestException;
-import org.apache.rocketmq.remoting.exception.RemotingTimeoutException;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.admin.ConsumeStats;
-import org.apache.rocketmq.remoting.protocol.admin.OffsetWrapper;
-import org.apache.rocketmq.remoting.protocol.admin.TopicOffset;
-import org.apache.rocketmq.remoting.protocol.admin.TopicStatsTable;
-import org.apache.rocketmq.remoting.protocol.body.ClusterInfo;
-import org.apache.rocketmq.remoting.protocol.route.BrokerData;
-import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
-import org.apache.rocketmq.remoting.protocol.statictopic.LogicQueueMappingItem;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicConfigAndQueueMapping;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingDetail;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingOne;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingUtils;
-import org.apache.rocketmq.remoting.rpc.ClientMetadata;
+import org.sail.mq.remoting.exception.RemotingConnectException;
+import org.sail.mq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.exception.RemotingSendRequestException;
+import org.sail.mq.remoting.exception.RemotingTimeoutException;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.admin.ConsumeStats;
+import org.sail.mq.remoting.protocol.admin.OffsetWrapper;
+import org.sail.mq.remoting.protocol.admin.TopicOffset;
+import org.sail.mq.remoting.protocol.admin.TopicStatsTable;
+import org.sail.mq.remoting.protocol.body.ClusterInfo;
+import org.sail.mq.remoting.protocol.route.BrokerData;
+import org.sail.mq.remoting.protocol.route.TopicRouteData;
+import org.sail.mq.remoting.protocol.statictopic.LogicQueueMappingItem;
+import org.sail.mq.remoting.protocol.statictopic.TopicConfigAndQueueMapping;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingDetail;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingOne;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingUtils;
+import org.sail.mq.remoting.rpc.ClientMetadata;
 
-import static org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingUtils.checkAndBuildMappingItems;
-import static org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingUtils.getMappingDetailFromConfig;
+import static org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingUtils.checkAndBuildMappingItems;
+import static org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingUtils.getMappingDetailFromConfig;
 
 public class MQAdminUtils {
 

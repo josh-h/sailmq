@@ -19,7 +19,7 @@ package org.sail.mq.auth.authentication.builder;
 import com.google.protobuf.GeneratedMessageV3;
 import io.grpc.Metadata;
 import io.netty.channel.ChannelHandlerContext;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public interface AuthenticationContextBuilder<AuthenticationContext> {
 

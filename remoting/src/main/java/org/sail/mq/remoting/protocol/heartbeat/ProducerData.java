@@ -18,7 +18,7 @@
 /**
  * $Id: ProducerData.java 1835 2013-05-16 02:00:50Z vintagewang@apache.org $
  */
-package org.apache.rocketmq.remoting.protocol.heartbeat;
+package org.sail.mq.remoting.protocol.heartbeat;
 
 public class ProducerData {
     private String groupName;

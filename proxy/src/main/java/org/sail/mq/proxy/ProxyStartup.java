@@ -51,8 +51,8 @@ import org.sail.mq.proxy.metrics.ProxyMetricsManager;
 import org.sail.mq.proxy.processor.DefaultMessagingProcessor;
 import org.sail.mq.proxy.processor.MessagingProcessor;
 import org.sail.mq.proxy.remoting.RemotingProtocolServer;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.srvutil.ServerUtil;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.srvutil.ServerUtil;
 
 public class ProxyStartup {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

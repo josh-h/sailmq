@@ -19,10 +19,10 @@ package org.apache.rocketmq.test.container;
 
 import org.sail.mq.client.exception.MQBrokerException;
 import org.sail.mq.container.BrokerContainer;
-import org.apache.rocketmq.remoting.exception.RemotingConnectException;
-import org.apache.rocketmq.remoting.exception.RemotingSendRequestException;
-import org.apache.rocketmq.remoting.exception.RemotingTimeoutException;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.exception.RemotingConnectException;
+import org.sail.mq.remoting.exception.RemotingSendRequestException;
+import org.sail.mq.remoting.exception.RemotingTimeoutException;
+import org.sail.mq.remoting.protocol.ResponseCode;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Ignore;

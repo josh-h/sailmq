@@ -36,15 +36,15 @@ import org.apache.commons.lang3.StringUtils;
 import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.netty.TlsHelper;
+import org.sail.mq.remoting.netty.TlsHelper;
 
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsServerAuthClient;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsServerCertPath;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsServerKeyPassword;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsServerKeyPath;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsServerNeedClientAuth;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsServerTrustCertPath;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsTestModeEnable;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsServerAuthClient;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsServerCertPath;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsServerKeyPassword;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsServerKeyPath;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsServerNeedClientAuth;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsServerTrustCertPath;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsTestModeEnable;
 
 public class MultiProtocolTlsHelper extends TlsHelper {
     private final static Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

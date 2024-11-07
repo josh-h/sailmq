@@ -14,11 +14,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.protocol.header;
+package org.sail.mq.remoting.protocol.header;
 
-import org.apache.rocketmq.remoting.CommandCustomHeader;
-import org.apache.rocketmq.remoting.annotation.CFNotNull;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.annotation.CFNotNull;
+import org.sail.mq.remoting.exception.RemotingCommandException;
 
 public class ChangeInvisibleTimeResponseHeader implements CommandCustomHeader {
 

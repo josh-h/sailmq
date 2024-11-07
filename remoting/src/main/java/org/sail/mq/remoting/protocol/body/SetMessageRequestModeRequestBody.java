@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.body;
+package org.sail.mq.remoting.protocol.body;
 
 import org.sail.mq.common.message.MessageRequestMode;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 public class SetMessageRequestModeRequestBody extends RemotingSerializable {
 

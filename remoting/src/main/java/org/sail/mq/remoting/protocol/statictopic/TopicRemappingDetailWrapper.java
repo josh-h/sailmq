@@ -14,13 +14,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.protocol.statictopic;
+package org.sail.mq.remoting.protocol.statictopic;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 public class TopicRemappingDetailWrapper extends RemotingSerializable {
     public static final String TYPE_CREATE_OR_UPDATE = "CREATE_OR_UPDATE";

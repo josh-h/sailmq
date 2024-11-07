@@ -19,7 +19,7 @@ package org.sail.mq.broker.mqtrace;
 import java.util.Map;
 
 import org.sail.mq.common.TopicConfig;
-import org.apache.rocketmq.store.stats.BrokerStatsManager;
+import org.sail.mq.store.stats.BrokerStatsManager;
 
 public class ConsumeMessageContext {
     private String consumerGroup;

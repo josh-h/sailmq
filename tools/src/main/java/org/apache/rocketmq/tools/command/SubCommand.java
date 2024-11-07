@@ -18,7 +18,7 @@ package org.apache.rocketmq.tools.command;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.Options;
-import org.apache.rocketmq.remoting.RPCHook;
+import org.sail.mq.remoting.RPCHook;
 
 public interface SubCommand {
     String commandName();

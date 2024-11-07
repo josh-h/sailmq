@@ -35,7 +35,7 @@ import org.sail.mq.common.coldctr.AccAndTimeStamp;
 import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.store.config.MessageStoreConfig;
+import org.sail.mq.store.config.MessageStoreConfig;
 
 /**
  * store the cg cold read ctr table and acc the size of the cold

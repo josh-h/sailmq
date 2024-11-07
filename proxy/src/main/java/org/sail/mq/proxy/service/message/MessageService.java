@@ -28,20 +28,20 @@ import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.service.route.AddressableMessageQueue;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.body.LockBatchRequestBody;
-import org.apache.rocketmq.remoting.protocol.body.UnlockBatchRequestBody;
-import org.apache.rocketmq.remoting.protocol.header.AckMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.ChangeInvisibleTimeRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.ConsumerSendMsgBackRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.EndTransactionRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.GetMaxOffsetRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.GetMinOffsetRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.PopMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.PullMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.QueryConsumerOffsetRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.SendMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.UpdateConsumerOffsetRequestHeader;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.body.LockBatchRequestBody;
+import org.sail.mq.remoting.protocol.body.UnlockBatchRequestBody;
+import org.sail.mq.remoting.protocol.header.AckMessageRequestHeader;
+import org.sail.mq.remoting.protocol.header.ChangeInvisibleTimeRequestHeader;
+import org.sail.mq.remoting.protocol.header.ConsumerSendMsgBackRequestHeader;
+import org.sail.mq.remoting.protocol.header.EndTransactionRequestHeader;
+import org.sail.mq.remoting.protocol.header.GetMaxOffsetRequestHeader;
+import org.sail.mq.remoting.protocol.header.GetMinOffsetRequestHeader;
+import org.sail.mq.remoting.protocol.header.PopMessageRequestHeader;
+import org.sail.mq.remoting.protocol.header.PullMessageRequestHeader;
+import org.sail.mq.remoting.protocol.header.QueryConsumerOffsetRequestHeader;
+import org.sail.mq.remoting.protocol.header.SendMessageRequestHeader;
+import org.sail.mq.remoting.protocol.header.UpdateConsumerOffsetRequestHeader;
 
 public interface MessageService {
 

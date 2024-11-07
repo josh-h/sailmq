@@ -29,17 +29,17 @@ import org.sail.mq.proxy.processor.MessagingProcessor;
 import org.sail.mq.proxy.remoting.channel.RemotingChannel;
 import org.sail.mq.proxy.remoting.channel.RemotingChannelManager;
 import org.sail.mq.proxy.remoting.pipeline.RequestPipeline;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.netty.AttributeKeys;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.header.UnregisterClientRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.UnregisterClientResponseHeader;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumerData;
-import org.apache.rocketmq.remoting.protocol.heartbeat.HeartbeatData;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ProducerData;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.netty.AttributeKeys;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.header.UnregisterClientRequestHeader;
+import org.sail.mq.remoting.protocol.header.UnregisterClientResponseHeader;
+import org.sail.mq.remoting.protocol.heartbeat.ConsumerData;
+import org.sail.mq.remoting.protocol.heartbeat.HeartbeatData;
+import org.sail.mq.remoting.protocol.heartbeat.ProducerData;
 
 import java.util.Set;
 

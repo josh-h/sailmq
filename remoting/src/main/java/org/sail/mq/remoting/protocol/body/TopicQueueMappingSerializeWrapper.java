@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.body;
+package org.sail.mq.remoting.protocol.body;
 
 import java.util.Map;
-import org.apache.rocketmq.remoting.protocol.DataVersion;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingDetail;
+import org.sail.mq.remoting.protocol.DataVersion;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingDetail;
 
 public class TopicQueueMappingSerializeWrapper extends RemotingSerializable {
     private Map<String/* topic */, TopicQueueMappingDetail> topicQueueMappingInfoMap;

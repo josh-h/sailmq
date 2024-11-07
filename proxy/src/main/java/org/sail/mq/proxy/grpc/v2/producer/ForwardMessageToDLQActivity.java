@@ -27,7 +27,7 @@ import org.sail.mq.proxy.grpc.v2.channel.GrpcChannelManager;
 import org.sail.mq.proxy.grpc.v2.common.GrpcClientSettingsManager;
 import org.sail.mq.proxy.grpc.v2.common.ResponseBuilder;
 import org.sail.mq.proxy.processor.MessagingProcessor;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class ForwardMessageToDLQActivity extends AbstractMessingActivity {
 

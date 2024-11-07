@@ -43,20 +43,20 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.utils.ThreadUtils;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.EpochEntry;
-import org.apache.rocketmq.remoting.protocol.body.SyncStateSet;
-import org.apache.rocketmq.remoting.protocol.header.controller.ElectMasterResponseHeader;
-import org.apache.rocketmq.remoting.protocol.header.controller.GetMetaDataResponseHeader;
-import org.apache.rocketmq.remoting.protocol.header.controller.GetReplicaInfoResponseHeader;
-import org.apache.rocketmq.remoting.protocol.header.controller.register.ApplyBrokerIdResponseHeader;
-import org.apache.rocketmq.remoting.protocol.header.controller.register.GetNextBrokerIdResponseHeader;
-import org.apache.rocketmq.remoting.protocol.header.controller.register.RegisterBrokerToControllerResponseHeader;
-import org.apache.rocketmq.store.config.BrokerRole;
-import org.apache.rocketmq.store.ha.autoswitch.AutoSwitchHAService;
-import org.apache.rocketmq.store.ha.autoswitch.BrokerMetadata;
-import org.apache.rocketmq.store.ha.autoswitch.TempBrokerMetadata;
+import org.sail.mq.remoting.protocol.EpochEntry;
+import org.sail.mq.remoting.protocol.body.SyncStateSet;
+import org.sail.mq.remoting.protocol.header.controller.ElectMasterResponseHeader;
+import org.sail.mq.remoting.protocol.header.controller.GetMetaDataResponseHeader;
+import org.sail.mq.remoting.protocol.header.controller.GetReplicaInfoResponseHeader;
+import org.sail.mq.remoting.protocol.header.controller.register.ApplyBrokerIdResponseHeader;
+import org.sail.mq.remoting.protocol.header.controller.register.GetNextBrokerIdResponseHeader;
+import org.sail.mq.remoting.protocol.header.controller.register.RegisterBrokerToControllerResponseHeader;
+import org.sail.mq.store.config.BrokerRole;
+import org.sail.mq.store.ha.autoswitch.AutoSwitchHAService;
+import org.sail.mq.store.ha.autoswitch.BrokerMetadata;
+import org.sail.mq.store.ha.autoswitch.TempBrokerMetadata;
 
-import static org.apache.rocketmq.remoting.protocol.ResponseCode.CONTROLLER_BROKER_METADATA_NOT_EXIST;
+import static org.sail.mq.remoting.protocol.ResponseCode.CONTROLLER_BROKER_METADATA_NOT_EXIST;
 
 /**
  * The manager of broker replicas, including: 0.regularly syncing controller metadata, change controller leader address,

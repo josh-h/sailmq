@@ -24,7 +24,7 @@ import org.sail.mq.client.producer.DefaultMQProducer;
 import org.sail.mq.client.producer.SendResult;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.RPCHook;
+import org.sail.mq.remoting.RPCHook;
 import org.apache.rocketmq.tools.command.SubCommand;
 import org.apache.rocketmq.tools.command.SubCommandException;
 

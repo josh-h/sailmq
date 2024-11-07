@@ -49,8 +49,8 @@ import org.sail.mq.proxy.grpc.v2.common.GrpcClientSettingsManager;
 import org.sail.mq.proxy.grpc.v2.common.ResponseBuilder;
 import org.sail.mq.proxy.processor.MessagingProcessor;
 import org.sail.mq.proxy.service.route.ProxyTopicRouteData;
-import org.apache.rocketmq.remoting.protocol.route.QueueData;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.remoting.protocol.route.QueueData;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
 
 public class RouteActivity extends AbstractMessingActivity {
 

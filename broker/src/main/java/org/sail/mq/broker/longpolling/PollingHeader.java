@@ -17,8 +17,8 @@
 
 package org.sail.mq.broker.longpolling;
 
-import org.apache.rocketmq.remoting.protocol.header.NotificationRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.PopMessageRequestHeader;
+import org.sail.mq.remoting.protocol.header.NotificationRequestHeader;
+import org.sail.mq.remoting.protocol.header.PopMessageRequestHeader;
 
 public class PollingHeader {
     private final String consumerGroup;

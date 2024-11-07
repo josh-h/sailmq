@@ -28,7 +28,7 @@ import org.sail.mq.common.constant.PermName;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageConst;
 import org.sail.mq.common.topic.TopicValidator;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
 
 import static org.sail.mq.common.topic.TopicValidator.isTopicOrGroupIllegal;
 

@@ -19,8 +19,8 @@ package org.apache.rocketmq.test.container;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
-import org.apache.rocketmq.remoting.protocol.body.ClusterInfo;
-import org.apache.rocketmq.store.DefaultMessageStore;
+import org.sail.mq.remoting.protocol.body.ClusterInfo;
+import org.sail.mq.store.DefaultMessageStore;
 import org.junit.Ignore;
 import org.junit.Test;
 

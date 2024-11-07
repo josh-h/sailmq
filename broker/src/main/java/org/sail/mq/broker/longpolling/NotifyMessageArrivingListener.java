@@ -20,7 +20,7 @@ package org.sail.mq.broker.longpolling;
 import java.util.Map;
 import org.sail.mq.broker.processor.NotificationProcessor;
 import org.sail.mq.broker.processor.PopMessageProcessor;
-import org.apache.rocketmq.store.MessageArrivingListener;
+import org.sail.mq.store.MessageArrivingListener;
 
 public class NotifyMessageArrivingListener implements MessageArrivingListener {
     private final PullRequestHoldService pullRequestHoldService;

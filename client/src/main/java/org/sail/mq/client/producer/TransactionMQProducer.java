@@ -20,8 +20,8 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.common.message.Message;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
 
 public class TransactionMQProducer extends DefaultMQProducer {
     private TransactionCheckListener transactionCheckListener;

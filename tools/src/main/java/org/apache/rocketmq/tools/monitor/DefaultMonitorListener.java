@@ -20,7 +20,7 @@ package org.apache.rocketmq.tools.monitor;
 import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.TreeMap;
-import org.apache.rocketmq.remoting.protocol.body.ConsumerRunningInfo;
+import org.sail.mq.remoting.protocol.body.ConsumerRunningInfo;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 

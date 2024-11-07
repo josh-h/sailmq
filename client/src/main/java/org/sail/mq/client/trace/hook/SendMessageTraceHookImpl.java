@@ -25,7 +25,7 @@ import org.sail.mq.client.trace.TraceBean;
 import org.sail.mq.client.trace.TraceContext;
 import org.sail.mq.client.trace.TraceDispatcher;
 import org.sail.mq.client.trace.TraceType;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
 
 public class SendMessageTraceHookImpl implements SendMessageHook {
 

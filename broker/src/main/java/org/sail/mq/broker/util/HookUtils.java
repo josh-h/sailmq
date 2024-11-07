@@ -35,10 +35,10 @@ import org.sail.mq.common.topic.TopicValidator;
 import org.sail.mq.common.utils.QueueTypeUtils;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.store.PutMessageResult;
-import org.apache.rocketmq.store.PutMessageStatus;
-import org.apache.rocketmq.store.config.BrokerRole;
-import org.apache.rocketmq.store.timer.TimerMessageStore;
+import org.sail.mq.store.PutMessageResult;
+import org.sail.mq.store.PutMessageStatus;
+import org.sail.mq.store.config.BrokerRole;
+import org.sail.mq.store.timer.TimerMessageStore;
 
 public class HookUtils {
 

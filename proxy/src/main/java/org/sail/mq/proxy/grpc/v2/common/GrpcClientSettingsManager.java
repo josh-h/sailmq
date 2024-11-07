@@ -45,11 +45,11 @@ import org.sail.mq.proxy.config.ConfigurationManager;
 import org.sail.mq.proxy.config.MetricCollectorMode;
 import org.sail.mq.proxy.config.ProxyConfig;
 import org.sail.mq.proxy.processor.MessagingProcessor;
-import org.apache.rocketmq.remoting.protocol.subscription.CustomizedRetryPolicy;
-import org.apache.rocketmq.remoting.protocol.subscription.ExponentialRetryPolicy;
-import org.apache.rocketmq.remoting.protocol.subscription.GroupRetryPolicy;
-import org.apache.rocketmq.remoting.protocol.subscription.GroupRetryPolicyType;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.remoting.protocol.subscription.CustomizedRetryPolicy;
+import org.sail.mq.remoting.protocol.subscription.ExponentialRetryPolicy;
+import org.sail.mq.remoting.protocol.subscription.GroupRetryPolicy;
+import org.sail.mq.remoting.protocol.subscription.GroupRetryPolicyType;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
 
 public class GrpcClientSettingsManager extends ServiceThread implements StartAndShutdown {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

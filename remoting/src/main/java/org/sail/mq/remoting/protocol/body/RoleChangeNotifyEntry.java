@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.body;
+package org.sail.mq.remoting.protocol.body;
 
 
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
-import org.apache.rocketmq.remoting.protocol.header.controller.ElectMasterResponseHeader;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.header.controller.ElectMasterResponseHeader;
 
 import java.util.Set;
 

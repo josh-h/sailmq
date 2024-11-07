@@ -17,7 +17,7 @@
 package org.sail.mq.proxy.service;
 
 import org.sail.mq.broker.BrokerController;
-import org.apache.rocketmq.remoting.RPCHook;
+import org.sail.mq.remoting.RPCHook;
 
 public class ServiceManagerFactory {
     public static ServiceManager createForLocalMode(BrokerController brokerController) {

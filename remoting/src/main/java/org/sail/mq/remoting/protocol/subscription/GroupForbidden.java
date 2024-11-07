@@ -14,10 +14,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.protocol.subscription;
+package org.sail.mq.remoting.protocol.subscription;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 /**
  *

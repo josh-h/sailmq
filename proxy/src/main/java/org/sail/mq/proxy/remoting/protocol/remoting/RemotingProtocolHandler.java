@@ -21,10 +21,10 @@ import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import java.util.function.Supplier;
 import org.sail.mq.proxy.remoting.protocol.ProtocolHandler;
-import org.apache.rocketmq.remoting.netty.NettyDecoder;
-import org.apache.rocketmq.remoting.netty.NettyEncoder;
-import org.apache.rocketmq.remoting.netty.NettyRemotingServer;
-import org.apache.rocketmq.remoting.netty.RemotingCodeDistributionHandler;
+import org.sail.mq.remoting.netty.NettyDecoder;
+import org.sail.mq.remoting.netty.NettyEncoder;
+import org.sail.mq.remoting.netty.NettyRemotingServer;
+import org.sail.mq.remoting.netty.RemotingCodeDistributionHandler;
 
 public class RemotingProtocolHandler implements ProtocolHandler {
 

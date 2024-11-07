@@ -19,7 +19,7 @@ package org.sail.mq.proxy.remoting.pipeline;
 
 import io.netty.channel.ChannelHandlerContext;
 import org.sail.mq.proxy.common.ProxyContext;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public interface RequestPipeline {
 

@@ -21,9 +21,9 @@ import io.netty.channel.ChannelHandlerContext;
 import java.util.Comparator;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicLong;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
-import org.apache.rocketmq.store.MessageFilter;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.store.MessageFilter;
 
 public class PopRequest {
     private static final AtomicLong COUNTER = new AtomicLong(Long.MIN_VALUE);

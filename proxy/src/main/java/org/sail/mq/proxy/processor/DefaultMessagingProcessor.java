@@ -55,12 +55,12 @@ import org.sail.mq.proxy.service.message.ReceiptHandleMessage;
 import org.sail.mq.proxy.service.metadata.MetadataService;
 import org.sail.mq.proxy.service.relay.ProxyRelayService;
 import org.sail.mq.proxy.service.route.ProxyTopicRouteData;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumeType;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.heartbeat.ConsumeType;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
 
 public class DefaultMessagingProcessor extends AbstractStartAndShutdown implements MessagingProcessor {
 

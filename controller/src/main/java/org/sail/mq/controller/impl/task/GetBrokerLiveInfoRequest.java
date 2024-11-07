@@ -17,8 +17,8 @@
 package org.sail.mq.controller.impl.task;
 
 import org.sail.mq.controller.impl.heartbeat.BrokerIdentityInfo;
-import org.apache.rocketmq.remoting.CommandCustomHeader;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.exception.RemotingCommandException;
 
 public class GetBrokerLiveInfoRequest implements CommandCustomHeader {
     private String clusterName;

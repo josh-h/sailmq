@@ -28,13 +28,13 @@ import org.sail.mq.common.TopicConfig;
 import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.body.ConsumerOffsetSerializeWrapper;
-import org.apache.rocketmq.remoting.protocol.body.MessageRequestModeSerializeWrapper;
-import org.apache.rocketmq.remoting.protocol.body.SubscriptionGroupWrapper;
-import org.apache.rocketmq.remoting.protocol.body.TopicConfigAndMappingSerializeWrapper;
-import org.apache.rocketmq.store.config.StorePathConfigHelper;
-import org.apache.rocketmq.store.timer.TimerCheckpoint;
-import org.apache.rocketmq.store.timer.TimerMetrics;
+import org.sail.mq.remoting.protocol.body.ConsumerOffsetSerializeWrapper;
+import org.sail.mq.remoting.protocol.body.MessageRequestModeSerializeWrapper;
+import org.sail.mq.remoting.protocol.body.SubscriptionGroupWrapper;
+import org.sail.mq.remoting.protocol.body.TopicConfigAndMappingSerializeWrapper;
+import org.sail.mq.store.config.StorePathConfigHelper;
+import org.sail.mq.store.timer.TimerCheckpoint;
+import org.sail.mq.store.timer.TimerMetrics;
 
 public class SlaveSynchronize {
     private static final Logger LOGGER = LoggerFactory.getLogger(LoggerName.BROKER_LOGGER_NAME);

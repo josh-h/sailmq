@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.topic;
+package org.sail.mq.remoting.protocol.topic;
 
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 public class OffsetMovedEvent extends RemotingSerializable {
     private String consumerGroup;

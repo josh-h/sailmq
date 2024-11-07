@@ -14,9 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.rpc;
+package org.sail.mq.remoting.rpc;
 
-import org.apache.rocketmq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.CommandCustomHeader;
 
 public class RpcResponse   {
     private int code;

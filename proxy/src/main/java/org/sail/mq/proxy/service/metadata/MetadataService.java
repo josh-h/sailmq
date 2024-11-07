@@ -23,7 +23,7 @@ import org.sail.mq.auth.authentication.model.User;
 import org.sail.mq.auth.authorization.model.Acl;
 import org.sail.mq.common.attribute.TopicMessageType;
 import org.sail.mq.proxy.common.ProxyContext;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
 
 public interface MetadataService {
 

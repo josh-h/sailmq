@@ -29,9 +29,9 @@ Field defaultMQPullConsumerImpl : protected consumer.impl.org.sail.mq.client.Def
 Field enableStreamRequestType : protected boolean true
 Field heartbeatBrokerInterval : private int 30000
 Field instanceName : private java.lang.String DEFAULT
-Field language : private org.apache.rocketmq.remoting.protocol.LanguageCode JAVA
+Field language : private protocol.org.sail.mq.remoting.LanguageCode JAVA
 Field maxReconsumeTimes : private int 16
-Field messageModel : private org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel CLUSTERING
+Field messageModel : private heartbeat.protocol.org.sail.mq.remoting.MessageModel CLUSTERING
 Field messageQueueListener : private consumer.org.sail.mq.client.MessageQueueListener null
 Field mqClientApiTimeout : private int 3000
 Field namespace : protected java.lang.String null
@@ -66,9 +66,9 @@ Method getConsumerTimeoutMillisWhenSuspend() : public throws (long)
 Method getDefaultMQPullConsumerImpl() : public throws (consumer.impl.org.sail.mq.client.DefaultMQPullConsumerImpl)
 Method getHeartbeatBrokerInterval() : public throws (int)
 Method getInstanceName() : public throws (java.lang.String)
-Method getLanguage() : public throws (org.apache.rocketmq.remoting.protocol.LanguageCode)
+Method getLanguage() : public throws (protocol.org.sail.mq.remoting.LanguageCode)
 Method getMaxReconsumeTimes() : public throws (int)
-Method getMessageModel() : public throws (org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel)
+Method getMessageModel() : public throws (heartbeat.protocol.org.sail.mq.remoting.MessageModel)
 Method getMessageQueueListener() : public throws (consumer.org.sail.mq.client.MessageQueueListener)
 Method getMqClientApiTimeout() : public throws (int)
 Method getNamespace() : public throws (java.lang.String)
@@ -115,9 +115,9 @@ Method setConsumerTimeoutMillisWhenSuspend(long) : public throws (void)
 Method setEnableStreamRequestType(boolean) : public throws (void)
 Method setHeartbeatBrokerInterval(int) : public throws (void)
 Method setInstanceName(java.lang.String) : public throws (void)
-Method setLanguage(org.apache.rocketmq.remoting.protocol.LanguageCode) : public throws (void)
+Method setLanguage(protocol.org.sail.mq.remoting.LanguageCode) : public throws (void)
 Method setMaxReconsumeTimes(int) : public throws (void)
-Method setMessageModel(org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel) : public throws (void)
+Method setMessageModel(heartbeat.protocol.org.sail.mq.remoting.MessageModel) : public throws (void)
 Method setMessageQueueListener(consumer.org.sail.mq.client.MessageQueueListener) : public throws (void)
 Method setMqClientApiTimeout(int) : public throws (void)
 Method setNamespace(java.lang.String) : public throws (void)

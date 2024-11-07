@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.netty;
+package org.sail.mq.remoting.netty;
 
 import io.netty.handler.ssl.SslContext;
-import org.apache.rocketmq.remoting.common.TlsMode;
+import org.sail.mq.remoting.common.TlsMode;
 
 public class TlsSystemConfig {
     public static final String TLS_SERVER_MODE = "tls.server.mode";

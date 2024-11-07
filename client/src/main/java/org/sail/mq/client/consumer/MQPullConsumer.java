@@ -22,7 +22,7 @@ import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.common.filter.ExpressionType;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.exception.RemotingException;
 
 /**
  * Pulling consumer interface

@@ -32,11 +32,11 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.consumer.ConsumeFromWhere;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumeType;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
-import org.apache.rocketmq.store.stats.BrokerStatsManager;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.protocol.heartbeat.ConsumeType;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.store.stats.BrokerStatsManager;
 
 public class ConsumerManager {
     private static final Logger LOGGER = LoggerFactory.getLogger(LoggerName.BROKER_LOGGER_NAME);

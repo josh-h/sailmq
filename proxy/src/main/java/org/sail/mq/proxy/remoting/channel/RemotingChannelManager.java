@@ -32,7 +32,7 @@ import org.sail.mq.common.utils.StartAndShutdown;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.remoting.RemotingProxyOutClient;
 import org.sail.mq.proxy.service.relay.ProxyRelayService;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public class RemotingChannelManager implements StartAndShutdown {
     protected final static Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

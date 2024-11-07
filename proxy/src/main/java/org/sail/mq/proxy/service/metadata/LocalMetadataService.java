@@ -25,7 +25,7 @@ import org.sail.mq.broker.BrokerController;
 import org.sail.mq.common.TopicConfig;
 import org.sail.mq.common.attribute.TopicMessageType;
 import org.sail.mq.proxy.common.ProxyContext;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
 
 public class LocalMetadataService implements MetadataService {
     private final BrokerController brokerController;

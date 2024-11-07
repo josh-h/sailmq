@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.body;
+package org.sail.mq.remoting.protocol.body;
 
 import com.google.common.base.Objects;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 public class BrokerMemberGroup extends RemotingSerializable {
     private String cluster;

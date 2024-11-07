@@ -27,7 +27,7 @@ import org.sail.mq.broker.topic.TopicConfigManager;
 import org.sail.mq.common.TopicConfig;
 import org.sail.mq.common.UtilAll;
 import org.sail.mq.common.utils.DataConverter;
-import org.apache.rocketmq.remoting.protocol.DataVersion;
+import org.sail.mq.remoting.protocol.DataVersion;
 import org.rocksdb.CompressionType;
 
 public class RocksDBTopicConfigManager extends TopicConfigManager {

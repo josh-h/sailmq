@@ -22,8 +22,8 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.locks.Lock;
 import org.sail.mq.common.BoundaryType;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.store.DispatchRequest;
-import org.apache.rocketmq.store.SelectMappedBufferResult;
+import org.sail.mq.store.DispatchRequest;
+import org.sail.mq.store.SelectMappedBufferResult;
 import org.apache.rocketmq.tieredstore.common.AppendResult;
 
 public interface FlatFileInterface {

@@ -24,7 +24,7 @@ import org.sail.mq.common.MixAll;
 import org.sail.mq.common.filter.ExpressionType;
 import org.sail.mq.common.message.MessageConst;
 import org.sail.mq.common.message.MessageDecoder;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 /**
  * Support filter to retry topic.

@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Set;
 import org.apache.commons.lang3.StringUtils;
 import org.sail.mq.acl.plain.PlainAccessResource;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.RequestCode;
 
 public class Permission {
 

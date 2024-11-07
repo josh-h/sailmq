@@ -29,9 +29,9 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.utils.ThreadUtils;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.store.DefaultMessageStore;
-import org.apache.rocketmq.store.config.BrokerRole;
-import org.apache.rocketmq.store.dledger.DLedgerCommitLog;
+import org.sail.mq.store.DefaultMessageStore;
+import org.sail.mq.store.config.BrokerRole;
+import org.sail.mq.store.dledger.DLedgerCommitLog;
 
 public class DLedgerRoleChangeHandler implements DLedgerLeaderElector.RoleChangeHandler {
 

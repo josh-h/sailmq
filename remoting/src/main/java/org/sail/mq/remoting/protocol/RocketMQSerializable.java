@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.protocol;
+package org.sail.mq.remoting.protocol;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
@@ -22,7 +22,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.exception.RemotingCommandException;
 
 import io.netty.buffer.ByteBuf;
 

@@ -26,8 +26,8 @@ import org.sail.mq.proxy.common.ProxyExceptionCode;
 import org.sail.mq.proxy.common.utils.ProxyUtils;
 import org.sail.mq.proxy.service.transaction.TransactionData;
 import org.sail.mq.proxy.service.transaction.TransactionService;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.header.CheckTransactionStateRequestHeader;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.header.CheckTransactionStateRequestHeader;
 
 public abstract class AbstractProxyRelayService implements ProxyRelayService {
 

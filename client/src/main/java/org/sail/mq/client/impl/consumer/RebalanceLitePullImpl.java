@@ -27,8 +27,8 @@ import org.sail.mq.common.MixAll;
 import org.sail.mq.common.UtilAll;
 import org.sail.mq.common.consumer.ConsumeFromWhere;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumeType;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.protocol.heartbeat.ConsumeType;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
 
 public class RebalanceLitePullImpl extends RebalanceImpl {
 

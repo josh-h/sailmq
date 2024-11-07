@@ -44,9 +44,9 @@ import org.sail.mq.proxy.common.Address;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.config.ConfigurationManager;
 import org.sail.mq.proxy.config.ProxyConfig;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.header.GetMaxOffsetRequestHeader;
-import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.header.GetMaxOffsetRequestHeader;
+import org.sail.mq.remoting.protocol.route.TopicRouteData;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.checkerframework.checker.nullness.qual.Nullable;
 

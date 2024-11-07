@@ -14,18 +14,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.netty;
+package org.sail.mq.remoting.netty;
 
 import io.netty.channel.Channel;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.apache.rocketmq.remoting.InvokeCallback;
-import org.apache.rocketmq.remoting.common.SemaphoreReleaseOnlyOnce;
-import org.apache.rocketmq.remoting.exception.RemotingException;
-import org.apache.rocketmq.remoting.exception.RemotingSendRequestException;
-import org.apache.rocketmq.remoting.exception.RemotingTimeoutException;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.InvokeCallback;
+import org.sail.mq.remoting.common.SemaphoreReleaseOnlyOnce;
+import org.sail.mq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.exception.RemotingSendRequestException;
+import org.sail.mq.remoting.exception.RemotingTimeoutException;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class ResponseFuture {
     private final Channel channel;

@@ -41,14 +41,14 @@ import org.sail.mq.common.constant.PermName;
 import org.sail.mq.common.filter.ExpressionType;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.filter.FilterAPI;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumeType;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
-import org.apache.rocketmq.remoting.protocol.subscription.SimpleSubscriptionData;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
-import org.apache.rocketmq.store.DefaultMessageFilter;
-import org.apache.rocketmq.store.MessageStore;
-import org.apache.rocketmq.store.exception.ConsumeQueueException;
+import org.sail.mq.remoting.protocol.filter.FilterAPI;
+import org.sail.mq.remoting.protocol.heartbeat.ConsumeType;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.subscription.SimpleSubscriptionData;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.store.DefaultMessageFilter;
+import org.sail.mq.store.MessageStore;
+import org.sail.mq.store.exception.ConsumeQueueException;
 
 public class ConsumerLagCalculator {
     private final BrokerConfig brokerConfig;

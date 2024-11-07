@@ -32,8 +32,8 @@ import org.sail.mq.common.future.FutureTaskExt;
 import org.sail.mq.common.utils.ThreadUtils;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.netty.RequestTask;
-import org.apache.rocketmq.remoting.protocol.RemotingSysResponseCode;
+import org.sail.mq.remoting.netty.RequestTask;
+import org.sail.mq.remoting.protocol.RemotingSysResponseCode;
 
 /**
  * BrokerFastFailure will cover {@link BrokerController#getSendThreadPoolQueue()} and {@link

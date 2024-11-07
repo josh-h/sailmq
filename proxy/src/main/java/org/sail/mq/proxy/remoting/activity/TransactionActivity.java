@@ -18,14 +18,14 @@
 package org.sail.mq.proxy.remoting.activity;
 
 import io.netty.channel.ChannelHandlerContext;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.header.EndTransactionRequestHeader;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.header.EndTransactionRequestHeader;
 import org.sail.mq.common.sysflag.MessageSysFlag;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.processor.MessagingProcessor;
 import org.sail.mq.proxy.processor.TransactionStatus;
 import org.sail.mq.proxy.remoting.pipeline.RequestPipeline;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class TransactionActivity extends AbstractRemotingActivity {
 

@@ -21,7 +21,7 @@ import org.sail.mq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import org.sail.mq.client.consumer.listener.MessageListenerConcurrently;
 import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.common.consumer.ConsumeFromWhere;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
 
 public class PushConsumer {
 

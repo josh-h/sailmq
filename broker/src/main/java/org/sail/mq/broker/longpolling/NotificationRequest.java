@@ -18,7 +18,7 @@ package org.sail.mq.broker.longpolling;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 import io.netty.channel.Channel;
 

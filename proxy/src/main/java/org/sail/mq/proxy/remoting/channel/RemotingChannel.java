@@ -47,16 +47,16 @@ import org.sail.mq.proxy.service.relay.ProxyChannel;
 import org.sail.mq.proxy.service.relay.ProxyRelayResult;
 import org.sail.mq.proxy.service.relay.ProxyRelayService;
 import org.sail.mq.proxy.service.transaction.TransactionData;
-import org.apache.rocketmq.remoting.exception.RemotingException;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.body.ConsumeMessageDirectlyResult;
-import org.apache.rocketmq.remoting.protocol.body.ConsumerRunningInfo;
-import org.apache.rocketmq.remoting.protocol.header.CheckTransactionStateRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.ConsumeMessageDirectlyResultRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.GetConsumerRunningInfoRequestHeader;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.body.ConsumeMessageDirectlyResult;
+import org.sail.mq.remoting.protocol.body.ConsumerRunningInfo;
+import org.sail.mq.remoting.protocol.header.CheckTransactionStateRequestHeader;
+import org.sail.mq.remoting.protocol.header.ConsumeMessageDirectlyResultRequestHeader;
+import org.sail.mq.remoting.protocol.header.GetConsumerRunningInfoRequestHeader;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public class RemotingChannel extends ProxyChannel implements RemoteChannelConverter, ChannelExtendAttributeGetter {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

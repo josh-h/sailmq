@@ -29,9 +29,9 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.consumer.ConsumeFromWhere;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumeType;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.heartbeat.ConsumeType;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public class ConsumerGroupInfo {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.BROKER_LOGGER_NAME);

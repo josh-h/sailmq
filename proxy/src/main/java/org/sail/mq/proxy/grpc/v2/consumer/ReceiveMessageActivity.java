@@ -43,8 +43,8 @@ import org.sail.mq.proxy.processor.QueueSelector;
 import org.sail.mq.proxy.service.route.AddressableMessageQueue;
 import org.sail.mq.proxy.service.route.MessageQueueSelector;
 import org.sail.mq.proxy.service.route.MessageQueueView;
-import org.apache.rocketmq.remoting.protocol.filter.FilterAPI;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.filter.FilterAPI;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public class ReceiveMessageActivity extends AbstractMessingActivity {
     private static final String ILLEGAL_POLLING_TIME_INTRODUCED_CLIENT_VERSION = "5.0.3";

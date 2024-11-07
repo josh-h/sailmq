@@ -24,7 +24,7 @@ import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.Options;
 import org.sail.mq.common.PlainAccessConfig;
-import org.apache.rocketmq.srvutil.ServerUtil;
+import org.sail.mq.srvutil.ServerUtil;
 import org.junit.Assert;
 import org.junit.Test;
 

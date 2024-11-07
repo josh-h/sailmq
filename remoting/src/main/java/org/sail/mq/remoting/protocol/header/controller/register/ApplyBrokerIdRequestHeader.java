@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.header.controller.register;
+package org.sail.mq.remoting.protocol.header.controller.register;
 
 import org.sail.mq.common.action.Action;
 import org.sail.mq.common.action.RocketMQAction;
 import org.sail.mq.common.resource.ResourceType;
 import org.sail.mq.common.resource.RocketMQResource;
-import org.apache.rocketmq.remoting.CommandCustomHeader;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.protocol.RequestCode;
 
 @RocketMQAction(value = RequestCode.CONTROLLER_APPLY_BROKER_ID, resource = ResourceType.CLUSTER, action = Action.UPDATE)
 public class ApplyBrokerIdRequestHeader implements CommandCustomHeader {

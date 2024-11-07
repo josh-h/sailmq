@@ -14,10 +14,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.protocol.header.controller;
+package org.sail.mq.remoting.protocol.header.controller;
 
-import org.apache.rocketmq.remoting.CommandCustomHeader;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.exception.RemotingCommandException;
 
 public class GetMetaDataResponseHeader implements CommandCustomHeader {
     private String group;

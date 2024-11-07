@@ -19,7 +19,7 @@ package org.sail.mq.client.impl.mqclient;
 import io.netty.channel.ChannelHandlerContext;
 import org.sail.mq.client.impl.ClientRemotingProcessor;
 import org.sail.mq.client.impl.factory.MQClientInstance;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class DoNothingClientRemotingProcessor extends ClientRemotingProcessor {
 

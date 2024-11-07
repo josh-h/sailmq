@@ -14,9 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting;
+package org.sail.mq.remoting;
 
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.exception.RemotingCommandException;
 
 public interface CommandCustomHeader {
     void checkFields() throws RemotingCommandException;

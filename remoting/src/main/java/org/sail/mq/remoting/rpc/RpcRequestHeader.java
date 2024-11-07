@@ -14,11 +14,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.rpc;
+package org.sail.mq.remoting.rpc;
 
 import com.google.common.base.MoreObjects;
 import java.util.Objects;
-import org.apache.rocketmq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.CommandCustomHeader;
 
 public abstract class RpcRequestHeader implements CommandCustomHeader {
     //the namespace name

@@ -18,7 +18,7 @@ package org.sail.mq.controller.impl.event;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
 
 public class ControllerResult<T> {
     private final List<EventMessage> events;

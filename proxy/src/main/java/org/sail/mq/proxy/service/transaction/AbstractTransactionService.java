@@ -22,7 +22,7 @@ import org.sail.mq.common.message.Message;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.common.utils.StartAndShutdown;
 import org.sail.mq.proxy.config.ConfigurationManager;
-import org.apache.rocketmq.remoting.protocol.header.EndTransactionRequestHeader;
+import org.sail.mq.remoting.protocol.header.EndTransactionRequestHeader;
 
 public abstract class AbstractTransactionService implements TransactionService, StartAndShutdown {
 

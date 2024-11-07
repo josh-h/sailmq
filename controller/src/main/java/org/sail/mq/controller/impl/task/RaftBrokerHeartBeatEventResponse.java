@@ -16,8 +16,8 @@
  */
 package org.sail.mq.controller.impl.task;
 
-import org.apache.rocketmq.remoting.CommandCustomHeader;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.exception.RemotingCommandException;
 
 public class RaftBrokerHeartBeatEventResponse implements CommandCustomHeader {
     public RaftBrokerHeartBeatEventResponse() {

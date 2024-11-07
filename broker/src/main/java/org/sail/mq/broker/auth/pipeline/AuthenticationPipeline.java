@@ -27,9 +27,9 @@ import org.sail.mq.common.AbortProcessException;
 import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.pipeline.RequestPipeline;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.pipeline.RequestPipeline;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.ResponseCode;
 
 public class AuthenticationPipeline implements RequestPipeline {
     protected static final Logger LOGGER = LoggerFactory.getLogger(LoggerName.BROKER_LOGGER_NAME);

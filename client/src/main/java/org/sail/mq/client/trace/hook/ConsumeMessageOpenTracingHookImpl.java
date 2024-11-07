@@ -29,7 +29,7 @@ import org.sail.mq.client.hook.ConsumeMessageHook;
 import org.sail.mq.client.trace.TraceConstants;
 import org.sail.mq.common.message.MessageConst;
 import org.sail.mq.common.message.MessageExt;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
 
 
 public class ConsumeMessageOpenTracingHookImpl implements ConsumeMessageHook {

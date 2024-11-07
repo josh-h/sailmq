@@ -35,7 +35,7 @@ import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.client.impl.consumer.ProcessQueue;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.protocol.LanguageCode;
+import org.sail.mq.remoting.protocol.LanguageCode;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 

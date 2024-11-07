@@ -32,10 +32,10 @@ import io.netty.util.concurrent.Future;
 import java.net.InetSocketAddress;
 import java.util.HashMap;
 import java.util.concurrent.ExecutionException;
-import org.apache.rocketmq.remoting.netty.NettyDecoder;
-import org.apache.rocketmq.remoting.netty.NettyEncoder;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RemotingSysResponseCode;
+import org.sail.mq.remoting.netty.NettyDecoder;
+import org.sail.mq.remoting.netty.NettyEncoder;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingSysResponseCode;
 import org.junit.After;
 import org.junit.Before;
 

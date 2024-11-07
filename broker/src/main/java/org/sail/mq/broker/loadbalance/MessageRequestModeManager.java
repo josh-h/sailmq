@@ -20,8 +20,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.sail.mq.broker.BrokerController;
 import org.sail.mq.broker.BrokerPathConfigHelper;
 import org.sail.mq.common.ConfigManager;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
-import org.apache.rocketmq.remoting.protocol.body.SetMessageRequestModeRequestBody;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.body.SetMessageRequestModeRequestBody;
 
 public class MessageRequestModeManager extends ConfigManager {
 

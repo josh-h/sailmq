@@ -19,7 +19,7 @@ package org.sail.mq.broker.config.v1;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 public class RocksDBOffsetSerializeWrapper extends RemotingSerializable {
     private ConcurrentMap<Integer, Long> offsetTable = new ConcurrentHashMap(16);

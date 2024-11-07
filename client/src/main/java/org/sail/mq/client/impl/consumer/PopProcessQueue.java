@@ -17,7 +17,7 @@
 package org.sail.mq.client.impl.consumer;
 
 import java.util.concurrent.atomic.AtomicInteger;
-import org.apache.rocketmq.remoting.protocol.body.PopProcessQueueInfo;
+import org.sail.mq.remoting.protocol.body.PopProcessQueueInfo;
 
 /**
  * Queue consumption snapshot

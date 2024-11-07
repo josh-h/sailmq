@@ -37,7 +37,7 @@ import org.sail.mq.common.MQVersion;
 import org.sail.mq.common.MixAll;
 import org.sail.mq.common.constant.CommonConstants;
 import org.sail.mq.common.constant.GrpcConstants;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class DefaultAuthenticationContextBuilder implements AuthenticationContextBuilder<DefaultAuthenticationContext> {
 

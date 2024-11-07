@@ -17,9 +17,9 @@
 package org.sail.mq.broker.longpolling;
 
 import io.netty.channel.Channel;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
-import org.apache.rocketmq.store.MessageFilter;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.store.MessageFilter;
 
 public class PullRequest {
     private final RemotingCommand requestCommand;

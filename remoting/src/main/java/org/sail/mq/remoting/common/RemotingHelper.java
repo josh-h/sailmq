@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.common;
+package org.sail.mq.remoting.common;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
@@ -26,15 +26,15 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.utils.NetworkUtil;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.exception.RemotingConnectException;
-import org.apache.rocketmq.remoting.exception.RemotingSendRequestException;
-import org.apache.rocketmq.remoting.exception.RemotingTimeoutException;
-import org.apache.rocketmq.remoting.netty.AttributeKeys;
-import org.apache.rocketmq.remoting.netty.NettySystemConfig;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.exception.RemotingConnectException;
+import org.sail.mq.remoting.exception.RemotingSendRequestException;
+import org.sail.mq.remoting.exception.RemotingTimeoutException;
+import org.sail.mq.remoting.netty.AttributeKeys;
+import org.sail.mq.remoting.netty.NettySystemConfig;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
 
 import java.io.IOException;
 import java.lang.reflect.Field;

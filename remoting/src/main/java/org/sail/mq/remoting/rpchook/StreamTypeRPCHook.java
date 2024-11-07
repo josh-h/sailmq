@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.rpchook;
+package org.sail.mq.remoting.rpchook;
 
 import org.sail.mq.common.MixAll;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RequestType;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RequestType;
 
 public class StreamTypeRPCHook implements RPCHook {
     @Override

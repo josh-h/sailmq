@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 import org.sail.mq.auth.authentication.enums.UserStatus;
 import org.sail.mq.auth.authentication.enums.UserType;
 import org.sail.mq.auth.authentication.model.User;
-import org.apache.rocketmq.remoting.protocol.body.UserInfo;
+import org.sail.mq.remoting.protocol.body.UserInfo;
 
 public class UserConverter {
 

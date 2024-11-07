@@ -44,11 +44,11 @@ import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.common.sysflag.MessageSysFlag;
 import org.sail.mq.common.sysflag.PullSysFlag;
-import org.apache.rocketmq.remoting.exception.RemotingException;
-import org.apache.rocketmq.remoting.protocol.header.PopMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.PullMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
-import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
+import org.sail.mq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.protocol.header.PopMessageRequestHeader;
+import org.sail.mq.remoting.protocol.header.PullMessageRequestHeader;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.route.TopicRouteData;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 

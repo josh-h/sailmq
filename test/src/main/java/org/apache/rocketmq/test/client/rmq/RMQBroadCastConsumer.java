@@ -17,7 +17,7 @@
 
 package org.apache.rocketmq.test.client.rmq;
 
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.test.listener.AbstractListener;

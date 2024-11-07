@@ -26,7 +26,7 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.namesrv.NamesrvConfig;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.header.namesrv.UnRegisterBrokerRequestHeader;
+import org.sail.mq.remoting.protocol.header.namesrv.UnRegisterBrokerRequestHeader;
 
 /**
  * BatchUnregistrationService provides a mechanism to unregister brokers in batch manner, which speeds up broker-offline

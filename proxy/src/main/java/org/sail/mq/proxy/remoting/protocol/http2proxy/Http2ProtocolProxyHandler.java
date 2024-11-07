@@ -39,8 +39,8 @@ import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.proxy.config.ConfigurationManager;
 import org.sail.mq.proxy.config.ProxyConfig;
 import org.sail.mq.proxy.remoting.protocol.ProtocolHandler;
-import org.apache.rocketmq.remoting.common.TlsMode;
-import org.apache.rocketmq.remoting.netty.TlsSystemConfig;
+import org.sail.mq.remoting.common.TlsMode;
+import org.sail.mq.remoting.netty.TlsSystemConfig;
 
 public class Http2ProtocolProxyHandler implements ProtocolHandler {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.ROCKETMQ_REMOTING_NAME);

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol;
+package org.sail.mq.remoting.protocol;
 
 public enum SerializeType {
     JSON((byte) 0),

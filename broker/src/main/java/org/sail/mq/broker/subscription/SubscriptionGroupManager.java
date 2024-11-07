@@ -36,9 +36,9 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.topic.TopicValidator;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.DataVersion;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.remoting.protocol.DataVersion;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
 
 public class SubscriptionGroupManager extends ConfigManager {
     protected static final Logger log = LoggerFactory.getLogger(LoggerName.BROKER_LOGGER_NAME);

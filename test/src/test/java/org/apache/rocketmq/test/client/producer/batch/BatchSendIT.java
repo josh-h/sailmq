@@ -39,7 +39,7 @@ import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.store.DefaultMessageStore;
+import org.sail.mq.store.DefaultMessageStore;
 import org.apache.rocketmq.test.base.BaseConf;
 import org.apache.rocketmq.test.base.IntegrationTestBase;
 import org.apache.rocketmq.test.client.consumer.tag.TagMessageWith1ConsumerIT;

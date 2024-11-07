@@ -45,11 +45,11 @@ import org.sail.mq.proxy.processor.validator.DefaultTopicMessageTypeValidator;
 import org.sail.mq.proxy.processor.validator.TopicMessageTypeValidator;
 import org.sail.mq.proxy.service.ServiceManager;
 import org.sail.mq.proxy.service.route.AddressableMessageQueue;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.header.ConsumerSendMsgBackRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.SendMessageRequestHeader;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.header.ConsumerSendMsgBackRequestHeader;
+import org.sail.mq.remoting.protocol.header.SendMessageRequestHeader;
 
 public class ProducerProcessor extends AbstractProcessor {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

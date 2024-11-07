@@ -19,7 +19,7 @@ package org.sail.mq.proxy.remoting;
 
 import io.netty.channel.Channel;
 import org.sail.mq.proxy.remoting.activity.ClientManagerActivity;
-import org.apache.rocketmq.remoting.ChannelEventListener;
+import org.sail.mq.remoting.ChannelEventListener;
 
 public class ClientHousekeepingService implements ChannelEventListener {
 

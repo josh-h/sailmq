@@ -28,21 +28,21 @@ import java.util.Set;
 import org.sail.mq.broker.client.ClientChannelInfo;
 import org.sail.mq.broker.client.ConsumerGroupInfo;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.body.Connection;
-import org.apache.rocketmq.remoting.protocol.body.ConsumerConnection;
-import org.apache.rocketmq.remoting.protocol.body.LockBatchRequestBody;
-import org.apache.rocketmq.remoting.protocol.body.UnlockBatchRequestBody;
-import org.apache.rocketmq.remoting.protocol.header.GetConsumerConnectionListRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.GetConsumerListByGroupRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.GetConsumerListByGroupResponseBody;
-import org.apache.rocketmq.remoting.protocol.header.GetConsumerListByGroupResponseHeader;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.body.Connection;
+import org.sail.mq.remoting.protocol.body.ConsumerConnection;
+import org.sail.mq.remoting.protocol.body.LockBatchRequestBody;
+import org.sail.mq.remoting.protocol.body.UnlockBatchRequestBody;
+import org.sail.mq.remoting.protocol.header.GetConsumerConnectionListRequestHeader;
+import org.sail.mq.remoting.protocol.header.GetConsumerListByGroupRequestHeader;
+import org.sail.mq.remoting.protocol.header.GetConsumerListByGroupResponseBody;
+import org.sail.mq.remoting.protocol.header.GetConsumerListByGroupResponseHeader;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.processor.MessagingProcessor;
 import org.sail.mq.proxy.remoting.pipeline.RequestPipeline;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class ConsumerManagerActivity extends AbstractRemotingActivity {
     public ConsumerManagerActivity(RequestPipeline requestPipeline, MessagingProcessor messagingProcessor) {

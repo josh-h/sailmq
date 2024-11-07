@@ -18,7 +18,7 @@
 package org.sail.mq.proxy.service.admin;
 
 import java.util.List;
-import org.apache.rocketmq.remoting.protocol.route.BrokerData;
+import org.sail.mq.remoting.protocol.route.BrokerData;
 
 public interface AdminService {
 

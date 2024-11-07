@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.netty;
+package org.sail.mq.remoting.netty;
 
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public interface RemotingResponseCallback {
     void callback(RemotingCommand response);

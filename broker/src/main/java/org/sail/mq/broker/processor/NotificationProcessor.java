@@ -33,15 +33,15 @@ import org.sail.mq.common.constant.PermName;
 import org.sail.mq.common.help.FAQUrl;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.netty.NettyRequestProcessor;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.header.NotificationRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.NotificationResponseHeader;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
-import org.apache.rocketmq.store.exception.ConsumeQueueException;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.netty.NettyRequestProcessor;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.header.NotificationRequestHeader;
+import org.sail.mq.remoting.protocol.header.NotificationResponseHeader;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.store.exception.ConsumeQueueException;
 
 public class NotificationProcessor implements NettyRequestProcessor {
     private static final Logger POP_LOGGER = LoggerFactory.getLogger(LoggerName.ROCKETMQ_POP_LOGGER_NAME);

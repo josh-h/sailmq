@@ -17,7 +17,7 @@
 package org.sail.mq.broker.metrics;
 
 import com.google.common.base.Objects;
-import org.apache.rocketmq.remoting.protocol.LanguageCode;
+import org.sail.mq.remoting.protocol.LanguageCode;
 
 public class ProducerAttr {
     LanguageCode language;

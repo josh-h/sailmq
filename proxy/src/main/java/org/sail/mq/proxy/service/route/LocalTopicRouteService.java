@@ -28,9 +28,9 @@ import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.proxy.common.Address;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.config.ConfigurationManager;
-import org.apache.rocketmq.remoting.protocol.route.BrokerData;
-import org.apache.rocketmq.remoting.protocol.route.QueueData;
-import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
+import org.sail.mq.remoting.protocol.route.BrokerData;
+import org.sail.mq.remoting.protocol.route.QueueData;
+import org.sail.mq.remoting.protocol.route.TopicRouteData;
 
 public class LocalTopicRouteService extends TopicRouteService {
 

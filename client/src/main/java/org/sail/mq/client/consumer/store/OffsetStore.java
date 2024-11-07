@@ -21,7 +21,7 @@ import java.util.Set;
 import org.sail.mq.client.exception.MQBrokerException;
 import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.exception.RemotingException;
 
 /**
  * Offset store interface

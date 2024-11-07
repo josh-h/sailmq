@@ -61,15 +61,15 @@ import org.sail.mq.proxy.grpc.v2.common.GrpcProxyException;
 import org.sail.mq.proxy.grpc.v2.common.ResponseBuilder;
 import org.sail.mq.proxy.processor.MessagingProcessor;
 import org.sail.mq.proxy.service.relay.ProxyRelayResult;
-import org.apache.rocketmq.remoting.protocol.LanguageCode;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.body.CMResult;
-import org.apache.rocketmq.remoting.protocol.body.ConsumeMessageDirectlyResult;
-import org.apache.rocketmq.remoting.protocol.body.ConsumerRunningInfo;
-import org.apache.rocketmq.remoting.protocol.filter.FilterAPI;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumeType;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.LanguageCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.body.CMResult;
+import org.sail.mq.remoting.protocol.body.ConsumeMessageDirectlyResult;
+import org.sail.mq.remoting.protocol.body.ConsumerRunningInfo;
+import org.sail.mq.remoting.protocol.filter.FilterAPI;
+import org.sail.mq.remoting.protocol.heartbeat.ConsumeType;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public class ClientActivity extends AbstractMessingActivity {
 

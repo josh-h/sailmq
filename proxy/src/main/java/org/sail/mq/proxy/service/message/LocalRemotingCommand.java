@@ -17,9 +17,9 @@
 package org.sail.mq.proxy.service.message;
 
 import java.util.HashMap;
-import org.apache.rocketmq.remoting.CommandCustomHeader;
-import org.apache.rocketmq.remoting.protocol.LanguageCode;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.protocol.LanguageCode;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class LocalRemotingCommand extends RemotingCommand {
 

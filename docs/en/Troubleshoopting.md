@@ -5,7 +5,7 @@
 >  Problem: Sometimes after deploying the RocketMQ cluster, when you try to execute some commands of "mqadmin", the following exception will appear:
 >
 >  ```java
->  org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to <null> failed
+>  exception.org.sail.mq.remoting.RemotingConnectException: connect to <null> failed
 >  ```
 
 Solution: Execute  `export NAMESRV_ADDR=ip:9876` (ip refers to the address of NameServer deployed in the cluster) on the VM that deploys the RocketMQ cluster.Then you will execute commands of "mqadmin" successfully.

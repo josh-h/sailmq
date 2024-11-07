@@ -25,7 +25,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.sail.mq.common.resource.ResourceType;
 import org.sail.mq.common.resource.ResourcePattern;
 import org.sail.mq.common.constant.CommonConstants;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
 
 public class Resource {
 

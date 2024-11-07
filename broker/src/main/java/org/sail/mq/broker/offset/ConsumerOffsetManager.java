@@ -36,8 +36,8 @@ import org.sail.mq.common.UtilAll;
 import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.DataVersion;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.DataVersion;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 public class ConsumerOffsetManager extends ConfigManager {
     protected static final Logger LOG = LoggerFactory.getLogger(LoggerName.BROKER_LOGGER_NAME);

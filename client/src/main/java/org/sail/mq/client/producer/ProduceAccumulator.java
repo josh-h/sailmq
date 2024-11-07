@@ -40,7 +40,7 @@ import org.sail.mq.common.message.MessageDecoder;
 import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.exception.RemotingException;
 
 public class ProduceAccumulator {
     // totalHoldSize normal value

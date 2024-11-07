@@ -32,8 +32,8 @@ import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.proxy.common.ProxyException;
 import org.sail.mq.common.utils.ExceptionUtils;
 import org.sail.mq.proxy.service.route.TopicRouteHelper;
-import org.apache.rocketmq.remoting.exception.RemotingTimeoutException;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.exception.RemotingTimeoutException;
+import org.sail.mq.remoting.protocol.ResponseCode;
 
 public class ResponseBuilder {
 

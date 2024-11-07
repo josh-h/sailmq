@@ -47,9 +47,9 @@ import org.sail.mq.client.producer.SendStatus;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.CommandCustomHeader;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.protocol.RequestCode;
 import org.apache.rocketmq.tools.admin.DefaultMQAdminExt;
 import org.reflections.Reflections;
 

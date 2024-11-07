@@ -18,15 +18,15 @@
 /**
  * $Id: PullMessageResponseHeader.java 1835 2013-05-16 02:00:50Z vintagewang@apache.org $
  */
-package org.apache.rocketmq.remoting.protocol.header;
+package org.sail.mq.remoting.protocol.header;
 
 import io.netty.buffer.ByteBuf;
 import java.util.HashMap;
-import org.apache.rocketmq.remoting.CommandCustomHeader;
-import org.apache.rocketmq.remoting.annotation.CFNotNull;
-import org.apache.rocketmq.remoting.annotation.CFNullable;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.protocol.FastCodesHeader;
+import org.sail.mq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.annotation.CFNotNull;
+import org.sail.mq.remoting.annotation.CFNullable;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.protocol.FastCodesHeader;
 
 public class PullMessageResponseHeader implements CommandCustomHeader, FastCodesHeader {
     @CFNotNull

@@ -34,7 +34,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import org.sail.mq.common.ThreadFactoryImpl;
-import org.apache.rocketmq.store.logfile.DefaultMappedFile;
+import org.sail.mq.store.logfile.DefaultMappedFile;
 import org.apache.rocketmq.tieredstore.MessageStoreConfig;
 import org.apache.rocketmq.tieredstore.common.AppendResult;
 import org.apache.rocketmq.tieredstore.file.FlatFileFactory;

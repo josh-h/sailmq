@@ -18,7 +18,7 @@
 package org.apache.rocketmq.tools.monitor;
 
 import java.util.TreeMap;
-import org.apache.rocketmq.remoting.protocol.body.ConsumerRunningInfo;
+import org.sail.mq.remoting.protocol.body.ConsumerRunningInfo;
 
 public interface MonitorListener {
     void beginRound();

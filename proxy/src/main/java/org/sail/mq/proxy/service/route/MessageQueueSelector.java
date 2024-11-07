@@ -35,7 +35,7 @@ import org.sail.mq.client.impl.producer.TopicPublishInfo;
 import org.sail.mq.client.latency.MQFaultStrategy;
 import org.sail.mq.common.constant.PermName;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.protocol.route.QueueData;
+import org.sail.mq.remoting.protocol.route.QueueData;
 
 public class MessageQueueSelector {
     private static final int BROKER_ACTING_QUEUE_ID = -1;

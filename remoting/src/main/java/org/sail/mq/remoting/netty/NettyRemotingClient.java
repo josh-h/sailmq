@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.netty;
+package org.sail.mq.remoting.netty;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
@@ -76,17 +76,17 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.utils.ThreadUtils;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.ChannelEventListener;
-import org.apache.rocketmq.remoting.InvokeCallback;
-import org.apache.rocketmq.remoting.RemotingClient;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.exception.RemotingConnectException;
-import org.apache.rocketmq.remoting.exception.RemotingSendRequestException;
-import org.apache.rocketmq.remoting.exception.RemotingTimeoutException;
-import org.apache.rocketmq.remoting.exception.RemotingTooMuchRequestException;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.proxy.SocksProxyConfig;
+import org.sail.mq.remoting.ChannelEventListener;
+import org.sail.mq.remoting.InvokeCallback;
+import org.sail.mq.remoting.RemotingClient;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.exception.RemotingConnectException;
+import org.sail.mq.remoting.exception.RemotingSendRequestException;
+import org.sail.mq.remoting.exception.RemotingTimeoutException;
+import org.sail.mq.remoting.exception.RemotingTooMuchRequestException;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.proxy.SocksProxyConfig;
 
 public class NettyRemotingClient extends NettyRemotingAbstract implements RemotingClient {
     private static final Logger LOGGER = LoggerFactory.getLogger(LoggerName.ROCKETMQ_REMOTING_NAME);

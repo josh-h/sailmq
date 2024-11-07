@@ -27,11 +27,11 @@ import org.sail.mq.client.producer.DefaultMQProducer;
 import org.sail.mq.common.ThreadFactoryImpl;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageConst;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.exception.RemotingException;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.srvutil.ServerUtil;
+import org.sail.mq.srvutil.ServerUtil;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;

@@ -24,10 +24,10 @@ import org.sail.mq.common.sysflag.PullSysFlag;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.processor.MessagingProcessor;
 import org.sail.mq.proxy.remoting.pipeline.RequestPipeline;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.header.PullMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.header.PullMessageRequestHeader;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public class PullMessageActivity extends AbstractRemotingActivity {
     public PullMessageActivity(RequestPipeline requestPipeline,

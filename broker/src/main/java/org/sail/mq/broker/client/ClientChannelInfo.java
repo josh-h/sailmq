@@ -17,7 +17,7 @@
 package org.sail.mq.broker.client;
 
 import io.netty.channel.Channel;
-import org.apache.rocketmq.remoting.protocol.LanguageCode;
+import org.sail.mq.remoting.protocol.LanguageCode;
 
 public class ClientChannelInfo {
     private final Channel channel;

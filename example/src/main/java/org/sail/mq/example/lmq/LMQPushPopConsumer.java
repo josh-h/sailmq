@@ -29,8 +29,8 @@ import org.sail.mq.common.MixAll;
 import org.sail.mq.common.consumer.ConsumeFromWhere;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageRequestMode;
-import org.apache.rocketmq.remoting.protocol.route.BrokerData;
-import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
+import org.sail.mq.remoting.protocol.route.BrokerData;
+import org.sail.mq.remoting.protocol.route.TopicRouteData;
 import org.apache.rocketmq.tools.admin.DefaultMQAdminExt;
 
 public class LMQPushPopConsumer {

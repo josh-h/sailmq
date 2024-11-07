@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.netty;
+package org.sail.mq.remoting.netty;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFutureListener;
@@ -51,27 +51,27 @@ import org.sail.mq.common.UtilAll;
 import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.ChannelEventListener;
-import org.apache.rocketmq.remoting.InvokeCallback;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.common.SemaphoreReleaseOnlyOnce;
-import org.apache.rocketmq.remoting.exception.RemotingSendRequestException;
-import org.apache.rocketmq.remoting.exception.RemotingTimeoutException;
-import org.apache.rocketmq.remoting.exception.RemotingTooMuchRequestException;
-import org.apache.rocketmq.remoting.metrics.RemotingMetricsManager;
-import org.apache.rocketmq.remoting.pipeline.RequestPipeline;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RemotingSysResponseCode;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.ChannelEventListener;
+import org.sail.mq.remoting.InvokeCallback;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.common.SemaphoreReleaseOnlyOnce;
+import org.sail.mq.remoting.exception.RemotingSendRequestException;
+import org.sail.mq.remoting.exception.RemotingTimeoutException;
+import org.sail.mq.remoting.exception.RemotingTooMuchRequestException;
+import org.sail.mq.remoting.metrics.RemotingMetricsManager;
+import org.sail.mq.remoting.pipeline.RequestPipeline;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingSysResponseCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
 
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.LABEL_IS_LONG_POLLING;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.LABEL_REQUEST_CODE;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.LABEL_RESPONSE_CODE;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.LABEL_RESULT;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.RESULT_ONEWAY;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.RESULT_PROCESS_REQUEST_FAILED;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.RESULT_WRITE_CHANNEL_FAILED;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.LABEL_IS_LONG_POLLING;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.LABEL_REQUEST_CODE;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.LABEL_RESPONSE_CODE;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.LABEL_RESULT;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.RESULT_ONEWAY;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.RESULT_PROCESS_REQUEST_FAILED;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.RESULT_WRITE_CHANNEL_FAILED;
 
 public abstract class NettyRemotingAbstract {
 

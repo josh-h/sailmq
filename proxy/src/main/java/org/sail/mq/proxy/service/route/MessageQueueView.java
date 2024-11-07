@@ -18,7 +18,7 @@ package org.sail.mq.proxy.service.route;
 
 import com.google.common.base.MoreObjects;
 import org.sail.mq.client.latency.MQFaultStrategy;
-import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
+import org.sail.mq.remoting.protocol.route.TopicRouteData;
 
 public class MessageQueueView {
     public static final MessageQueueView WRAPPED_EMPTY_QUEUE = new MessageQueueView("", new TopicRouteData(), null);

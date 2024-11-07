@@ -36,7 +36,7 @@ import org.sail.mq.controller.BrokerHeartbeatManager;
 import org.sail.mq.controller.helper.BrokerLifecycleListener;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.common.RemotingHelper;
 
 public class DefaultBrokerHeartbeatManager implements BrokerHeartbeatManager {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.CONTROLLER_LOGGER_NAME);

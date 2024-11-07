@@ -20,7 +20,7 @@ package org.sail.mq.proxy.processor;
 import java.util.concurrent.CompletableFuture;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.service.ServiceManager;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class RequestBrokerProcessor extends AbstractProcessor {
 

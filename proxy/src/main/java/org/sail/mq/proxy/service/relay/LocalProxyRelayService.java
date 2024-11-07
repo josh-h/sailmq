@@ -21,14 +21,14 @@ import org.sail.mq.broker.BrokerController;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.service.channel.SimpleChannel;
 import org.sail.mq.proxy.service.transaction.TransactionService;
-import org.apache.rocketmq.remoting.RemotingServer;
-import org.apache.rocketmq.remoting.netty.NettyRemotingAbstract;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.body.ConsumeMessageDirectlyResult;
-import org.apache.rocketmq.remoting.protocol.body.ConsumerRunningInfo;
-import org.apache.rocketmq.remoting.protocol.header.ConsumeMessageDirectlyResultRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.GetConsumerRunningInfoRequestHeader;
+import org.sail.mq.remoting.RemotingServer;
+import org.sail.mq.remoting.netty.NettyRemotingAbstract;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.body.ConsumeMessageDirectlyResult;
+import org.sail.mq.remoting.protocol.body.ConsumerRunningInfo;
+import org.sail.mq.remoting.protocol.header.ConsumeMessageDirectlyResultRequestHeader;
+import org.sail.mq.remoting.protocol.header.GetConsumerRunningInfoRequestHeader;
 
 public class LocalProxyRelayService extends AbstractProxyRelayService {
 

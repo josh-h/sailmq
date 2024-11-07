@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.body;
+package org.sail.mq.remoting.protocol.body;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import org.apache.rocketmq.remoting.protocol.DataVersion;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.remoting.protocol.DataVersion;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
 
 public class SubscriptionGroupWrapper extends RemotingSerializable {
     private ConcurrentMap<String, SubscriptionGroupConfig> subscriptionGroupTable =

@@ -17,7 +17,7 @@
 
 package org.sail.mq.proxy.service.channel;
 
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public interface InvocationContextInterface {
     void handle(RemotingCommand remotingCommand);

@@ -25,7 +25,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import org.sail.mq.broker.BrokerController;
 import org.sail.mq.common.BrokerConfig;
 import org.sail.mq.common.ServiceThread;
-import org.apache.rocketmq.store.exception.ConsumeQueueException;
+import org.sail.mq.store.exception.ConsumeQueueException;
 
 /**
  * manage the offset of broadcast.

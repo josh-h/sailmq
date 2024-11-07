@@ -18,7 +18,7 @@
 /**
  * $Id: CreateTopicRequestHeader.java 1835 2013-05-16 02:00:50Z vintagewang@apache.org $
  */
-package org.apache.rocketmq.remoting.protocol.header;
+package org.sail.mq.remoting.protocol.header;
 
 import com.google.common.base.MoreObjects;
 import org.sail.mq.common.TopicFilterType;
@@ -26,11 +26,11 @@ import org.sail.mq.common.action.Action;
 import org.sail.mq.common.action.RocketMQAction;
 import org.sail.mq.common.resource.ResourceType;
 import org.sail.mq.common.resource.RocketMQResource;
-import org.apache.rocketmq.remoting.annotation.CFNotNull;
-import org.apache.rocketmq.remoting.annotation.CFNullable;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.rpc.TopicRequestHeader;
+import org.sail.mq.remoting.annotation.CFNotNull;
+import org.sail.mq.remoting.annotation.CFNullable;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.rpc.TopicRequestHeader;
 
 @RocketMQAction(value = RequestCode.UPDATE_AND_CREATE_TOPIC, action = Action.CREATE)
 public class CreateTopicRequestHeader extends TopicRequestHeader {

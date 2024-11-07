@@ -37,12 +37,12 @@ import org.sail.mq.common.message.MessageExtBrokerInner;
 import org.sail.mq.common.utils.DataConverter;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.store.PutMessageResult;
-import org.apache.rocketmq.store.PutMessageStatus;
-import org.apache.rocketmq.store.config.BrokerRole;
-import org.apache.rocketmq.store.pop.AckMsg;
-import org.apache.rocketmq.store.pop.BatchAckMsg;
-import org.apache.rocketmq.store.pop.PopCheckPoint;
+import org.sail.mq.store.PutMessageResult;
+import org.sail.mq.store.PutMessageStatus;
+import org.sail.mq.store.config.BrokerRole;
+import org.sail.mq.store.pop.AckMsg;
+import org.sail.mq.store.pop.BatchAckMsg;
+import org.sail.mq.store.pop.PopCheckPoint;
 
 public class PopBufferMergeService extends ServiceThread {
     private static final Logger POP_LOGGER = LoggerFactory.getLogger(LoggerName.ROCKETMQ_POP_LOGGER_NAME);

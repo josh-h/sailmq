@@ -1335,7 +1335,7 @@ The above Broker matches Slave by specifying the same BrokerName, Master's Broke
 >  question description: execute mqadmin occur below exception after deploy RocketMQ cluster.
 >
 > ```java
-> org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to <null> failed
+> exception.org.sail.mq.remoting.RemotingConnectException: connect to <null> failed
 > ```
 
 Solution: execute command `export NAMESRV_ADDR=ip:9876` (ip is NameServer's ip address), then execute mqadmin commands.

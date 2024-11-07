@@ -59,21 +59,21 @@ import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.common.resource.ResourcePattern;
 import org.sail.mq.common.resource.ResourceType;
 import org.sail.mq.common.resource.RocketMQResource;
-import org.apache.rocketmq.remoting.CommandCustomHeader;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.protocol.RequestHeaderRegistry;
-import org.apache.rocketmq.remoting.protocol.body.LockBatchRequestBody;
-import org.apache.rocketmq.remoting.protocol.body.UnlockBatchRequestBody;
-import org.apache.rocketmq.remoting.protocol.header.GetConsumerListByGroupRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.QueryConsumerOffsetRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.UnregisterClientRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.UpdateConsumerOffsetRequestHeader;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumerData;
-import org.apache.rocketmq.remoting.protocol.heartbeat.HeartbeatData;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.RequestHeaderRegistry;
+import org.sail.mq.remoting.protocol.body.LockBatchRequestBody;
+import org.sail.mq.remoting.protocol.body.UnlockBatchRequestBody;
+import org.sail.mq.remoting.protocol.header.GetConsumerListByGroupRequestHeader;
+import org.sail.mq.remoting.protocol.header.QueryConsumerOffsetRequestHeader;
+import org.sail.mq.remoting.protocol.header.UnregisterClientRequestHeader;
+import org.sail.mq.remoting.protocol.header.UpdateConsumerOffsetRequestHeader;
+import org.sail.mq.remoting.protocol.heartbeat.ConsumerData;
+import org.sail.mq.remoting.protocol.heartbeat.HeartbeatData;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public class DefaultAuthorizationContextBuilder implements AuthorizationContextBuilder {
 

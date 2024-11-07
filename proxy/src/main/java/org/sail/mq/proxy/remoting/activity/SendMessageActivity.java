@@ -22,16 +22,16 @@ import java.time.Duration;
 import java.util.Map;
 import org.sail.mq.common.attribute.TopicMessageType;
 import org.sail.mq.common.message.MessageDecoder;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.protocol.header.SendMessageRequestHeader;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.header.SendMessageRequestHeader;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.config.ConfigurationManager;
 import org.sail.mq.proxy.processor.MessagingProcessor;
 import org.sail.mq.proxy.processor.validator.DefaultTopicMessageTypeValidator;
 import org.sail.mq.proxy.processor.validator.TopicMessageTypeValidator;
 import org.sail.mq.proxy.remoting.pipeline.RequestPipeline;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class SendMessageActivity extends AbstractRemotingActivity {
     TopicMessageTypeValidator topicMessageTypeValidator;

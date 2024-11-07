@@ -26,9 +26,9 @@ import org.sail.mq.filter.util.BitsArray;
 import org.sail.mq.filter.util.BloomFilter;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
-import org.apache.rocketmq.store.ConsumeQueueExt;
-import org.apache.rocketmq.store.MessageFilter;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.store.ConsumeQueueExt;
+import org.sail.mq.store.MessageFilter;
 
 public class ExpressionMessageFilter implements MessageFilter {
 

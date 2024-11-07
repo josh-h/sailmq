@@ -29,18 +29,18 @@ import org.sail.mq.common.ConfigManager;
 import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.DataVersion;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.body.TopicQueueMappingSerializeWrapper;
-import org.apache.rocketmq.remoting.protocol.statictopic.LogicQueueMappingItem;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingContext;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingDetail;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingUtils;
-import org.apache.rocketmq.remoting.rpc.TopicQueueRequestHeader;
-import org.apache.rocketmq.remoting.rpc.TopicRequestHeader;
+import org.sail.mq.remoting.protocol.DataVersion;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.body.TopicQueueMappingSerializeWrapper;
+import org.sail.mq.remoting.protocol.statictopic.LogicQueueMappingItem;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingContext;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingDetail;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingUtils;
+import org.sail.mq.remoting.rpc.TopicQueueRequestHeader;
+import org.sail.mq.remoting.rpc.TopicRequestHeader;
 
-import static org.apache.rocketmq.remoting.protocol.RemotingCommand.buildErrorResponse;
+import static org.sail.mq.remoting.protocol.RemotingCommand.buildErrorResponse;
 
 public class TopicQueueMappingManager extends ConfigManager {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.BROKER_LOGGER_NAME);

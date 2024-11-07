@@ -21,7 +21,7 @@ import org.sail.mq.client.producer.SendResult;
 import org.sail.mq.client.producer.TransactionListener;
 import org.sail.mq.client.producer.TransactionMQProducer;
 import org.sail.mq.common.message.Message;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.common.RemotingHelper;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;

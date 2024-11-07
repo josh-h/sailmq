@@ -32,10 +32,10 @@ import io.openmessaging.sailmq.utils.BeanUtils;
 import org.sail.mq.client.exception.MQBrokerException;
 import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.remoting.exception.RemotingConnectException;
-import org.apache.rocketmq.remoting.exception.RemotingTimeoutException;
-import org.apache.rocketmq.remoting.protocol.LanguageCode;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.exception.RemotingConnectException;
+import org.sail.mq.remoting.exception.RemotingTimeoutException;
+import org.sail.mq.remoting.protocol.LanguageCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
 
 import static io.openmessaging.sailmq.utils.OMSUtil.buildInstanceName;
 

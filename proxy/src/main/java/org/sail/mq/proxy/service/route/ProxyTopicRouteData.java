@@ -24,9 +24,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import org.sail.mq.proxy.common.Address;
-import org.apache.rocketmq.remoting.protocol.route.BrokerData;
-import org.apache.rocketmq.remoting.protocol.route.QueueData;
-import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
+import org.sail.mq.remoting.protocol.route.BrokerData;
+import org.sail.mq.remoting.protocol.route.QueueData;
+import org.sail.mq.remoting.protocol.route.TopicRouteData;
 
 public class ProxyTopicRouteData {
     public ProxyTopicRouteData() {

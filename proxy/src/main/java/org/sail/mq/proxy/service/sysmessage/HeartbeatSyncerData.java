@@ -20,10 +20,10 @@ package org.sail.mq.proxy.service.sysmessage;
 import com.google.common.base.MoreObjects;
 import java.util.Set;
 import org.sail.mq.common.consumer.ConsumeFromWhere;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumeType;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
-import org.apache.rocketmq.remoting.protocol.LanguageCode;
+import org.sail.mq.remoting.protocol.heartbeat.ConsumeType;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.LanguageCode;
 
 public class HeartbeatSyncerData {
     private HeartbeatType heartbeatType;

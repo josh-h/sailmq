@@ -35,10 +35,10 @@ import org.sail.mq.proxy.config.ConfigurationManager;
 import org.sail.mq.proxy.config.ProxyConfig;
 import org.sail.mq.proxy.processor.MessagingProcessor;
 import org.sail.mq.proxy.remoting.pipeline.RequestPipeline;
-import org.apache.rocketmq.remoting.netty.NettyRequestProcessor;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.netty.NettyRequestProcessor;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
 
 public abstract class AbstractRemotingActivity implements NettyRequestProcessor {
     protected final static Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

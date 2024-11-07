@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.metrics;
+package org.sail.mq.remoting.metrics;
 
 import com.google.common.collect.Lists;
 import io.netty.util.concurrent.Future;
@@ -34,12 +34,12 @@ import java.util.function.Supplier;
 import org.sail.mq.common.Pair;
 import org.sail.mq.common.metrics.NopLongHistogram;
 
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.HISTOGRAM_RPC_LATENCY;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.LABEL_PROTOCOL_TYPE;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.PROTOCOL_TYPE_REMOTING;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.RESULT_CANCELED;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.RESULT_SUCCESS;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.RESULT_WRITE_CHANNEL_FAILED;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.HISTOGRAM_RPC_LATENCY;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.LABEL_PROTOCOL_TYPE;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.PROTOCOL_TYPE_REMOTING;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.RESULT_CANCELED;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.RESULT_SUCCESS;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.RESULT_WRITE_CHANNEL_FAILED;
 
 public class RemotingMetricsManager {
     public static LongHistogram rpcLatency = new NopLongHistogram();

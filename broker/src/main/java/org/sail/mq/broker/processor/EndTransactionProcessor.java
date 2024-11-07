@@ -32,14 +32,14 @@ import org.sail.mq.common.message.MessageExtBrokerInner;
 import org.sail.mq.common.sysflag.MessageSysFlag;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.netty.NettyRequestProcessor;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.header.EndTransactionRequestHeader;
-import org.apache.rocketmq.store.PutMessageResult;
-import org.apache.rocketmq.store.config.BrokerRole;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.netty.NettyRequestProcessor;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.header.EndTransactionRequestHeader;
+import org.sail.mq.store.PutMessageResult;
+import org.sail.mq.store.config.BrokerRole;
 
 import static org.sail.mq.broker.metrics.BrokerMetricsConstant.LABEL_TOPIC;
 

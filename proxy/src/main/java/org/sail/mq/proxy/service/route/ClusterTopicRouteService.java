@@ -21,7 +21,7 @@ import org.sail.mq.client.impl.mqclient.MQClientAPIFactory;
 import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.proxy.common.Address;
 import org.sail.mq.proxy.common.ProxyContext;
-import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
+import org.sail.mq.remoting.protocol.route.TopicRouteData;
 
 public class ClusterTopicRouteService extends TopicRouteService {
 

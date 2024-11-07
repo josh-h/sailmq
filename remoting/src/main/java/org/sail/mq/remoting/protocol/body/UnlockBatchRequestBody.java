@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.body;
+package org.sail.mq.remoting.protocol.body;
 
 import com.google.common.base.MoreObjects;
 import java.util.HashSet;
 import java.util.Set;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 public class UnlockBatchRequestBody extends RemotingSerializable {
     private String consumerGroup;

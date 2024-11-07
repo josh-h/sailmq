@@ -30,8 +30,8 @@ import org.sail.mq.broker.RocksDBConfigManager;
 import org.sail.mq.broker.subscription.SubscriptionGroupManager;
 import org.sail.mq.common.UtilAll;
 import org.sail.mq.common.utils.DataConverter;
-import org.apache.rocketmq.remoting.protocol.DataVersion;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.remoting.protocol.DataVersion;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
 import org.rocksdb.CompressionType;
 import org.rocksdb.RocksIterator;
 

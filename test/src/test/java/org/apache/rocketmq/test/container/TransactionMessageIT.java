@@ -35,7 +35,7 @@ import org.sail.mq.client.producer.TransactionSendResult;
 import org.sail.mq.common.BrokerIdentity;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageExt;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.common.RemotingHelper;
 import org.junit.Ignore;
 import org.junit.Test;
 

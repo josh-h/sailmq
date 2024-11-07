@@ -18,7 +18,7 @@
 /**
  * $Id: TopicRouteData.java 1835 2013-05-16 02:00:50Z vintagewang@apache.org $
  */
-package org.apache.rocketmq.remoting.protocol.route;
+package org.sail.mq.remoting.protocol.route;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -27,8 +27,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingInfo;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingInfo;
 
 public class TopicRouteData extends RemotingSerializable {
     private String orderTopicConf;

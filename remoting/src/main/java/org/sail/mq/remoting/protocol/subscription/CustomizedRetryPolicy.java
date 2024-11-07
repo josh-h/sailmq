@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.subscription;
+package org.sail.mq.remoting.protocol.subscription;
 
 import com.google.common.base.MoreObjects;
 import org.sail.mq.common.message.MessageExt;

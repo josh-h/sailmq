@@ -24,7 +24,7 @@ import org.sail.mq.broker.BrokerController;
 import org.sail.mq.broker.subscription.SubscriptionGroupManager;
 import org.sail.mq.common.MixAll;
 import org.sail.mq.common.config.AbstractRocksDBStorage;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
 import org.rocksdb.RocksDBException;
 import org.rocksdb.RocksIterator;
 import org.rocksdb.WriteBatch;

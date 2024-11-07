@@ -22,7 +22,7 @@ import org.sail.mq.client.producer.MessageQueueSelector;
 import org.sail.mq.client.producer.SendResult;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.common.RemotingHelper;
 
 import java.util.List;
 

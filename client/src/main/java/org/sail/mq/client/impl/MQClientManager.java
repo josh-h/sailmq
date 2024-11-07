@@ -22,7 +22,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import org.sail.mq.client.ClientConfig;
 import org.sail.mq.client.impl.factory.MQClientInstance;
 import org.sail.mq.client.producer.ProduceAccumulator;
-import org.apache.rocketmq.remoting.RPCHook;
+import org.sail.mq.remoting.RPCHook;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 

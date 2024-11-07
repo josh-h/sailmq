@@ -22,7 +22,7 @@ import java.time.Duration;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.processor.MessagingProcessor;
 import org.sail.mq.proxy.remoting.pipeline.RequestPipeline;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class ChangeInvisibleTimeActivity extends AbstractRemotingActivity {
     public ChangeInvisibleTimeActivity(RequestPipeline requestPipeline,

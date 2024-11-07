@@ -38,10 +38,10 @@ import org.sail.mq.broker.processor.PopReviveService;
 import org.sail.mq.common.Pair;
 import org.sail.mq.common.metrics.NopLongCounter;
 import org.sail.mq.common.metrics.NopLongHistogram;
-import org.apache.rocketmq.store.PutMessageStatus;
-import org.apache.rocketmq.store.exception.ConsumeQueueException;
-import org.apache.rocketmq.store.pop.AckMsg;
-import org.apache.rocketmq.store.pop.PopCheckPoint;
+import org.sail.mq.store.PutMessageStatus;
+import org.sail.mq.store.exception.ConsumeQueueException;
+import org.sail.mq.store.pop.AckMsg;
+import org.sail.mq.store.pop.PopCheckPoint;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 

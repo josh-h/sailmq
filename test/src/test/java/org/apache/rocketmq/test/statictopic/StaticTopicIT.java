@@ -33,14 +33,14 @@ import org.sail.mq.client.producer.DefaultMQProducer;
 import org.sail.mq.common.MixAll;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.protocol.admin.ConsumeStats;
-import org.apache.rocketmq.remoting.protocol.admin.OffsetWrapper;
-import org.apache.rocketmq.remoting.protocol.admin.TopicStatsTable;
-import org.apache.rocketmq.remoting.protocol.statictopic.LogicQueueMappingItem;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicConfigAndQueueMapping;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingOne;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingUtils;
-import org.apache.rocketmq.remoting.rpc.ClientMetadata;
+import org.sail.mq.remoting.protocol.admin.ConsumeStats;
+import org.sail.mq.remoting.protocol.admin.OffsetWrapper;
+import org.sail.mq.remoting.protocol.admin.TopicStatsTable;
+import org.sail.mq.remoting.protocol.statictopic.LogicQueueMappingItem;
+import org.sail.mq.remoting.protocol.statictopic.TopicConfigAndQueueMapping;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingOne;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingUtils;
+import org.sail.mq.remoting.rpc.ClientMetadata;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.apache.rocketmq.test.base.BaseConf;
@@ -60,7 +60,7 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 
 import static com.google.common.truth.Truth.assertThat;
-import static org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingUtils.getMappingDetailFromConfig;
+import static org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingUtils.getMappingDetailFromConfig;
 
 @FixMethodOrder
 public class StaticTopicIT extends BaseConf {

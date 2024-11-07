@@ -28,8 +28,8 @@ import org.sail.mq.client.impl.ClientRemotingProcessor;
 import org.sail.mq.common.MixAll;
 import org.sail.mq.common.utils.AsyncShutdownHelper;
 import org.sail.mq.common.utils.StartAndShutdown;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.netty.NettyClientConfig;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.netty.NettyClientConfig;
 
 public class MQClientAPIFactory implements StartAndShutdown {
 

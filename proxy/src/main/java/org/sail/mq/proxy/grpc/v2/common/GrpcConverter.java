@@ -45,7 +45,7 @@ import org.sail.mq.common.utils.BinaryUtil;
 import org.sail.mq.common.utils.NetworkUtil;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
 
 public class GrpcConverter {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

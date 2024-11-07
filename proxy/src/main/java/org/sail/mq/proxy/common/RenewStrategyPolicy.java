@@ -18,7 +18,7 @@
 package org.sail.mq.proxy.common;
 
 import com.google.common.base.MoreObjects;
-import org.apache.rocketmq.remoting.protocol.subscription.RetryPolicy;
+import org.sail.mq.remoting.protocol.subscription.RetryPolicy;
 
 import java.util.concurrent.TimeUnit;
 

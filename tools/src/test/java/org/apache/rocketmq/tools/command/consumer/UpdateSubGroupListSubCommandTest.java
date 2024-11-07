@@ -20,7 +20,7 @@ package org.apache.rocketmq.tools.command.consumer;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.Options;
-import org.apache.rocketmq.srvutil.ServerUtil;
+import org.sail.mq.srvutil.ServerUtil;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

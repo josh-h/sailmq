@@ -19,7 +19,7 @@ package org.sail.mq.proxy.service.channel;
 
 import java.time.Duration;
 import java.util.concurrent.CompletableFuture;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class InvocationContext implements InvocationContextInterface {
     private final CompletableFuture<RemotingCommand> response;

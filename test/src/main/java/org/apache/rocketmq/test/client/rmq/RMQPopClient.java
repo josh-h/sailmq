@@ -27,12 +27,12 @@ import org.sail.mq.client.consumer.PopResult;
 import org.sail.mq.client.impl.ClientRemotingProcessor;
 import org.sail.mq.client.impl.mqclient.MQClientAPIExt;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.netty.NettyClientConfig;
-import org.apache.rocketmq.remoting.protocol.header.AckMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.ChangeInvisibleTimeRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.ExtraInfoUtil;
-import org.apache.rocketmq.remoting.protocol.header.NotificationRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.PopMessageRequestHeader;
+import org.sail.mq.remoting.netty.NettyClientConfig;
+import org.sail.mq.remoting.protocol.header.AckMessageRequestHeader;
+import org.sail.mq.remoting.protocol.header.ChangeInvisibleTimeRequestHeader;
+import org.sail.mq.remoting.protocol.header.ExtraInfoUtil;
+import org.sail.mq.remoting.protocol.header.NotificationRequestHeader;
+import org.sail.mq.remoting.protocol.header.PopMessageRequestHeader;
 import org.apache.rocketmq.test.clientinterface.MQConsumer;
 import org.apache.rocketmq.test.util.RandomUtil;
 

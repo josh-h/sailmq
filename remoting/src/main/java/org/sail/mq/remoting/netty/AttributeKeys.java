@@ -14,12 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.netty;
+package org.sail.mq.remoting.netty;
 
 
 import io.netty.util.AttributeKey;
 import org.sail.mq.common.constant.HAProxyConstants;
-import org.apache.rocketmq.remoting.protocol.LanguageCode;
+import org.sail.mq.remoting.protocol.LanguageCode;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

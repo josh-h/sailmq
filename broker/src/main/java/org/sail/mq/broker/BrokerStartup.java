@@ -36,12 +36,12 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.utils.NetworkUtil;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.netty.NettyClientConfig;
-import org.apache.rocketmq.remoting.netty.NettyServerConfig;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.srvutil.ServerUtil;
-import org.apache.rocketmq.store.config.BrokerRole;
-import org.apache.rocketmq.store.config.MessageStoreConfig;
+import org.sail.mq.remoting.netty.NettyClientConfig;
+import org.sail.mq.remoting.netty.NettyServerConfig;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.srvutil.ServerUtil;
+import org.sail.mq.store.config.BrokerRole;
+import org.sail.mq.store.config.MessageStoreConfig;
 
 public class BrokerStartup {
 

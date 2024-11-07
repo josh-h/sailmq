@@ -23,9 +23,9 @@ import io.netty.channel.ChannelHandlerContext;
 import java.util.ArrayList;
 import java.util.List;
 import org.sail.mq.common.MQVersion;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.header.namesrv.GetRouteInfoRequestHeader;
-import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.header.namesrv.GetRouteInfoRequestHeader;
+import org.sail.mq.remoting.protocol.route.TopicRouteData;
 import org.sail.mq.proxy.common.Address;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.config.ConfigurationManager;
@@ -33,7 +33,7 @@ import org.sail.mq.proxy.config.ProxyConfig;
 import org.sail.mq.proxy.processor.MessagingProcessor;
 import org.sail.mq.proxy.remoting.pipeline.RequestPipeline;
 import org.sail.mq.proxy.service.route.ProxyTopicRouteData;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class GetTopicRouteActivity extends AbstractRemotingActivity {
     public GetTopicRouteActivity(RequestPipeline requestPipeline,

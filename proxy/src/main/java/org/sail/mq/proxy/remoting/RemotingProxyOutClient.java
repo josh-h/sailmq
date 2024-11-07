@@ -19,7 +19,7 @@ package org.sail.mq.proxy.remoting;
 
 import io.netty.channel.Channel;
 import java.util.concurrent.CompletableFuture;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public interface RemotingProxyOutClient {
 

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.subscription;
+package org.sail.mq.remoting.protocol.subscription;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import com.google.common.base.MoreObjects;

@@ -18,16 +18,16 @@
 /**
  * $Id: QueryMessageRequestHeader.java 1835 2013-05-16 02:00:50Z vintagewang@apache.org $
  */
-package org.apache.rocketmq.remoting.protocol.header;
+package org.sail.mq.remoting.protocol.header;
 
 import org.sail.mq.common.action.Action;
 import org.sail.mq.common.action.RocketMQAction;
 import org.sail.mq.common.resource.ResourceType;
 import org.sail.mq.common.resource.RocketMQResource;
-import org.apache.rocketmq.remoting.annotation.CFNotNull;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.rpc.TopicRequestHeader;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.annotation.CFNotNull;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.rpc.TopicRequestHeader;
+import org.sail.mq.remoting.protocol.RequestCode;
 
 @RocketMQAction(value = RequestCode.QUERY_SUBSCRIPTION_BY_CONSUMER, action = Action.GET)
 public class QuerySubscriptionByConsumerRequestHeader extends TopicRequestHeader {

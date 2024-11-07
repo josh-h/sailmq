@@ -20,12 +20,12 @@ import java.util.concurrent.CompletableFuture;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.service.transaction.TransactionData;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.body.ConsumeMessageDirectlyResult;
-import org.apache.rocketmq.remoting.protocol.body.ConsumerRunningInfo;
-import org.apache.rocketmq.remoting.protocol.header.CheckTransactionStateRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.ConsumeMessageDirectlyResultRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.GetConsumerRunningInfoRequestHeader;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.body.ConsumeMessageDirectlyResult;
+import org.sail.mq.remoting.protocol.body.ConsumerRunningInfo;
+import org.sail.mq.remoting.protocol.header.CheckTransactionStateRequestHeader;
+import org.sail.mq.remoting.protocol.header.ConsumeMessageDirectlyResultRequestHeader;
+import org.sail.mq.remoting.protocol.header.GetConsumerRunningInfoRequestHeader;
 
 public interface ProxyRelayService {
 

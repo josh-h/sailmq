@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.protocol;
+package org.sail.mq.remoting.protocol;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import com.google.common.base.Stopwatch;
@@ -38,9 +38,9 @@ import org.sail.mq.common.BoundaryType;
 import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.CommandCustomHeader;
-import org.apache.rocketmq.remoting.annotation.CFNotNull;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.annotation.CFNotNull;
+import org.sail.mq.remoting.exception.RemotingCommandException;
 
 public class RemotingCommand {
     public static final String SERIALIZE_TYPE_PROPERTY = "sailmq.serialize.type";

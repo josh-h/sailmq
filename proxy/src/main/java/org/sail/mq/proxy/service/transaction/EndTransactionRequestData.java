@@ -17,7 +17,7 @@
 
 package org.sail.mq.proxy.service.transaction;
 
-import org.apache.rocketmq.remoting.protocol.header.EndTransactionRequestHeader;
+import org.sail.mq.remoting.protocol.header.EndTransactionRequestHeader;
 
 public class EndTransactionRequestData {
     private String brokerName;

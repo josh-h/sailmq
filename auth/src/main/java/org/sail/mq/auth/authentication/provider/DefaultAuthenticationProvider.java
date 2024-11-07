@@ -29,7 +29,7 @@ import org.sail.mq.auth.authentication.chain.DefaultAuthenticationHandler;
 import org.sail.mq.auth.config.AuthConfig;
 import org.sail.mq.common.chain.HandlerChain;
 import org.sail.mq.common.constant.LoggerName;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -24,7 +24,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.sail.mq.broker.BrokerController;
 import org.sail.mq.broker.BrokerPathConfigHelper;
 import org.sail.mq.common.MixAll;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 public class LmqConsumerOffsetManager extends ConsumerOffsetManager {
     private ConcurrentHashMap<String, Long> lmqOffsetTable = new ConcurrentHashMap<>(512);

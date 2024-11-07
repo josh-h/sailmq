@@ -53,17 +53,17 @@ import org.sail.mq.common.KeyBuilder;
 import org.sail.mq.common.MQVersion;
 import org.sail.mq.common.MixAll;
 import org.sail.mq.common.PlainAccessConfig;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.header.GetConsumerListByGroupRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.UnregisterClientRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.UpdateConsumerOffsetRequestHeader;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumerData;
-import org.apache.rocketmq.remoting.protocol.heartbeat.HeartbeatData;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.header.GetConsumerListByGroupRequestHeader;
+import org.sail.mq.remoting.protocol.header.UnregisterClientRequestHeader;
+import org.sail.mq.remoting.protocol.header.UpdateConsumerOffsetRequestHeader;
+import org.sail.mq.remoting.protocol.heartbeat.ConsumerData;
+import org.sail.mq.remoting.protocol.heartbeat.HeartbeatData;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public class PlainAccessResource implements AccessResource {
 

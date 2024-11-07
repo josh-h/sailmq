@@ -30,7 +30,7 @@ import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.processor.MessagingProcessor;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class AuthorizationPipeline implements RequestPipeline {
     private static final Logger LOGGER = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

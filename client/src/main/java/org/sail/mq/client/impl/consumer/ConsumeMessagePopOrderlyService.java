@@ -40,10 +40,10 @@ import org.sail.mq.common.message.MessageConst;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.common.utils.ThreadUtils;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
-import org.apache.rocketmq.remoting.protocol.body.CMResult;
-import org.apache.rocketmq.remoting.protocol.body.ConsumeMessageDirectlyResult;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.body.CMResult;
+import org.sail.mq.remoting.protocol.body.ConsumeMessageDirectlyResult;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 

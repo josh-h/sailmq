@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.common;
+package org.sail.mq.remoting.common;
 
 /**
  * For server, three SSL modes are supported: disabled, permissive and enforcing.

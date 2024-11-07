@@ -33,15 +33,15 @@ import org.sail.mq.common.BrokerConfig;
 import org.sail.mq.common.message.MessageDecoder;
 import org.sail.mq.common.message.MessageExtBrokerInner;
 import org.sail.mq.common.ControllerConfig;
-import org.apache.rocketmq.remoting.netty.NettyClientConfig;
-import org.apache.rocketmq.remoting.netty.NettyServerConfig;
-import org.apache.rocketmq.store.GetMessageResult;
-import org.apache.rocketmq.store.GetMessageStatus;
-import org.apache.rocketmq.store.MessageStore;
-import org.apache.rocketmq.store.PutMessageStatus;
-import org.apache.rocketmq.store.config.BrokerRole;
-import org.apache.rocketmq.store.config.FlushDiskType;
-import org.apache.rocketmq.store.config.MessageStoreConfig;
+import org.sail.mq.remoting.netty.NettyClientConfig;
+import org.sail.mq.remoting.netty.NettyServerConfig;
+import org.sail.mq.store.GetMessageResult;
+import org.sail.mq.store.GetMessageStatus;
+import org.sail.mq.store.MessageStore;
+import org.sail.mq.store.PutMessageStatus;
+import org.sail.mq.store.config.BrokerRole;
+import org.sail.mq.store.config.FlushDiskType;
+import org.sail.mq.store.config.MessageStoreConfig;
 
 import static org.awaitility.Awaitility.await;
 

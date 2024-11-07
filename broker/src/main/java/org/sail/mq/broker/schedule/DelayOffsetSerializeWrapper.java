@@ -18,8 +18,8 @@ package org.sail.mq.broker.schedule;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import org.apache.rocketmq.remoting.protocol.DataVersion;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.DataVersion;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 public class DelayOffsetSerializeWrapper extends RemotingSerializable {
     private ConcurrentMap<Integer /* level */, Long/* offset */> offsetTable =

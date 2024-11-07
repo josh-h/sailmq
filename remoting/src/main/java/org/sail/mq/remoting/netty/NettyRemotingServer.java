@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.netty;
+package org.sail.mq.remoting.netty;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;
@@ -78,15 +78,15 @@ import org.sail.mq.common.utils.NetworkUtil;
 import org.sail.mq.common.utils.ThreadUtils;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.ChannelEventListener;
-import org.apache.rocketmq.remoting.InvokeCallback;
-import org.apache.rocketmq.remoting.RemotingServer;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.common.TlsMode;
-import org.apache.rocketmq.remoting.exception.RemotingSendRequestException;
-import org.apache.rocketmq.remoting.exception.RemotingTimeoutException;
-import org.apache.rocketmq.remoting.exception.RemotingTooMuchRequestException;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.ChannelEventListener;
+import org.sail.mq.remoting.InvokeCallback;
+import org.sail.mq.remoting.RemotingServer;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.common.TlsMode;
+import org.sail.mq.remoting.exception.RemotingSendRequestException;
+import org.sail.mq.remoting.exception.RemotingTimeoutException;
+import org.sail.mq.remoting.exception.RemotingTooMuchRequestException;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 @SuppressWarnings("NullableProblems")
 public class NettyRemotingServer extends NettyRemotingAbstract implements RemotingServer {

@@ -48,17 +48,17 @@ import org.sail.mq.common.topic.TopicValidator;
 import org.sail.mq.common.utils.NetworkUtil;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.InvokeCallback;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.exception.RemotingException;
-import org.apache.rocketmq.remoting.netty.ResponseFuture;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.header.QueryMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.QueryMessageResponseHeader;
-import org.apache.rocketmq.remoting.protocol.route.BrokerData;
-import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
+import org.sail.mq.remoting.InvokeCallback;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.netty.ResponseFuture;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.header.QueryMessageRequestHeader;
+import org.sail.mq.remoting.protocol.header.QueryMessageResponseHeader;
+import org.sail.mq.remoting.protocol.route.BrokerData;
+import org.sail.mq.remoting.protocol.route.TopicRouteData;
 
 public class MQAdminImpl {
 

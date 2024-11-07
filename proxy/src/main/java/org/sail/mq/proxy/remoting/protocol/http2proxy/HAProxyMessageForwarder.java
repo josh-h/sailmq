@@ -44,8 +44,8 @@ import org.sail.mq.common.constant.HAProxyConstants;
 import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.netty.AttributeKeys;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.netty.AttributeKeys;
 
 public class HAProxyMessageForwarder extends ChannelInboundHandlerAdapter {
 

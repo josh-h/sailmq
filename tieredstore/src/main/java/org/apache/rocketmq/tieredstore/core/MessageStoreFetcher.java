@@ -19,9 +19,9 @@ package org.apache.rocketmq.tieredstore.core;
 
 import java.util.concurrent.CompletableFuture;
 import org.sail.mq.common.BoundaryType;
-import org.apache.rocketmq.store.GetMessageResult;
-import org.apache.rocketmq.store.MessageFilter;
-import org.apache.rocketmq.store.QueryMessageResult;
+import org.sail.mq.store.GetMessageResult;
+import org.sail.mq.store.MessageFilter;
+import org.sail.mq.store.QueryMessageResult;
 
 public interface MessageStoreFetcher {
 

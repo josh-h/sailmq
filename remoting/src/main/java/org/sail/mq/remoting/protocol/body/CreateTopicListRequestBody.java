@@ -14,12 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.protocol.body;
+package org.sail.mq.remoting.protocol.body;
 
 import java.util.List;
 import org.sail.mq.common.TopicConfig;
-import org.apache.rocketmq.remoting.annotation.CFNotNull;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.annotation.CFNotNull;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 public class CreateTopicListRequestBody extends RemotingSerializable {
     @CFNotNull

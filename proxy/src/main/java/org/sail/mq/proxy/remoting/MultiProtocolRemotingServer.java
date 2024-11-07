@@ -28,11 +28,11 @@ import org.sail.mq.proxy.common.ProxyExceptionCode;
 import org.sail.mq.proxy.remoting.protocol.ProtocolNegotiationHandler;
 import org.sail.mq.proxy.remoting.protocol.http2proxy.Http2ProtocolProxyHandler;
 import org.sail.mq.proxy.remoting.protocol.remoting.RemotingProtocolHandler;
-import org.apache.rocketmq.remoting.ChannelEventListener;
-import org.apache.rocketmq.remoting.common.TlsMode;
-import org.apache.rocketmq.remoting.netty.NettyRemotingServer;
-import org.apache.rocketmq.remoting.netty.NettyServerConfig;
-import org.apache.rocketmq.remoting.netty.TlsSystemConfig;
+import org.sail.mq.remoting.ChannelEventListener;
+import org.sail.mq.remoting.common.TlsMode;
+import org.sail.mq.remoting.netty.NettyRemotingServer;
+import org.sail.mq.remoting.netty.NettyServerConfig;
+import org.sail.mq.remoting.netty.TlsSystemConfig;
 
 import java.io.IOException;
 import java.security.cert.CertificateException;

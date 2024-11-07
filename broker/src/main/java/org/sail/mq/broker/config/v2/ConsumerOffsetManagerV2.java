@@ -26,7 +26,7 @@ import org.sail.mq.broker.BrokerController;
 import org.sail.mq.broker.offset.ConsumerOffsetManager;
 import org.sail.mq.common.MixAll;
 import org.sail.mq.common.config.AbstractRocksDBStorage;
-import org.apache.rocketmq.store.MessageStore;
+import org.sail.mq.store.MessageStore;
 import org.rocksdb.RocksDBException;
 import org.rocksdb.RocksIterator;
 import org.rocksdb.WriteBatch;

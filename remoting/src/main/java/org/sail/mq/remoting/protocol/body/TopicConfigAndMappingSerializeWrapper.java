@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.body;
+package org.sail.mq.remoting.protocol.body;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import org.apache.rocketmq.remoting.protocol.DataVersion;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingDetail;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingInfo;
+import org.sail.mq.remoting.protocol.DataVersion;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingDetail;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingInfo;
 
 public class TopicConfigAndMappingSerializeWrapper extends TopicConfigSerializeWrapper {
     private Map<String/* topic */, TopicQueueMappingInfo> topicQueueMappingInfoMap = new ConcurrentHashMap<>();

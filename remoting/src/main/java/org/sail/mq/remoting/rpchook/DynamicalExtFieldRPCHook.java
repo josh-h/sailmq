@@ -14,12 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.rpchook;
+package org.sail.mq.remoting.rpchook;
 
 import org.apache.commons.lang3.StringUtils;
 import org.sail.mq.common.MixAll;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class DynamicalExtFieldRPCHook implements RPCHook {
 

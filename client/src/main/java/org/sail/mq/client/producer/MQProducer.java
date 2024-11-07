@@ -24,7 +24,7 @@ import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.client.exception.RequestTimeoutException;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.exception.RemotingException;
 
 public interface MQProducer extends MQAdmin {
     void start() throws MQClientException;

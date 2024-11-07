@@ -43,7 +43,7 @@ import org.sail.mq.proxy.service.route.LocalTopicRouteService;
 import org.sail.mq.proxy.service.route.TopicRouteService;
 import org.sail.mq.proxy.service.transaction.LocalTransactionService;
 import org.sail.mq.proxy.service.transaction.TransactionService;
-import org.apache.rocketmq.remoting.RPCHook;
+import org.sail.mq.remoting.RPCHook;
 
 public class LocalServiceManager extends AbstractStartAndShutdown implements ServiceManager {
 

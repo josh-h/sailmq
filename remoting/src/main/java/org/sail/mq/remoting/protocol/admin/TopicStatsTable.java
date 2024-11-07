@@ -14,12 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.protocol.admin;
+package org.sail.mq.remoting.protocol.admin;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 public class TopicStatsTable extends RemotingSerializable {
     private Map<MessageQueue, TopicOffset> offsetTable = new ConcurrentHashMap<>();

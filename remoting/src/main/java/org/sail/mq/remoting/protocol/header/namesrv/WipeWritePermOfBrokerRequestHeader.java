@@ -14,15 +14,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.protocol.header.namesrv;
+package org.sail.mq.remoting.protocol.header.namesrv;
 
 import org.sail.mq.common.action.Action;
 import org.sail.mq.common.action.RocketMQAction;
 import org.sail.mq.common.resource.ResourceType;
-import org.apache.rocketmq.remoting.CommandCustomHeader;
-import org.apache.rocketmq.remoting.annotation.CFNotNull;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.annotation.CFNotNull;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.protocol.RequestCode;
 
 @RocketMQAction(value = RequestCode.WIPE_WRITE_PERM_OF_BROKER, resource = ResourceType.CLUSTER, action = Action.UPDATE)
 public class WipeWritePermOfBrokerRequestHeader implements CommandCustomHeader {

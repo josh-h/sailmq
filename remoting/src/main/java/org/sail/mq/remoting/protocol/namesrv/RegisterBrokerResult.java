@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.namesrv;
+package org.sail.mq.remoting.protocol.namesrv;
 
-import org.apache.rocketmq.remoting.protocol.body.KVTable;
+import org.sail.mq.remoting.protocol.body.KVTable;
 
 public class RegisterBrokerResult {
     private String haServerAddr;

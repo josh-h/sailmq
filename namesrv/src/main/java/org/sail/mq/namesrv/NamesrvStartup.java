@@ -34,12 +34,12 @@ import org.sail.mq.common.constant.LoggerName;
 import org.sail.mq.common.namesrv.NamesrvConfig;
 import org.sail.mq.controller.ControllerManager;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
-import org.apache.rocketmq.remoting.netty.NettyClientConfig;
-import org.apache.rocketmq.remoting.netty.NettyServerConfig;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.netty.NettyClientConfig;
+import org.sail.mq.remoting.netty.NettyServerConfig;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.srvutil.ServerUtil;
-import org.apache.rocketmq.srvutil.ShutdownHookThread;
+import org.sail.mq.srvutil.ServerUtil;
+import org.sail.mq.srvutil.ShutdownHookThread;
 
 public class NamesrvStartup {
 

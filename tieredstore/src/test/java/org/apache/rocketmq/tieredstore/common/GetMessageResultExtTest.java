@@ -18,11 +18,11 @@ package org.apache.rocketmq.tieredstore.common;
 
 import java.nio.ByteBuffer;
 import java.util.Map;
-import org.apache.rocketmq.store.ConsumeQueueExt;
-import org.apache.rocketmq.store.GetMessageResult;
-import org.apache.rocketmq.store.GetMessageStatus;
-import org.apache.rocketmq.store.MessageFilter;
-import org.apache.rocketmq.store.SelectMappedBufferResult;
+import org.sail.mq.store.ConsumeQueueExt;
+import org.sail.mq.store.GetMessageResult;
+import org.sail.mq.store.GetMessageStatus;
+import org.sail.mq.store.MessageFilter;
+import org.sail.mq.store.SelectMappedBufferResult;
 import org.apache.rocketmq.tieredstore.util.MessageFormatUtilTest;
 import org.junit.Assert;
 import org.junit.Test;

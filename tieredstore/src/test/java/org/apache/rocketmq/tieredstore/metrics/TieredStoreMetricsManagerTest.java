@@ -17,7 +17,7 @@
 package org.apache.rocketmq.tieredstore.metrics;
 
 import io.opentelemetry.sdk.OpenTelemetrySdk;
-import org.apache.rocketmq.store.DefaultMessageStore;
+import org.sail.mq.store.DefaultMessageStore;
 import org.apache.rocketmq.tieredstore.MessageStoreConfig;
 import org.apache.rocketmq.tieredstore.TieredMessageStore;
 import org.apache.rocketmq.tieredstore.core.MessageStoreFetcherImpl;

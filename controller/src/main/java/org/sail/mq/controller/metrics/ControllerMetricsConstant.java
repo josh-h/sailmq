@@ -17,7 +17,7 @@
 
 package org.sail.mq.controller.metrics;
 
-import org.apache.rocketmq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.RequestCode;
 
 public class ControllerMetricsConstant {
 

@@ -27,10 +27,10 @@ import org.sail.mq.proxy.service.admin.AdminService;
 import org.sail.mq.client.impl.mqclient.MQClientAPIFactory;
 import org.sail.mq.proxy.service.route.TopicRouteService;
 import org.sail.mq.proxy.service.sysmessage.HeartbeatSyncer;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumeType;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.protocol.heartbeat.ConsumeType;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public class ClusterConsumerManager extends ConsumerManager implements StartAndShutdown {
 

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.body;
+package org.sail.mq.remoting.protocol.body;
 
 import java.util.Iterator;
 import java.util.Map.Entry;
@@ -23,9 +23,9 @@ import java.util.Properties;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumeType;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.heartbeat.ConsumeType;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public class ConsumerRunningInfo extends RemotingSerializable {
     public static final String PROP_NAMESERVER_ADDR = "PROP_NAMESERVER_ADDR";

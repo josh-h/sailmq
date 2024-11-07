@@ -28,22 +28,22 @@ import org.sail.mq.common.MixAll;
 import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.metrics.RemotingMetricsManager;
-import org.apache.rocketmq.remoting.netty.NettyRequestProcessor;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.header.QueryMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.QueryMessageResponseHeader;
-import org.apache.rocketmq.remoting.protocol.header.ViewMessageRequestHeader;
-import org.apache.rocketmq.store.QueryMessageResult;
-import org.apache.rocketmq.store.SelectMappedBufferResult;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.metrics.RemotingMetricsManager;
+import org.sail.mq.remoting.netty.NettyRequestProcessor;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.header.QueryMessageRequestHeader;
+import org.sail.mq.remoting.protocol.header.QueryMessageResponseHeader;
+import org.sail.mq.remoting.protocol.header.ViewMessageRequestHeader;
+import org.sail.mq.store.QueryMessageResult;
+import org.sail.mq.store.SelectMappedBufferResult;
 
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.LABEL_REQUEST_CODE;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.LABEL_RESPONSE_CODE;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.LABEL_RESULT;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.LABEL_REQUEST_CODE;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.LABEL_RESPONSE_CODE;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.LABEL_RESULT;
 
 public class QueryMessageProcessor implements NettyRequestProcessor {
     private static final Logger LOGGER = LoggerFactory.getLogger(LoggerName.BROKER_LOGGER_NAME);

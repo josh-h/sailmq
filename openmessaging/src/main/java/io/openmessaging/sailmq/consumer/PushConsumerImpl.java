@@ -39,7 +39,7 @@ import org.sail.mq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import org.sail.mq.client.consumer.listener.MessageListenerConcurrently;
 import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.common.message.MessageExt;
-import org.apache.rocketmq.remoting.protocol.LanguageCode;
+import org.sail.mq.remoting.protocol.LanguageCode;
 
 public class PushConsumerImpl implements PushConsumer {
     private final DefaultMQPushConsumer rocketmqPushConsumer;

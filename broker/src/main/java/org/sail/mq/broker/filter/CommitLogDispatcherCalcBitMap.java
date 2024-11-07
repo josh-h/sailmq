@@ -23,8 +23,8 @@ import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.filter.util.BitsArray;
-import org.apache.rocketmq.store.CommitLogDispatcher;
-import org.apache.rocketmq.store.DispatchRequest;
+import org.sail.mq.store.CommitLogDispatcher;
+import org.sail.mq.store.DispatchRequest;
 
 import java.util.Collection;
 import java.util.Iterator;

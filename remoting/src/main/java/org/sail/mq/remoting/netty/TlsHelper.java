@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.netty;
+package org.sail.mq.remoting.netty;
 
 import io.netty.handler.ssl.ClientAuth;
 import io.netty.handler.ssl.OpenSsl;
@@ -34,30 +34,30 @@ import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.TLS_CLIENT_AUTHSERVER;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.TLS_CLIENT_CERTPATH;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.TLS_CLIENT_KEYPASSWORD;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.TLS_CLIENT_KEYPATH;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.TLS_CLIENT_TRUSTCERTPATH;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.TLS_SERVER_AUTHCLIENT;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.TLS_SERVER_CERTPATH;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.TLS_SERVER_KEYPASSWORD;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.TLS_SERVER_KEYPATH;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.TLS_SERVER_NEED_CLIENT_AUTH;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.TLS_SERVER_TRUSTCERTPATH;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.TLS_TEST_MODE_ENABLE;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsClientAuthServer;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsClientCertPath;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsClientKeyPassword;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsClientKeyPath;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsClientTrustCertPath;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsServerAuthClient;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsServerCertPath;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsServerKeyPassword;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsServerKeyPath;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsServerNeedClientAuth;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsServerTrustCertPath;
-import static org.apache.rocketmq.remoting.netty.TlsSystemConfig.tlsTestModeEnable;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.TLS_CLIENT_AUTHSERVER;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.TLS_CLIENT_CERTPATH;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.TLS_CLIENT_KEYPASSWORD;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.TLS_CLIENT_KEYPATH;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.TLS_CLIENT_TRUSTCERTPATH;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.TLS_SERVER_AUTHCLIENT;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.TLS_SERVER_CERTPATH;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.TLS_SERVER_KEYPASSWORD;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.TLS_SERVER_KEYPATH;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.TLS_SERVER_NEED_CLIENT_AUTH;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.TLS_SERVER_TRUSTCERTPATH;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.TLS_TEST_MODE_ENABLE;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsClientAuthServer;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsClientCertPath;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsClientKeyPassword;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsClientKeyPath;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsClientTrustCertPath;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsServerAuthClient;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsServerCertPath;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsServerKeyPassword;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsServerKeyPath;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsServerNeedClientAuth;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsServerTrustCertPath;
+import static org.sail.mq.remoting.netty.TlsSystemConfig.tlsTestModeEnable;
 
 public class TlsHelper {
 

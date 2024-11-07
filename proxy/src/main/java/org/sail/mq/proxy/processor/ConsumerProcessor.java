@@ -50,17 +50,17 @@ import org.sail.mq.proxy.common.utils.ProxyUtils;
 import org.sail.mq.proxy.service.ServiceManager;
 import org.sail.mq.proxy.service.message.ReceiptHandleMessage;
 import org.sail.mq.proxy.service.route.AddressableMessageQueue;
-import org.apache.rocketmq.remoting.protocol.body.LockBatchRequestBody;
-import org.apache.rocketmq.remoting.protocol.body.UnlockBatchRequestBody;
-import org.apache.rocketmq.remoting.protocol.header.AckMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.ChangeInvisibleTimeRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.GetMaxOffsetRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.GetMinOffsetRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.PopMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.PullMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.QueryConsumerOffsetRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.UpdateConsumerOffsetRequestHeader;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.body.LockBatchRequestBody;
+import org.sail.mq.remoting.protocol.body.UnlockBatchRequestBody;
+import org.sail.mq.remoting.protocol.header.AckMessageRequestHeader;
+import org.sail.mq.remoting.protocol.header.ChangeInvisibleTimeRequestHeader;
+import org.sail.mq.remoting.protocol.header.GetMaxOffsetRequestHeader;
+import org.sail.mq.remoting.protocol.header.GetMinOffsetRequestHeader;
+import org.sail.mq.remoting.protocol.header.PopMessageRequestHeader;
+import org.sail.mq.remoting.protocol.header.PullMessageRequestHeader;
+import org.sail.mq.remoting.protocol.header.QueryConsumerOffsetRequestHeader;
+import org.sail.mq.remoting.protocol.header.UpdateConsumerOffsetRequestHeader;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public class ConsumerProcessor extends AbstractProcessor {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

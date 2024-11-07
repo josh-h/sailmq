@@ -42,9 +42,9 @@ import org.sail.mq.proxy.config.ProxyConfig;
 import org.sail.mq.client.impl.mqclient.MQClientAPIFactory;
 import org.sail.mq.proxy.service.route.MessageQueueView;
 import org.sail.mq.proxy.service.route.TopicRouteService;
-import org.apache.rocketmq.remoting.protocol.heartbeat.HeartbeatData;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ProducerData;
-import org.apache.rocketmq.remoting.protocol.route.BrokerData;
+import org.sail.mq.remoting.protocol.heartbeat.HeartbeatData;
+import org.sail.mq.remoting.protocol.heartbeat.ProducerData;
+import org.sail.mq.remoting.protocol.route.BrokerData;
 
 public class ClusterTransactionService extends AbstractTransactionService {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

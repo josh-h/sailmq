@@ -39,13 +39,13 @@ import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.service.channel.SimpleChannel;
 import org.sail.mq.proxy.service.transaction.TransactionData;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.protocol.body.ConsumeMessageDirectlyResult;
-import org.apache.rocketmq.remoting.protocol.body.ConsumerRunningInfo;
-import org.apache.rocketmq.remoting.protocol.header.CheckTransactionStateRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.ConsumeMessageDirectlyResultRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.GetConsumerRunningInfoRequestHeader;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.body.ConsumeMessageDirectlyResult;
+import org.sail.mq.remoting.protocol.body.ConsumerRunningInfo;
+import org.sail.mq.remoting.protocol.header.CheckTransactionStateRequestHeader;
+import org.sail.mq.remoting.protocol.header.ConsumeMessageDirectlyResultRequestHeader;
+import org.sail.mq.remoting.protocol.header.GetConsumerRunningInfoRequestHeader;
 
 public abstract class ProxyChannel extends SimpleChannel {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

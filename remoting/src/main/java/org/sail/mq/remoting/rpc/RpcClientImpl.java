@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.rpc;
+package org.sail.mq.remoting.rpc;
 
 import io.netty.util.concurrent.ImmediateEventExecutor;
 import io.netty.util.concurrent.Promise;
@@ -22,22 +22,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Future;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.InvokeCallback;
-import org.apache.rocketmq.remoting.RemotingClient;
-import org.apache.rocketmq.remoting.netty.ResponseFuture;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.admin.TopicStatsTable;
-import org.apache.rocketmq.remoting.protocol.header.GetEarliestMsgStoretimeResponseHeader;
-import org.apache.rocketmq.remoting.protocol.header.GetMaxOffsetResponseHeader;
-import org.apache.rocketmq.remoting.protocol.header.GetMinOffsetResponseHeader;
-import org.apache.rocketmq.remoting.protocol.header.PullMessageResponseHeader;
-import org.apache.rocketmq.remoting.protocol.header.QueryConsumerOffsetResponseHeader;
-import org.apache.rocketmq.remoting.protocol.header.SearchOffsetResponseHeader;
-import org.apache.rocketmq.remoting.protocol.header.UpdateConsumerOffsetResponseHeader;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicConfigAndQueueMapping;
+import org.sail.mq.remoting.InvokeCallback;
+import org.sail.mq.remoting.RemotingClient;
+import org.sail.mq.remoting.netty.ResponseFuture;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.admin.TopicStatsTable;
+import org.sail.mq.remoting.protocol.header.GetEarliestMsgStoretimeResponseHeader;
+import org.sail.mq.remoting.protocol.header.GetMaxOffsetResponseHeader;
+import org.sail.mq.remoting.protocol.header.GetMinOffsetResponseHeader;
+import org.sail.mq.remoting.protocol.header.PullMessageResponseHeader;
+import org.sail.mq.remoting.protocol.header.QueryConsumerOffsetResponseHeader;
+import org.sail.mq.remoting.protocol.header.SearchOffsetResponseHeader;
+import org.sail.mq.remoting.protocol.header.UpdateConsumerOffsetResponseHeader;
+import org.sail.mq.remoting.protocol.statictopic.TopicConfigAndQueueMapping;
 
 public class RpcClientImpl implements RpcClient {
 

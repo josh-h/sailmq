@@ -21,7 +21,7 @@ import io.grpc.Metadata;
 import io.netty.channel.ChannelHandlerContext;
 import java.util.List;
 import org.sail.mq.auth.authorization.context.DefaultAuthorizationContext;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public interface AuthorizationContextBuilder {
 

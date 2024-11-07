@@ -24,7 +24,7 @@ import org.sail.mq.client.producer.DefaultMQProducer;
 import org.sail.mq.client.producer.SendCallback;
 import org.sail.mq.client.producer.SendResult;
 import org.sail.mq.common.message.Message;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.common.RemotingHelper;
 
 public class AsyncProducer {
     public static void main(

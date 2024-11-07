@@ -33,7 +33,7 @@ import org.sail.mq.controller.impl.task.RaftBrokerHeartBeatEventRequest;
 import org.sail.mq.controller.impl.task.RaftBrokerHeartBeatEventResponse;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;

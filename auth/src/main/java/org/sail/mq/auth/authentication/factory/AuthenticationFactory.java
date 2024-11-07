@@ -34,7 +34,7 @@ import org.sail.mq.auth.authentication.provider.DefaultAuthenticationProvider;
 import org.sail.mq.auth.authentication.strategy.AuthenticationStrategy;
 import org.sail.mq.auth.authentication.strategy.StatelessAuthenticationStrategy;
 import org.sail.mq.auth.config.AuthConfig;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class AuthenticationFactory {
 

@@ -28,8 +28,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 import org.yaml.snakeyaml.Yaml;
 
 import static org.sail.mq.acl.common.common.SessionCredentials.CHARSET;

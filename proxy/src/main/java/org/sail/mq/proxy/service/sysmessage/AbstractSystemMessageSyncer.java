@@ -42,9 +42,9 @@ import org.sail.mq.proxy.service.admin.AdminService;
 import org.sail.mq.client.impl.mqclient.MQClientAPIFactory;
 import org.sail.mq.proxy.service.route.AddressableMessageQueue;
 import org.sail.mq.proxy.service.route.TopicRouteService;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.protocol.header.SendMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.protocol.header.SendMessageRequestHeader;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
 
 public abstract class AbstractSystemMessageSyncer implements StartAndShutdown, MessageListenerConcurrently {
     protected static final Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

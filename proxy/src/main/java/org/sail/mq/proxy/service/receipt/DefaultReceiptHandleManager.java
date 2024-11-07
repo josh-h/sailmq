@@ -57,8 +57,8 @@ import org.sail.mq.common.utils.ExceptionUtils;
 import org.sail.mq.proxy.config.ConfigurationManager;
 import org.sail.mq.proxy.config.ProxyConfig;
 import org.sail.mq.proxy.service.metadata.MetadataService;
-import org.apache.rocketmq.remoting.protocol.subscription.RetryPolicy;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.remoting.protocol.subscription.RetryPolicy;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
 
 public class DefaultReceiptHandleManager extends AbstractStartAndShutdown implements ReceiptHandleManager {
     protected final static Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

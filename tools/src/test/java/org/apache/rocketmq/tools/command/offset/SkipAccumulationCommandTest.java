@@ -24,7 +24,7 @@ import org.sail.mq.client.ClientConfig;
 import org.sail.mq.client.impl.MQClientAPIImpl;
 import org.sail.mq.client.impl.MQClientManager;
 import org.sail.mq.client.impl.factory.MQClientInstance;
-import org.apache.rocketmq.srvutil.ServerUtil;
+import org.sail.mq.srvutil.ServerUtil;
 import org.apache.rocketmq.tools.admin.DefaultMQAdminExt;
 import org.apache.rocketmq.tools.admin.DefaultMQAdminExtImpl;
 import org.apache.rocketmq.tools.command.SubCommandException;

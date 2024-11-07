@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.netty;
+package org.sail.mq.remoting.netty;
 
 
 import io.netty.util.internal.logging.InternalLogLevel;

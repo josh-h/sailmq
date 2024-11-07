@@ -24,7 +24,7 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.lang3.StringUtils;
 import org.sail.mq.common.config.ConfigRocksDBStorage;
 import org.sail.mq.common.utils.DataConverter;
-import org.apache.rocketmq.remoting.RPCHook;
+import org.sail.mq.remoting.RPCHook;
 import org.apache.rocketmq.tools.command.SubCommand;
 import org.apache.rocketmq.tools.command.SubCommandException;
 import org.rocksdb.RocksIterator;

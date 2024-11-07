@@ -42,10 +42,10 @@ import org.sail.mq.proxy.processor.channel.RemoteChannel;
 import org.sail.mq.proxy.service.admin.AdminService;
 import org.sail.mq.client.impl.mqclient.MQClientAPIFactory;
 import org.sail.mq.proxy.service.route.TopicRouteService;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumeType;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.protocol.heartbeat.ConsumeType;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public class HeartbeatSyncer extends AbstractSystemMessageSyncer {
 

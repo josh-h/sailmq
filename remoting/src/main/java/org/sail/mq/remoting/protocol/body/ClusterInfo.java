@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.body;
+package org.sail.mq.remoting.protocol.body;
 
 import com.google.common.base.Objects;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
-import org.apache.rocketmq.remoting.protocol.route.BrokerData;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.route.BrokerData;
 
 public class ClusterInfo extends RemotingSerializable {
     private Map<String/* brokerName */, BrokerData> brokerAddrTable;

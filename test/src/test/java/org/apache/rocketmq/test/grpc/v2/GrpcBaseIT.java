@@ -102,7 +102,7 @@ import org.sail.mq.proxy.grpc.interceptor.ContextInterceptor;
 import org.sail.mq.proxy.grpc.interceptor.HeaderInterceptor;
 import org.sail.mq.common.constant.GrpcConstants;
 import org.sail.mq.proxy.grpc.v2.common.ResponseBuilder;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
 import org.apache.rocketmq.test.base.BaseConf;
 import org.apache.rocketmq.test.util.MQRandomUtils;
 import org.apache.rocketmq.test.util.RandomUtils;

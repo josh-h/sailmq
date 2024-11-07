@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol;
+package org.sail.mq.remoting.protocol;
 
 import java.util.HashMap;
 
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.exception.RemotingCommandException;
 
 import io.netty.buffer.ByteBuf;
 

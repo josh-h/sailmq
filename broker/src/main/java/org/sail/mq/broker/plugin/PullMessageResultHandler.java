@@ -18,13 +18,13 @@
 package org.sail.mq.broker.plugin;
 
 import io.netty.channel.Channel;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.header.PullMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingContext;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
-import org.apache.rocketmq.store.GetMessageResult;
-import org.apache.rocketmq.store.MessageFilter;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.header.PullMessageRequestHeader;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingContext;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.store.GetMessageResult;
+import org.sail.mq.store.MessageFilter;
 
 public interface PullMessageResultHandler {
 

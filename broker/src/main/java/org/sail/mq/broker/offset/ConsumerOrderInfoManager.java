@@ -34,8 +34,8 @@ import org.sail.mq.common.TopicConfig;
 import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
-import org.apache.rocketmq.remoting.protocol.header.ExtraInfoUtil;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.header.ExtraInfoUtil;
 
 public class ConsumerOrderInfoManager extends ConfigManager {
 

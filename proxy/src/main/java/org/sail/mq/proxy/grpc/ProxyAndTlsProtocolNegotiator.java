@@ -56,8 +56,8 @@ import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.proxy.config.ConfigurationManager;
 import org.sail.mq.proxy.config.ProxyConfig;
 import org.sail.mq.proxy.grpc.constant.AttributeKeys;
-import org.apache.rocketmq.remoting.common.TlsMode;
-import org.apache.rocketmq.remoting.netty.TlsSystemConfig;
+import org.sail.mq.remoting.common.TlsMode;
+import org.sail.mq.remoting.netty.TlsSystemConfig;
 
 public class ProxyAndTlsProtocolNegotiator implements InternalProtocolNegotiator.ProtocolNegotiator {
     protected static final Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

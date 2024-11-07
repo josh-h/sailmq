@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.route;
+package org.sail.mq.remoting.protocol.route;
 
 import java.util.ArrayList;
 import java.util.HashMap;

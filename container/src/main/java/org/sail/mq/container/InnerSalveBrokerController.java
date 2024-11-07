@@ -24,7 +24,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import org.sail.mq.common.BrokerConfig;
 import org.sail.mq.common.MixAll;
-import org.apache.rocketmq.store.config.MessageStoreConfig;
+import org.sail.mq.store.config.MessageStoreConfig;
 
 public class InnerSalveBrokerController extends InnerBrokerController {
 

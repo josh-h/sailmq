@@ -27,7 +27,7 @@ Field defaultTopicQueueNums : private int 4
 Field enableStreamRequestType : protected boolean false
 Field heartbeatBrokerInterval : private int 30000
 Field instanceName : private java.lang.String DEFAULT
-Field language : private org.apache.rocketmq.remoting.protocol.LanguageCode JAVA
+Field language : private protocol.org.sail.mq.remoting.LanguageCode JAVA
 Field log : private org.apache.rocketmq.logging.InternalLogger null
 Field maxMessageSize : private int 4194304
 Field mqClientApiTimeout : private int 3000
@@ -65,7 +65,7 @@ Method getDefaultMQProducerImpl() : public throws (producer.impl.org.sail.mq.cli
 Method getDefaultTopicQueueNums() : public throws (int)
 Method getHeartbeatBrokerInterval() : public throws (int)
 Method getInstanceName() : public throws (java.lang.String)
-Method getLanguage() : public throws (org.apache.rocketmq.remoting.protocol.LanguageCode)
+Method getLanguage() : public throws (protocol.org.sail.mq.remoting.LanguageCode)
 Method getLatencyMax() : public throws ([J)
 Method getMaxMessageSize() : public throws (int)
 Method getMqClientApiTimeout() : public throws (int)
@@ -137,7 +137,7 @@ Method setDefaultTopicQueueNums(int) : public throws (void)
 Method setEnableStreamRequestType(boolean) : public throws (void)
 Method setHeartbeatBrokerInterval(int) : public throws (void)
 Method setInstanceName(java.lang.String) : public throws (void)
-Method setLanguage(org.apache.rocketmq.remoting.protocol.LanguageCode) : public throws (void)
+Method setLanguage(protocol.org.sail.mq.remoting.LanguageCode) : public throws (void)
 Method setLatencyMax([J) : public throws (void)
 Method setMaxMessageSize(int) : public throws (void)
 Method setMqClientApiTimeout(int) : public throws (void)

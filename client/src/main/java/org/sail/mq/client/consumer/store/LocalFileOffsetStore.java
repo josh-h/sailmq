@@ -32,7 +32,7 @@ import org.sail.mq.common.MixAll;
 import org.sail.mq.common.UtilAll;
 import org.sail.mq.common.help.FAQUrl;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.exception.RemotingException;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 

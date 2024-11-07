@@ -28,7 +28,7 @@ import org.sail.mq.common.MixAll;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageConst;
 import org.sail.mq.common.message.MessageType;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
 
 public class EndTransactionTraceHookImpl implements EndTransactionHook {
 

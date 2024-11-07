@@ -31,7 +31,7 @@ import org.sail.mq.common.message.MessageConst;
 import org.sail.mq.common.message.MessageExt;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.protocol.body.ProcessQueueInfo;
+import org.sail.mq.remoting.protocol.body.ProcessQueueInfo;
 
 /**
  * Queue consumption snapshot

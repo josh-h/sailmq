@@ -31,7 +31,7 @@ import org.sail.mq.client.utils.MessageUtil;
 import org.sail.mq.common.consumer.ConsumeFromWhere;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageExt;
-import org.apache.rocketmq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.exception.RemotingException;
 
 public class ResponseConsumer {
     public static void main(String[] args) throws InterruptedException, MQClientException {

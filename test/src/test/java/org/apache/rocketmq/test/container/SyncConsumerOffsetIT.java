@@ -40,7 +40,7 @@ import org.sail.mq.client.producer.SendStatus;
 import org.sail.mq.common.consumer.ConsumeFromWhere;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.exception.RemotingException;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Ignore;

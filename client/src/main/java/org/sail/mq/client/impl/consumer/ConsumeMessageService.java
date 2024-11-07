@@ -19,7 +19,7 @@ package org.sail.mq.client.impl.consumer;
 import java.util.List;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.protocol.body.ConsumeMessageDirectlyResult;
+import org.sail.mq.remoting.protocol.body.ConsumeMessageDirectlyResult;
 
 public interface ConsumeMessageService {
     void start();

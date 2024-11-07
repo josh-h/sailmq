@@ -26,10 +26,10 @@ import org.sail.mq.common.UtilAll;
 import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.common.utils.NameServerAddressUtils;
 import org.sail.mq.common.utils.NetworkUtil;
-import org.apache.rocketmq.remoting.netty.TlsSystemConfig;
-import org.apache.rocketmq.remoting.protocol.LanguageCode;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
-import org.apache.rocketmq.remoting.protocol.RequestType;
+import org.sail.mq.remoting.netty.TlsSystemConfig;
+import org.sail.mq.remoting.protocol.LanguageCode;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.RequestType;
 
 /**
  * Client Common configuration

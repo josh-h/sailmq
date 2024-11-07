@@ -31,14 +31,14 @@ import org.sail.mq.common.ServiceThread;
 import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.protocol.BrokerSyncInfo;
-import org.apache.rocketmq.remoting.protocol.body.BrokerMemberGroup;
-import org.apache.rocketmq.remoting.protocol.body.ConsumerOffsetSerializeWrapper;
-import org.apache.rocketmq.store.config.StorePathConfigHelper;
-import org.apache.rocketmq.store.ha.HAConnectionState;
-import org.apache.rocketmq.store.ha.HAConnectionStateNotificationRequest;
-import org.apache.rocketmq.store.timer.TimerCheckpoint;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.protocol.BrokerSyncInfo;
+import org.sail.mq.remoting.protocol.body.BrokerMemberGroup;
+import org.sail.mq.remoting.protocol.body.ConsumerOffsetSerializeWrapper;
+import org.sail.mq.store.config.StorePathConfigHelper;
+import org.sail.mq.store.ha.HAConnectionState;
+import org.sail.mq.store.ha.HAConnectionStateNotificationRequest;
+import org.sail.mq.store.timer.TimerCheckpoint;
 
 public class BrokerPreOnlineService extends ServiceThread {
     private static final Logger LOGGER = LoggerFactory.getLogger(LoggerName.BROKER_LOGGER_NAME);

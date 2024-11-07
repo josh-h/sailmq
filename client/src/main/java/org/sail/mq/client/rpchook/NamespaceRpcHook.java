@@ -20,8 +20,8 @@ package org.sail.mq.client.rpchook;
 import org.apache.commons.lang3.StringUtils;
 import org.sail.mq.client.ClientConfig;
 import org.sail.mq.common.MixAll;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class NamespaceRpcHook implements RPCHook {
     private final ClientConfig clientConfig;

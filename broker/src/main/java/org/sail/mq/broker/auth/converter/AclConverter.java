@@ -29,7 +29,7 @@ import org.sail.mq.auth.authorization.model.Policy;
 import org.sail.mq.auth.authorization.model.PolicyEntry;
 import org.sail.mq.auth.authorization.model.Resource;
 import org.sail.mq.common.action.Action;
-import org.apache.rocketmq.remoting.protocol.body.AclInfo;
+import org.sail.mq.remoting.protocol.body.AclInfo;
 
 public class AclConverter {
 

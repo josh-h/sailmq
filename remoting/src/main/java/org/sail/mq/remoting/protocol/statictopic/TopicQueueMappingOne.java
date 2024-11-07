@@ -14,10 +14,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.protocol.statictopic;
+package org.sail.mq.remoting.protocol.statictopic;
 
 import java.util.List;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 public class TopicQueueMappingOne extends RemotingSerializable {
 

@@ -14,10 +14,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.protocol.header;
+package org.sail.mq.remoting.protocol.header;
 
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.rpc.TopicRequestHeader;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.rpc.TopicRequestHeader;
 
 public class InitConsumerOffsetRequestHeader extends TopicRequestHeader {
 

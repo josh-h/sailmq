@@ -24,7 +24,7 @@ import org.sail.mq.proxy.config.ConfigurationManager;
 import org.sail.mq.proxy.grpc.v2.GrpcMessagingApplication;
 import org.sail.mq.proxy.processor.DefaultMessagingProcessor;
 import org.sail.mq.proxy.processor.MessagingProcessor;
-import org.apache.rocketmq.remoting.protocol.route.BrokerData;
+import org.sail.mq.remoting.protocol.route.BrokerData;
 import org.apache.rocketmq.test.util.MQAdminTestUtils;
 import org.junit.After;
 import org.junit.Before;

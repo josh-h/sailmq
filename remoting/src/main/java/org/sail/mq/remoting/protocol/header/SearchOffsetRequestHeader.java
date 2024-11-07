@@ -18,7 +18,7 @@
 /**
  * $Id: SearchOffsetRequestHeader.java 1835 2013-05-16 02:00:50Z vintagewang@apache.org $
  */
-package org.apache.rocketmq.remoting.protocol.header;
+package org.sail.mq.remoting.protocol.header;
 
 import com.google.common.base.MoreObjects;
 import org.sail.mq.common.BoundaryType;
@@ -26,10 +26,10 @@ import org.sail.mq.common.action.Action;
 import org.sail.mq.common.action.RocketMQAction;
 import org.sail.mq.common.resource.ResourceType;
 import org.sail.mq.common.resource.RocketMQResource;
-import org.apache.rocketmq.remoting.annotation.CFNotNull;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.rpc.TopicQueueRequestHeader;
+import org.sail.mq.remoting.annotation.CFNotNull;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.rpc.TopicQueueRequestHeader;
 
 @RocketMQAction(value = RequestCode.SEARCH_OFFSET_BY_TIMESTAMP, action = Action.GET)
 public class SearchOffsetRequestHeader extends TopicQueueRequestHeader {

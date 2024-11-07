@@ -27,7 +27,7 @@ import org.sail.mq.client.consumer.listener.MessageListenerConcurrently;
 import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.common.ThreadFactoryImpl;
 import org.sail.mq.common.message.MessageExt;
-import org.apache.rocketmq.srvutil.ServerUtil;
+import org.sail.mq.srvutil.ServerUtil;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

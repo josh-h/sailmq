@@ -58,10 +58,10 @@ import org.sail.mq.common.metrics.NopObservableLongGauge;
 import org.sail.mq.common.topic.TopicValidator;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.metrics.RemotingMetricsManager;
-import org.apache.rocketmq.remoting.protocol.header.SendMessageRequestHeader;
-import org.apache.rocketmq.store.MessageStore;
-import org.apache.rocketmq.store.metrics.DefaultStoreMetricsConstant;
+import org.sail.mq.remoting.metrics.RemotingMetricsManager;
+import org.sail.mq.remoting.protocol.header.SendMessageRequestHeader;
+import org.sail.mq.store.MessageStore;
+import org.sail.mq.store.metrics.DefaultStoreMetricsConstant;
 import org.slf4j.bridge.SLF4JBridgeHandler;
 
 import java.time.Duration;
@@ -111,8 +111,8 @@ import static org.sail.mq.broker.metrics.BrokerMetricsConstant.LABEL_TOPIC;
 import static org.sail.mq.broker.metrics.BrokerMetricsConstant.LABEL_VERSION;
 import static org.sail.mq.broker.metrics.BrokerMetricsConstant.NODE_TYPE_BROKER;
 import static org.sail.mq.broker.metrics.BrokerMetricsConstant.OPEN_TELEMETRY_METER_NAME;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.LABEL_PROTOCOL_TYPE;
-import static org.apache.rocketmq.remoting.metrics.RemotingMetricsConstant.PROTOCOL_TYPE_REMOTING;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.LABEL_PROTOCOL_TYPE;
+import static org.sail.mq.remoting.metrics.RemotingMetricsConstant.PROTOCOL_TYPE_REMOTING;
 
 public class BrokerMetricsManager {
     private static final Logger LOGGER = LoggerFactory.getLogger(LoggerName.BROKER_LOGGER_NAME);

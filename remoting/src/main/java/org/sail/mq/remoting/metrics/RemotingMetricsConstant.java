@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.metrics;
+package org.sail.mq.remoting.metrics;
 
 public class RemotingMetricsConstant {
     public static final String HISTOGRAM_RPC_LATENCY = "rocketmq_rpc_latency";

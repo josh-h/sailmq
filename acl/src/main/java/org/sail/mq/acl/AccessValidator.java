@@ -23,8 +23,8 @@ import java.util.Map;
 import org.sail.mq.acl.common.common.AuthenticationHeader;
 import org.sail.mq.common.AclConfig;
 import org.sail.mq.common.PlainAccessConfig;
-import org.apache.rocketmq.remoting.protocol.DataVersion;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.DataVersion;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public interface AccessValidator {
 

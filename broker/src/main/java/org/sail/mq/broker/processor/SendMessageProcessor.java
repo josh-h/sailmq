@@ -45,25 +45,25 @@ import org.sail.mq.common.topic.TopicValidator;
 import org.sail.mq.common.utils.CleanupPolicyUtils;
 import org.sail.mq.common.utils.MessageUtils;
 import org.sail.mq.common.utils.QueueTypeUtils;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.netty.NettyRequestProcessor;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.header.SendMessageRequestHeader;
-import org.apache.rocketmq.remoting.protocol.header.SendMessageResponseHeader;
-import org.apache.rocketmq.remoting.protocol.statictopic.LogicQueueMappingItem;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingContext;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicQueueMappingDetail;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
-import org.apache.rocketmq.store.AppendMessageResult;
-import org.apache.rocketmq.store.DefaultMessageStore;
-import org.apache.rocketmq.store.MessageStore;
-import org.apache.rocketmq.store.PutMessageResult;
-import org.apache.rocketmq.store.PutMessageStatus;
-import org.apache.rocketmq.store.config.BrokerRole;
-import org.apache.rocketmq.store.config.StorePathConfigHelper;
-import org.apache.rocketmq.store.stats.BrokerStatsManager;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.netty.NettyRequestProcessor;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.header.SendMessageRequestHeader;
+import org.sail.mq.remoting.protocol.header.SendMessageResponseHeader;
+import org.sail.mq.remoting.protocol.statictopic.LogicQueueMappingItem;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingContext;
+import org.sail.mq.remoting.protocol.statictopic.TopicQueueMappingDetail;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.store.AppendMessageResult;
+import org.sail.mq.store.DefaultMessageStore;
+import org.sail.mq.store.MessageStore;
+import org.sail.mq.store.PutMessageResult;
+import org.sail.mq.store.PutMessageStatus;
+import org.sail.mq.store.config.BrokerRole;
+import org.sail.mq.store.config.StorePathConfigHelper;
+import org.sail.mq.store.stats.BrokerStatsManager;
 
 import java.nio.ByteBuffer;
 import java.util.Map;
@@ -75,7 +75,7 @@ import static org.sail.mq.broker.metrics.BrokerMetricsConstant.LABEL_CONSUMER_GR
 import static org.sail.mq.broker.metrics.BrokerMetricsConstant.LABEL_IS_SYSTEM;
 import static org.sail.mq.broker.metrics.BrokerMetricsConstant.LABEL_MESSAGE_TYPE;
 import static org.sail.mq.broker.metrics.BrokerMetricsConstant.LABEL_TOPIC;
-import static org.apache.rocketmq.remoting.protocol.RemotingCommand.buildErrorResponse;
+import static org.sail.mq.remoting.protocol.RemotingCommand.buildErrorResponse;
 
 public class SendMessageProcessor extends AbstractSendMessageProcessor implements NettyRequestProcessor {
 

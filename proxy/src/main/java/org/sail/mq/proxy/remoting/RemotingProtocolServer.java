@@ -52,17 +52,17 @@ import org.sail.mq.proxy.remoting.pipeline.AuthenticationPipeline;
 import org.sail.mq.proxy.remoting.pipeline.AuthorizationPipeline;
 import org.sail.mq.proxy.remoting.pipeline.ContextInitPipeline;
 import org.sail.mq.proxy.remoting.pipeline.RequestPipeline;
-import org.apache.rocketmq.remoting.ChannelEventListener;
-import org.apache.rocketmq.remoting.InvokeCallback;
-import org.apache.rocketmq.remoting.RemotingServer;
-import org.apache.rocketmq.remoting.netty.NettyRemotingServer;
-import org.apache.rocketmq.remoting.netty.NettyServerConfig;
-import org.apache.rocketmq.remoting.netty.RequestTask;
-import org.apache.rocketmq.remoting.netty.ResponseFuture;
-import org.apache.rocketmq.remoting.netty.TlsSystemConfig;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.ChannelEventListener;
+import org.sail.mq.remoting.InvokeCallback;
+import org.sail.mq.remoting.RemotingServer;
+import org.sail.mq.remoting.netty.NettyRemotingServer;
+import org.sail.mq.remoting.netty.NettyServerConfig;
+import org.sail.mq.remoting.netty.RequestTask;
+import org.sail.mq.remoting.netty.ResponseFuture;
+import org.sail.mq.remoting.netty.TlsSystemConfig;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
 
 public class RemotingProtocolServer implements StartAndShutdown, RemotingProxyOutClient {
     private final static Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

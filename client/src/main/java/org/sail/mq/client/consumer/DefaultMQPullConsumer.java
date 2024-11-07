@@ -30,10 +30,10 @@ import org.sail.mq.common.MixAll;
 import org.sail.mq.common.message.MessageDecoder;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.exception.RemotingException;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
 
 /**
  * @deprecated Default pulling consumer. This class will be removed in 2022, and a better implementation

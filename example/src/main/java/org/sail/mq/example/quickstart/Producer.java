@@ -20,7 +20,7 @@ import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.client.producer.DefaultMQProducer;
 import org.sail.mq.client.producer.SendResult;
 import org.sail.mq.common.message.Message;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.common.RemotingHelper;
 
 /**
  * This class demonstrates how to send messages to brokers using provided {@link DefaultMQProducer}.

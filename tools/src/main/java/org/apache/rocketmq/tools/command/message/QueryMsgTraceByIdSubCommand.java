@@ -31,7 +31,7 @@ import org.sail.mq.client.trace.TraceType;
 import org.sail.mq.client.trace.TraceView;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.topic.TopicValidator;
-import org.apache.rocketmq.remoting.RPCHook;
+import org.sail.mq.remoting.RPCHook;
 import org.apache.rocketmq.tools.admin.DefaultMQAdminExt;
 import org.apache.rocketmq.tools.command.SubCommand;
 import org.apache.rocketmq.tools.command.SubCommandException;

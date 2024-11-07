@@ -24,10 +24,10 @@ import org.sail.mq.broker.BrokerController;
 import org.sail.mq.broker.out.BrokerOuterAPI;
 import org.sail.mq.common.BrokerConfig;
 import org.sail.mq.common.BrokerIdentity;
-import org.apache.rocketmq.remoting.RemotingServer;
-import org.apache.rocketmq.remoting.netty.NettyClientConfig;
-import org.apache.rocketmq.remoting.netty.NettyServerConfig;
-import org.apache.rocketmq.store.config.MessageStoreConfig;
+import org.sail.mq.remoting.RemotingServer;
+import org.sail.mq.remoting.netty.NettyClientConfig;
+import org.sail.mq.remoting.netty.NettyServerConfig;
+import org.sail.mq.store.config.MessageStoreConfig;
 
 /**
  * An interface for broker container to hold multiple master and slave brokers.

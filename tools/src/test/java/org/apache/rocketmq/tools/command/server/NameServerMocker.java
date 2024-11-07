@@ -19,8 +19,8 @@ package org.apache.rocketmq.tools.command.server;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import org.apache.rocketmq.remoting.protocol.route.BrokerData;
-import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
+import org.sail.mq.remoting.protocol.route.BrokerData;
+import org.sail.mq.remoting.protocol.route.TopicRouteData;
 
 /**
  * tools class

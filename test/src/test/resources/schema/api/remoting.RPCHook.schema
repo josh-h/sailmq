@@ -16,5 +16,5 @@
  */
 
 
-Method doAfterResponse(java.lang.String,org.apache.rocketmq.remoting.protocol.RemotingCommand,org.apache.rocketmq.remoting.protocol.RemotingCommand) : public throws (void)
-Method doBeforeRequest(java.lang.String,org.apache.rocketmq.remoting.protocol.RemotingCommand) : public throws (void)
+Method doAfterResponse(java.lang.String,protocol.org.sail.mq.remoting.RemotingCommand,protocol.org.sail.mq.remoting.RemotingCommand) : public throws (void)
+Method doBeforeRequest(java.lang.String,protocol.org.sail.mq.remoting.RemotingCommand) : public throws (void)

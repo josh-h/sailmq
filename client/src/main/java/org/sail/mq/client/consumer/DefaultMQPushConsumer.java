@@ -38,10 +38,10 @@ import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.exception.RemotingException;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
 
 import java.util.HashMap;
 import java.util.Map;

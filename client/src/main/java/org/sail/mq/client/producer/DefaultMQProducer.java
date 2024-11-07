@@ -42,9 +42,9 @@ import org.sail.mq.common.message.MessageQueue;
 import org.sail.mq.common.topic.TopicValidator;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.exception.RemotingException;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.protocol.ResponseCode;
 
 import java.util.Arrays;
 import java.util.Collection;

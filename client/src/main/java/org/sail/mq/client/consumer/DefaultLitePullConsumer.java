@@ -33,13 +33,13 @@ import org.sail.mq.common.UtilAll;
 import org.sail.mq.common.consumer.ConsumeFromWhere;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.protocol.NamespaceUtil;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.protocol.NamespaceUtil;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 
-import static org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData.SUB_ALL;
+import static org.sail.mq.remoting.protocol.heartbeat.SubscriptionData.SUB_ALL;
 
 public class DefaultLitePullConsumer extends ClientConfig implements LitePullConsumer {
 

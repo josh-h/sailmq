@@ -30,7 +30,7 @@ import org.sail.mq.client.trace.hook.EndTransactionOpenTracingHookImpl;
 import org.sail.mq.client.trace.hook.SendMessageOpenTracingHookImpl;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageExt;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.common.RemotingHelper;
 
 import java.io.UnsupportedEncodingException;
 

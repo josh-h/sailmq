@@ -22,7 +22,7 @@ import io.netty.channel.ChannelHandlerContext;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Supplier;
 import org.sail.mq.auth.config.AuthConfig;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public interface AuthenticationProvider<AuthenticationContext> {
 

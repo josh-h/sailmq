@@ -38,8 +38,8 @@ import org.sail.mq.common.consumer.ConsumeFromWhere;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.common.RemotingHelper;
 
 
 public class AclClient {

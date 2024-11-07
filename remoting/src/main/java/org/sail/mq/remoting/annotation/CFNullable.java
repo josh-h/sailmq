@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.annotation;
+package org.sail.mq.remoting.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

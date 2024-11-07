@@ -23,7 +23,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import org.sail.mq.proxy.config.ConfigurationManager;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class InvocationChannel extends SimpleChannel {
     protected final ConcurrentMap<Integer, InvocationContextInterface> inFlightRequestMap;

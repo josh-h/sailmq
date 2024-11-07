@@ -26,7 +26,7 @@ import org.sail.mq.client.consumer.listener.MessageListenerConcurrently;
 import org.sail.mq.common.consumer.ConsumeFromWhere;
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.common.message.MessageRequestMode;
-import org.apache.rocketmq.remoting.protocol.route.BrokerData;
+import org.sail.mq.remoting.protocol.route.BrokerData;
 import org.apache.rocketmq.tools.admin.DefaultMQAdminExt;
 
 public class PopConsumer {

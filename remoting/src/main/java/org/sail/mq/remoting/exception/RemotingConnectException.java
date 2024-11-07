@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.exception;
+package org.sail.mq.remoting.exception;
 
 public class RemotingConnectException extends RemotingException {
     private static final long serialVersionUID = -5565366231695911316L;

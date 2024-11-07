@@ -20,7 +20,7 @@ import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.common.utils.FilterUtils;
 import org.sail.mq.proxy.processor.PopMessageResultFilter;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public class PopMessageResultFilterImpl implements PopMessageResultFilter {
 

@@ -14,13 +14,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.protocol;
+package org.sail.mq.remoting.protocol;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import org.sail.mq.common.action.RocketMQAction;
-import org.apache.rocketmq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.CommandCustomHeader;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
 import org.reflections.util.ClasspathHelper;

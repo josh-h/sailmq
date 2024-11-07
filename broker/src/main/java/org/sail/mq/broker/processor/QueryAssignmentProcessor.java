@@ -39,16 +39,16 @@ import org.sail.mq.common.message.MessageQueueAssignment;
 import org.sail.mq.common.message.MessageRequestMode;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.netty.NettyRequestProcessor;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
-import org.apache.rocketmq.remoting.protocol.body.QueryAssignmentRequestBody;
-import org.apache.rocketmq.remoting.protocol.body.QueryAssignmentResponseBody;
-import org.apache.rocketmq.remoting.protocol.body.SetMessageRequestModeRequestBody;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.netty.NettyRequestProcessor;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.body.QueryAssignmentRequestBody;
+import org.sail.mq.remoting.protocol.body.QueryAssignmentResponseBody;
+import org.sail.mq.remoting.protocol.body.SetMessageRequestModeRequestBody;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
 
 public class QueryAssignmentProcessor implements NettyRequestProcessor {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.BROKER_LOGGER_NAME);

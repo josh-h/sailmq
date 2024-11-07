@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.exception;
+package org.sail.mq.remoting.exception;
 
 public class RemotingTimeoutException extends RemotingException {
 

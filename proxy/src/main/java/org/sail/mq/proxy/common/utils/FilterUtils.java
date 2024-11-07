@@ -17,7 +17,7 @@
 package org.sail.mq.proxy.common.utils;
 
 import java.util.Set;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public class FilterUtils {
     /**

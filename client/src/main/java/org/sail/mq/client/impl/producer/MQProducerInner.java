@@ -20,7 +20,7 @@ import java.util.Set;
 import org.sail.mq.client.producer.TransactionCheckListener;
 import org.sail.mq.client.producer.TransactionListener;
 import org.sail.mq.common.message.MessageExt;
-import org.apache.rocketmq.remoting.protocol.header.CheckTransactionStateRequestHeader;
+import org.sail.mq.remoting.protocol.header.CheckTransactionStateRequestHeader;
 
 public interface MQProducerInner {
     Set<String> getPublishTopicList();

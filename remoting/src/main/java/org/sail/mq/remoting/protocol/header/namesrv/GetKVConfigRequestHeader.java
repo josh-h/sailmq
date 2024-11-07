@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.header.namesrv;
+package org.sail.mq.remoting.protocol.header.namesrv;
 
 import org.sail.mq.common.action.Action;
 import org.sail.mq.common.action.RocketMQAction;
 import org.sail.mq.common.resource.ResourceType;
-import org.apache.rocketmq.remoting.CommandCustomHeader;
-import org.apache.rocketmq.remoting.annotation.CFNotNull;
-import org.apache.rocketmq.remoting.exception.RemotingCommandException;
-import org.apache.rocketmq.remoting.protocol.RequestCode;
+import org.sail.mq.remoting.CommandCustomHeader;
+import org.sail.mq.remoting.annotation.CFNotNull;
+import org.sail.mq.remoting.exception.RemotingCommandException;
+import org.sail.mq.remoting.protocol.RequestCode;
 
 @RocketMQAction(value = RequestCode.GET_KV_CONFIG, resource = ResourceType.CLUSTER, action = Action.GET)
 public class GetKVConfigRequestHeader implements CommandCustomHeader {

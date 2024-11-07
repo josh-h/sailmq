@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting.protocol.admin;
+package org.sail.mq.remoting.protocol.admin;
 
 public class RollbackStats {
     private String brokerName;

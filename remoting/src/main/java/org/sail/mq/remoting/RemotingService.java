@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package org.apache.rocketmq.remoting;
+package org.sail.mq.remoting;
 
-import org.apache.rocketmq.remoting.pipeline.RequestPipeline;
+import org.sail.mq.remoting.pipeline.RequestPipeline;
 
 public interface RemotingService {
     void start();

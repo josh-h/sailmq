@@ -26,7 +26,7 @@ import org.sail.mq.common.constant.LoggerName;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
 import org.sail.mq.namesrv.NamesrvController;
-import org.apache.rocketmq.remoting.protocol.body.KVTable;
+import org.sail.mq.remoting.protocol.body.KVTable;
 
 public class KVConfigManager {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.NAMESRV_LOGGER_NAME);

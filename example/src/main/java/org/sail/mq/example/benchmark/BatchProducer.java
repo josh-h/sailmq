@@ -42,13 +42,13 @@ import org.sail.mq.common.ThreadFactoryImpl;
 import org.sail.mq.common.UtilAll;
 import org.sail.mq.common.compression.CompressionType;
 import org.sail.mq.common.message.Message;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.exception.RemotingException;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.SerializeType;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.exception.RemotingException;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.SerializeType;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.srvutil.ServerUtil;
+import org.sail.mq.srvutil.ServerUtil;
 
 public class BatchProducer {
 

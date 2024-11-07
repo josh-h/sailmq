@@ -32,10 +32,10 @@ import org.sail.mq.common.UtilAll;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageConst;
 import org.sail.mq.common.message.MessageExt;
-import org.apache.rocketmq.remoting.RPCHook;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.SerializeType;
-import org.apache.rocketmq.srvutil.ServerUtil;
+import org.sail.mq.remoting.RPCHook;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.SerializeType;
+import org.sail.mq.srvutil.ServerUtil;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;

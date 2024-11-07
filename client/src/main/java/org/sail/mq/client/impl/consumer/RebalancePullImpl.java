@@ -23,8 +23,8 @@ import org.sail.mq.client.consumer.MessageQueueListener;
 import org.sail.mq.client.exception.MQClientException;
 import org.sail.mq.client.impl.factory.MQClientInstance;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.protocol.heartbeat.ConsumeType;
-import org.apache.rocketmq.remoting.protocol.heartbeat.MessageModel;
+import org.sail.mq.remoting.protocol.heartbeat.ConsumeType;
+import org.sail.mq.remoting.protocol.heartbeat.MessageModel;
 
 public class RebalancePullImpl extends RebalanceImpl {
     private final DefaultMQPullConsumerImpl defaultMQPullConsumerImpl;

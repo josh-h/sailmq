@@ -24,7 +24,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicLong;
 import org.sail.mq.common.config.AbstractRocksDBStorage;
-import org.apache.rocketmq.remoting.protocol.DataVersion;
+import org.sail.mq.remoting.protocol.DataVersion;
 import org.rocksdb.RocksDBException;
 import org.rocksdb.WriteBatch;
 

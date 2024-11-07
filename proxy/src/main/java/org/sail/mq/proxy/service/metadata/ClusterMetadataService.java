@@ -43,11 +43,11 @@ import org.sail.mq.proxy.config.ConfigurationManager;
 import org.sail.mq.proxy.config.ProxyConfig;
 import org.sail.mq.proxy.service.route.TopicRouteHelper;
 import org.sail.mq.proxy.service.route.TopicRouteService;
-import org.apache.rocketmq.remoting.protocol.body.AclInfo;
-import org.apache.rocketmq.remoting.protocol.body.UserInfo;
-import org.apache.rocketmq.remoting.protocol.route.BrokerData;
-import org.apache.rocketmq.remoting.protocol.statictopic.TopicConfigAndQueueMapping;
-import org.apache.rocketmq.remoting.protocol.subscription.SubscriptionGroupConfig;
+import org.sail.mq.remoting.protocol.body.AclInfo;
+import org.sail.mq.remoting.protocol.body.UserInfo;
+import org.sail.mq.remoting.protocol.route.BrokerData;
+import org.sail.mq.remoting.protocol.statictopic.TopicConfigAndQueueMapping;
+import org.sail.mq.remoting.protocol.subscription.SubscriptionGroupConfig;
 
 public class ClusterMetadataService extends AbstractStartAndShutdown implements MetadataService {
     protected static final Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

@@ -18,7 +18,7 @@ package org.sail.mq.namesrv.routeinfo;
 
 import io.netty.channel.Channel;
 import org.sail.mq.namesrv.NamesrvController;
-import org.apache.rocketmq.remoting.ChannelEventListener;
+import org.sail.mq.remoting.ChannelEventListener;
 
 public class BrokerHousekeepingService implements ChannelEventListener {
 

@@ -20,7 +20,7 @@ package org.sail.mq.container;
 import io.netty.channel.Channel;
 import java.util.Collection;
 import org.sail.mq.broker.BrokerController;
-import org.apache.rocketmq.remoting.ChannelEventListener;
+import org.sail.mq.remoting.ChannelEventListener;
 
 public class ContainerClientHouseKeepingService implements ChannelEventListener {
     private final IBrokerContainer brokerContainer;

@@ -32,9 +32,9 @@ import org.sail.mq.controller.impl.task.GetBrokerLiveInfoResponse;
 import org.sail.mq.controller.impl.task.RaftBrokerHeartBeatEventRequest;
 import org.apache.rocketmq.logging.org.slf4j.Logger;
 import org.apache.rocketmq.logging.org.slf4j.LoggerFactory;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.protocol.ResponseCode;
 
 import java.util.ArrayList;
 import java.util.HashMap;

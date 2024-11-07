@@ -22,7 +22,7 @@ import org.sail.mq.client.producer.SendResult;
 import org.sail.mq.common.MixAll;
 import org.sail.mq.common.message.Message;
 import org.sail.mq.common.message.MessageConst;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.common.RemotingHelper;
 
 public class LMQProducer {
     public static final String PRODUCER_GROUP = "ProducerGroupName";

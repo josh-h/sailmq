@@ -22,10 +22,10 @@ import org.sail.mq.common.MQVersion;
 import org.sail.mq.common.utils.NetworkUtil;
 import org.sail.mq.proxy.common.ProxyContext;
 import org.sail.mq.proxy.processor.channel.ChannelProtocolType;
-import org.apache.rocketmq.remoting.common.RemotingHelper;
-import org.apache.rocketmq.remoting.netty.AttributeKeys;
-import org.apache.rocketmq.remoting.protocol.LanguageCode;
-import org.apache.rocketmq.remoting.protocol.RemotingCommand;
+import org.sail.mq.remoting.common.RemotingHelper;
+import org.sail.mq.remoting.netty.AttributeKeys;
+import org.sail.mq.remoting.protocol.LanguageCode;
+import org.sail.mq.remoting.protocol.RemotingCommand;
 
 public class ContextInitPipeline implements RequestPipeline {
 

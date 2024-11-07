@@ -50,7 +50,7 @@ import org.sail.mq.proxy.service.route.ClusterTopicRouteService;
 import org.sail.mq.proxy.service.route.TopicRouteService;
 import org.sail.mq.proxy.service.transaction.ClusterTransactionService;
 import org.sail.mq.proxy.service.transaction.TransactionService;
-import org.apache.rocketmq.remoting.RPCHook;
+import org.sail.mq.remoting.RPCHook;
 
 public class ClusterServiceManager extends AbstractStartAndShutdown implements ServiceManager {
     private static final Logger log = LoggerFactory.getLogger(LoggerName.PROXY_LOGGER_NAME);

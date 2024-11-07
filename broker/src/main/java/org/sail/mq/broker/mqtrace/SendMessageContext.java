@@ -19,7 +19,7 @@ package org.sail.mq.broker.mqtrace;
 import java.util.Properties;
 
 import org.sail.mq.common.message.MessageType;
-import org.apache.rocketmq.store.stats.BrokerStatsManager;
+import org.sail.mq.store.stats.BrokerStatsManager;
 
 public class SendMessageContext {
     /** namespace */

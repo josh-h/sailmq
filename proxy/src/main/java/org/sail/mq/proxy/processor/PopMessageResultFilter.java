@@ -18,7 +18,7 @@ package org.sail.mq.proxy.processor;
 
 import org.sail.mq.common.message.MessageExt;
 import org.sail.mq.proxy.common.ProxyContext;
-import org.apache.rocketmq.remoting.protocol.heartbeat.SubscriptionData;
+import org.sail.mq.remoting.protocol.heartbeat.SubscriptionData;
 
 public interface PopMessageResultFilter {
 

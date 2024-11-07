@@ -19,7 +19,7 @@ package org.sail.mq.proxy.service.route;
 import org.sail.mq.client.common.ClientErrorCode;
 import org.sail.mq.client.exception.MQBrokerException;
 import org.sail.mq.client.exception.MQClientException;
-import org.apache.rocketmq.remoting.protocol.ResponseCode;
+import org.sail.mq.remoting.protocol.ResponseCode;
 
 public class TopicRouteHelper {
 

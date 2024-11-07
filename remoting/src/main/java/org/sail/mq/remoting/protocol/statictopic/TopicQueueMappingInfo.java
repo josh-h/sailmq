@@ -14,12 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.remoting.protocol.statictopic;
+package org.sail.mq.remoting.protocol.statictopic;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import org.sail.mq.common.MixAll;
-import org.apache.rocketmq.remoting.protocol.RemotingSerializable;
+import org.sail.mq.remoting.protocol.RemotingSerializable;
 
 public class TopicQueueMappingInfo extends RemotingSerializable {
     public static final int LEVEL_0 = 0;

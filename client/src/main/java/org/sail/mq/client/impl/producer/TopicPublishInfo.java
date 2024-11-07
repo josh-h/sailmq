@@ -22,8 +22,8 @@ import java.util.List;
 import com.google.common.base.Preconditions;
 import org.sail.mq.client.common.ThreadLocalIndex;
 import org.sail.mq.common.message.MessageQueue;
-import org.apache.rocketmq.remoting.protocol.route.QueueData;
-import org.apache.rocketmq.remoting.protocol.route.TopicRouteData;
+import org.sail.mq.remoting.protocol.route.QueueData;
+import org.sail.mq.remoting.protocol.route.TopicRouteData;
 
 public class TopicPublishInfo {
     private boolean orderTopic = false;
